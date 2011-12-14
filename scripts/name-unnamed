@@ -11,6 +11,7 @@ named = Dir["images/*.png"]
 unamed = unicode - named
 
 unamed.each do |fn|
+  system "open", "images/unicode/#{fn}"
   print "#{fn}: "
   name = gets.chomp
 
