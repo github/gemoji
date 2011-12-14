@@ -3,7 +3,7 @@ module Emoji
   IMAGE_PATH = File.expand_path("../../images", __FILE__)
 
   def self.names
-    @names ||= Dir.entries(IMAGE_PATH).map { |fn| File.basename(fn, '.png') }
+    @names ||= Dir["#{IMAGE_PATH}/*.png"].map { |fn| File.basename(fn, '.png') }
   end
 
   def self.replace(string)
