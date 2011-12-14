@@ -1,0 +1,9 @@
+.emoji {
+  display: inline-block;
+  background: url("emoji.png") top left no-repeat;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+<% emoji.each_with_index do |name, index| %>
+.emoji-<%= name %> { background-position: 0px -<%= index * 20 %>px; }<% end %>
