@@ -8,3 +8,12 @@ task :unnamed do
 
   puts unicode - named
 end
+
+desc "List custom emoji"
+task :custom do
+  custom = Dir["images/*.png"]
+    .select { |fn| !File.symlink?(fn) }
+    .map { |fn| File.basename(fn) }
+
+  puts custom
+end
