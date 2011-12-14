@@ -23,22 +23,11 @@ end
 directory "dist/"
 CLOBBER.include "dist/"
 
+require 'erb'
+
 file "dist/emoji.css" => ["dist/"] + Dir["images/*.png"] do |f|
-  css = <<-CSS
-.emoji {
-  display: inline-block;
-  background: url("emoji.png") top left no-repeat;
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-}
-  CSS
-
-  Dir["images/*.png"].each_with_index do |fn, i|
-    fn = File.basename(fn, '.png')
-    css += ".emoji-#{fn} { background-position: 0px -#{i*20}px; }\n"
-  end
-
+  emoji = Dir["images/*.png"].map { |fn| File.basename(fn, '.png') }
+  css = ERB.new(File.read("lib/emoji.css.erb")).result(binding)
   File.open(f.name, 'w') { |f| f.write css }
 end
 
