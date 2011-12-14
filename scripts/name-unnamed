@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+require 'fileutils'
+
+unicode = Dir["images/unicode/*.png"].map { |fn| File.basename(fn) }
+
+named = Dir["images/*.png"]
+  .select { |fn| File.symlink?(fn) }
+  .map { |fn| File.basename(File.readlink(fn)) }
+
+unamed = unicode - named
+
+unamed.each do |fn|
+  print "#{fn}: "
+  name = gets.chomp
+
+  Dir.chdir("images/") do
+    FileUtils.ln_s "unicode/#{fn}", "#{name}.png"
+  end
+end
