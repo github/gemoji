@@ -1,6 +1,5 @@
 module Emoji
-
-  IMAGE_PATH = File.expand_path("../../images", __FILE__)
+  IMAGE_PATH = File.expand_path("../assets/images/emoji", __FILE__)
 
   def self.names
     @names ||= Dir["#{IMAGE_PATH}/*.png"].map { |fn| File.basename(fn, '.png') }
@@ -16,4 +15,8 @@ module Emoji
       end
     end
   end
+end
+
+if defined? Rails::Engine
+  require 'emoji/engine'
 end
