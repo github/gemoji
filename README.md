@@ -1,13 +1,27 @@
 Emoji
 =====
 
-Adding/updating emoji
----------------------
+Shared Emoji assets between GitHub and Campfire.
 
-* add new emoji to `images`
-* run `rake` to create the new css/js/png assets
+Contributing
+------------
 
-Updating campfire
------------------
-* update the emoji external
-* run `rake emoji` to copy the new assets into the appropriate places
+### Designers
+
+Drop a 64x64 png into `images/` and commit it.
+
+### Others
+
+Rerun `rake` to rebuild static assets and sprites. (Trying to make this step unnecessary)
+
+Deploying
+---------
+
+### GitHub
+
+1. Run `rake emoji` in app root
+
+### Campfire
+
+1. Update emoji external
+2. Run `rake emoji` in app root
