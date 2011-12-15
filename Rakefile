@@ -9,7 +9,7 @@ Assets = Sprockets::Environment.new do |env|
 end
 
 file "lib/emoji.png" do |f|
-  sh "montage images/*.png -background transparent -tile x#{Emoji.names.size} -geometry 20x20 #{f.name}"
+  Assets["emoji.png"].write_to(f.name)
 end
 
 file "lib/emoji.js" do |f|

@@ -1,3 +1,5 @@
+require 'tmpdir'
+
 module Emoji
   PATH = File.expand_path("..", __FILE__)
 
@@ -17,6 +19,18 @@ module Emoji
       else
         message
       end
+    end
+  end
+
+  def self.generate_sprite
+    Dir.mktmpdir('emoji') do |path|
+      output = ::File.join(path, 'emoji.png')
+      system "montage", "#{Emoji.path}/emoji/*.png",
+         "-background", "transparent",
+         "-tile", "x#{Emoji.names.size}",
+         "-geometry", "20x20",
+         output
+      File.read(output)
     end
   end
 
