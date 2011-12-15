@@ -5,9 +5,9 @@ require 'sprockets'
 require 'rake/clean'
 
 Assets = Sprockets::Environment.new do |env|
-  env.append_path "lib/assets/images"
-  env.append_path "lib/assets/javascripts"
-  env.append_path "lib/assets/stylesheets"
+  env.append_path Emoji.images_path
+  env.append_path Emoji.javascripts_path
+  env.append_path Emoji.stylesheets_path
 end
 
 file "lib/assets/images/emoji.png" do |f|
