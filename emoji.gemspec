@@ -9,4 +9,6 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/github/emoji"
 
   s.files = `git ls-files`.split("\n")
+
+  s.add_development_dependency "sprockets", "~> 2.0"
 end
