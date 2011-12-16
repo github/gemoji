@@ -23,5 +23,7 @@ Deploying
 
 ### Campfire
 
-1. Update emoji external
-2. Run `rake emoji` in app root
+1. Update emoji version in config/externals.yml
+2. Run `cap local externals:setup` in app root
+3. Run `rake emoji` in app root
+4. Test, commit, push, and deploy
