@@ -23,7 +23,9 @@ Deploying
 
 ### Campfire
 
-1. Update emoji version in config/externals.yml
-2. Run `cap local externals:setup` in app root
-3. Run `rake emoji` in app root
-4. Test, commit, push, and deploy
+1. Push changes to 37signals/emoji repo
+2. Update emoji version in config/externals.yml
+3. Run `cap local externals:setup` in app root
+4. Run `rake emoji` in app root
+5. Test locally after running `Rails.cache.clear`
+6. Commit, push, deploy
