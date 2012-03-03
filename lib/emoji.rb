@@ -37,5 +37,13 @@ module Emoji
   if defined? Rails::Engine
     class Engine < Rails::Engine
     end
+
+    def self.image_path(context, path)
+      context.asset_path(path)
+    end
+  else
+    def self.image_path(context, path)
+      "/images/#{path}"
+    end
   end
 end
