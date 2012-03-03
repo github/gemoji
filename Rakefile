@@ -5,19 +5,19 @@ require 'sprockets'
 require 'rake/clean'
 
 Assets = Sprockets::Environment.new do |env|
-  env.append_path Emoji.path
+  env.append_path File.join(Emoji.path, 'assets')
 end
 
 file "lib/emoji.png" do |f|
-  Assets["emoji.png"].write_to(f.name)
+  Assets["images/emoji/index.png.erb"].write_to(f.name)
 end
 
 file "lib/emoji.js" do |f|
-  Assets["emoji.js"].write_to(f.name)
+  Assets["javascripts/emoji/index.js.erb"].write_to(f.name)
 end
 
 file "lib/emoji.css" do |f|
-  Assets["emoji.css"].write_to(f.name)
+  Assets["stylesheets/emoji/index.css.erb"].write_to(f.name)
 end
 
 assets = [
