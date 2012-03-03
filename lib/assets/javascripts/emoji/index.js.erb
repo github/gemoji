@@ -3,7 +3,7 @@ var Emoji = {
 
   replace: function(string) {
     return string.replace(/:([a-z0-9\+\-_]+):/g, function(match, $1) {
-      if (Emoji.names.indexOf($1) > 0) {
+      if (Emoji.names.indexOf($1) >= 0) {
         return '<span class="emoji emoji-' + $1 + '" title=":' +$1 + ':"></span>';
       } else {
         return ':' + $1 + ':';
