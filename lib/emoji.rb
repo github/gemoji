@@ -15,7 +15,7 @@ module Emoji
     string.gsub(/:([a-z0-9\+\-_]+):/) do |message|
       name = $1.to_s.downcase
       if names.include?(name)
-        %(<span class="emoji emoji-#{name}" title="#{name}"></span>)
+        %(<span class="emoji emoji-#{name}" title=":#{name}:"></span>)
       else
         message
       end
