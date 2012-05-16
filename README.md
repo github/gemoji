@@ -1,7 +1,7 @@
 Emoji
 =====
 
-Shared Emoji assets between GitHub and Campfire.
+Shared Emoji assets between GitHub,  Campfire, and BCX.
 
 Contributing
 ------------
@@ -29,3 +29,7 @@ Deploying
 4. Run `rake emoji` in app root
 5. Test locally after running `Rails.cache.clear`
 6. Commit, push, deploy
+
+### BCX
+
+1. Run `bundle update emoji` in app root
