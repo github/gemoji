@@ -14,11 +14,11 @@ file "lib/emoji.png" do |f|
 end
 
 file "lib/emoji.js" do |f|
-  Assets["javascripts/emoji/index.js.erb"].write_to(f.name)
+  Assets["emoji.js.erb"].write_to(f.name)
 end
 
 file "lib/emoji.css" do |f|
-  Assets["stylesheets/emoji/index.css.erb"].write_to(f.name)
+  Assets["emoji.css.erb"].write_to(f.name)
 end
 
 assets = [

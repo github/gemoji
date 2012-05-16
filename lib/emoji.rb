@@ -1,4 +1,5 @@
 require 'tmpdir'
+require 'emoji_helper'
 
 module Emoji
   PATH = File.expand_path("..", __FILE__)
@@ -36,6 +37,11 @@ module Emoji
 
   if defined? Rails::Engine
     class Engine < Rails::Engine
+      initializer 'emoji.action_controller' do |app|
+        ActiveSupport.on_load :action_controller do
+          helper EmojiHelper
+        end
+      end
     end
 
     def self.image_path(context, path)
