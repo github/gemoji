@@ -8,7 +8,7 @@ module Emoji
   end
 
   def self.names
-    @names ||= Dir["#{PATH}/emoji/*.png"].sort.map { |fn| File.basename(fn, '.png') }
+    @names ||= Dir["#{PATH}/assets/images/emoji/*.png"].sort.map { |fn| File.basename(fn, '.png') }
   end
 
   def self.replace(string)
@@ -25,7 +25,7 @@ module Emoji
   def self.generate_sprite
     Dir.mktmpdir('emoji') do |path|
       output = ::File.join(path, 'emoji.png')
-      system "montage", "#{Emoji.path}/emoji/*.png",
+      system "montage", "#{Emoji.path}/assets/images/emoji/*.png",
          "-background", "transparent",
          "-tile", "x#{Emoji.names.size}",
          "-geometry", "20x20",
