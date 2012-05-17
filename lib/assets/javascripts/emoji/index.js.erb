@@ -1,6 +1,6 @@
 var Emoji = {
   names: <%= Emoji.names.to_json %>,
-  paths: <%= Emoji.names.inject({}) { |h, n| h[n] = asset_path("emoji/#{n}.png"); h }.to_json %>,
+  paths: <%= Emoji.names.inject({}) { |h, n| h[n] = BCX.asset_url(asset_path("emoji/#{n}.png")); h }.to_json %>,
 
   replace: function(string) {
     return string.replace(/:([a-z0-9\+\-_]+):/g, function(match, $1) {
