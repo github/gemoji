@@ -37,10 +37,6 @@ module Emoji
 
   if defined? Rails::Engine
     class Engine < Rails::Engine
-      config.to_prepare do
-        ApplicationController.helper(EmojiHelper)
-        ActionView::TestCase.helper(EmojiHelper)
-      end
     end
 
     def self.image_path(context, path)
