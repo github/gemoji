@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name    = "emoji"
-  s.version = "0.1"
+  s.version = "0.2"
   s.summary = "Emoji Assets"
   s.description = "Shared Emoji assets between GitHub,  Campfire, and BCX."
 
