@@ -7,7 +7,7 @@ var Emoji = {
       if (Emoji.names.indexOf($1) >= 0) {
         // FIXME emoji images instead of sprite
         // return '<img alt="' + $1 + '" height="20" src="' + Emoji.paths[$1] + '" style="vertical-align:middle" width="20" />';
-        return '<span class="emoji emoji-' + $1 + '" title=":' +$1 + ':"></span>';
+        return '<span class="emoji emoji-' + $1 + '" title=":' + $1 + ':"></span>';
       } else {
         return ':' + $1 + ':';
       }
