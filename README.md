@@ -23,13 +23,13 @@ Deploying
 
 ### Campfire
 
-1. Push changes to 37signals/emoji repo
+1. Push changes to 37signals/emoji
 2. Update emoji version in config/externals.yml
 3. Run `cap local externals:setup` in app root
 4. Run `rake emoji` in app root
-5. Test locally after running `Rails.cache.clear`
-6. Commit, push, deploy
+5. Run `Rails.cache.clear` in app console
 
 ### BCX
 
-1. Run `bundle update emoji` in app root
+1. Push changes to 37signals/emoji
+2. Run `bundle update emoji` in app root
