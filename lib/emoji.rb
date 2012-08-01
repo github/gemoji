@@ -9,7 +9,7 @@ module Emoji
   end
 
   def self.names
-    @names ||= Dir["#{PATH}/assets/images/emoji/*.png"].sort.map { |fn| File.basename(fn, '.png') }
+    @names ||= Dir["#{PATH}/../images/emoji/*.png"].sort.map { |fn| File.basename(fn, '.png') }
   end
 
   def self.replace(string)
