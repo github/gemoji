@@ -44,3 +44,4 @@ Todo
 
 - Make all apps use lib/assets versions
 - Move the sprite img/css into CF/BCX and remove from the gem
+- Figure out what's wrong with the symlinks removed in 97709f
