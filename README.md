@@ -1,7 +1,7 @@
 Emoji
 =====
 
-Shared Emoji assets between GitHub,  Campfire, and BCX.
+Shared Emoji assets between GitHub, Campfire, and BCX.
 
 Contributing
 ------------
@@ -33,3 +33,14 @@ Deploying
 
 1. Push changes to 37signals/emoji
 2. Run `bundle update emoji` in app root
+
+Notes
+-----
+
+Use `replace` for the sprite and `emojify` for individual images.
+
+Todo
+----
+
+- Make all apps use lib/assets versions
+- Move the sprite img/css into CF/BCX and remove from the gem
