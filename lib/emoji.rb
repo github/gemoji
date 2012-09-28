@@ -19,7 +19,7 @@ module Emoji
         task :emoji do
           require 'emoji'
           Dir["#{PATH}/../images/*.png"].each do |src|
-            cp src, "#{Rails.root}/public/images/icons/emoji/"
+            cp src, "#{Rails.root}/public/images/emoji/"
           end
         end
       end
