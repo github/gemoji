@@ -10,16 +10,13 @@ Contributing
 
 Drop a 64x64 png into `images/` and commit it.
 
-### Others
-
-Rerun `rake` to rebuild static assets and sprites. (Trying to make this step unnecessary)
-
 Deploying
 ---------
 
 ### GitHub
 
-1. Run `rake emoji` in app root
+1. Update `emoji` gem in Gemfile
+1. Rerun `rake emoji` in app root
 
 ### Campfire
 
@@ -34,14 +31,7 @@ Deploying
 1. Push changes to 37signals/emoji
 2. Run `bundle update emoji` in app root
 
-Notes
------
-
-Use `replace` for the sprite and `emojify` for individual images.
-
 Todo
 ----
 
-- Make all apps use lib/assets versions
-- Move the sprite img/css into CF/BCX and remove from the gem
 - Figure out what's wrong with the symlinks removed in 97709f
