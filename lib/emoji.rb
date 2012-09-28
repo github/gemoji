@@ -15,6 +15,14 @@ module Emoji
 
   if defined? Rails::Engine
     class Engine < Rails::Engine
+      rake_tasks do
+        task :emoji do
+          require 'emoji'
+          Dir["#{PATH}/../images/*.png"].each do |src|
+            cp src, "#{Rails.root}/public/images/icons/emoji/"
+          end
+        end
+      end
     end
   end
 end
