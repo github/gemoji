@@ -1,37 +1,30 @@
-Emoji
-=====
+gemoji
+======
 
-Shared Emoji assets between GitHub, Campfire, and BCX.
+Emoji images and names for GitHub, Campfire, and Basecamp.
 
-Contributing
-------------
+See the LICENSE.
 
-### Designers
 
-Drop a 64x64 png into `images/` and commit it.
+Installation
+============
 
-Deploying
----------
+Install and require `gemoji` or add it to your Gemfile.
 
-### GitHub
 
-1. Update `emoji` gem in Gemfile
-1. Rerun `rake emoji` in app root
+Example Rails Helper
+====================
 
-### Campfire
-
-1. Push changes to 37signals/emoji
-2. Update emoji version in config/externals.yml
-3. Run `cap local externals:setup` in app root
-4. Run `rake emoji` in app root
-5. Run `Rails.cache.clear` in app console
-
-### BCX
-
-1. Push changes to 37signals/emoji
-2. Run `bundle update emoji` in app root
-
-Todo
-----
-
-- Figure out what's wrong with the symlinks removed in 97709f
+```ruby
+module EmojiHelper
+ def emojify(content)
+    h(content).to_str.gsub(/:([a-z0-9\+\-_]+):/) do |match|
+      if Emoji.names.include?($1)
+        '<img alt="' + $1 + '" height="20" src="' + asset_path("emoji/#{$1}.png") + '" style="vertical-align:middle" width="20" />'
+      else
+        match
+      end
+    end.html_safe if content.present?
+  end
+end
+```
