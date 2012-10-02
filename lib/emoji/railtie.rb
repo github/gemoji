@@ -6,5 +6,9 @@ module Emoji
     rake_tasks do
       load "tasks/emoji.rake"
     end
+
+    initializer "emoji" do |app|
+      app.config.paths << Emoji.images_path
+    end
   end
 end

@@ -6,10 +6,10 @@ module Emoji
   end
 
   def self.images_path
-    File.join(path, "assets/images")
+    File.expand_path("../../images", __FILE__)
   end
 
   def self.names
-    @names ||= Dir["#{PATH}/../images/*.png"].sort.map { |fn| File.basename(fn, '.png') }
+    @names ||= Dir["#{images_path}/emoji/*.png"].sort.map { |fn| File.basename(fn, '.png') }
   end
 end
