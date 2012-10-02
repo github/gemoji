@@ -7,7 +7,11 @@ Emoji images and names. See the LICENSE for copyright information.
 Installation
 ============
 
-Install and require `gemoji` or add it to your Gemfile.
+Add `gemoji` to you Gemfile.
+
+``` ruby
+gem 'gemoji', :require => 'emoji/railtie'
+```
 
 
 Example Rails Helper
