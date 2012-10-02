@@ -8,7 +8,7 @@ module Emoji
     end
 
     initializer "emoji" do |app|
-      app.assets.paths << Emoji.images_path
+      app.config.assets.paths << Emoji.images_path
     end
   end
 end
