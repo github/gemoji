@@ -8,5 +8,5 @@ Gem::Specification.new do |s|
   s.email    = "support@github.com"
   s.homepage = "https://github.com/github/gemoji"
 
-  s.files = Dir["README.md", "images/**/*.png", "lib/**/*"]
+  s.files = Dir["README.md", "images/**/*.png", "lib/**/*.rb", "lib/tasks/*.rake"]
 end
