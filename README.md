@@ -13,6 +13,10 @@ Install and require `gemoji` or add it to your Gemfile.
 Example Rails Helper
 ====================
 
+This would allow emojifying content such as: `it's raining :cats: and :dogs:!`
+
+See the [Emoji cheat sheet](http://www.emoji-cheat-sheet.com) for more examples.
+
 ```ruby
 module EmojiHelper
  def emojify(content)
