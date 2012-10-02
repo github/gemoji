@@ -12,12 +12,4 @@ module Emoji
   def self.names
     @names ||= Dir["#{PATH}/../images/*.png"].sort.map { |fn| File.basename(fn, '.png') }
   end
-
-  if defined? Rails::Engine
-    class Engine < Rails::Engine
-      rake_tasks do
-        load "tasks/emoji.rake"
-      end
-    end
-  end
 end
