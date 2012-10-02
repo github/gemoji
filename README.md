@@ -1,9 +1,7 @@
 gemoji
 ======
 
-Emoji images and names for GitHub, Campfire, and Basecamp.
-
-See the LICENSE.
+Emoji images and names. See the LICENSE for copyright information.
 
 
 Installation
