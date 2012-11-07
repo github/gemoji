@@ -10,7 +10,7 @@ Installation
 Add `gemoji` to you Gemfile.
 
 ``` ruby
-gem 'gemoji', :require => 'emoji/railtie'
+gem 'gemoji'
 ```
 
 
