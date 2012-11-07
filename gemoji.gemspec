@@ -1,6 +1,8 @@
+require File.join(File.dirname(__FILE__), 'lib', 'emoji', 'version')
+
 Gem::Specification.new do |s|
   s.name        = "gemoji"
-  s.version     = "1.1.2"
+  s.version     = Emoji::VERSION
   s.platform    = Gem::Platform::RUBY
   s.summary     = "Emoji Assets"
   s.description = "Emoji assets"
