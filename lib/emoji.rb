@@ -6,7 +6,7 @@ module Emoji
   end
 
   def self.images_path
-    File.expand_path("../../images", __FILE__)
+    File.expand_path("../../vendor/assets/images", __FILE__)
   end
 
   def self.names
