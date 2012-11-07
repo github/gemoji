@@ -8,7 +8,7 @@ module Emoji
 
   def self.names
     @names ||= Dir["#{images_path}/emoji/*.png"].map do |filename|
-      File.basename(fn, '.png')
+      File.basename(filename, '.png')
     end
   end
 end
