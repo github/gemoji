@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name    = "gemoji"
-  s.version = "1.1.2"
+  s.version = "1.1.3"
   s.summary = "Emoji Assets"
   s.description = "Emoji assets"
 
