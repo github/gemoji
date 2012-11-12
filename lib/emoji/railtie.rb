@@ -7,7 +7,7 @@ module Emoji
       load "tasks/emoji.rake"
     end
 
-    initializer "emoji" do |app|
+    initializer :emoji, :group => :assets do |app|
       app.config.assets.paths << Emoji.images_path
     end
   end
