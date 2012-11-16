@@ -11,7 +11,7 @@ To prepare the release commit, edit the [gemoji.gemspec](https://github.com/gith
 Example commit https://github.com/github/gemoji/commit/v1.0.0
 
 ```
-$ git ci -m "Emoji 1.0.0"
+$ git ci -m "Gemoji 1.0.0"
 $ git tag v1.0.0
 $ git push
 $ git push --tags
