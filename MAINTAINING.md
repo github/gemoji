@@ -2,7 +2,7 @@
 
 ## Releasing a new gem
 
-If you are just adding new emoji or making a small fix, only increment the patch level "1.0.*x*". If you need to rename a ton of emojis or making any other radical (but still mostly backwards compatible changes), but the minor version "1.*x*.*x*".
+If you are just adding new emoji or making a small fix, only increment the patch level "1.0.x". If you need to rename a ton of emojis or making any other radical (but still mostly backwards compatible changes), bump the minor version "1.x.x".
 
 ### Make a release commit
 
