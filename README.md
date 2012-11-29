@@ -28,7 +28,7 @@ config.assets.paths << Emoji.images_path
 
 Then have them compiled to public on deploy.
 
-`` ruby
+``` ruby
 # config/application.rb
 config.assets.precompile << "emoji/*.png"
 ```
