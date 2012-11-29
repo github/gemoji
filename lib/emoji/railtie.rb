@@ -2,7 +2,7 @@ require 'emoji'
 require 'rails'
 
 module Emoji
-  class Engine < Rails::Engine
+  class Railtie < Rails::Railtie
     rake_tasks do
       load "tasks/emoji.rake"
     end
