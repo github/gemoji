@@ -1,14 +1,6 @@
-require 'emoji'
-require 'rails'
+warn "requiring 'emoji/railtie' is deprecated. " +
+  "Please manually add Emoji.images_path to your config.assets.paths."
 
-module Emoji
-  class Railtie < Rails::Railtie
-    rake_tasks do
-      load "tasks/emoji.rake"
-    end
-
-    initializer :emoji, :group => :assets do |app|
-      app.config.assets.paths << Emoji.images_path
-    end
-  end
-end
+# Automatic path configuration via a railtie is intentionally removed.
+# Please see the README for details. Any patches to readded it by a
+# non-repo collab will be closed without comment.
