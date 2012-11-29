@@ -1,13 +1,14 @@
 require 'emoji'
-require 'rails'
 
 module Emoji
-  class Engine < Rails::Engine
+  class Railtie < ::Rails::Railtie
+    railtie_name :emoji
+
     rake_tasks do
-      load "tasks/emoji.rake"
+      load 'tasks/emoji.rake'
     end
 
-    initializer :emoji, :group => :assets do |app|
+    initializer 'emoji.initialize' do |app|
       app.config.assets.paths << Emoji.images_path
     end
   end
