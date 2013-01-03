@@ -42,7 +42,7 @@ Then have them compiled to public on deploy.
 config.assets.precompile << "emoji/*.png"
 ```
 
-**WARNING** Since there are a ton of images, just adding the path may slow down other lookups if you aren't using it. Compiling all the emojis on deploy will add overhead to your deploy if even the images haven't changed. Theres just so many more superfluous files to iterate over. Also, the urls will be fingerprinted which many not be ideal for referencing from cached content.
+**WARNING** Since there are a ton of images, just adding the path may slow down other lookups if you aren't using it. Compiling all the emojis on deploy will add overhead to your deploy if even the images haven't changed. Theres just so many more superfluous files to iterate over. Also, the urls will be fingerprinted which may not be ideal for referencing from cached content.
 
 
 Example Rails Helper
