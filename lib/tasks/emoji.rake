@@ -4,7 +4,9 @@ desc "Copy emoji to the Rails `public/images/emoji` directory"
 task :emoji => :environment do
   require 'emoji'
 
-  target = "#{Rails.root}/public/images/emoji"
+  root = defined?(Rails) ? Rails.root : Rake.original_dir
+
+  target = "#{root}/public/images/emoji"
 
   mkdir_p "#{target}"
   Dir["#{Emoji.images_path}/emoji/*.png"].each do |src|
