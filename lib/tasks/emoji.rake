@@ -1,3 +1,5 @@
+task :environment
+
 desc "Copy emoji to the Rails `public/images/emoji` directory"
 task :emoji => :environment do
   require 'emoji'
