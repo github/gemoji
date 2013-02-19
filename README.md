@@ -65,3 +65,23 @@ module EmojiHelper
   end
 end
 ```
+
+Example CoffeeScript Helper
+---------------------------
+
+If you want to use Emoji in the client without translating to Unicode or generating HTML on the server, you can export a minimal JavaScript file containing a list of valid emoji names:
+
+```
+$ rake emoji_javascript_helper
+```
+
+Running `rake emoji_javascript_helper` will output `emoji.js` in `vendor/assets/javascripts`, and, assuming you've required that file, this CoffeeScript function will emojify incoming text in the client:
+
+```CoffeeScript
+emojify = (text) ->
+  text.replace /:([a-z0-9\+\-_]+):/g, (match, sub) ->
+    if sub in Emoji.names
+      "<img alt='#{sub}' height='20' src='/images/emoji/#{sub}.png' style='vertical-align:middle' width='20' />"
+    else
+      match
+```
