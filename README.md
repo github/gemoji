@@ -66,9 +66,7 @@ module EmojiHelper
 
   def reverse_emojify(content)
     Emoji.unicodes.each do |unicode|
-      if emoji = Emoji.from_unicode(unicode)
-        content.gsub!(unicode, ":#{emoji}:")
-      end
+      content.gsub!(unicode, ":#{Emoji.from_unicode(unicode)}:")
     end
     content
   end
