@@ -54,7 +54,7 @@ See the [Emoji cheat sheet](http://www.emoji-cheat-sheet.com) for more examples.
 
 ```ruby
 module EmojiHelper
- def emojify(content)
+  def emojify(content)
     h(content).to_str.gsub(/:([a-z0-9\+\-_]+):/) do |match|
       if Emoji.names.include?($1)
         '<img alt="' + $1 + '" height="20" src="' + asset_path("emoji/#{$1}.png") + '" style="vertical-align:middle" width="20" />'
@@ -62,6 +62,13 @@ module EmojiHelper
         match
       end
     end.html_safe if content.present?
+  end
+
+  def reverse_emojify(content)
+    Emoji.unicodes.each do |unicode|
+      content.gsub!(unicode, ":#{Emoji.from_unicode(unicode)}:")
+    end
+    content
   end
 end
 ```
