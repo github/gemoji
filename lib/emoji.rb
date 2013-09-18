@@ -34,7 +34,7 @@ private
         filename = "#{images_path}/emoji/#{name}.png"
         if File.symlink?(filename)
           match = /unicode\/([\da-f\-]+)\.png/.match File.readlink(filename)
-          @emoji_unicode_map[name] = "&#x#{match[1].gsub('-', ';&#x')};"
+          @emoji_unicode_map[name] = match[1].split('-').map(&:hex).pack('U*')
         end
       end
     end
