@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'json'
 
 class IntegrityTest < TestCase
   test "missing aliases to unicode sources" do
@@ -20,10 +21,8 @@ class IntegrityTest < TestCase
       "Missing or incorrect unicodes:\n".tap do |message|
         missing.each do |missing|
           message << "#{missing} (#{point_pair(missing)})"
-          Emoji.unicodes.each do |unicode|
-            if (unicode.codepoints & missing.codepoints).any?
-              message << " - might be #{unicode} (#{point_pair(unicode)}) named #{Emoji.name_for(unicode)}"
-            end
+          if unicode = Emoji.unicodes.detect { |u| u.codepoints.first == missing.codepoints.first }
+            message << " - might be #{unicode} (#{point_pair(unicode)}) named #{Emoji.name_for(unicode)}"
           end
           message << "\n"
         end
@@ -34,24 +33,11 @@ class IntegrityTest < TestCase
       Array(unicode.codepoints).map { |c| c.to_s(16) }.join('-')
     end
 
-    # http://www.unicode.org/Public/UNIDATA/EmojiSources.txt
-    # I think this list is missing the newer emoji added in iOS6
-    def emoji_source_file
-      File.expand_path("../fixtures/EmojiSources.txt", __FILE__)
+    def db
+      @db ||= JSON.parse(File.read(File.expand_path("../../db/Category-Emoji.json", __FILE__)))
     end
 
     def source_unicode_emoji
-      @source_unicode_emoji ||= [].tap do |codepoints|
-        File.open(emoji_source_file).each_line do |line|
-          unless line =~ /^#/ || line.strip == ""
-            values = line.split(";").first.split()
-            codepoints << values unless white_space_codepoints.include?(values[0])
-          end
-        end
-      end.map { |c| c.map(&:hex).pack("U*") }
-    end
-
-    def white_space_codepoints
-      %w(2002 2003 2005)
+      @source_unicode_emoji ||= db["EmojiDataArray"].flat_map { |data| data["CVCategoryData"]["Data"].split(",") }
     end
 end
