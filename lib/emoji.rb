@@ -18,7 +18,7 @@ module Emoji
   end
 
   def unicode_for(name)
-    mapping[name]
+    Array(mapping[name]).last
   end
 
   def name_for(unicode)
@@ -27,12 +27,25 @@ module Emoji
 
   def mapping
     @mapping ||= {}.tap do |mapping|
-      Dir["#{images_path}/emoji/*.png"].each do |filename|
+      emoji_path = "#{images_path}/emoji"
+
+      Dir["#{emoji_path}/*.png"].each do |filename|
         name = File.basename(filename, ".png")
 
         if File.symlink?(filename)
-          codepoints = File.readlink(filename).match(/unicode\/([\da-f\-]+)\.png/)[1]
-          mapping[name] = codepoints.split("-").map(&:hex).pack("U*")
+          unicode_filename = "#{emoji_path}/#{File.readlink(filename)}"
+          mapping[name] = []
+
+          loop do
+            codepoints = unicode_filename.match(/unicode\/([\da-f\-]+)\.png/)[1]
+            mapping[name] << codepoints.split("-").map(&:hex).pack("U*")
+
+            if File.symlink?(unicode_filename)
+              unicode_filename = "#{emoji_path}/unicode/#{File.readlink(unicode_filename)}"
+            else
+              break
+            end
+          end
         else
           mapping[name] = nil
         end
@@ -41,6 +54,13 @@ module Emoji
   end
 
   def inverted_mapping
-    @inverted_mapping ||= mapping.reject { |name, unicode| unicode.nil? }.invert
+    @inverted_mapping ||= {}.tap do |inverted_mapping|
+      mapping.each do |name, unicodes|
+        next if unicodes.nil?
+        unicodes.each do |unicode|
+          inverted_mapping[unicode] = name
+        end
+      end
+    end
   end
 end

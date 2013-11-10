@@ -53,4 +53,10 @@ class EmojiTest < TestCase
       assert !Emoji.name_for(unicode).nil?
     end
   end
+
+  test "support for unicode variation selectors" do
+    assert_equal "heart", Emoji.name_for("\u{2764}")
+    assert_equal "heart", Emoji.name_for("\u{2764}\u{fe0f}")
+    assert_equal "\u{2764}\u{fe0f}", Emoji.unicode_for("heart")
+  end
 end

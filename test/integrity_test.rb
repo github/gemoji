@@ -3,7 +3,12 @@ require 'json'
 
 class IntegrityTest < TestCase
   test "missing aliases to unicode sources" do
-    unicodes = Dir["#{Emoji.images_path}/emoji/unicode/*.png"].map { |fn| File.basename(fn) }
+    # List unicode files excluding those that are symlinked to
+    unicode_files = Dir["#{Emoji.images_path}/emoji/unicode/*.png"]
+    symlink_paths = unicode_files.select { |fn| File.symlink?(fn) }.map { |fn| File.realpath(fn) }
+    unicode_files.reject! { |fn| symlink_paths.include?(File.realpath(fn)) }
+
+    unicodes = unicode_files.map { |fn| File.basename(fn) }
     aliases  = Dir["#{Emoji.images_path}/emoji/*.png"].select { |fn| File.symlink?(fn) }.map { |fn| File.basename(fn) }
     used     = aliases.map { |name| File.basename(File.readlink("#{Emoji.images_path}/emoji/#{name}")) }.uniq
     unnamed  = unicodes - used
