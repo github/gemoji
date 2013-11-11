@@ -1,7 +1,16 @@
-desc "Checks for missing aliases to unicode sources"
-task :unnamed do
-  unicodes = Dir["./images/emoji/unicode/*.png"].map { |fn| File.basename(fn) }
-  aliases = Dir["./images/emoji/*.png"].select { |fn| File.symlink?(fn) }.map { |fn| File.basename(fn) }
-  used_unicodes = aliases.map { |name| File.basename(File.readlink("./images/emoji/#{name}")) }.uniq
-  puts unicodes - used_unicodes
+require 'rake/testtask'
+
+task :default => :test
+
+Rake::TestTask.new do |t|
+  t.libs << "test"
+  t.test_files = FileList["test/*_test.rb"]
+end
+
+namespace :db do
+  task :generate do
+    system "cp /System/Library/Input\\ Methods/CharacterPalette.app/Contents/Resources/Category-Emoji.plist db/"
+    system "plutil -convert json db/Category-Emoji.plist"
+    system "mv db/Category-Emoji.plist db/Category-Emoji.json"
+  end
 end
