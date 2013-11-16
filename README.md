@@ -65,3 +65,18 @@ module EmojiHelper
   end
 end
 ```
+
+Unicode mapping
+---------------
+
+Translate emoji names to unicode and vice versa.
+
+```ruby
+>> Emoji.unicode_for("cat")
+=> "🐱"  # Don't see a cat? That's U+1F431.
+
+>> Emoji.name_for("\u{1f431}")
+=> "cat"
+```
+
+Note: These will only work if you install gemoji from github. In your Gemfile, for example: `gem 'gemoji', github: 'github/gemoji'`.
