@@ -4,5 +4,5 @@ task :emoji do
 
   target = "#{Rake.original_dir}/public/images"
   mkdir_p target
-  cp_r "#{Emoji.images_path}/emoji", target, preserve: true, remove_destination: true
+  cp_r "#{Emoji.images_path}/emoji", target, :preserve => true, :remove_destination => true
 end
