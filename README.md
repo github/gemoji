@@ -7,7 +7,7 @@ Emoji images and names. See the LICENSE for copyright information.
 Installation
 ------------
 
-Add `gemoji` to you Gemfile.
+Add `gemoji` to your Gemfile.
 
 ``` ruby
 gem 'gemoji'
