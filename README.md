@@ -48,7 +48,7 @@ config.assets.precompile << "emoji/*.png"
 Example Rails Helper
 --------------------
 
-This would allow emojifying content such as: `it's raining :cats: and :dogs:!`
+This would allow emojifying content such as: `it's raining :cat:s and :dog:s!`
 
 See the [Emoji cheat sheet](http://www.emoji-cheat-sheet.com) for more examples.
 
