@@ -9,11 +9,16 @@ end
 
 namespace :db do
   desc %(Generate Emoji data files needed for development)
-  task :generate => ['db/Category-Emoji.json']
+  task :generate => ['db/Category-Emoji.json', 'db/NamesList.txt']
 end
 
 emoji_plist = '/System/Library/Input Methods/CharacterPalette.app/Contents/Resources/Category-Emoji.plist'
+nameslist_url = 'http://www.unicode.org/Public/6.3.0/ucd/NamesList.txt'
 
 task 'db/Category-Emoji.json' do |t|
   system "plutil -convert json -r '#{emoji_plist}' -o '#{t.name}'"
+end
+
+file 'db/NamesList.txt' do |t|
+  system "curl -fsSL '#{nameslist_url}' -o '#{t.name}'"
 end
