@@ -8,9 +8,12 @@ Rake::TestTask.new do |t|
 end
 
 namespace :db do
-  task :generate do
-    system "cp /System/Library/Input\\ Methods/CharacterPalette.app/Contents/Resources/Category-Emoji.plist db/"
-    system "plutil -convert json db/Category-Emoji.plist"
-    system "mv db/Category-Emoji.plist db/Category-Emoji.json"
-  end
+  desc %(Generate Emoji data files needed for development)
+  task :generate => ['db/Category-Emoji.json']
+end
+
+emoji_plist = '/System/Library/Input Methods/CharacterPalette.app/Contents/Resources/Category-Emoji.plist'
+
+task 'db/Category-Emoji.json' do |t|
+  system "plutil -convert json -r '#{emoji_plist}' -o '#{t.name}'"
 end
