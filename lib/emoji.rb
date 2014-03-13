@@ -18,7 +18,8 @@ module Emoji
   end
 
   def unicode_for(name)
-    Array(mapping[name]).last
+    unicodes = mapping.fetch(name, nil)
+    unicodes.last if unicodes
   end
 
   def name_for(unicode)
@@ -26,8 +27,14 @@ module Emoji
   end
 
   private
+    def create_index
+      index = Hash.new { |hash, key| hash[key] = [] }
+      yield index
+      index
+    end
+
     def mapping
-      @mapping ||= {}.tap do |mapping|
+      @mapping ||= create_index do |mapping|
         emoji_path = "#{images_path}/emoji"
 
         Dir["#{emoji_path}/*.png"].each do |filename|
@@ -35,7 +42,6 @@ module Emoji
 
           if File.symlink?(filename)
             unicode_filename = "#{emoji_path}/#{File.readlink(filename)}"
-            mapping[name] = []
 
             loop do
               codepoints = unicode_filename.match(/unicode\/([\da-f\-]+)\.png/)[1]
