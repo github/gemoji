@@ -23,7 +23,12 @@ module Emoji
   end
 
   def name_for(unicode)
-    inverted_mapping[unicode]
+    names = names_for(unicode)
+    names.last if names
+  end
+
+  def names_for(unicode)
+    inverted_mapping.fetch(unicode, nil)
   end
 
   private
@@ -61,11 +66,11 @@ module Emoji
     end
 
     def inverted_mapping
-      @inverted_mapping ||= {}.tap do |inverted_mapping|
+      @inverted_mapping ||= create_index do |inverted_mapping|
         mapping.each do |name, unicodes|
           next if unicodes.nil?
           unicodes.each do |unicode|
-            inverted_mapping[unicode] = name
+            inverted_mapping[unicode] << name
           end
         end
       end
