@@ -10,6 +10,11 @@ end
 namespace :db do
   desc %(Generate Emoji data files needed for development)
   task :generate => ['db/Category-Emoji.json', 'db/NamesList.txt']
+
+  desc %(Dump a list of supported Emoji with Unicode descriptions and aliases)
+  task :dump => :generate do
+    system 'ruby', '-Ilib', 'db/dump.rb'
+  end
 end
 
 emoji_plist = '/System/Library/Input Methods/CharacterPalette.app/Contents/Resources/Category-Emoji.plist'
