@@ -1,0 +1,752 @@
+---
+smile:
+- happy
+- joy
+- pleased
+smiley:
+- happy
+- joy
+- haha
+grinning:
+- smile
+- happy
+blush:
+- proud
+relaxed:
+- blush
+- pleased
+wink:
+- flirt
+heart_eyes:
+- love
+- crush
+kissing_heart:
+- flirt
+stuck_out_tongue_winking_eye:
+- prank
+- silly
+stuck_out_tongue_closed_eyes:
+- prank
+flushed:
+- shocked
+pensive:
+- sad
+disappointed:
+- sad
+persevere:
+- upset
+cry:
+- sad
+sob:
+- sad
+- cry
+sleepy:
+- tired
+disappointed_relieved:
+- phew
+- sweat
+- nervous
+cold_sweat:
+- nervous
+sweat_smile:
+- hot
+weary:
+- tired
+tired_face:
+- upset
+- whine
+fearful:
+- scared
+- oops
+- gasp
+scream:
+- horror
+angry:
+- mad
+- annoyed
+rage:
+- angry
+triumph:
+- smug
+laughing:
+- happy
+- haha
+yum:
+- tongue
+- lick
+mask:
+- sick
+- ill
+sunglasses:
+- cool
+worried:
+- nervous
+anguished:
+- stunned
+smiling_imp:
+- devil
+- evil
+- horns
+imp:
+- angry
+- devil
+- evil
+- horns
+open_mouth:
+- surprise
+- impressed
+- wow
+neutral_face:
+- meh
+innocent:
+- angel
+smirk:
+- smug
+cop:
+- police
+- law
+construction_worker:
+- helmet
+baby:
+- child
+- newborn
+boy:
+- child
+girl:
+- child
+man:
+- mustache
+- father
+- dad
+woman:
+- girls
+person_with_blond_hair:
+- boy
+princess:
+- blonde
+- crown
+- royal
+scream_cat:
+- horror
+crying_cat_face:
+- sad
+- tears
+japanese_ogre:
+- monster
+see_no_evil:
+- monkey
+- blind
+- ignore
+hear_no_evil:
+- monkey
+- deaf
+speak_no_evil:
+- monkey
+- mute
+- hush
+skull:
+- dead
+- danger
+- poison
+alien:
+- ufo
+fire:
+- burn
+sparkles:
+- shiny
+dizzy:
+- star
+anger:
+- angry
+sweat_drops:
+- water
+- workout
+droplet:
+- water
+zzz:
+- sleeping
+dash:
+- wind
+- blow
+- fast
+ear:
+- hear
+- sound
+- listen
+eyes:
+- look
+- see
+- watch
+nose:
+- smell
+"+1":
+- approve
+"-1":
+- bury
+facepunch:
+- attack
+fist:
+- power
+v:
+- victory
+- peace
+wave:
+- goodbye
+hand:
+- highfive
+- stop
+raised_hands:
+- hooray
+pray:
+- please
+- hope
+- wish
+clap:
+- praise
+- applause
+muscle:
+- flex
+- bicep
+- strong
+- workout
+runner:
+- exercise
+- workout
+- marathon
+dancer:
+- dress
+couple:
+- date
+family:
+- home
+- parents
+- child
+two_men_holding_hands:
+- couple
+- date
+two_women_holding_hands:
+- couple
+- date
+dancers:
+- bunny
+no_good:
+- stop
+- halt
+massage:
+- spa
+nail_care:
+- beauty
+- manicure
+bride_with_veil:
+- marriage
+- wedding
+person_frowning:
+- sad
+bow:
+- respect
+- thanks
+tophat:
+- hat
+- classy
+crown:
+- king
+- royal
+athletic_shoe:
+- sneaker
+- sport
+- running
+sandal:
+- shoe
+high_heel:
+- shoe
+necktie:
+- shirt
+- formal
+running_shirt_with_sash:
+- marathon
+jeans:
+- pants
+bikini:
+- beach
+briefcase:
+- business
+handbag:
+- bag
+pouch:
+- bag
+eyeglasses:
+- glasses
+closed_umbrella:
+- weather
+- rain
+lipstick:
+- makeup
+heart:
+- love
+cupid:
+- love
+- heart
+love_letter:
+- email
+- envelope
+kiss:
+- lipstick
+ring:
+- wedding
+- marriage
+- engaged
+gem:
+- diamond
+- ruby
+bust_in_silhouette:
+- user
+busts_in_silhouette:
+- users
+- group
+- team
+speech_balloon:
+- comment
+footprints:
+- feet
+- tracks
+thought_balloon:
+- thinking
+dog:
+- pet
+cat:
+- pet
+hamster:
+- pet
+turtle:
+- slow
+beetle:
+- bug
+snail:
+- slow
+shell:
+- sea
+- beach
+whale:
+- sea
+racehorse:
+- speed
+dromedary_camel:
+- desert
+poodle:
+- dog
+bouquet:
+- flowers
+cherry_blossom:
+- flower
+tulip:
+- flower
+four_leaf_clover:
+- luck
+rose:
+- flower
+leaves:
+- leaf
+evergreen_tree:
+- wood
+deciduous_tree:
+- wood
+seedling:
+- plant
+globe_with_meridians:
+- world
+- global
+- international
+crescent_moon:
+- night
+earth_africa:
+- globe
+- world
+- international
+earth_americas:
+- globe
+- world
+- international
+earth_asia:
+- globe
+- world
+- international
+sunny:
+- weather
+partly_sunny:
+- weather
+- cloud
+zap:
+- lightning
+- thunder
+umbrella:
+- rain
+- weather
+snowflake:
+- winter
+- cold
+- weather
+snowman:
+- winter
+- christmas
+cyclone:
+- swirl
+ocean:
+- sea
+gift_heart:
+- chocolates
+mortar_board:
+- education
+- college
+- university
+- graduation
+fireworks:
+- festival
+- celebration
+jack_o_lantern:
+- halloween
+ghost:
+- halloween
+santa:
+- christmas
+gift:
+- present
+- birthday
+- christmas
+tada:
+- party
+balloon:
+- party
+- birthday
+crystal_ball:
+- fortune
+movie_camera:
+- film
+- video
+camera:
+- photo
+cd:
+- dvd
+dvd:
+- cd
+floppy_disk:
+- save
+computer:
+- desktop
+- screen
+iphone:
+- smartphone
+phone:
+- call
+telephone_receiver:
+- phone
+- call
+satellite:
+- signal
+radio:
+- podcast
+mute:
+- sound
+- volume
+bell:
+- sound
+- notification
+no_bell:
+- volume
+- mute
+loudspeaker:
+- announcement
+hourglass_flowing_sand:
+- time
+hourglass:
+- time
+alarm_clock:
+- morning
+watch:
+- time
+unlock:
+- security
+lock:
+- security
+- private
+closed_lock_with_key:
+- security
+key:
+- lock
+- password
+bulb:
+- idea
+- light
+battery:
+- power
+mag:
+- search
+- zoom
+bath:
+- shower
+shower:
+- bath
+wrench:
+- tool
+hammer:
+- tool
+smoking:
+- cigarette
+bomb:
+- boom
+gun:
+- shoot
+- weapon
+hocho:
+- cut
+- chop
+pill:
+- health
+- medicine
+syringe:
+- health
+- hospital
+- needle
+moneybag:
+- dollar
+- cream
+dollar:
+- money
+credit_card:
+- subscription
+money_with_wings:
+- dollar
+calling:
+- iphone
+- incoming
+email:
+- letter
+package:
+- shipping
+memo:
+- document
+- note
+page_facing_up:
+- document
+bar_chart:
+- graph
+- stats
+- metrics
+chart_with_upwards_trend:
+- graph
+- metrics
+chart_with_downwards_trend:
+- graph
+- metrics
+scroll:
+- document
+date:
+- calendar
+- schedule
+calendar:
+- schedule
+scissors:
+- cut
+microscope:
+- science
+- laboratory
+- investigate
+newspaper:
+- press
+art:
+- design
+- paint
+clapper:
+- film
+microphone:
+- sing
+headphones:
+- music
+- earphones
+notes:
+- music
+musical_keyboard:
+- piano
+space_invader:
+- game
+video_game:
+- play
+- controller
+game_die:
+- dice
+- gambling
+dart:
+- target
+football:
+- sports
+basketball:
+- sports
+soccer:
+- sports
+baseball:
+- sports
+tennis:
+- sports
+8ball:
+- pool
+- billiards
+checkered_flag:
+- milestone
+- finish
+trophy:
+- award
+- contest
+coffee:
+- cafe
+- espresso
+tea:
+- green
+- breakfast
+baby_bottle:
+- milk
+beer:
+- drink
+- party
+beers:
+- drinks
+- party
+cocktail:
+- drink
+tropical_drink:
+- summer
+hamburger:
+- burger
+poultry_leg:
+- meat
+- chicken
+fried_shrimp:
+- tempura
+ramen:
+- noodle
+bread:
+- toast
+birthday:
+- party
+cake:
+- dessert
+green_apple:
+- fruit
+cherries:
+- fruit
+strawberry:
+- fruit
+banana:
+- fruit
+eggplant:
+- aubergine
+wedding:
+- marriage
+tent:
+- camping
+speedboat:
+- ship
+anchor:
+- ship
+rocket:
+- ship
+- launch
+airplane:
+- flight
+steam_locomotive:
+- train
+rotating_light:
+- '911'
+- emergency
+bike:
+- bicycle
+vertical_traffic_light:
+- semaphore
+warning:
+- wip
+construction:
+- wip
+moyai:
+- stone
+performing_arts:
+- theater
+- drama
+jp:
+- japan
+kr:
+- korea
+de:
+- flag
+- germany
+cn:
+- china
+us:
+- flag
+- united
+- america
+fr:
+- france
+- french
+es:
+- spain
+it:
+- italy
+ru:
+- russia
+gb:
+- flag
+- british
+'1234':
+- numbers
+hash:
+- number
+capital_abcd:
+- letters
+abc:
+- alphabet
+arrows_counterclockwise:
+- sync
+leftwards_arrow_with_hook:
+- return
+ok:
+- 'yes'
+twisted_rightwards_arrows:
+- shuffle
+repeat:
+- loop
+new:
+- fresh
+signal_strength:
+- wifi
+cinema:
+- film
+- movie
+restroom:
+- toilet
+wc:
+- toilet
+- restroom
+wheelchair:
+- accessibility
+baggage_claim:
+- airport
+sos:
+- help
+- emergency
+no_entry_sign:
+- block
+- forbidden
+no_entry:
+- limit
+mobile_phone_off:
+- mute
+recycle:
+- environment
+- green
+tm:
+- trademark
+exclamation:
+- bang
+question:
+- confused
+'100':
+- score
+- perfect
