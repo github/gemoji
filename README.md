@@ -78,5 +78,3 @@ Translate emoji names to unicode and vice versa.
 >> Emoji.name_for("\u{1f431}")
 => "cat"
 ```
-
-Note: These will only work if you install gemoji from github. In your Gemfile, for example: `gem 'gemoji', github: 'github/gemoji'`.
