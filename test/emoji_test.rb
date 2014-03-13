@@ -48,6 +48,11 @@ class EmojiTest < TestCase
     assert_equal nil, Emoji.name_for(nil)
   end
 
+  test "names_for" do
+    assert_equal %w[hocho knife], Emoji.names_for("\u{1f52a}")
+    assert_equal nil, Emoji.names_for("$$$$$")
+  end
+
   Emoji.unicodes.each do |unicode|
     test "name for #{unicode}" do
       assert !Emoji.name_for(unicode).nil?
