@@ -3,7 +3,7 @@ require 'test_helper'
 class EmojiTest < TestCase
   test "names array contains all the names" do
     assert Emoji.names.size > 100
-    assert_equal Dir["#{Emoji.images_path}/emoji/*.png"].size, Emoji.names.size
+    assert_equal Dir["#{Emoji.images_path}/emoji/*.png"].size + Emoji.user_custom.size, Emoji.names.size
   end
 
   test "unicodes array contains all the unicodes" do
@@ -58,5 +58,13 @@ class EmojiTest < TestCase
     assert_equal "heart", Emoji.name_for("\u{2764}")
     assert_equal "heart", Emoji.name_for("\u{2764}\u{fe0f}")
     assert_equal "\u{2764}\u{fe0f}", Emoji.unicode_for("heart")
+  end
+
+  test "adding custom emoji" do
+    Emoji.add("foo")
+
+    assert Emoji.names.include?("foo")
+    assert Emoji.custom.include?("foo")
+    assert !Emoji.unicodes.include?("foo")
   end
 end

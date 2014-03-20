@@ -17,12 +17,22 @@ module Emoji
     @custom ||= mapping.select { |name, unicode| unicode.nil? }.keys.sort
   end
 
+  def user_custom
+    @user_custom ||= []
+  end
+
   def unicode_for(name)
     Array(mapping[name]).last
   end
 
   def name_for(unicode)
     inverted_mapping[unicode]
+  end
+
+  def add(name)
+    user_custom << name
+    names << name
+    custom << name
   end
 
   private

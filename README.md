@@ -66,6 +66,16 @@ module EmojiHelper
 end
 ```
 
+Adding custom emoji
+-------------------
+
+You can add custom emoji by calling `Emoji.add('name')`. You'll have to move your custom image to the `assets/images/emoji` folder yourself. To use the custom emoji you have to make sure the `.add` call is made before you check `Emoji.names`, so a good place would be an initializer:
+
+```ruby
+# config/initializers/emoji.rb
+Emoji.add('foo')
+```
+
 Unicode mapping
 ---------------
 
