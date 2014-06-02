@@ -4,6 +4,8 @@ require 'json'
 module Emoji
   extend self
 
+  NotFound = Class.new(IndexError)
+
   def data_file
     File.expand_path('../../db/emoji.json', __FILE__)
   end
@@ -17,11 +19,19 @@ module Emoji
   end
 
   def find_by_alias(name)
-    names_index.fetch(name) { yield }
+    names_index.fetch(name) {
+      if block_given? then yield name
+      else raise NotFound, "Emoji not found by name: %s" % name.inspect
+      end
+    }
   end
 
   def find_by_unicode(unicode)
-    unicodes_index.fetch(unicode) { yield }
+    unicodes_index.fetch(unicode) {
+      if block_given? then yield unicode
+      else raise NotFound, "Emoji not found from unicode: %s" % Emoji::Character.hex_inspect(unicode)
+      end
+    }
   end
 
   def names

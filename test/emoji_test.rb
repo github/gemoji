@@ -23,14 +23,15 @@ class EmojiTest < TestCase
   end
 
   test "emoji alias not found" do
-    assert_raises LocalJumpError do
+    error = assert_raises Emoji::NotFound do
       Emoji.find_by_alias('$$$')
     end
+    assert_equal %(Emoji not found by name: "$$$"), error.message
   end
 
   test "emoji by alias fallback block" do
-    emoji = Emoji.find_by_alias('$$$') { :not_found }
-    assert_equal :not_found, emoji
+    emoji = Emoji.find_by_alias('hello') { |name| name.upcase }
+    assert_equal 'HELLO', emoji
   end
 
   test "fetching emoji by unicode" do
@@ -39,14 +40,15 @@ class EmojiTest < TestCase
   end
 
   test "emoji unicode not found" do
-    assert_raises LocalJumpError do
-      Emoji.find_by_unicode('$$$')
+    error = assert_raises Emoji::NotFound do
+      Emoji.find_by_unicode("\u{1234}\u{abcd}")
     end
+    assert_equal %(Emoji not found from unicode: 1234-abcd), error.message
   end
 
   test "emoji by unicode fallback block" do
-    emoji = Emoji.find_by_unicode('$$$') { :not_found }
-    assert_equal :not_found, emoji
+    emoji = Emoji.find_by_unicode("\u{1234}") { |u| "not-#{u}-found" }
+    assert_equal "not-\u{1234}-found", emoji
   end
 
   test "emojis have tags" do
