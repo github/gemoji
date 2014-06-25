@@ -8,9 +8,6 @@ module Emoji
       str.codepoints.map { |c| c.to_s(16).rjust(4, '0') }.join('-')
     end
 
-    # Raw Unicode string for an emoji. Nil if emoji is non-standard.
-    attr_reader :raw
-
     # True if the emoji is not a standard Emoji character.
     def custom?() !raw end
 
@@ -28,6 +25,9 @@ module Emoji
     # variation selector character.
     attr_reader :unicode_aliases
 
+    # Raw Unicode string for an emoji. Nil if emoji is non-standard.
+    def raw() unicode_aliases.first end
+
     def add_unicode_alias(str)
       unicode_aliases << str
     end
@@ -41,9 +41,8 @@ module Emoji
     end
 
     def initialize(raw)
-      @raw = raw
       @aliases = []
-      @unicode_aliases = []
+      @unicode_aliases = Array(raw)
       @tags = []
 
       # Automatically add a representation of this emoji without the variation

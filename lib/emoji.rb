@@ -94,9 +94,7 @@ module Emoji
     def unicodes_index
       @unicodes_index ||= create_index do |mapping|
         all.each do |emoji|
-          unicodes = emoji.unicode_aliases.dup
-          unicodes << emoji.raw unless emoji.custom?
-          unicodes.each do |unicode|
+          emoji.unicode_aliases.each do |unicode|
             mapping[unicode] = emoji
           end
         end
