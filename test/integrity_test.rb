@@ -17,25 +17,23 @@ class IntegrityTest < TestCase
   end
 
   test "missing or incorrect unicodes" do
-    missing = source_unicode_emoji - Emoji.unicodes
+    missing = source_unicode_emoji - Emoji.all.map(&:raw).compact
     assert_equal 0, missing.size, missing_unicodes_message(missing)
   end
 
   private
     def missing_unicodes_message(missing)
       "Missing or incorrect unicodes:\n".tap do |message|
-        missing.each do |missing|
-          message << "#{missing} (#{point_pair(missing)})"
-          if unicode = Emoji.unicodes.detect { |u| u.codepoints.first == missing.codepoints.first }
-            message << " - might be #{unicode} (#{point_pair(unicode)}) named #{Emoji.name_for(unicode)}"
+        missing.each do |raw|
+          emoji = Emoji::Character.new(raw)
+          message << "#{emoji.raw}  (#{emoji.hex_inspect})"
+          codepoint = emoji.raw.codepoints[0]
+          if candidate = Emoji.all.detect { |e| !e.custom? && e.raw.codepoints[0] == codepoint }
+            message << " - might be #{candidate.raw}  (#{candidate.hex_inspect}) named #{emoji.name}"
           end
           message << "\n"
         end
       end
-    end
-
-    def point_pair(unicode)
-      Array(unicode.codepoints).map { |c| c.to_s(16) }.join('-')
     end
 
     def db

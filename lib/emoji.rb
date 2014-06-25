@@ -34,35 +34,6 @@ module Emoji
     }
   end
 
-  def names
-    @names ||= names_index.keys.sort
-  end
-
-  def unicodes
-    @unicodes ||= unicodes_index.keys
-  end
-
-  def custom
-    @custom ||= all.map { |emoji|
-      emoji.aliases if emoji.custom?
-    }.compact.flatten.sort
-  end
-
-  def unicode_for(name)
-    emoji = find_by_alias(name) { return nil }
-    emoji.raw
-  end
-
-  def name_for(unicode)
-    emoji = find_by_unicode(unicode) { return nil }
-    emoji.name
-  end
-
-  def names_for(unicode)
-    emoji = find_by_unicode(unicode) { return nil }
-    emoji.aliases
-  end
-
   private
     def create_index
       index = Hash.new { |hash, key| hash[key] = [] }
