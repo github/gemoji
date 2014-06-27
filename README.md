@@ -39,7 +39,7 @@ Then have them compiled to public on deploy.
 
 ``` ruby
 # config/application.rb
-config.assets.precompile << "emoji/*.png"
+config.assets.precompile << "emoji/**/*.png"
 ```
 
 **WARNING** Since there are a ton of images, just adding the path may slow down other lookups if you aren't using it. Compiling all the emojis on deploy will add overhead to your deploy if even the images haven't changed. Theres just so many more superfluous files to iterate over. Also, the urls will be fingerprinted which may not be ideal for referencing from cached content.
@@ -55,9 +55,9 @@ See the [Emoji cheat sheet](http://www.emoji-cheat-sheet.com) for more examples.
 ```ruby
 module EmojiHelper
  def emojify(content)
-    h(content).to_str.gsub(/:([a-z0-9\+\-_]+):/) do |match|
-      if Emoji.names.include?($1)
-        '<img alt="' + $1 + '" height="20" src="' + asset_path("emoji/#{$1}.png") + '" style="vertical-align:middle" width="20" />'
+    h(content).to_str.gsub(/:([\w+-]+):/) do |match|
+      if emoji = Emoji.find_by_alias($1) { nil }
+        %(<img alt="#$1" src="#{asset_path("emoji/#{emoji.image_filename}")}" style="vertical-align:middle" width="20" height="20" />)
       else
         match
       end
@@ -72,11 +72,9 @@ Unicode mapping
 Translate emoji names to unicode and vice versa.
 
 ```ruby
->> Emoji.unicode_for("cat")
+>> Emoji.find_by_alias("cat").raw
 => "🐱"  # Don't see a cat? That's U+1F431.
 
->> Emoji.name_for("\u{1f431}")
+>> Emoji.find_by_unicode("\u{1f431}").name
 => "cat"
 ```
-
-Note: These will only work if you install gemoji from github. In your Gemfile, for example: `gem 'gemoji', github: 'github/gemoji'`.
