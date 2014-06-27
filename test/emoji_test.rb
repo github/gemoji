@@ -100,6 +100,7 @@ class EmojiTest < TestCase
       assert_equal emoji, Emoji.find_by_unicode("\u{266b}")
 
       assert_equal "\u{266b}", emoji.raw
+      assert_equal "unicode/266b.png", emoji.image_filename
       assert_equal %w[music], emoji.aliases
       assert_equal %w[notes eighth], emoji.tags
     ensure

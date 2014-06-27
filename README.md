@@ -93,7 +93,19 @@ end
 
 emoji.name #=> "music"
 emoji.raw  #=> "♫"
+emoji.image_filename #=> "unicode/266b.png"
+
+# Creating custom emoji (not in Unicode spec):
+emoji = Emoji.create(nil) do |char|
+  char.add_alias "music"
+end
+
+emoji.custom? #=> true
+emoji.image_filename #=> "music.png"
 ```
+
+As you create new emoji, you must ensure that you also create and put the images
+they reference by their `image_filename` to your assets directory.
 
 For existing emojis, you can edit the list of aliases or add new tags in an edit block:
 
