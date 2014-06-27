@@ -150,7 +150,6 @@
       "flushed"
     ]
   , "tags": [
-      "shocked"
     ]
   }
 , {
@@ -188,6 +187,7 @@
       "unamused"
     ]
   , "tags": [
+      "meh"
     ]
   }
 , {
@@ -207,7 +207,7 @@
       "persevere"
     ]
   , "tags": [
-      "upset"
+      "struggling"
     ]
   }
 , {
@@ -218,6 +218,7 @@
     ]
   , "tags": [
       "sad"
+    , "tear"
     ]
   }
 , {
@@ -227,6 +228,7 @@
       "joy"
     ]
   , "tags": [
+      "tears"
     ]
   }
 , {
@@ -238,6 +240,7 @@
   , "tags": [
       "sad"
     , "cry"
+    , "bawling"
     ]
   }
 , {
@@ -320,8 +323,8 @@
     ]
   , "tags": [
       "scared"
+    , "shocked"
     , "oops"
-    , "gasp"
     ]
   }
 , {
@@ -332,6 +335,7 @@
     ]
   , "tags": [
       "horror"
+    , "shocked"
     ]
   }
 , {
@@ -425,6 +429,7 @@
       "sleeping"
     ]
   , "tags": [
+      "zzz"
     ]
   }
 , {
@@ -443,6 +448,8 @@
       "astonished"
     ]
   , "tags": [
+      "amazed"
+    , "gasp"
     ]
   }
 , {
@@ -546,6 +553,8 @@
       "hushed"
     ]
   , "tags": [
+      "silence"
+    , "speechless"
     ]
   }
 , {
@@ -555,6 +564,8 @@
       "no_mouth"
     ]
   , "tags": [
+      "mute"
+    , "silence"
     ]
   }
 , {
@@ -799,7 +810,7 @@
     ]
   , "tags": [
       "sad"
-    , "tears"
+    , "tear"
     ]
   }
 , {
@@ -905,6 +916,7 @@
     , "shit"
     ]
   , "tags": [
+      "crap"
     ]
   }
 , {
@@ -954,6 +966,7 @@
     , "collision"
     ]
   , "tags": [
+      "explode"
     ]
   }
 , {
@@ -1050,6 +1063,7 @@
       "tongue"
     ]
   , "tags": [
+      "taste"
     ]
   }
 , {
@@ -1059,6 +1073,7 @@
       "lips"
     ]
   , "tags": [
+      "kiss"
     ]
   }
 , {
@@ -1070,6 +1085,7 @@
     ]
   , "tags": [
       "approve"
+    , "ok"
     ]
   }
 , {
@@ -1080,7 +1096,8 @@
     , "thumbsdown"
     ]
   , "tags": [
-      "bury"
+      "disapprove"
+    , "bury"
     ]
   }
 , {
@@ -1405,6 +1422,7 @@
       "haircut"
     ]
   , "tags": [
+      "beauty"
     ]
   }
 , {
@@ -1478,6 +1496,7 @@
     ]
   , "tags": [
       "king"
+    , "queen"
     , "royal"
     ]
   }
@@ -1850,7 +1869,6 @@
     ]
   , "tags": [
       "diamond"
-    , "ruby"
     ]
   }
 , {
@@ -2507,6 +2525,7 @@
     ]
   , "tags": [
       "flower"
+    , "spring"
     ]
   }
 , {
@@ -2564,6 +2583,7 @@
       "maple_leaf"
     ]
   , "tags": [
+      "canada"
     ]
   }
 , {
@@ -2583,6 +2603,7 @@
       "fallen_leaf"
     ]
   , "tags": [
+      "autumn"
     ]
   }
 , {
@@ -2697,6 +2718,7 @@
       "sun_with_face"
     ]
   , "tags": [
+      "summer"
     ]
   }
 , {
@@ -2982,6 +3004,7 @@
       "foggy"
     ]
   , "tags": [
+      "karl"
     ]
   }
 , {
@@ -2991,6 +3014,7 @@
       "rainbow"
     ]
   , "tags": [
+      "pride"
     ]
   }
 , {
@@ -3255,7 +3279,6 @@
       "cd"
     ]
   , "tags": [
-      "dvd"
     ]
   }
 , {
@@ -3265,7 +3288,6 @@
       "dvd"
     ]
   , "tags": [
-      "cd"
     ]
   }
 , {
@@ -3306,6 +3328,7 @@
     ]
   , "tags": [
       "smartphone"
+    , "mobile"
     ]
   }
 , {
@@ -3316,7 +3339,6 @@
     , "telephone"
     ]
   , "tags": [
-      "call"
     ]
   }
 , {
@@ -3384,6 +3406,7 @@
       "loud_sound"
     ]
   , "tags": [
+      "volume"
     ]
   }
 , {
@@ -3393,6 +3416,7 @@
       "sound"
     ]
   , "tags": [
+      "volume"
     ]
   }
 , {
@@ -3434,7 +3458,7 @@
     ]
   , "tags": [
       "volume"
-    , "mute"
+    , "off"
     ]
   }
 , {
@@ -3660,6 +3684,7 @@
       "toilet"
     ]
   , "tags": [
+      "wc"
     ]
   }
 , {
@@ -3841,7 +3866,7 @@
       "calling"
     ]
   , "tags": [
-      "iphone"
+      "call"
     , "incoming"
     ]
   }
@@ -4012,8 +4037,7 @@
       "bar_chart"
     ]
   , "tags": [
-      "graph"
-    , "stats"
+      "stats"
     , "metrics"
     ]
   }
@@ -4095,6 +4119,7 @@
       "file_folder"
     ]
   , "tags": [
+      "directory"
     ]
   }
 , {
@@ -4123,6 +4148,7 @@
       "pushpin"
     ]
   , "tags": [
+      "location"
     ]
   }
 , {
@@ -4240,6 +4266,7 @@
       "books"
     ]
   , "tags": [
+      "library"
     ]
   }
 , {
@@ -4438,6 +4465,7 @@
   , "tags": [
       "play"
     , "controller"
+    , "console"
     ]
   }
 , {
@@ -4623,6 +4651,7 @@
   , "tags": [
       "award"
     , "contest"
+    , "winner"
     ]
   }
 , {
@@ -4826,6 +4855,7 @@
       "spaghetti"
     ]
   , "tags": [
+      "pasta"
     ]
   }
 , {
@@ -6055,6 +6085,7 @@
       "round_pushpin"
     ]
   , "tags": [
+      "location"
     ]
   }
 , {
@@ -7172,6 +7203,7 @@
     ]
   , "tags": [
       "mute"
+    , "off"
     ]
   }
 , {
