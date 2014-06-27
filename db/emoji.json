@@ -8219,13 +8219,7 @@
 , {
     "aliases": [
       "shipit"
-    ]
-  , "tags": [
-    ]
-  }
-, {
-    "aliases": [
-      "squirrel"
+    , "squirrel"
     ]
   , "tags": [
     ]
