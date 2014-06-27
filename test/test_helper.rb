@@ -1,8 +1,8 @@
 require 'minitest/autorun'
 require 'gemoji'
 
-class TestCase < MiniTest::Unit::TestCase
+class TestCase < MiniTest::Test
   def self.test(name, &block)
-    define_method(:"test #{name.inspect}", &block)
+    define_method(:"test_#{name.inspect}", &block)
   end
 end
