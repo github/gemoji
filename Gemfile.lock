@@ -6,6 +6,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    json (1.8.1)
     minitest (5.3.5)
     rake (10.3.2)
 
@@ -14,5 +15,6 @@ PLATFORMS
 
 DEPENDENCIES
   gemoji!
+  json
   minitest
   rake
