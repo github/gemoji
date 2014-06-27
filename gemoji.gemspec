@@ -4,6 +4,8 @@ Gem::Specification.new do |s|
   s.summary = "Emoji Assets"
   s.description = "Emoji assets"
 
+  s.required_ruby_version = '~> 1.9'
+
   s.authors  = ["GitHub"]
   s.email    = "support@github.com"
   s.homepage = "https://github.com/github/gemoji"
