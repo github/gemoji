@@ -1,5 +1,6 @@
 require 'test_helper'
 require 'json'
+require 'digest/md5'
 
 class IntegrityTest < TestCase
   test "images on disk correlate 1-1 with emojis" do
@@ -14,6 +15,20 @@ class IntegrityTest < TestCase
 
     extra_images = images_on_disk - expected_images
     assert_equal 0, extra_images.size, "these images don't match any emojis: #{extra_images.inspect}"
+  end
+
+  test "images on disk have no duplicates" do
+    hashes = Hash.new { |h,k| h[k] = [] }
+    Dir["#{Emoji.images_path}/**/*.png"].each do |image_file|
+      checksum = Digest::MD5.file(image_file)
+      hashes[checksum] << image_file
+    end
+
+    hashes.each do |checksum, filenames|
+      assert_equal 1, filenames.length,
+        "These images share the same checksum: " +
+        filenames.map {|f| f.sub(Emoji.images_path, '') }.join(', ')
+    end
   end
 
   test "missing or incorrect unicodes" do
