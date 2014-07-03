@@ -85,9 +85,9 @@ Adding new emoji
 You can add new emoji characters to the `Emoji.all` list:
 
 ```ruby
-emoji = Emoji.create("\u{266b}") do |char|
-  char.add_alias "music"
-  char.add_unicode_alias "\u{266a}"
+emoji = Emoji.create("music") do |char|
+  char.add_alias "song"
+  char.add_unicode_alias "\u{266b}"
   char.add_tag "notes"
 end
 
@@ -95,9 +95,9 @@ emoji.name #=> "music"
 emoji.raw  #=> "♫"
 emoji.image_filename #=> "unicode/266b.png"
 
-# Creating custom emoji (not in Unicode spec):
-emoji = Emoji.create(nil) do |char|
-  char.add_alias "music"
+# Creating custom emoji (no Unicode aliases):
+emoji = Emoji.create("music") do |char|
+  char.add_tag "notes"
 end
 
 emoji.custom? #=> true

@@ -52,17 +52,18 @@ end
 trap(:PIPE) { abort }
 
 items = []
+variation = Emoji::VARIATION_SELECTOR_16
 
 for emoji in Emoji.all
-  unicodes = emoji.unicode_aliases
-  unicodes = unicodes[1..-1] if emoji.variation?
+  unicodes = emoji.unicode_aliases.dup
 
   item = {}
 
   unless emoji.custom?
-    variation_codepoint = Emoji::Character::VARIATION_SELECTOR_16.codepoints[0]
+    variation_codepoint = variation.codepoints[0]
     chars = emoji.raw.codepoints.map { |code| UnicodeCharacter.fetch(code) unless code == variation_codepoint }.compact
-    item[:emoji] = emoji.raw
+    unicodes.select { |u| u.index(variation) }.each { |u| unicodes.delete(u.sub(variation, '')) }
+    item[:emoji] = unicodes.shift
     item[:unicodes] = unicodes if unicodes.any?
     item[:description] = chars.map(&:description).join(' + ')
   end

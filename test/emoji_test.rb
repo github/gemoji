@@ -86,8 +86,8 @@ class EmojiTest < TestCase
   end
 
   test "create" do
-    emoji = Emoji.create("\u{266b}") do |char|
-      char.add_alias "music"
+    emoji = Emoji.create("music") do |char|
+      char.add_unicode_alias "\u{266b}"
       char.add_unicode_alias "\u{266a}"
       char.add_tag "notes"
       char.add_tag "eighth"

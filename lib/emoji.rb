@@ -23,8 +23,8 @@ module Emoji
 
   # Public: Initialize an Emoji::Character instance and yield it to the block.
   # The character is added to the `Emoji.all` set.
-  def create(raw)
-    emoji = Emoji::Character.new(raw)
+  def create(name)
+    emoji = Emoji::Character.new(name)
     self.all << edit_emoji(emoji) { yield emoji }
     emoji
   end
@@ -64,12 +64,22 @@ module Emoji
   end
 
   private
+    VARIATION_SELECTOR_16 = "\u{fe0f}".freeze
+
     def parse_data_file
       raw = File.open(data_file, 'r:UTF-8') { |data| JSON.parse(data.read) }
       raw.each do |raw_emoji|
-        self.create(raw_emoji['emoji']) do |emoji|
+        self.create(nil) do |emoji|
           raw_emoji.fetch('aliases').each { |name| emoji.add_alias(name) }
-          raw_emoji.fetch('unicodes', []).each { |uni| emoji.add_unicode_alias(uni) }
+          unicodes = Array(raw_emoji['emoji']) + raw_emoji.fetch('unicodes', [])
+          unicodes.each { |uni|
+            emoji.add_unicode_alias(uni)
+            # Automatically add a representation of this emoji without the variation
+            # selector to unicode aliases:
+            if uni.index(VARIATION_SELECTOR_16)
+              emoji.add_unicode_alias(uni.sub(VARIATION_SELECTOR_16, ''))
+            end
+          }
           raw_emoji.fetch('tags').each { |tag| emoji.add_tag(tag) }
         end
       end
