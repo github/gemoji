@@ -31,6 +31,21 @@ class IntegrityTest < TestCase
     end
   end
 
+  test "images on disk are 64x64" do
+    mismatches = []
+    Dir["#{Emoji.images_path}/**/*.png"].each do |image_file|
+      width, height = png_dimensions(image_file)
+      unless width == 64 && height == 64
+        mismatches << "%s: %dx%d" % [
+          image_file.sub(Emoji.images_path, ''),
+          width,
+          height
+        ]
+      end
+    end
+    assert_equal ["/emoji/shipit.png: 75x75"], mismatches
+  end
+
   test "missing or incorrect unicodes" do
     missing = source_unicode_emoji - Emoji.all.map(&:raw).compact
     assert_equal 0, missing.size, missing_unicodes_message(missing)
@@ -57,5 +72,10 @@ class IntegrityTest < TestCase
 
     def source_unicode_emoji
       @source_unicode_emoji ||= db["EmojiDataArray"].flat_map { |data| data["CVCategoryData"]["Data"].split(",") }
+    end
+
+    def png_dimensions(file)
+      png = File.open(file, "rb") { |f| f.read(1024) }
+      png.unpack("x16N2")
     end
 end
