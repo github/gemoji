@@ -78,3 +78,46 @@ Translate emoji names to unicode and vice versa.
 >> Emoji.find_by_unicode("\u{1f431}").name
 => "cat"
 ```
+
+Adding new emoji
+----------------
+
+You can add new emoji characters to the `Emoji.all` list:
+
+```ruby
+emoji = Emoji.create("music") do |char|
+  char.add_alias "song"
+  char.add_unicode_alias "\u{266b}"
+  char.add_tag "notes"
+end
+
+emoji.name #=> "music"
+emoji.raw  #=> "♫"
+emoji.image_filename #=> "unicode/266b.png"
+
+# Creating custom emoji (no Unicode aliases):
+emoji = Emoji.create("music") do |char|
+  char.add_tag "notes"
+end
+
+emoji.custom? #=> true
+emoji.image_filename #=> "music.png"
+```
+
+As you create new emoji, you must ensure that you also create and put the images
+they reference by their `image_filename` to your assets directory.
+
+For existing emojis, you can edit the list of aliases or add new tags in an edit block:
+
+```ruby
+emoji = Emoji.find_by_alias "musical_note"
+
+Emoji.edit_emoji(emoji) do |char|
+  char.add_alias "music"
+  char.add_unicode_alias "\u{266b}"
+  char.add_tag "notes"
+end
+
+Emoji.find_by_alias "music"       #=> emoji
+Emoji.find_by_unicode "\u{266b}"  #=> emoji
+```

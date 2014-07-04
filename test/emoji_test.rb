@@ -84,4 +84,64 @@ class EmojiTest < TestCase
     assert custom_names.include?("shipit")
     assert !custom_names.include?("+1")
   end
+
+  test "create" do
+    emoji = Emoji.create("music") do |char|
+      char.add_unicode_alias "\u{266b}"
+      char.add_unicode_alias "\u{266a}"
+      char.add_tag "notes"
+      char.add_tag "eighth"
+    end
+
+    begin
+      assert_equal emoji, Emoji.all.last
+      assert_equal emoji, Emoji.find_by_alias("music")
+      assert_equal emoji, Emoji.find_by_unicode("\u{266a}")
+      assert_equal emoji, Emoji.find_by_unicode("\u{266b}")
+
+      assert_equal "\u{266b}", emoji.raw
+      assert_equal "unicode/266b.png", emoji.image_filename
+      assert_equal %w[music], emoji.aliases
+      assert_equal %w[notes eighth], emoji.tags
+    ensure
+      Emoji.all.pop
+    end
+  end
+
+  test "create without block" do
+    emoji = Emoji.create("music")
+
+    begin
+      assert_equal emoji, Emoji.find_by_alias("music")
+      assert_equal [], emoji.unicode_aliases
+      assert_equal [], emoji.tags
+      assert_equal "music.png", emoji.image_filename
+    ensure
+      Emoji.all.pop
+    end
+  end
+
+  test "edit" do
+    emoji = Emoji.find_by_alias("weary")
+
+    emoji = Emoji.edit_emoji(emoji) do |char|
+      char.add_alias "whining"
+      char.add_unicode_alias "\u{1f629}\u{266a}"
+      char.add_tag "complaining"
+    end
+
+    begin
+      assert_equal emoji, Emoji.find_by_alias("weary")
+      assert_equal emoji, Emoji.find_by_alias("whining")
+      assert_equal emoji, Emoji.find_by_unicode("\u{1f629}")
+      assert_equal emoji, Emoji.find_by_unicode("\u{1f629}\u{266a}")
+
+      assert_equal %w[weary whining], emoji.aliases
+      assert_includes emoji.tags, "complaining"
+    ensure
+      emoji.aliases.pop
+      emoji.unicode_aliases.pop
+      emoji.tags.pop
+    end
+  end
 end
