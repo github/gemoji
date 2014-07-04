@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.summary = "Emoji conversion and image assets"
   s.description = "Image assets and character information for emoji."
 
-  s.required_ruby_version = '~> 1.9'
+  s.required_ruby_version = '> 1.9'
 
   s.authors  = ["GitHub"]
   s.email    = "support@github.com"
