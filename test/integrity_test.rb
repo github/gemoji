@@ -20,7 +20,7 @@ class IntegrityTest < TestCase
   test "images on disk have no duplicates" do
     hashes = Hash.new { |h,k| h[k] = [] }
     Dir["#{Emoji.images_path}/**/*.png"].each do |image_file|
-      checksum = Digest::MD5.file(image_file)
+      checksum = Digest::MD5.file(image_file).to_s
       hashes[checksum] << image_file
     end
 
