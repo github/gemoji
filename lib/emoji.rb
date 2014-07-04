@@ -25,7 +25,7 @@ module Emoji
   # The character is added to the `Emoji.all` set.
   def create(name)
     emoji = Emoji::Character.new(name)
-    self.all << edit_emoji(emoji) { yield emoji }
+    self.all << edit_emoji(emoji) { yield emoji if block_given? }
     emoji
   end
 

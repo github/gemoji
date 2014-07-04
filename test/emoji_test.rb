@@ -108,6 +108,19 @@ class EmojiTest < TestCase
     end
   end
 
+  test "create without block" do
+    emoji = Emoji.create("music")
+
+    begin
+      assert_equal emoji, Emoji.find_by_alias("music")
+      assert_equal [], emoji.unicode_aliases
+      assert_equal [], emoji.tags
+      assert_equal "music.png", emoji.image_filename
+    ensure
+      Emoji.all.pop
+    end
+  end
+
   test "edit" do
     emoji = Emoji.find_by_alias("weary")
 
