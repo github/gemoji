@@ -12,37 +12,61 @@ class EmojiTest < TestCase
     assert count > min_size, "there were too few unicode mappings: #{count}"
   end
 
+  test "finding emoji by alias" do
+    refute_nil Emoji.find_by_alias('smile')
+  end
+
+  test "finding nonexistent emoji by alias returns nil" do
+    assert_nil Emoji.find_by_alias('$$$')
+  end
+
+  test "finding emoji by unicode" do
+    refute_nil Emoji.find_by_unicode("\u{1f604}")
+  end
+
+  test "finding nonexistent emoji by unicode returns nil" do
+    assert_nil Emoji.find_by_unicode("\u{1234}")
+  end
+
   test "fetching emoji by alias" do
-    emoji = Emoji.find_by_alias('smile')
+    emoji = Emoji.fetch_by_alias('smile')
     assert_equal "\u{1f604}", emoji.raw
   end
 
-  test "emoji alias not found" do
+  test "fetching nonexistent emoji by alias raises NotFound if neither default value nor block is given" do
     error = assert_raises Emoji::NotFound do
-      Emoji.find_by_alias('$$$')
+      Emoji.fetch_by_alias('$$$')
     end
     assert_equal %(Emoji not found by name: "$$$"), error.message
   end
 
-  test "emoji by alias fallback block" do
-    emoji = Emoji.find_by_alias('hello') { |name| name.upcase }
+  test "fetching nonexistent emoji by alias returns default value" do
+    assert_equal 'default', Emoji.fetch_by_alias('hello', 'default')
+  end
+
+  test "fetching nonexistent emoji by alias returns result of default block" do
+    emoji = Emoji.fetch_by_alias('hello', &:upcase)
     assert_equal 'HELLO', emoji
   end
 
   test "fetching emoji by unicode" do
-    emoji = Emoji.find_by_unicode("\u{1f604}")
+    emoji = Emoji.fetch_by_unicode("\u{1f604}")
     assert_equal 'smile', emoji.name
   end
 
-  test "emoji unicode not found" do
+  test "fetching nonexistent emoji unicode raises NotFound if neither default value nor block is given" do
     error = assert_raises Emoji::NotFound do
-      Emoji.find_by_unicode("\u{1234}\u{abcd}")
+      Emoji.fetch_by_unicode("\u{1234}\u{abcd}")
     end
     assert_equal %(Emoji not found from unicode: 1234-abcd), error.message
   end
 
-  test "emoji by unicode fallback block" do
-    emoji = Emoji.find_by_unicode("\u{1234}") { |u| "not-#{u}-found" }
+  test "fetching nonexistent emoji by unicode returns default value" do
+    assert_equal 'default', Emoji.fetch_by_unicode("\u{1234}", 'default')
+  end
+
+  test "fetching nonexistent emoji by unicode returns result of default block" do
+    emoji = Emoji.fetch_by_unicode("\u{1234}") { |u| "not-#{u}-found" }
     assert_equal "not-\u{1234}-found", emoji
   end
 
