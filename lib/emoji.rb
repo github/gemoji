@@ -47,23 +47,34 @@ module Emoji
     emoji
   end
 
+  # Public: Find an emoji by its aliased name. Return nil if missing.
   def find_by_alias(name)
-    names_index.fetch(name) {
-      if block_given? then yield name
-      else raise NotFound, "Emoji not found by name: %s" % name.inspect
-      end
-    }
+    fetch_by_alias name, nil
   end
 
+  # Public: Find an emoji by its unicode character. Return nil if missing.
   def find_by_unicode(unicode)
-    unicodes_index.fetch(unicode) {
-      if block_given? then yield unicode
-      else raise NotFound, "Emoji not found from unicode: %s" % Emoji::Character.hex_inspect(unicode)
-      end
-    }
+    fetch_by_unicode unicode, nil
+  end
+
+  # Public: Fetch an emoji by its aliased name. If missing, return the default
+  # value if provided, call the default block if provided, or raise NotFound.
+  def fetch_by_alias(name, *default_value, &default_block)
+    default_block ||= MISSING_ALIAS if default_value.empty?
+    names_index.fetch name, *default_value, &default_block
+  end
+
+  # Public: Fetch an emoji by its Unicode character. If missing, return the
+  # default value if provided, call the default block if provided, or raise
+  # NotFound.
+  def fetch_by_unicode(unicode, *default_value, &default_block)
+    default_block ||= MISSING_UNICODE if default_value.empty?
+    unicodes_index.fetch unicode, *default_value, &default_block
   end
 
   private
+    MISSING_ALIAS = lambda { |name| raise NotFound, "Emoji not found by name: %s" % name.inspect }
+    MISSING_UNICODE = lambda { |unicode| raise NotFound, "Emoji not found from unicode: %s" % Emoji::Character.hex_inspect(unicode) }
     VARIATION_SELECTOR_16 = "\u{fe0f}".freeze
 
     def parse_data_file
