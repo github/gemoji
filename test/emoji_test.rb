@@ -12,38 +12,20 @@ class EmojiTest < TestCase
     assert count > min_size, "there were too few unicode mappings: #{count}"
   end
 
-  test "fetching emoji by alias" do
-    emoji = Emoji.find_by_alias('smile')
-    assert_equal "\u{1f604}", emoji.raw
+  test "finding emoji by alias" do
+    assert_equal 'smile', Emoji.find_by_alias('smile').name
   end
 
-  test "emoji alias not found" do
-    error = assert_raises Emoji::NotFound do
-      Emoji.find_by_alias('$$$')
-    end
-    assert_equal %(Emoji not found by name: "$$$"), error.message
+  test "finding nonexistent emoji by alias returns nil" do
+    assert_nil Emoji.find_by_alias('$$$')
   end
 
-  test "emoji by alias fallback block" do
-    emoji = Emoji.find_by_alias('hello') { |name| name.upcase }
-    assert_equal 'HELLO', emoji
+  test "finding emoji by unicode" do
+    assert_equal "\u{1f604}", Emoji.find_by_unicode("\u{1f604}").raw
   end
 
-  test "fetching emoji by unicode" do
-    emoji = Emoji.find_by_unicode("\u{1f604}")
-    assert_equal 'smile', emoji.name
-  end
-
-  test "emoji unicode not found" do
-    error = assert_raises Emoji::NotFound do
-      Emoji.find_by_unicode("\u{1234}\u{abcd}")
-    end
-    assert_equal %(Emoji not found from unicode: 1234-abcd), error.message
-  end
-
-  test "emoji by unicode fallback block" do
-    emoji = Emoji.find_by_unicode("\u{1234}") { |u| "not-#{u}-found" }
-    assert_equal "not-\u{1234}-found", emoji
+  test "finding nonexistent emoji by unicode returns nil" do
+    assert_nil Emoji.find_by_unicode("\u{1234}")
   end
 
   test "unicode_aliases" do
