@@ -28,9 +28,9 @@ class EmojiTest < TestCase
     assert_nil Emoji.find_by_unicode("\u{1234}")
   end
 
-  test "unicode_aliases" do
+  test "unicode_aliases don't include Kanji raw form" do
     emoji = Emoji.find_by_unicode("\u{1f237}")
-    assert_equal ["\u{1f237}", "\u{6708}"], emoji.unicode_aliases
+    assert_equal ["\u{1f237}"], emoji.unicode_aliases
   end
 
   test "unicode_aliases includes form without variation selector" do
