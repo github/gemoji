@@ -56,22 +56,13 @@ module Emoji
   end
 
   private
-    VARIATION_SELECTOR_16 = "\u{fe0f}".freeze
-
     def parse_data_file
       raw = File.open(data_file, 'r:UTF-8') { |data| JSON.parse(data.read) }
       raw.each do |raw_emoji|
         self.create(nil) do |emoji|
           raw_emoji.fetch('aliases').each { |name| emoji.add_alias(name) }
           unicodes = Array(raw_emoji['emoji']) + raw_emoji.fetch('unicodes', [])
-          unicodes.each { |uni|
-            emoji.add_unicode_alias(uni)
-            # Automatically add a representation of this emoji without the variation
-            # selector to unicode aliases:
-            if uni.index(VARIATION_SELECTOR_16)
-              emoji.add_unicode_alias(uni.sub(VARIATION_SELECTOR_16, ''))
-            end
-          }
+          unicodes.each { |uni| emoji.add_unicode_alias(uni) }
           raw_emoji.fetch('tags').each { |tag| emoji.add_tag(tag) }
         end
       end

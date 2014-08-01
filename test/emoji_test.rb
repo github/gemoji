@@ -33,11 +33,6 @@ class EmojiTest < TestCase
     assert_equal ["\u{1f237}", "\u{6708}"], emoji.unicode_aliases
   end
 
-  test "unicode_aliases includes form without variation selector" do
-    emoji = Emoji.find_by_alias("heart")
-    assert_equal ["\u{2764}\u{fe0f}", "\u{2764}"], emoji.unicode_aliases
-  end
-
   test "emojis have tags" do
     emoji = Emoji.find_by_alias('smile')
     assert emoji.tags.include?('happy')
