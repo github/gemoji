@@ -29,8 +29,8 @@ class EmojiTest < TestCase
   end
 
   test "unicode_aliases" do
-    emoji = Emoji.find_by_unicode("\u{1f237}")
-    assert_equal ["\u{1f237}", "\u{6708}"], emoji.unicode_aliases
+    emoji = Emoji.find_by_unicode("\u{2728}")
+    assert_equal ["\u{2728}", "\u{2728}\u{fe0e}", "\u{2728}\u{fe0f}"], emoji.unicode_aliases
   end
 
   test "emojis have tags" do
