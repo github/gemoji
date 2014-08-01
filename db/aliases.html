@@ -36,6 +36,8 @@
       var aliases = candidates.filter(isColorEmoji);
       if (aliases.length) {
         emoji.unicodes = aliases;
+      } else {
+        delete emoji.unicodes;
       }
     }
 
