@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<title>Emoji alias detection</title>
+<style>
+  textarea {
+    font-family: monospace;
+  }
+</style>
+
+<p>Save the following as <tt>emoji.json</tt>:</p>
+
+<textarea id="output" rows="50" cols="80"></textarea>
+
+<script>
+  const VARIATION_SELECTOR_15 = String.fromCharCode(0xfe0e);
+  const VARIATION_SELECTOR_16 = String.fromCharCode(0xfe0f);
+
+  function detectAliases(db) {
+    for (var i = 0; i < db.length; ++i) {
+      var emoji = db[i];
+      var raw = emoji.emoji;
+      if (!raw) {
+        continue;
+      }
+
+      var candidates = [];
+
+      if (raw.length === 1) {
+        candidates.push(raw + VARIATION_SELECTOR_15);
+        candidates.push(raw + VARIATION_SELECTOR_16);
+      } else if (raw[raw.length - 1] === VARIATION_SELECTOR_16) {
+        var base = raw.substr(0, raw.length - 1);
+        candidates.push(base);
+        candidates.push(base + VARIATION_SELECTOR_15);
+      }
+
+      var aliases = candidates.filter(isColorEmoji);
+      if (aliases.length) {
+        emoji.unicodes = aliases;
+      } else {
+        delete emoji.unicodes;
+      }
+    }
+
+    dump(db);
+  }
+
+  function isColorEmoji(candidate) {
+    // Draw the emoji twice using a different color each time. If the emoji
+    // draws as the same color regardless of what color we set, it's a color
+    // emoji.
+    return color(candidate, "#f00") === color(candidate, "#0f0");
+  }
+
+  var canvas = document.createElement("canvas");
+  function color(emoji, rgb) {
+    var context = canvas.getContext("2d");
+    context.clearRect(0, 0, 32, 32);
+    context.fillStyle = rgb;
+    context.textBaseline = "top";
+    context.font = "32px Arial";
+    context.fillText(emoji, 0, 0);
+    var data = context.getImageData(0, 0, 32, 32).data;
+    for (var i = 0; i < data.length; i += 4) {
+      if (data[i] === 0 && data[i + 1] === 0 && data[i + 2] === 0) {
+        continue;
+      }
+      return data[i].toString(16)
+        + data[i + 1].toString(16)
+        + data[i + 2].toString(16);
+    }
+    return "no colored pixel found";
+  }
+
+  function dump(db) {
+    var json = JSON.stringify(db, null, "  ")
+      .replace(/^( +)(.+)\[\](,?)$/mg, "$1$2[\n$1]$3")
+      .replace(/,\n( *)  /g, "\n$1, ");
+    document.getElementById("output").value = json + "\n";
+  }
+
+  var xhr = new XMLHttpRequest;
+  xhr.onload = function() {
+    detectAliases(JSON.parse(this.responseText));
+  };
+  xhr.open("GET", "emoji.json", false);
+  xhr.send(null);
+</script>
