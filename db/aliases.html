@@ -23,23 +23,14 @@
         continue;
       }
 
-      var candidates = [];
-
-      if (raw.length === 1) {
-        candidates.push(raw + VARIATION_SELECTOR_15);
-        candidates.push(raw + VARIATION_SELECTOR_16);
-      } else if (raw[raw.length - 1] === VARIATION_SELECTOR_16) {
-        var base = raw.substr(0, raw.length - 1);
-        candidates.push(base);
-        candidates.push(base + VARIATION_SELECTOR_15);
+      if (raw.indexOf(VARIATION_SELECTOR_16) > -1) {
+        var candidates = [raw.replace(VARIATION_SELECTOR_16, ""), raw];
+      } else {
+        var candidates = [raw, raw + VARIATION_SELECTOR_16];
       }
 
       var aliases = candidates.filter(isColorEmoji);
-      if (aliases.length) {
-        emoji.unicodes = aliases;
-      } else {
-        delete emoji.unicodes;
-      }
+      emoji.emoji = aliases[0];
     }
 
     dump(db);

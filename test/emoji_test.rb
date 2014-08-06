@@ -30,12 +30,17 @@ class EmojiTest < TestCase
 
   test "unicode_aliases" do
     emoji = Emoji.find_by_unicode("\u{2728}")
-    assert_equal ["\u{2728}", "\u{2728}\u{fe0e}", "\u{2728}\u{fe0f}"], emoji.unicode_aliases
+    assert_equal ["\u{2728}", "\u{2728}\u{fe0f}"], emoji.unicode_aliases
   end
 
-  test "unicode_aliases doesn't necessarily include form without VARIATION SELECTOR 16" do
+  test "unicode_aliases includes alternate position of VARIATION_SELECTOR_16" do
+    emoji = Emoji.find_by_unicode("\u{0031}\u{fe0f}\u{20e3}")
+    assert_equal ["\u{0031}\u{fe0f}\u{20e3}", "\u{0031}\u{20e3}\u{fe0f}"], emoji.unicode_aliases
+  end
+
+  test "unicode_aliases doesn't necessarily include form without VARIATION_SELECTOR_16" do
     emoji = Emoji.find_by_unicode("\u{00a9}\u{fe0f}")
-    refute emoji.unicode_aliases.include?("\u{00a9}")
+    assert_equal ["\u{00a9}\u{fe0f}"], emoji.unicode_aliases
   end
 
   test "emojis have tags" do

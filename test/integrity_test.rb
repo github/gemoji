@@ -45,7 +45,7 @@ class IntegrityTest < TestCase
   end
 
   test "missing or incorrect unicodes" do
-    missing = source_unicode_emoji - Emoji.all.map(&:raw).compact
+    missing = source_unicode_emoji - Emoji.all.flat_map(&:unicode_aliases)
     assert_equal 0, missing.size, missing_unicodes_message(missing)
   end
 
