@@ -55,11 +55,12 @@ class IntegrityTest < TestCase
     def missing_unicodes_message(missing)
       "Missing or incorrect unicodes:\n".tap do |message|
         missing.each do |raw|
-          emoji = Emoji::Character.new(raw)
+          emoji = Emoji::Character.new(nil)
+          emoji.add_unicode_alias(raw)
           message << "#{emoji.raw}  (#{emoji.hex_inspect})"
           codepoint = emoji.raw.codepoints[0]
           if candidate = Emoji.all.detect { |e| !e.custom? && e.raw.codepoints[0] == codepoint }
-            message << " - might be #{candidate.raw}  (#{candidate.hex_inspect}) named #{emoji.name}"
+            message << " - might be #{candidate.raw}  (#{candidate.hex_inspect}) named #{candidate.name}"
           end
           message << "\n"
         end
