@@ -25,7 +25,7 @@ bundle exec rake db:dump > db/emoji2.json
 mv db/emoji2.json db/emoji.json
 
 open -g -a Safari db/aliases.html
-osascript db/aliases.scpt | sed '/^$/d' > db/emoji2.json
+osascript db/aliases.applescript | sed '/^$/d' > db/emoji2.json
 mv db/emoji2.json db/emoji.json
 
 if git diff --exit-code --stat -- db/emoji.json; then
