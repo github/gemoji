@@ -13,6 +13,7 @@
 <script>
   const VARIATION_SELECTOR_15 = String.fromCharCode(0xfe0e);
   const VARIATION_SELECTOR_16 = String.fromCharCode(0xfe0f);
+  const EMOJI_SIZE = 32
 
   function detectAliases(db) {
     for (var i = 0; i < db.length; ++i) {
@@ -52,14 +53,16 @@
   }
 
   var canvas = document.createElement("canvas");
+  canvas.width = canvas.height = EMOJI_SIZE;
+
   function color(emoji, rgb) {
     var context = canvas.getContext("2d");
-    context.clearRect(0, 0, 32, 32);
+    context.clearRect(0, 0, canvas.width, canvas.height);
     context.fillStyle = rgb;
     context.textBaseline = "top";
-    context.font = "32px Arial";
+    context.font = EMOJI_SIZE+"px Arial";
     context.fillText(emoji, 0, 0);
-    var data = context.getImageData(0, 0, 32, 32).data;
+    var data = context.getImageData(0, 0, EMOJI_SIZE, EMOJI_SIZE).data;
     for (var i = 0; i < data.length; i += 4) {
       if (data[i] === 0 && data[i + 1] === 0 && data[i + 2] === 0) {
         continue;
