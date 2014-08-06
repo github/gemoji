@@ -55,7 +55,7 @@ module Emoji
       if custom?
         '%s.png' % name
       else
-        'unicode/%s.png' % hex_inspect
+        'unicode/%s.png' % hex_inspect.sub(/-fe0f\b/, '')
       end
     end
   end
