@@ -5,16 +5,13 @@ require 'digest/md5'
 class IntegrityTest < TestCase
   test "images on disk correlate 1-1 with emojis" do
     images_on_disk = Dir["#{Emoji.images_path}/**/*.png"].map {|f| f.sub(Emoji.images_path, '') }
-    expected_images = []
+    expected_images = Emoji.all.map { |emoji| '/emoji/%s' % emoji.image_filename }
 
-    Emoji.all.each do |emoji|
-      image = '/emoji/%s' % emoji.image_filename
-      assert images_on_disk.include?(image), "'#{image}' is missing on disk"
-      expected_images << image
-    end
+    missing_images = expected_images - images_on_disk
+    assert_equal 0, missing_images.size, "these images are missing on disk:\n  #{missing_images.join("\n  ")}\n"
 
     extra_images = images_on_disk - expected_images
-    assert_equal 0, extra_images.size, "these images don't match any emojis: #{extra_images.inspect}"
+    assert_equal 0, extra_images.size, "these images don't match any emojis:\n  #{extra_images.join("\n  ")}\n"
   end
 
   test "images on disk have no duplicates" do
