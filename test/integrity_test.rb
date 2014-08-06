@@ -69,7 +69,13 @@ class IntegrityTest < TestCase
     end
 
     def source_unicode_emoji
-      @source_unicode_emoji ||= db["EmojiDataArray"].flat_map { |data| data["CVCategoryData"]["Data"].split(",") }
+      @source_unicode_emoji ||= begin
+        # Chars from OS X palette which must have VARIATION SELECTOR-16 to render:
+        specials = ["🈷", "🈂", "🅰", "🅱", "🅾", "©", "®", "™", "〰"]
+        db["EmojiDataArray"]
+          .flat_map { |data| data["CVCategoryData"]["Data"].split(",") }
+          .map { |raw| specials.include?(raw) ? "#{raw}\u{fe0f}" : raw }
+      end
     end
 
     def png_dimensions(file)

@@ -6987,7 +6987,7 @@
     ]
   }
 , {
-    "emoji": "🈷"
+    "emoji": "🈷️"
   , "description": "squared cjk unified ideograph-6708"
   , "aliases": [
       "u6708"
@@ -7005,7 +7005,7 @@
     ]
   }
 , {
-    "emoji": "🈂"
+    "emoji": "🈂️"
   , "description": "squared katakana sa"
   , "aliases": [
       "sa"
@@ -7295,7 +7295,7 @@
     ]
   }
 , {
-    "emoji": "🅰"
+    "emoji": "🅰️"
   , "description": "negative squared latin capital letter a"
   , "aliases": [
       "a"
@@ -7304,7 +7304,7 @@
     ]
   }
 , {
-    "emoji": "🅱"
+    "emoji": "🅱️"
   , "description": "negative squared latin capital letter b"
   , "aliases": [
       "b"
@@ -7322,7 +7322,7 @@
     ]
   }
 , {
-    "emoji": "🅾"
+    "emoji": "🅾️"
   , "description": "negative squared latin capital letter o"
   , "aliases": [
       "o2"
@@ -7565,10 +7565,7 @@
     ]
   }
 , {
-    "emoji": "©"
-  , "unicodes": [
-      "©️"
-    ]
+    "emoji": "©️"
   , "description": "copyright sign"
   , "aliases": [
       "copyright"
@@ -7577,10 +7574,7 @@
     ]
   }
 , {
-    "emoji": "®"
-  , "unicodes": [
-      "®️"
-    ]
+    "emoji": "®️"
   , "description": "registered sign"
   , "aliases": [
       "registered"
@@ -7589,10 +7583,7 @@
     ]
   }
 , {
-    "emoji": "™"
-  , "unicodes": [
-      "™️"
-    ]
+    "emoji": "™️"
   , "description": "trade mark sign"
   , "aliases": [
       "tm"
@@ -8124,10 +8115,7 @@
     ]
   }
 , {
-    "emoji": "〰"
-  , "unicodes": [
-      "〰️"
-    ]
+    "emoji": "〰️"
   , "description": "wavy dash"
   , "aliases": [
       "wavy_dash"
