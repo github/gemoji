@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    gemoji (2.0.0)
+    gemoji (2.1.0)
 
 GEM
   remote: https://rubygems.org/
