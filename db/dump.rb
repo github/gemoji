@@ -52,19 +52,14 @@ end
 trap(:PIPE) { abort }
 
 items = []
-variation = "\u{fe0f}".freeze
-
+variation_codepoint = Emoji::VARIATION_SELECTOR_16.codepoints[0]
 
 for emoji in Emoji.all
-  unicodes = emoji.unicode_aliases.dup
-
   item = {}
 
   unless emoji.custom?
-    variation_codepoint = variation.codepoints[0]
     chars = emoji.raw.codepoints.map { |code| UnicodeCharacter.fetch(code) unless code == variation_codepoint }.compact
-    item[:emoji] = unicodes.shift
-    item[:unicodes] = unicodes if unicodes.any?
+    item[:emoji] = emoji.raw
     item[:description] = chars.map(&:description).join(' + ')
   end
 
