@@ -51,9 +51,8 @@ class EmojiTest < TestCase
   end
 
   test "emojis have valid names" do
-    Emoji.all.each do |emoji|
-      assert_match /^[\w\+\-]+$/, emoji.name
-    end
+    invalid = Emoji.all.reject { |emoji| emoji.name =~ /^[\w\+\-]+$/ }
+    assert_equal [], invalid, "some emoji have invalid names"
   end
 
   test "custom emojis" do
