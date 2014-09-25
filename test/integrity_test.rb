@@ -23,7 +23,7 @@ class IntegrityTest < TestCase
     end
 
     hashes.each do |checksum, filenames|
-      assert_equal 1, filenames.length,
+      assert_equal expected_identical_checksum_count(filenames), filenames.length,
         "These images share the same checksum: " +
         filenames.map {|f| f.sub(Emoji.images_path, '') }.join(', ')
     end
@@ -82,5 +82,21 @@ class IntegrityTest < TestCase
     def png_dimensions(file)
       png = File.open(file, "rb") { |f| f.read(1024) }
       png.unpack("x16N2")
+    end
+
+    # Some emojis have the same PNG data
+    # https://gist.github.com/javan/512ad91917bf2ba24555
+    IDENTICAL_EMOJIS = [
+      ["black_medium_square", "black_large_square"]
+    ]
+    FILENAMES_WITH_SAME_CHECKSUM = IDENTICAL_EMOJIS.map do |aliases|
+      aliases.map { |a| File.join(Emoji.images_path, "emoji", Emoji.find_by_alias(a).image_filename) }
+    end.sort
+    def expected_identical_checksum_count(filenames)
+      if FILENAMES_WITH_SAME_CHECKSUM.include?(filenames.sort)
+        filenames.length
+      else
+        1
+      end
     end
 end
