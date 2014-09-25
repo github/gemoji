@@ -17,15 +17,17 @@ class IntegrityTest < TestCase
 
   test "images on disk have no duplicates" do
     hashes = Hash.new { |h,k| h[k] = [] }
-    Dir["#{Emoji.images_path}/**/*.png"].each do |image_file|
-      checksum = Digest::MD5.file(image_file).to_s
-      hashes[checksum] << image_file
+    Emoji.all.each do |emoji|
+      checksum = Digest::MD5.file(File.join(Emoji.images_path, 'emoji', emoji.image_filename)).to_s
+      hashes[checksum] << emoji
     end
 
-    hashes.each do |checksum, filenames|
-      assert_equal expected_identical_checksum_count(filenames), filenames.length,
+    hashes.each do |checksum, emojis|
+      # Apple uses the same image for "black_medium_square" and "black_large_square":
+      expected_length = ("black_medium_square" == emojis[0].name) ? 2 : 1
+      assert_equal expected_length, emojis.length,
         "These images share the same checksum: " +
-        filenames.map {|f| f.sub(Emoji.images_path, '') }.join(', ')
+        emojis.map(&:image_filename).join(', ')
     end
   end
 
@@ -82,21 +84,5 @@ class IntegrityTest < TestCase
     def png_dimensions(file)
       png = File.open(file, "rb") { |f| f.read(1024) }
       png.unpack("x16N2")
-    end
-
-    # Some emojis have the same PNG data
-    # https://gist.github.com/javan/512ad91917bf2ba24555
-    IDENTICAL_EMOJIS = [
-      ["black_medium_square", "black_large_square"]
-    ]
-    FILENAMES_WITH_SAME_CHECKSUM = IDENTICAL_EMOJIS.map do |aliases|
-      aliases.map { |a| File.join(Emoji.images_path, "emoji", Emoji.find_by_alias(a).image_filename) }
-    end.sort
-    def expected_identical_checksum_count(filenames)
-      if FILENAMES_WITH_SAME_CHECKSUM.include?(filenames.sort)
-        filenames.length
-      else
-        1
-      end
     end
 end
