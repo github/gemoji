@@ -1,4 +1,4 @@
-require 'gemoji'
+require 'emoji'
 require 'ttfunk'
 require 'pathname'
 
@@ -36,7 +36,7 @@ module Emoji
       end
 
       def emoji_char_codes
-        @emoji_char_codes ||= Emoji.all.select { |e| !e.custom? }.map(&:raw).map { |r| r.codepoints.first }
+        @emoji_char_codes ||= Emoji.all.reject(&:custom?).map { |e| e.raw.codepoints[0] }
       end
   end
 end
