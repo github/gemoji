@@ -17,15 +17,17 @@ class IntegrityTest < TestCase
 
   test "images on disk have no duplicates" do
     hashes = Hash.new { |h,k| h[k] = [] }
-    Dir["#{Emoji.images_path}/**/*.png"].each do |image_file|
-      checksum = Digest::MD5.file(image_file).to_s
-      hashes[checksum] << image_file
+    Emoji.all.each do |emoji|
+      checksum = Digest::MD5.file(File.join(Emoji.images_path, 'emoji', emoji.image_filename)).to_s
+      hashes[checksum] << emoji
     end
 
-    hashes.each do |checksum, filenames|
-      assert_equal 1, filenames.length,
+    hashes.each do |checksum, emojis|
+      # Apple uses the same image for "black_medium_square" and "black_large_square":
+      expected_length = ("black_medium_square" == emojis[0].name) ? 2 : 1
+      assert_equal expected_length, emojis.length,
         "These images share the same checksum: " +
-        filenames.map {|f| f.sub(Emoji.images_path, '') }.join(', ')
+        emojis.map(&:image_filename).join(', ')
     end
   end
 
