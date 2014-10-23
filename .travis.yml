@@ -2,5 +2,6 @@ script: script/test
 rvm:
   - 1.9.3
   - 2.1.2
+  - 2.2
 notifications:
   email: false
