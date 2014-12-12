@@ -51,7 +51,19 @@ module Emoji
       self.class.hex_inspect(raw)
     end
 
+    attr_writer :image_filename
+
     def image_filename
+      if defined? @image_filename
+        @image_filename
+      else
+        default_image_filename
+      end
+    end
+
+    private
+
+    def default_image_filename
       if custom?
         '%s.png' % name
       else

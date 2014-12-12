@@ -107,6 +107,14 @@ emoji.image_filename #=> "music.png"
 As you create new emoji, you must ensure that you also create and put the images
 they reference by their `image_filename` to your assets directory.
 
+You can customize `image_filename` with:
+
+```ruby
+emoji = Emoji.create("music") do |char|
+  char.image_filename = "subdirectory/my_emoji.gif"
+end
+```
+
 For existing emojis, you can edit the list of aliases or add new tags in an edit block:
 
 ```ruby
