@@ -94,6 +94,18 @@ class EmojiTest < TestCase
     end
   end
 
+  test "create with custom filename" do
+    emoji = Emoji.create("music") do |char|
+      char.image_filename = "some_path/my_emoji.gif"
+    end
+
+    begin
+      assert_equal "some_path/my_emoji.gif", emoji.image_filename
+    ensure
+      Emoji.all.pop
+    end
+  end
+
   test "create without block" do
     emoji = Emoji.create("music")
 
