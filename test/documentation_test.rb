@@ -18,7 +18,7 @@ class DocumentationTest < TestCase
       str.gsub('<', '&lt;').gsub('>', '&gt;')
     end
 
-    def self.asset_path(img)
+    def self.image_path(img)
       "/images/#{img}?123"
     end
   end
