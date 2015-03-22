@@ -50,7 +50,7 @@ Example Rails Helper
 
 This would allow emojifying content such as: `it's raining :cat:s and :dog:s!`
 
-See the [Emoji cheat sheet](http://www.emoji-cheat-sheet.com) for more examples.
+See the [Emoji cheat sheet](http://www.emoji-cheat-sheet.com) for more examples. For a complete parsing utility that encodes emoji symbols using unicode characters, token string, and emoticons, see the [gemoji-parser](https://github.com/gmac/gemoji-parser).
 
 ```ruby
 module EmojiHelper
