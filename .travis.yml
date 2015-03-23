@@ -4,4 +4,4 @@ rvm:
   - 2.1.2
   - 2.2
 notifications:
-  email: false
+  email: true
