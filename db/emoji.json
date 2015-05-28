@@ -8120,6 +8120,17 @@
     ]
   }
 , {
+
+
+
+
+
+
+
+
+
+
+
     "aliases": [
       "basecamp"
     ]
@@ -8248,16 +8259,625 @@
   }
 , {
     "aliases": [
-      "taco"
-    ]
-  , "tags": [
-    ]
-  }
-, {
-    "aliases": [
       "trollface"
     ]
   , "tags": [
     ]
+  },
+  {
+    "emoji": "🌭",
+    "description": "hot dog",
+    "aliases": [
+      "hot_dog"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌮",
+    "description": "taco",
+    "aliases": [
+      "taco"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🌯",
+    "description": "burrito",
+    "aliases": [
+      "burrito"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍾",
+    "description": "bottle with popping cork",
+    "aliases": [
+      "bottle_with_popping_cork"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🍿",
+    "description": "popcorn",
+    "aliases": [
+      "popcorn"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏅",
+    "description": "sports medal",
+    "aliases": [
+      "sports_medal"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏏",
+    "description": "cricket bat and ball",
+    "aliases": [
+      "cricket_bat_and_ball"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏐",
+    "description": "volleyball",
+    "aliases": [
+      "volleyball"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏑",
+    "description": "field hockey stick and ball",
+    "aliases": [
+      "field_hockey_stick_and_ball"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏒",
+    "description": "ice hockey stick and puck",
+    "aliases": [
+      "ice_hockey_stick_and_puck"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏓",
+    "description": "table tennis paddle and ball",
+    "aliases": [
+      "table_tennis_paddle_and_ball"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏴",
+    "description": "waving black flag",
+    "aliases": [
+      "waving_black_flag"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏸",
+    "description": "badminton racquet and shuttlecock",
+    "aliases": [
+      "badminton_racquet_and_shuttlecock"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏹",
+    "description": "bow and arrow",
+    "aliases": [
+      "bow_and_arrow"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏺",
+    "description": "amphora",
+    "aliases": [
+      "amphora"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏻",
+    "description": "emoji modifier fitzpatrick type-1-2",
+    "aliases": [
+      "emoji_modifier_fitzpatrick_type-1-2"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏼",
+    "description": "emoji modifier fitzpatrick type-3",
+    "aliases": [
+      "emoji_modifier_fitzpatrick_type-3"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏽",
+    "description": "emoji modifier fitzpatrick type-4",
+    "aliases": [
+      "emoji_modifier_fitzpatrick_type-4"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏾",
+    "description": "emoji modifier fitzpatrick type-5",
+    "aliases": [
+      "emoji_modifier_fitzpatrick_type-5"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🏿",
+    "description": "emoji modifier fitzpatrick type-6",
+    "aliases": [
+      "emoji_modifier_fitzpatrick_type-6"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📸",
+    "description": "camera with flash",
+    "aliases": [
+      "camera_with_flash"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "📿",
+    "description": "prayer beads",
+    "aliases": [
+      "prayer_beads"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕋",
+    "description": "kaaba",
+    "aliases": [
+      "kaaba"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕌",
+    "description": "mosque",
+    "aliases": [
+      "mosque"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕍",
+    "description": "synagogue",
+    "aliases": [
+      "synagogue"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🕎",
+    "description": "menorah with nine branches",
+    "aliases": [
+      "menorah_with_nine_branches"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖕",
+    "description": "reversed hand with middle finger extended",
+    "aliases": [
+      "reversed_hand_with_middle_finger_extended"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🖖",
+    "description": "raised hand with part between middle and ring fingers",
+    "aliases": [
+      "raised_hand_with_part_between_middle_and_ring_fingers"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🙁",
+    "description": "slightly frowning face",
+    "aliases": [
+      "slightly_frowning_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🙂",
+    "description": "slightly smiling face",
+    "aliases": [
+      "slightly_smiling_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🙃",
+    "description": "upside-down face",
+    "aliases": [
+      "upside-down_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🙄",
+    "description": "face with rolling eyes",
+    "aliases": [
+      "face_with_rolling_eyes"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛌",
+    "description": "sleeping accommodation",
+    "aliases": [
+      "sleeping_accommodation"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛐",
+    "description": "place of worship",
+    "aliases": [
+      "place_of_worship"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛫",
+    "description": "airplane departure",
+    "aliases": [
+      "airplane_departure"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🛬",
+    "description": "airplane arriving",
+    "aliases": [
+      "airplane_arriving"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤐",
+    "description": "zipper-mouth face",
+    "aliases": [
+      "zipper-mouth_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤑",
+    "description": "money-mouth face",
+    "aliases": [
+      "money-mouth_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤒",
+    "description": "face with thermometer",
+    "aliases": [
+      "face_with_thermometer"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤓",
+    "description": "nerd face",
+    "aliases": [
+      "nerd_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤔",
+    "description": "thinking face",
+    "aliases": [
+      "thinking_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤕",
+    "description": "face with head-bandage",
+    "aliases": [
+      "face_with_head-bandage"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤖",
+    "description": "robot face",
+    "aliases": [
+      "robot_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤗",
+    "description": "hugging face",
+    "aliases": [
+      "hugging_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🤘",
+    "description": "sign of the horns",
+    "aliases": [
+      "sign_of_the_horns"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦀",
+    "description": "crab",
+    "aliases": [
+      "crab"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦁",
+    "description": "lion face",
+    "aliases": [
+      "lion_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦂",
+    "description": "scorpion",
+    "aliases": [
+      "scorpion"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦃",
+    "description": "turkey",
+    "aliases": [
+      "turkey"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🦄",
+    "description": "unicorn face",
+    "aliases": [
+      "unicorn_face"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🧀",
+    "description": "cheese wedge",
+    "aliases": [
+      "cheese_wedge"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇦",
+    "description": "flag for azerbaijan",
+    "aliases": [
+      "flag_for_azerbaijan"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇧",
+    "description": "flag for belize",
+    "aliases": [
+      "flag_for_belize"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇨",
+    "description": "flag for czech republic",
+    "aliases": [
+      "flag_for_czech_republic"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇩",
+    "description": "flag for algeria",
+    "aliases": [
+      "flag_for_algeria"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇪",
+    "description": "flag for european union",
+    "aliases": [
+      "flag_for_european_union"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇫",
+    "description": "flag for france",
+    "aliases": [
+      "flag_for_france"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇬",
+    "description": "flag for guyana",
+    "aliases": [
+      "flag_for_guyana"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇭",
+    "description": "flag for hungary",
+    "aliases": [
+      "flag_for_hungary"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇮",
+    "description": "flag for italy",
+    "aliases": [
+      "flag_for_italy"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇯",
+    "description": "flag for japan",
+    "aliases": [
+      "flag_for_japan"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇰",
+    "description": "flag for kazakhstan",
+    "aliases": [
+      "flag_for_kazakhstan"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇱",
+    "description": "flag for libya",
+    "aliases": [
+      "flag_for_libya"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇲",
+    "description": "flag for mozambique",
+    "aliases": [
+      "flag_for_mozambique"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇳",
+    "description": "flag for new zealand",
+    "aliases": [
+      "flag_for_new_zealand"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇴",
+    "description": "flag for oman",
+    "aliases": [
+      "flag_for_oman"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇵",
+    "description": "flag for paraguay",
+    "aliases": [
+      "flag_for_paraguay"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇶",
+    "description": "flag for qatar",
+    "aliases": [
+      "flag_for_qatar"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇷",
+    "description": "flag for rwanda",
+    "aliases": [
+      "flag_for_rwanda"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇸",
+    "description": "flag for swaziland",
+    "aliases": [
+      "flag_for_swaziland"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇹",
+    "description": "flag for tanzania",
+    "aliases": [
+      "flag_for_tanzania"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇺",
+    "description": "flag for uzbekistan",
+    "aliases": [
+      "flag_for_uzbekistan"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇻",
+    "description": "flag for vanuatu",
+    "aliases": [
+      "flag_for_vanuatu"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇼",
+    "description": "flag for samoa",
+    "aliases": [
+      "flag_for_samoa"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇽",
+    "description": "flag for kosovo",
+    "aliases": [
+      "flag_for_kosovo"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇾",
+    "description": "flag for mayotte",
+    "aliases": [
+      "flag_for_mayotte"
+    ],
+    "tags": []
+  },
+  {
+    "emoji": "🇿",
+    "description": "flag for zimbabwe",
+    "aliases": [
+      "flag_for_zimbabwe"
+    ],
+    "tags": []
   }
 ]
