@@ -8466,7 +8466,7 @@
   },
   {
     "emoji": "🕎",
-    "description": "menorah with nine branches",
+    "description": "menorah",
     "aliases": [
       "menorah_with_nine_branches"
     ],
@@ -8474,7 +8474,7 @@
   },
   {
     "emoji": "🖕",
-    "description": "reversed hand with middle finger extended",
+    "description": "middle finger",
     "aliases": [
       "reversed_hand_with_middle_finger_extended"
     ],
@@ -8482,7 +8482,7 @@
   },
   {
     "emoji": "🖖",
-    "description": "raised hand with part between middle and ring fingers",
+    "description": "prosper",
     "aliases": [
       "raised_hand_with_part_between_middle_and_ring_fingers"
     ],
@@ -8674,7 +8674,7 @@
   },
   {
     "emoji": "🇦",
-    "description": "flag for azerbaijan",
+    "description": "azerbaijan",
     "aliases": [
       "flag_for_azerbaijan"
     ],
@@ -8682,7 +8682,7 @@
   },
   {
     "emoji": "🇧",
-    "description": "flag for belize",
+    "description": "belize",
     "aliases": [
       "flag_for_belize"
     ],
@@ -8690,7 +8690,7 @@
   },
   {
     "emoji": "🇨",
-    "description": "flag for czech republic",
+    "description": "czech republic",
     "aliases": [
       "flag_for_czech_republic"
     ],
@@ -8698,7 +8698,7 @@
   },
   {
     "emoji": "🇩",
-    "description": "flag for algeria",
+    "description": "algeria",
     "aliases": [
       "flag_for_algeria"
     ],
@@ -8706,7 +8706,7 @@
   },
   {
     "emoji": "🇪",
-    "description": "flag for european union",
+    "description": "european union",
     "aliases": [
       "flag_for_european_union"
     ],
@@ -8714,7 +8714,7 @@
   },
   {
     "emoji": "🇫",
-    "description": "flag for france",
+    "description": "france",
     "aliases": [
       "flag_for_france"
     ],
@@ -8722,7 +8722,7 @@
   },
   {
     "emoji": "🇬",
-    "description": "flag for guyana",
+    "description": "guyana",
     "aliases": [
       "flag_for_guyana"
     ],
@@ -8730,7 +8730,7 @@
   },
   {
     "emoji": "🇭",
-    "description": "flag for hungary",
+    "description": "hungary",
     "aliases": [
       "flag_for_hungary"
     ],
@@ -8738,7 +8738,7 @@
   },
   {
     "emoji": "🇮",
-    "description": "flag for italy",
+    "description": "italy",
     "aliases": [
       "flag_for_italy"
     ],
@@ -8746,7 +8746,7 @@
   },
   {
     "emoji": "🇯",
-    "description": "flag for japan",
+    "description": "japan",
     "aliases": [
       "flag_for_japan"
     ],
@@ -8754,7 +8754,7 @@
   },
   {
     "emoji": "🇰",
-    "description": "flag for kazakhstan",
+    "description": "kazakhstan",
     "aliases": [
       "flag_for_kazakhstan"
     ],
@@ -8762,7 +8762,7 @@
   },
   {
     "emoji": "🇱",
-    "description": "flag for libya",
+    "description": "libya",
     "aliases": [
       "flag_for_libya"
     ],
@@ -8770,7 +8770,7 @@
   },
   {
     "emoji": "🇲",
-    "description": "flag for mozambique",
+    "description": "mozambique",
     "aliases": [
       "flag_for_mozambique"
     ],
@@ -8778,7 +8778,7 @@
   },
   {
     "emoji": "🇳",
-    "description": "flag for new zealand",
+    "description": "new zealand",
     "aliases": [
       "flag_for_new_zealand"
     ],
@@ -8786,7 +8786,7 @@
   },
   {
     "emoji": "🇴",
-    "description": "flag for oman",
+    "description": "oman",
     "aliases": [
       "flag_for_oman"
     ],
@@ -8794,7 +8794,7 @@
   },
   {
     "emoji": "🇵",
-    "description": "flag for paraguay",
+    "description": "paraguay",
     "aliases": [
       "flag_for_paraguay"
     ],
@@ -8802,7 +8802,7 @@
   },
   {
     "emoji": "🇶",
-    "description": "flag for qatar",
+    "description": "qatar",
     "aliases": [
       "flag_for_qatar"
     ],
@@ -8810,7 +8810,7 @@
   },
   {
     "emoji": "🇷",
-    "description": "flag for rwanda",
+    "description": "rwanda",
     "aliases": [
       "flag_for_rwanda"
     ],
@@ -8818,7 +8818,7 @@
   },
   {
     "emoji": "🇸",
-    "description": "flag for swaziland",
+    "description": "swaziland",
     "aliases": [
       "flag_for_swaziland"
     ],
@@ -8826,7 +8826,7 @@
   },
   {
     "emoji": "🇹",
-    "description": "flag for tanzania",
+    "description": "tanzania",
     "aliases": [
       "flag_for_tanzania"
     ],
@@ -8834,7 +8834,7 @@
   },
   {
     "emoji": "🇺",
-    "description": "flag for uzbekistan",
+    "description": "uzbekistan",
     "aliases": [
       "flag_for_uzbekistan"
     ],
@@ -8842,7 +8842,7 @@
   },
   {
     "emoji": "🇻",
-    "description": "flag for vanuatu",
+    "description": "vanuatu",
     "aliases": [
       "flag_for_vanuatu"
     ],
@@ -8850,7 +8850,7 @@
   },
   {
     "emoji": "🇼",
-    "description": "flag for samoa",
+    "description": "samoa",
     "aliases": [
       "flag_for_samoa"
     ],
@@ -8858,7 +8858,7 @@
   },
   {
     "emoji": "🇽",
-    "description": "flag for kosovo",
+    "description": "kosovo",
     "aliases": [
       "flag_for_kosovo"
     ],
@@ -8866,7 +8866,7 @@
   },
   {
     "emoji": "🇾",
-    "description": "flag for mayotte",
+    "description": "mayotte",
     "aliases": [
       "flag_for_mayotte"
     ],
@@ -8874,7 +8874,7 @@
   },
   {
     "emoji": "🇿",
-    "description": "flag for zimbabwe",
+    "description": "zimbabwe",
     "aliases": [
       "flag_for_zimbabwe"
     ],
