@@ -31,7 +31,7 @@ end
 namespace :images do
   desc %(Extract PNG images from Apple's "Apple Color Emoji.ttf" font)
   task :extract do
-    require 'emoji/extractor'
+    require_relative 'lib/emoji/extractor'
     gem_dir = File.dirname(File.realpath(__FILE__))
     Emoji::Extractor.new(64, "#{gem_dir}/images/emoji/unicode").extract!
   end
