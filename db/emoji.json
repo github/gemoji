@@ -6206,6 +6206,17 @@
     ]
   }
 , {
+    "emoji": "🇨🇦"
+  , "description": "regional indicator symbol letter c + regional indicator symbol letter a"
+  , "aliases": [
+      "ca"
+    ]
+  , "tags": [
+      "canada"
+    , "eh"
+    ]
+  }
+, {
     "emoji": "1️⃣"
   , "description": "digit one + combining enclosing keycap"
   , "aliases": [
