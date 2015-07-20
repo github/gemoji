@@ -1,3 +1,6 @@
+This project adheres to the [Open Code of Conduct][code-of-conduct]. By participating, you are expected to uphold this code.
+[code-of-conduct]: http://todogroup.org/opencodeofconduct/#gemoji/opensource@github.com
+
 Our emoji set is based off Apple's emoji character palette, plus some custom
 emoji such as :octocat: :shipit: :metal:.
 
