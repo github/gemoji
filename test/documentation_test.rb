@@ -41,6 +41,6 @@ class DocumentationTest < TestCase
   end
 
   test "returns nil for blank content" do
-    assert_nil Helper.emojify('')
+    assert "", Helper.emojify('')
   end
 end
