@@ -1,0 +1,18 @@
+Since this repo does not have Issues, I had to create a PR to ask a question.
+
+I was trying this (in console and Rails initializers)
+
+```ruby
+Emoji.create("custom_emoji") do |char|
+  char.add_alias "jenkins_success"
+  char.image_filename = "integrations/jenkins/jenkins_icon_success_2x.png"
+end
+```
+
+It throws the error:
+`NoMethodError: undefined method `image_filename=' for #<Emoji::Character:custom_emoji>`
+
+But the documentation says one can use this.
+Any help?
+
+version: 2.1.0
