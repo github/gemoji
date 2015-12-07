@@ -1,8 +1,9 @@
-require 'emoji/character'
+require 'emoji/collection'
+require 'forwardable'
 require 'json'
 
 module Emoji
-  extend self
+  extend self, Forwardable
 
   def data_file
     File.expand_path('../../db/emoji.json', __FILE__)
@@ -12,56 +13,21 @@ module Emoji
     File.expand_path("../../images", __FILE__)
   end
 
+  def_delegators :default_collection, :edit_emoji, :find_by_alias, :find_by_unicode
+
   def all
-    return @all if defined? @all
-    @all = []
-    parse_data_file
-    @all
+    default_collection.to_a
   end
 
-  # Public: Initialize an Emoji::Character instance and yield it to the block.
-  # The character is added to the `Emoji.all` set.
-  def create(name)
-    emoji = Emoji::Character.new(name)
-    self.all << edit_emoji(emoji) { yield emoji if block_given? }
-    emoji
+  def create(name, &block)
+    default_collection.add_emoji(name, &block)
   end
 
-  # Public: Yield an emoji to the block and update the indices in case its
-  # aliases or unicode_aliases lists changed.
-  def edit_emoji(emoji)
-    @names_index ||= Hash.new
-    @unicodes_index ||= Hash.new
-
-    yield emoji
-
-    emoji.aliases.each do |name|
-      @names_index[name] = emoji
-    end
-    emoji.unicode_aliases.each do |unicode|
-      @unicodes_index[unicode] = emoji
-    end
-
-    emoji
-  end
-
-  # Public: Find an emoji by its aliased name. Return nil if missing.
-  def find_by_alias(name)
-    names_index[name]
-  end
-
-  # Public: Find an emoji by its unicode character. Return nil if missing.
-  def find_by_unicode(unicode)
-    unicodes_index[unicode]
-  end
-
-  private
-    VARIATION_SELECTOR_16 = "\u{fe0f}".freeze
-
-    def parse_data_file
+  def default_collection
+    @default_collection ||= Collection.new.tap do |collection|
       raw = File.open(data_file, 'r:UTF-8') { |data| JSON.parse(data.read) }
       raw.each do |raw_emoji|
-        self.create(nil) do |emoji|
+        collection.add_emoji(nil) do |emoji|
           raw_emoji.fetch('aliases').each { |name| emoji.add_alias(name) }
           if raw = raw_emoji['emoji']
             unicodes = [raw, raw.sub(VARIATION_SELECTOR_16, '') + VARIATION_SELECTOR_16].uniq
@@ -71,14 +37,8 @@ module Emoji
         end
       end
     end
+  end
 
-    def names_index
-      all unless defined? @all
-      @names_index
-    end
-
-    def unicodes_index
-      all unless defined? @all
-      @unicodes_index
-    end
+  VARIATION_SELECTOR_16 = "\u{fe0f}".freeze
+  private_constant :VARIATION_SELECTOR_16
 end
