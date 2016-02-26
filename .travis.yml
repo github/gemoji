@@ -1,3 +1,4 @@
+sudo: false
 script: script/test
 rvm:
   - 1.9.3
