@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+
+require 'emoji'
+require 'benchmark'
+
+# Build a regexp that matches all native emoji characters.
+# Some emoji code point sequences are prefixes of other emoji code point
+# sequences, e.g.:
+# U+2728 SPARKLES
+# vs.
+# U+2728 SPARKLES U+FE0F VARIATION SELECTOR-16
+# We sort the code point sequences longest-first so that the regex will
+# match the longest possible sequence.
+def unicodes_pattern
+  $unicodes_pattern ||= Regexp.new(emoji_unicodes.sort_by(&:length).reverse.join("|"))
+end
+
+def emoji_unicodes
+  Emoji.all.flat_map(&:unicode_aliases)
+end
+
+def unicode_emoji_filter(text)
+  text.gsub(unicodes_pattern) do |unicode|
+    emoji = Emoji.find_by_unicode(unicode)
+    "<g-emoji alias='#{emoji.name}'>" 
+  end
+end
+
+def gsub_unicode(text)
+  Emoji.gsub_unicode(text) do |emoji|
+    "<g-emoji alias='#{emoji.name}'>" 
+  end
+end
+
+data_file = File.join(File.dirname(File.realpath(__FILE__)), '../db/emoji.json')
+raw = File.open(data_file, 'r:UTF-8') { |file| file.read }
+raw = raw * 100
+
+puts "Benchmarking #{raw.bytesize} bytes..."
+
+puts Benchmark.measure('unicode_emoji_filter') { unicode_emoji_filter(raw) }
+puts Benchmark.measure('Emoji#gsub_unicode') { gsub_unicode(raw) }
