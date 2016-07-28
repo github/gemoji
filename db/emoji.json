@@ -8124,6 +8124,153 @@
     ]
   }
 , {
+    "emoji": "🏹"
+  , "description": "bow and arrow"
+  , "aliases": [
+      "bow_and_arrow"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "emoji": "🏺"
+  , "description": "amphora"
+  , "aliases": [
+      "amphora"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "emoji": "🙃"
+  , "description": "upside-down face"
+  , "aliases": [
+      "upside_down_face"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "emoji": "🙄"
+  , "description": "face with rolling eyes"
+  , "aliases": [
+      "rolling_eyes"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "emoji": "🤐"
+  , "description": "zipper-mouth face"
+  , "aliases": [
+      "zipper_mouth"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "emoji": "🤑"
+  , "description": "money-mouth face"
+  , "aliases": [
+      "money_mouth",
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "emoji": "🤒"
+  , "description": "face with thermometer"
+  , "aliases": [
+      "feeling sick"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "emoji": "🤓"
+  , "description": "nerd face"
+  , "aliases": [
+      "nerd"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "emoji": "🤔"
+  , "description": "thinking face"
+  , "aliases": [
+      "thinking"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "emoji": "🤕"
+  , "description": "face with head-bandage"
+  , "aliases": [
+      "head_bandage",
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "emoji": "🤖"
+  , "description": "robot face"
+  , "aliases": [
+      "robot",
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "emoji": "🤗"
+  , "description": "hugging face"
+  , "aliases": [
+      "hugging",
+    ]
+  , "tags": [
+    "hug"
+    ]
+  }
+, {
+    "emoji": "🤘"
+  , "description": "sign of the horns"
+  , "aliases": [
+      "horns_sign"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "emoji": "🦀"
+  , "description": "crab"
+  , "aliases": [
+      "crab",
+      "cancer"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "emoji": "🦁"
+  , "description": "lion face"
+  , "aliases": [
+      "lion",
+      "leo"
+    ]
+  , "tags": [
+    ]
+  }
+, {
+    "emoji": "🦂"
+  , "description": "scorpion"
+  , "aliases": [
+      "scorpio"
+    ]
+  , "tags": [
+    ]
+  }
+, {
     "aliases": [
       "basecamp"
     ]
