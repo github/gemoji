@@ -47,7 +47,14 @@
       "blush"
     ]
   , "tags": [
-      "proud"
+    "face"
+    , "smile"
+    , "happy"
+    , "flushed"
+    , "crush"
+    , "embarrassed"
+    , "shy"
+    , "joy"
     ]
   }
 , {
@@ -57,8 +64,10 @@
       "relaxed"
     ]
   , "tags": [
-      "blush"
-    , "pleased"
+        "face"
+      , "blush"
+      , "massage"
+      , "happiness"
     ]
   }
 , {
@@ -69,6 +78,10 @@
     ]
   , "tags": [
       "flirt"
+      , "face"
+      , "happy"
+      , "mischievous"
+      , "secret"
     ]
   }
 , {
