@@ -848,7 +848,11 @@
   , "aliases": [
       "pouting_cat"
     ]
-  , "tags": [
+  , "tags": ["animal"
+  , "sad"
+  , "unhappy"
+  , "angry"
+  , "cats"
     ]
   }
 , {
@@ -858,7 +862,15 @@
       "japanese_ogre"
     ]
   , "tags": [
-      "monster"
+    "namahage"
+    , "monster"
+    , "red"
+    , "mask"
+    , "halloween"
+    , "scary"
+    , "creepy"
+    , "devil"
+    , "demon"
     ]
   }
 , {
