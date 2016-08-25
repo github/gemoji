@@ -168,7 +168,14 @@
   , "aliases": [
       "flushed"
     ]
-  , "tags": [
+  , "tags": ["face"
+  , "smile"
+  , "happy"
+  , "flushed"
+  , "crush"
+  , "embarrassed"
+  , "shy"
+  , "joy"
     ]
   }
 , {
@@ -177,7 +184,10 @@
   , "aliases": [
       "grin"
     ]
-  , "tags": [
+  , "tags": ["happy"
+  , "smile"
+  , "face"
+  , "joy"
     ]
   }
 , {
@@ -186,7 +196,11 @@
   , "aliases": [
       "pensive"
     ]
-  , "tags": [
+  , "tags": ["face"
+  , "sad"
+  , "depressed"
+  , "okay"
+  , "upset"
     ]
   }
 , {
@@ -195,8 +209,12 @@
   , "aliases": [
       "relieved"
     ]
-  , "tags": [
-      "whew"
+  , "tags": ["face"
+  , "relaxed"
+  , "phew"
+  , "massage"
+  , "happiness"
+  , "whew"
     ]
   }
 , {
