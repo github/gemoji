@@ -120,7 +120,12 @@
   , "aliases": [
       "kissing"
     ]
-  , "tags": [
+  , "tags": ["face"
+  , "love"
+  , "like"
+  , "affection"
+  , "valentines"
+  , "infatuation"
     ]
   }
 , {
@@ -129,7 +134,11 @@
   , "aliases": [
       "kissing_smiling_eyes"
     ]
-  , "tags": [
+  , "tags": ["smooch"
+  , "face"
+  , "affection"
+  , "valentines"
+  , "infatuation"
     ]
   }
 , {
