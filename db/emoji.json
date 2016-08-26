@@ -90,9 +90,14 @@
   , "aliases": [
       "heart_eyes"
     ]
-  , "tags": [
-      "love"
-    , "crush"
+  , "tags": ["heart"
+            , "face"
+            , "like"
+            , "affection"
+            , "valentines"
+            , "infatuation"
+            , "love"
+            , "crush"
     ]
   }
 , {
@@ -101,8 +106,15 @@
   , "aliases": [
       "kissing_heart"
     ]
-  , "tags": [
-      "flirt"
+  , "tags": ["heart"
+          , "kiss"
+          , "face"
+          , "love"
+          , "like"
+          , "affection"
+          , "valentines"
+          , "infatuation"
+          , "flirt"
     ]
   }
 , {
@@ -111,7 +123,12 @@
   , "aliases": [
       "kissing_closed_eyes"
     ]
-  , "tags": [
+  , "tags": ["face"
+          , "love"
+          , "like"
+          , "affection"
+          , "valentines"
+          , "infatuation"
     ]
   }
 , {
