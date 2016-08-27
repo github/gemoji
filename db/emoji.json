@@ -862,8 +862,11 @@
   , "aliases": [
       "scream_cat"
     ]
-  , "tags": [
-      "horror"
+  , "tags": ["animal"
+            , "cats"
+            , "munch"
+            , "scared"
+            , "horror"
     ]
   }
 , {
@@ -872,9 +875,13 @@
   , "aliases": [
       "crying_cat_face"
     ]
-  , "tags": [
-      "sad"
-    , "tear"
+  , "tags": ["animal"
+            , "sad"
+            , "tears"
+            , "weep"
+            , "cats"
+            , "upset"
+      
     ]
   }
 , {
@@ -883,7 +890,11 @@
   , "aliases": [
       "joy_cat"
     ]
-  , "tags": [
+  , "tags": ["animal"
+            , "happy"
+            , "cats"
+            , "haha"
+            , "tears"
     ]
   }
 , {
