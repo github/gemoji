@@ -165,8 +165,13 @@
       "stuck_out_tongue_winking_eye"
     ]
   , "tags": [
-      "prank"
-    , "silly"
+        "face"
+      , "prank"
+      , "childish"
+      , "playful"
+      , "mischievous"
+      , "smile"
+      , "silly"
     ]
   }
 , {
@@ -176,7 +181,11 @@
       "stuck_out_tongue_closed_eyes"
     ]
   , "tags": [
-      "prank"
+      "face"
+      , "prank"
+      , "playful"
+      , "mischievous"
+      , "smile"
     ]
   }
 , {
@@ -186,6 +195,12 @@
       "stuck_out_tongue"
     ]
   , "tags": [
+      "face"
+      , "prank"
+      , "childish"
+      , "playful"
+      , "mischievous"
+      , "smile"
     ]
   }
 , {
@@ -250,7 +265,12 @@
       "unamused"
     ]
   , "tags": [
-      "meh"
+          "sarcasm"
+        , "indifference"
+        , "bored"
+        , "straight face"
+        , "serious"
+        , "meh"
     ]
   }
 , {
@@ -260,7 +280,11 @@
       "disappointed"
     ]
   , "tags": [
-      "sad"
+    "sad"
+  , "lonely"
+  , "face"
+  , "upset"
+  , "depressed"
     ]
   }
 , {
@@ -323,7 +347,8 @@
       "disappointed_relieved"
     ]
   , "tags": [
-      "phew"
+      "face"
+    , "phew"
     , "sweat"
     , "nervous"
     ]
