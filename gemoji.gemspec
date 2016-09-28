@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.files = Dir[
     "README.md",
     "images/**/*.png",
+    "db/Category-Emoji.json",
     "db/emoji.json",
     "lib/**/*.rb",
     "lib/tasks/*.rake"

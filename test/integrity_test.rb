@@ -1,4 +1,3 @@
-# encoding: utf-8
 require 'test_helper'
 require 'json'
 require 'digest/md5'
@@ -67,18 +66,8 @@ class IntegrityTest < TestCase
       end
     end
 
-    def db
-      @db ||= JSON.parse(File.read(File.expand_path("../../db/Category-Emoji.json", __FILE__)))
-    end
-
     def source_unicode_emoji
-      @source_unicode_emoji ||= begin
-        # Chars from OS X palette which must have VARIATION SELECTOR-16 to render:
-        specials = ["🈷", "🈂", "🅰", "🅱", "🅾", "©", "®", "™", "〰"]
-        db["EmojiDataArray"]
-          .flat_map { |data| data["CVCategoryData"]["Data"].split(",") }
-          .map { |raw| specials.include?(raw) ? "#{raw}\u{fe0f}" : raw }
-      end
+      Emoji.apple_palette.flat_map { |_, emoji| emoji }
     end
 
     def png_dimensions(file)
