@@ -9,7 +9,10 @@
       "happy"
     , "joy"
     , "pleased"
-    ]
+    , "face"
+    , "haha"
+    , "funny"
+    , "cheerful"]
   }
 , {
     "emoji": "😃"
@@ -30,8 +33,11 @@
       "grinning"
     ]
   , "tags": [
-      "smile"
-    , "happy"
+      "smiling"
+      , "face"
+      , "smile"
+      , "happy"
+      , "joy"
     ]
   }
 , {
