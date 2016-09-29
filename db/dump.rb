@@ -1,28 +1,57 @@
 require 'emoji'
 require 'json'
-
-names_list = File.expand_path('../NamesList.txt', __FILE__)
+require 'rexml/document'
 
 class UnicodeCharacter
-  attr_reader :code, :description, :aliases
+  attr_reader :code, :description, :version, :aliases
 
-  @index = {}
-  class << self
-    attr_reader :index
+  class CharListener
+    CHAR_TAG = "char".freeze
 
-    def fetch(code, *args, &block)
-      code = code.to_s(16).rjust(4, '0') if code.is_a?(Integer)
-      index.fetch(code, *args, &block)
+    def self.parse(io, &block)
+      REXML::Document.parse_stream(io, self.new(&block))
     end
+
+    def initialize(&block)
+      @callback = block
+    end
+
+    def tag_start(name, attributes)
+      if CHAR_TAG == name
+        @callback.call(
+          attributes.fetch("cp") { return },
+          attributes.fetch("na") { return },
+          attributes.fetch("age", nil),
+        )
+      end
+    end
+
+    def method_missing(*) end
   end
 
-  def initialize(code, description)
+  def self.index
+    return @index if defined? @index
+    @index = {}
+    File.open(File.expand_path('../ucd.nounihan.grouped.xml', __FILE__)) do |source|
+      CharListener.parse(source) do |char, desc, age|
+        uc = UnicodeCharacter.new(char, desc, age)
+        @index[uc.code] = uc
+      end
+    end
+    @index
+  end
+
+  def self.fetch(code)
+    code = code.to_s(16).rjust(4, '0') if code.is_a?(Integer)
+    self.index.fetch(code)
+  end
+
+  def initialize(code, description, version)
     @code = code.downcase
     @description = description.downcase
+    @version = version
     @aliases = []
     @references = []
-
-    self.class.index[@code] = self
   end
 
   def add_alias(string)
@@ -34,39 +63,74 @@ class UnicodeCharacter
   end
 end
 
-char = nil
-
-File.foreach(names_list) do |line|
-  case line
-  when /^[A-F0-9]{4,5}\t/
-    code, desc = line.chomp.split("\t", 2)
-    codepoint = code.hex
-    char = UnicodeCharacter.new(code, desc)
-  when /^\t= /
-    char.add_alias($')
-  when /^\tx .+ - ([A-F0-9]{4,5})\)$/
-    char.add_reference($1)
+unless $stdin.tty?
+  codepoints = STDIN.read.chomp.codepoints.map { |code|
+    UnicodeCharacter.fetch(code)
+  }
+  codepoints.each do |char|
+    printf "%5s: %s", char.code.upcase, char.description
+    printf " (%s)", char.version if char.version
+    puts
   end
+  exit
 end
 
 trap(:PIPE) { abort }
 
-items = []
-variation_codepoint = Emoji::VARIATION_SELECTOR_16.codepoints[0]
+normalize = -> (raw) {
+  raw.sub(Emoji::VARIATION_SELECTOR_16, '')
+}
 
-for emoji in Emoji.all
-  item = {}
-
-  unless emoji.custom?
-    chars = emoji.raw.codepoints.map { |code| UnicodeCharacter.fetch(code) unless code == variation_codepoint }.compact
-    item[:emoji] = emoji.raw
-    item[:description] = chars.map(&:description).join(' + ')
+emojidesc = {}
+File.open(File.expand_path('../emoji-test.txt', __FILE__)) do |file|
+  file.each do |line|
+    next if line =~ /^(#|$)/
+    line = line.chomp.split('# ', 2)[1]
+    emoji, description = line.split(' ', 2)
+    emojidesc[normalize.(emoji)] = description
   end
+end
 
-  item[:aliases] = emoji.aliases
-  item[:tags] = emoji.tags
+items = []
 
-  items << item
+for category, emojis in Emoji.apple_palette
+  for raw in emojis
+    emoji = Emoji.find_by_unicode(raw)
+    unicode_version = emoji ? emoji.unicode_version : ''
+    ios_version = emoji ? emoji.ios_version : ''
+
+    unless raw.include?(Emoji::ZERO_WIDTH_JOINER)
+      uchar = UnicodeCharacter.fetch(raw.codepoints[0])
+      unicode_version = uchar.version unless uchar.version.nil?
+    end
+
+    description = emojidesc.fetch(normalize.(raw))
+
+    if unicode_version == ''
+      warn "#{description} (#{raw}) doesn't have Unicode version"
+    end
+
+    if ios_version == ''
+      ios_version = '10.2'
+    end
+
+    items << {
+      emoji: raw,
+      description: description,
+      category: category,
+      aliases: emoji ? emoji.aliases : [description.gsub(/\W+/, '_').downcase],
+      tags: emoji ? emoji.tags : [],
+      unicode_version: unicode_version,
+      ios_version: ios_version,
+    }
+  end
+end
+
+for emoji in Emoji.all.select(&:custom?)
+  items << {
+    aliases: emoji.aliases,
+    tags: emoji.tags,
+  }
 end
 
 puts JSON.pretty_generate(items)
