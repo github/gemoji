@@ -43,6 +43,11 @@ class EmojiTest < TestCase
     assert_equal ["\u{00a9}\u{fe0f}"], emoji.unicode_aliases
   end
 
+  test "unicode_aliases for emoji that have gender variant include form with explicit gender" do
+    male_spy = Emoji.find_by_unicode("\u{1f575}\u{fe0f}")
+    assert_equal male_spy, Emoji.find_by_unicode("\u{1f575}\u{fe0f}\u{200d}\u{2642}\u{fe0f}")
+  end
+
   test "emojis have tags" do
     emoji = Emoji.find_by_alias('smile')
     assert emoji.tags.include?('happy')

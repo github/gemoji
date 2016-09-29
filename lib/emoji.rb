@@ -74,13 +74,15 @@ module Emoji
   private
     VARIATION_SELECTOR_16 = "\u{fe0f}".freeze
     ZERO_WIDTH_JOINER = "\u{200d}".freeze
+    FEMALE_SYMBOL = "\u{2640}".freeze
+    MALE_SYMBOL = "\u{2642}".freeze
 
     # Chars from Apple's palette which must have VARIATION_SELECTOR_16 to render:
     TEXT_GLYPHS = ["🈷", "🈂", "🅰", "🅱", "🅾", "©", "®", "™", "〰"].freeze
 
     def parse_data_file
-      raw = File.open(data_file, 'r:UTF-8') { |data| JSON.parse(data.read) }
-      raw.each do |raw_emoji|
+      data = File.open(data_file, 'r:UTF-8') { |file| JSON.parse(file.read) }
+      data.each do |raw_emoji|
         self.create(nil) do |emoji|
           raw_emoji.fetch('aliases').each { |name| emoji.add_alias(name) }
           if raw = raw_emoji['emoji']
@@ -88,6 +90,21 @@ module Emoji
             unicodes.each { |uni| emoji.add_unicode_alias(uni) }
           end
           raw_emoji.fetch('tags').each { |tag| emoji.add_tag(tag) }
+        end
+      end
+
+      # Add an explicit gendered variant to emoji that historically imply a gender
+      data.each do |raw_emoji|
+        raw = raw_emoji['emoji']
+        next unless raw
+        no_gender = raw.sub(/(#{VARIATION_SELECTOR_16})?#{ZERO_WIDTH_JOINER}(#{FEMALE_SYMBOL}|#{MALE_SYMBOL})/, '')
+        next unless $2
+        edit_emoji(find_by_unicode(no_gender)) do |emoji|
+          emoji.add_unicode_alias(
+            $2 == FEMALE_SYMBOL ?
+              raw.sub(FEMALE_SYMBOL, MALE_SYMBOL) :
+              raw.sub(MALE_SYMBOL, FEMALE_SYMBOL)
+          )
         end
       end
     end
