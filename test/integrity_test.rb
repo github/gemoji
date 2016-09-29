@@ -2,6 +2,10 @@ require 'test_helper'
 require 'json'
 require 'digest/md5'
 
+unless images_extracted = File.directory?(File.join(Emoji.images_path, 'unicode'))
+  warn "Warning: skipping image integrity tests. Run \`rake images/unicode' on macOS to enable."
+end
+
 class IntegrityTest < TestCase
   test "images on disk correlate 1-1 with emojis" do
     images_on_disk = Dir["#{Emoji.images_path}/**/*.png"].map {|f| f.sub(Emoji.images_path, '') }
@@ -45,33 +49,10 @@ class IntegrityTest < TestCase
     assert_equal ["/shipit.png: 75x75"], mismatches
   end
 
-  test "missing or incorrect unicodes" do
-    missing = source_unicode_emoji - Emoji.all.flat_map(&:unicode_aliases)
-    assert_equal 0, missing.size, missing_unicodes_message(missing)
-  end
-
   private
-    def missing_unicodes_message(missing)
-      "Missing or incorrect unicodes:\n".tap do |message|
-        missing.each do |raw|
-          emoji = Emoji::Character.new(nil)
-          emoji.add_unicode_alias(raw)
-          message << "#{emoji.raw}  (#{emoji.hex_inspect})"
-          codepoint = emoji.raw.codepoints[0]
-          if candidate = Emoji.all.detect { |e| !e.custom? && e.raw.codepoints[0] == codepoint }
-            message << " - might be #{candidate.raw}  (#{candidate.hex_inspect}) named #{candidate.name}"
-          end
-          message << "\n"
-        end
-      end
-    end
 
-    def source_unicode_emoji
-      Emoji.apple_palette.flat_map { |_, emoji| emoji }
-    end
-
-    def png_dimensions(file)
-      png = File.open(file, "rb") { |f| f.read(1024) }
-      png.unpack("x16N2")
-    end
-end
+  def png_dimensions(file)
+    png = File.open(file, "rb") { |f| f.read(1024) }
+    png.unpack("x16N2")
+  end
+end if images_extracted

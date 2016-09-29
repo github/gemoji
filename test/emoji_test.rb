@@ -71,6 +71,23 @@ class EmojiTest < TestCase
     assert_equal [], duplicates, "some emoji aliases have duplicates"
   end
 
+  test "missing or incorrect unicodes" do
+    source_unicode_emoji = Emoji.apple_palette.values.flatten
+    missing = source_unicode_emoji - Emoji.all.flat_map(&:unicode_aliases)
+
+    message = "Missing or incorrect unicodes:\n"
+    missing.each do |raw|
+      message << "#{raw}  (#{Emoji::Character.hex_inspect(raw)})"
+      codepoint = raw.codepoints[0]
+      if candidate = Emoji.all.detect { |e| !e.custom? && e.raw.codepoints[0] == codepoint }
+        message << " - might be #{candidate.raw}  (#{candidate.hex_inspect}) named #{candidate.name}"
+      end
+      message << "\n"
+    end
+
+    assert_equal 0, missing.size, message
+  end
+
   test "custom emojis" do
     custom = Emoji.all.select(&:custom?)
     assert custom.size > 0
