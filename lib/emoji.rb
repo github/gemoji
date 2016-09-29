@@ -90,6 +90,11 @@ module Emoji
             unicodes.each { |uni| emoji.add_unicode_alias(uni) }
           end
           raw_emoji.fetch('tags').each { |tag| emoji.add_tag(tag) }
+
+          emoji.category = raw_emoji['category']
+          emoji.description = raw_emoji['description']
+          emoji.unicode_version = raw_emoji['unicode_version']
+          emoji.ios_version = raw_emoji['ios_version']
         end
       end
 

@@ -88,6 +88,35 @@ class EmojiTest < TestCase
     assert_equal 0, missing.size, message
   end
 
+  test "emoji have category" do
+    missing = Emoji.all.select { |e| !e.custom? && e.category.to_s.empty? }
+    assert_equal [], missing.map(&:name), "some emoji don't have a category"
+
+    emoji = Emoji.find_by_alias('family_man_woman_girl')
+    assert_equal 'People', emoji.category
+  end
+
+  test "emoji have description" do
+    missing = Emoji.all.select { |e| !e.custom? && e.description.to_s.empty? }
+    assert_equal [], missing.map(&:name), "some emoji don't have a description"
+
+    emoji = Emoji.find_by_alias('family_man_woman_girl')
+    assert_equal 'family: man, woman, girl', emoji.description
+  end
+
+  test "emoji have Unicode version" do
+    emoji = Emoji.find_by_alias('family_man_woman_girl')
+    assert_equal '6.0', emoji.unicode_version
+  end
+
+  test "emoji have iOS version" do
+    missing = Emoji.all.select { |e| !e.custom? && e.ios_version.to_s.empty? }
+    assert_equal [], missing.map(&:name), "some emoji don't have an iOS version"
+
+    emoji = Emoji.find_by_alias('family_man_woman_girl')
+    assert_equal '8.3', emoji.ios_version
+  end
+
   test "custom emojis" do
     custom = Emoji.all.select(&:custom?)
     assert custom.size > 0
