@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name    = "gemoji"
   s.version = "2.1.0"
-  s.summary = "Emoji conversion and image assets"
-  s.description = "Image assets and character information for emoji."
+  s.summary = "Emoji library"
+  s.description = "Character information and metadata for standard and custom emoji."
 
   s.required_ruby_version = '> 1.9'
 
@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir[
     "README.md",
-    "images/**/*.png",
+    "images/emoji/*.png",
     "db/Category-Emoji.json",
     "db/emoji.json",
     "lib/**/*.rb",

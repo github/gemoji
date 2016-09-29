@@ -1,4 +1,5 @@
 require 'emoji'
+require 'fileutils'
 
 module Emoji
   class Extractor
@@ -11,24 +12,79 @@ module Emoji
       @images_path = images_path
     end
 
-    def extract!
+    def each(&block)
+      return to_enum(__method__) unless block_given?
+
       File.open(EMOJI_TTF, 'rb') do |file|
         font_offsets = parse_ttc(file)
         file.pos = font_offsets[0]
+
         tables = parse_tables(file)
         glyph_index = extract_glyph_index(file, tables)
 
-        each_glyph_bitmap(file, tables, glyph_index) do |glyph_name, type, binread|
-          if glyph_name =~ /^u[0-9A-F]{4}/ && glyph_name !~ /\.[1-5]($|\.)/
-            File.open("#{images_path}/#{glyph_name}.#{type}", 'wb') do |png|
-              png.write binread.call
-            end
-          end
+        each_glyph_bitmap(file, tables, glyph_index, &block)
+      end
+    end
+
+    def extract!
+      each do |glyph_name, type, binread|
+        if emoji = glyph_name_to_emoji(glyph_name)
+          image_filename = "#{images_path}/#{emoji.image_filename}"
+          FileUtils.mkdir_p(File.dirname(image_filename))
+          File.open(image_filename, 'wb') { |f| f.write binread.call }
         end
       end
     end
 
   private
+
+    GENDER_MAP = {
+      "M" => "\u{2642}",
+      "W" => "\u{2640}",
+    }
+
+    FAMILY_MAP = {
+      "B" => "\u{1f466}",
+      "G" => "\u{1f467}",
+      "M" => "\u{1f468}",
+      "W" => "\u{1f469}",
+    }.freeze
+
+    FAMILY = "1F46A"
+    COUPLE = "1F491"
+    KISS = "1F48F"
+
+    def glyph_name_to_emoji(glyph_name)
+      return if glyph_name =~ /\.[1-5]($|\.)/
+      zwj = Emoji::ZERO_WIDTH_JOINER
+      v16 = Emoji::VARIATION_SELECTOR_16
+
+      if glyph_name =~ /^u(#{FAMILY}|#{COUPLE}|#{KISS})\.([#{FAMILY_MAP.keys.join('')}]+)$/
+        if $1 == FAMILY ? $2 == "MWB" : $2 == "WM"
+          raw = [$1.hex].pack('U')
+        else
+          if $1 == COUPLE
+            middle = "#{zwj}\u{2764}#{v16}#{zwj}" # heavy black heart
+          elsif $1 == KISS
+            middle = "#{zwj}\u{2764}#{v16}#{zwj}\u{1F48B}#{zwj}" # heart + kiss mark
+          else
+            middle = zwj
+          end
+          raw = $2.split('').map { |c| FAMILY_MAP.fetch(c) }.join(middle)
+        end
+        candidates = [raw]
+      else
+        raw = glyph_name.gsub(/(^|_)u([0-9A-F]+)/) { ($1.empty?? $1 : zwj) + [$2.hex].pack('U') }
+        raw.sub!(/\.0\b/, '')
+        raw.sub!(/\.(#{GENDER_MAP.keys.join('|')})$/) { v16 + zwj + GENDER_MAP.fetch($1) }
+        candidates = [raw]
+        candidates << raw.sub(v16, '') if raw.include?(v16)
+        candidates << raw.gsub(zwj, '') if raw.include?(zwj)
+        candidates.dup.each { |c| candidates << (c + v16) }
+      end
+
+      candidates.map { |c| Emoji.find_by_unicode(c) }.compact.first
+    end
 
     # https://www.microsoft.com/typography/otspec/otff.htm
     def parse_ttc(io)
