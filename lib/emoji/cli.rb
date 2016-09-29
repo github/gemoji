@@ -33,7 +33,7 @@ module Emoji
       raise ArgumentError if path.to_s.empty?
 
       Emoji::Extractor.new(64, path).extract!
-      Dir["#{Emoji.images_path}/emoji/*.png"].each do |png|
+      Dir["#{Emoji.images_path}/*.png"].each do |png|
         FileUtils.cp(png, File.join(path, File.basename(png)))
       end
     end

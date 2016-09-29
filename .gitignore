@@ -3,5 +3,5 @@
 .bundle
 .ruby-version
 db/NamesList.txt
-images/emoji/unicode
+images/unicode/*.png
 vendor/

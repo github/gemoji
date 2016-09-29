@@ -5,7 +5,7 @@ require 'digest/md5'
 class IntegrityTest < TestCase
   test "images on disk correlate 1-1 with emojis" do
     images_on_disk = Dir["#{Emoji.images_path}/**/*.png"].map {|f| f.sub(Emoji.images_path, '') }
-    expected_images = Emoji.all.map { |emoji| '/emoji/%s' % emoji.image_filename }
+    expected_images = Emoji.all.map { |emoji| '/%s' % emoji.image_filename }
 
     missing_images = expected_images - images_on_disk
     assert_equal 0, missing_images.size, "these images are missing on disk:\n  #{missing_images.join("\n  ")}\n"
@@ -17,7 +17,7 @@ class IntegrityTest < TestCase
   test "images on disk have no duplicates" do
     hashes = Hash.new { |h,k| h[k] = [] }
     Emoji.all.each do |emoji|
-      checksum = Digest::MD5.file(File.join(Emoji.images_path, 'emoji', emoji.image_filename)).to_s
+      checksum = Digest::MD5.file(File.join(Emoji.images_path, emoji.image_filename)).to_s
       hashes[checksum] << emoji
     end
 
@@ -42,7 +42,7 @@ class IntegrityTest < TestCase
         ]
       end
     end
-    assert_equal ["/emoji/shipit.png: 75x75"], mismatches
+    assert_equal ["/shipit.png: 75x75"], mismatches
   end
 
   test "missing or incorrect unicodes" do
