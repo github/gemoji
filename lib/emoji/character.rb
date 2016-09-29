@@ -12,6 +12,18 @@ module Emoji
     # A list of names uniquely referring to this emoji.
     attr_reader :aliases
 
+    # The category for this emoji as per Apple's character palette
+    attr_accessor :category
+
+    # The Unicode description text
+    attr_accessor :description
+
+    # The Unicode spec version where this emoji first debuted
+    attr_accessor :unicode_version
+
+    # The iOS version where this emoji first debuted
+    attr_accessor :ios_version
+
     def name() aliases.first end
 
     def add_alias(name)
@@ -67,7 +79,8 @@ module Emoji
       if custom?
         '%s.png' % name
       else
-        'unicode/%s.png' % hex_inspect.sub(/-fe0f\b/, '')
+        hex_name = hex_inspect.gsub(/-(fe0f|200d)\b/, '')
+        'unicode/%s.png' % hex_name
       end
     end
   end

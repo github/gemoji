@@ -43,6 +43,11 @@ class EmojiTest < TestCase
     assert_equal ["\u{00a9}\u{fe0f}"], emoji.unicode_aliases
   end
 
+  test "unicode_aliases for emoji that have gender variant include form with explicit gender" do
+    male_spy = Emoji.find_by_unicode("\u{1f575}\u{fe0f}")
+    assert_equal male_spy, Emoji.find_by_unicode("\u{1f575}\u{fe0f}\u{200d}\u{2642}\u{fe0f}")
+  end
+
   test "emojis have tags" do
     emoji = Emoji.find_by_alias('smile')
     assert emoji.tags.include?('happy')
@@ -51,8 +56,65 @@ class EmojiTest < TestCase
   end
 
   test "emojis have valid names" do
-    invalid = Emoji.all.reject { |emoji| emoji.name =~ /^[\w\+\-]+$/ }
+    aliases = Emoji.all.flat_map(&:aliases)
+
+    invalid = []
+    alias_count = Hash.new(0)
+    aliases.each do |name|
+      alias_count[name] += 1
+      invalid << name if name !~ /\A[\w+-]+\Z/
+    end
+
+    duplicates = alias_count.select { |_, count| count > 1 }.keys
+
     assert_equal [], invalid, "some emoji have invalid names"
+    assert_equal [], duplicates, "some emoji aliases have duplicates"
+  end
+
+  test "missing or incorrect unicodes" do
+    source_unicode_emoji = Emoji.apple_palette.values.flatten
+    missing = source_unicode_emoji - Emoji.all.flat_map(&:unicode_aliases)
+
+    message = "Missing or incorrect unicodes:\n"
+    missing.each do |raw|
+      message << "#{raw}  (#{Emoji::Character.hex_inspect(raw)})"
+      codepoint = raw.codepoints[0]
+      if candidate = Emoji.all.detect { |e| !e.custom? && e.raw.codepoints[0] == codepoint }
+        message << " - might be #{candidate.raw}  (#{candidate.hex_inspect}) named #{candidate.name}"
+      end
+      message << "\n"
+    end
+
+    assert_equal 0, missing.size, message
+  end
+
+  test "emoji have category" do
+    missing = Emoji.all.select { |e| !e.custom? && e.category.to_s.empty? }
+    assert_equal [], missing.map(&:name), "some emoji don't have a category"
+
+    emoji = Emoji.find_by_alias('family_man_woman_girl')
+    assert_equal 'People', emoji.category
+  end
+
+  test "emoji have description" do
+    missing = Emoji.all.select { |e| !e.custom? && e.description.to_s.empty? }
+    assert_equal [], missing.map(&:name), "some emoji don't have a description"
+
+    emoji = Emoji.find_by_alias('family_man_woman_girl')
+    assert_equal 'family: man, woman, girl', emoji.description
+  end
+
+  test "emoji have Unicode version" do
+    emoji = Emoji.find_by_alias('family_man_woman_girl')
+    assert_equal '6.0', emoji.unicode_version
+  end
+
+  test "emoji have iOS version" do
+    missing = Emoji.all.select { |e| !e.custom? && e.ios_version.to_s.empty? }
+    assert_equal [], missing.map(&:name), "some emoji don't have an iOS version"
+
+    emoji = Emoji.find_by_alias('family_man_woman_girl')
+    assert_equal '8.3', emoji.ios_version
   end
 
   test "custom emojis" do

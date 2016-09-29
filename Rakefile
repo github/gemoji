@@ -28,11 +28,7 @@ file 'db/NamesList.txt' do |t|
   system "curl -fsSL '#{nameslist_url}' -o '#{t.name}'"
 end
 
-namespace :images do
-  desc %(Extract PNG images from Apple's "Apple Color Emoji.ttf" font)
-  task :extract do
-    require 'emoji/extractor'
-    gem_dir = File.dirname(File.realpath(__FILE__))
-    Emoji::Extractor.new(64, "#{gem_dir}/images/emoji/unicode").extract!
-  end
+directory 'images/unicode' do
+  require 'emoji/extractor'
+  Emoji::Extractor.new(64, Emoji.images_path).extract!
 end
