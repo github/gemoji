@@ -56,8 +56,19 @@ class EmojiTest < TestCase
   end
 
   test "emojis have valid names" do
-    invalid = Emoji.all.reject { |emoji| emoji.name =~ /^[\w\+\-]+$/ }
+    aliases = Emoji.all.flat_map(&:aliases)
+
+    invalid = []
+    alias_count = Hash.new(0)
+    aliases.each do |name|
+      alias_count[name] += 1
+      invalid << name if name !~ /\A[\w+-]+\Z/
+    end
+
+    duplicates = alias_count.select { |_, count| count > 1 }.keys
+
     assert_equal [], invalid, "some emoji have invalid names"
+    assert_equal [], duplicates, "some emoji aliases have duplicates"
   end
 
   test "custom emojis" do
