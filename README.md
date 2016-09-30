@@ -17,7 +17,7 @@ gem 'gemoji'
 ### Extract images
 
 To obtain image files as fallbacks for browsers and OS's that don't support
-emoji, run the `gemoji extract` command **on macOS Seirra or later**:
+emoji, run the `gemoji extract` command **on macOS Sierra or later**:
 
 ``` sh
 bundle exec gemoji extract public/images/emoji
