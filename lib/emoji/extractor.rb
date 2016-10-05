@@ -43,6 +43,14 @@ module Emoji
       "W" => "\u{2640}",
     }
 
+    SKIN_TONE_MAP = {
+      "1" => "\u{1F3FB}",
+      "2" => "\u{1F3FC}",
+      "3" => "\u{1F3FD}",
+      "4" => "\u{1F3FE}",
+      "5" => "\u{1F3FF}",
+    }.freeze
+
     FAMILY_MAP = {
       "B" => "\u{1f466}",
       "G" => "\u{1f467}",
@@ -55,7 +63,6 @@ module Emoji
     KISS = "1F48F"
 
     def glyph_name_to_emoji(glyph_name)
-      return if glyph_name =~ /\.[1-5]($|\.)/
       zwj = Emoji::ZERO_WIDTH_JOINER
       v16 = Emoji::VARIATION_SELECTOR_16
 
@@ -76,6 +83,7 @@ module Emoji
       else
         raw = glyph_name.gsub(/(^|_)u([0-9A-F]+)/) { ($1.empty?? $1 : zwj) + [$2.hex].pack('U') }
         raw.sub!(/\.0\b/, '')
+        raw.sub!(/\.(#{SKIN_TONE_MAP.keys.join('|')})/) { SKIN_TONE_MAP.fetch($1) }
         raw.sub!(/\.(#{GENDER_MAP.keys.join('|')})$/) { v16 + zwj + GENDER_MAP.fetch($1) }
         candidates = [raw]
         candidates << raw.sub(v16, '') if raw.include?(v16)

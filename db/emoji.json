@@ -1182,6 +1182,72 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🙌🏻"
+  , "description": "raising hands + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "raised_hands_tone_1"
+    , "raised_hands_tone_2"
+    ]
+  , "tags": [
+      "hooray"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙌🏼"
+  , "description": "raising hands + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "raised_hands_tone_3"
+    ]
+  , "tags": [
+      "hooray"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙌🏽"
+  , "description": "raising hands + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "raised_hands_tone_4"
+    ]
+  , "tags": [
+      "hooray"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙌🏾"
+  , "description": "raising hands + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "raised_hands_tone_5"
+    ]
+  , "tags": [
+      "hooray"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙌🏿"
+  , "description": "raising hands + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "raised_hands_tone_6"
+    ]
+  , "tags": [
+      "hooray"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👏"
   , "description": "clapping hands"
   , "category": "People"
@@ -1194,6 +1260,77 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "👏🏻"
+  , "description": "clapping hands + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "clap_tone_1"
+    , "clap_tone_2"
+    ]
+  , "tags": [
+      "praise"
+    , "applause"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👏🏼"
+  , "description": "clapping hands + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "clap_tone_3"
+    ]
+  , "tags": [
+      "praise"
+    , "applause"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👏🏽"
+  , "description": "clapping hands + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "clap_tone_4"
+    ]
+  , "tags": [
+      "praise"
+    , "applause"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👏🏾"
+  , "description": "clapping hands + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "clap_tone_5"
+    ]
+  , "tags": [
+      "praise"
+    , "applause"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👏🏿"
+  , "description": "clapping hands + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "clap_tone_6"
+    ]
+  , "tags": [
+      "praise"
+    , "applause"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👍"
@@ -1211,6 +1348,83 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👍🏻"
+  , "description": "thumbs up + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "+1_tone_1"
+    , "+1_tone_2"
+    , "thumbsup_tone_1"
+    , "thumbsup_tone_2"
+    ]
+  , "tags": [
+      "approve"
+    , "ok"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👍🏼"
+  , "description": "thumbs up + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "+1_tone_3"
+    , "thumbsup_tone_3"
+    ]
+  , "tags": [
+      "approve"
+    , "ok"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👍🏽"
+  , "description": "thumbs up + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "+1_tone_4"
+    , "thumbsup_tone_4"
+    ]
+  , "tags": [
+      "approve"
+    , "ok"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👍🏾"
+  , "description": "thumbs up + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "+1_tone_5"
+    , "thumbsup_tone_5"
+    ]
+  , "tags": [
+      "approve"
+    , "ok"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👍🏿"
+  , "description": "thumbs up + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "+1_tone_6"
+    , "thumbsup_tone_6"
+    ]
+  , "tags": [
+      "approve"
+    , "ok"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👎"
   , "description": "thumbs down"
   , "category": "People"
@@ -1224,6 +1438,83 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "👎🏻"
+  , "description": "thumbs down + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "-1_tone_1"
+    , "-1_tone_2"
+    , "thumbsdown_tone_1"
+    , "thumbsdown_tone_2"
+    ]
+  , "tags": [
+      "disapprove"
+    , "bury"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👎🏼"
+  , "description": "thumbs down + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "-1_tone_3"
+    , "thumbsdown_tone_3"
+    ]
+  , "tags": [
+      "disapprove"
+    , "bury"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👎🏽"
+  , "description": "thumbs down + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "-1_tone_4"
+    , "thumbsdown_tone_4"
+    ]
+  , "tags": [
+      "disapprove"
+    , "bury"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👎🏾"
+  , "description": "thumbs down + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "-1_tone_5"
+    , "thumbsdown_tone_5"
+    ]
+  , "tags": [
+      "disapprove"
+    , "bury"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👎🏿"
+  , "description": "thumbs down + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "-1_tone_6"
+    , "thumbsdown_tone_6"
+    ]
+  , "tags": [
+      "disapprove"
+    , "bury"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👊"
@@ -1240,6 +1531,78 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👊🏻"
+  , "description": "oncoming fist + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "facepunch_tone_1"
+    , "facepunch_tone_2"
+    , "punch_tone_1"
+    , "punch_tone_2"
+    ]
+  , "tags": [
+      "attack"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👊🏼"
+  , "description": "oncoming fist + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "facepunch_tone_3"
+    , "punch_tone_3"
+    ]
+  , "tags": [
+      "attack"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👊🏽"
+  , "description": "oncoming fist + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "facepunch_tone_4"
+    , "punch_tone_4"
+    ]
+  , "tags": [
+      "attack"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👊🏾"
+  , "description": "oncoming fist + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "facepunch_tone_5"
+    , "punch_tone_5"
+    ]
+  , "tags": [
+      "attack"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👊🏿"
+  , "description": "oncoming fist + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "facepunch_tone_6"
+    , "punch_tone_6"
+    ]
+  , "tags": [
+      "attack"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "✊"
   , "description": "raised fist"
   , "category": "People"
@@ -1251,6 +1614,72 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "✊🏻"
+  , "description": "raised fist + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "fist_tone_1"
+    , "fist_tone_2"
+    ]
+  , "tags": [
+      "power"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✊🏼"
+  , "description": "raised fist + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "fist_tone_3"
+    ]
+  , "tags": [
+      "power"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✊🏽"
+  , "description": "raised fist + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "fist_tone_4"
+    ]
+  , "tags": [
+      "power"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✊🏾"
+  , "description": "raised fist + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "fist_tone_5"
+    ]
+  , "tags": [
+      "power"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✊🏿"
+  , "description": "raised fist + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "fist_tone_6"
+    ]
+  , "tags": [
+      "power"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👋"
@@ -1266,6 +1695,72 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👋🏻"
+  , "description": "waving hand + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "wave_tone_1"
+    , "wave_tone_2"
+    ]
+  , "tags": [
+      "goodbye"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👋🏼"
+  , "description": "waving hand + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "wave_tone_3"
+    ]
+  , "tags": [
+      "goodbye"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👋🏽"
+  , "description": "waving hand + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "wave_tone_4"
+    ]
+  , "tags": [
+      "goodbye"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👋🏾"
+  , "description": "waving hand + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "wave_tone_5"
+    ]
+  , "tags": [
+      "goodbye"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👋🏿"
+  , "description": "waving hand + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "wave_tone_6"
+    ]
+  , "tags": [
+      "goodbye"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👈"
   , "description": "backhand index pointing left"
   , "category": "People"
@@ -1276,6 +1771,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "👈🏻"
+  , "description": "backhand index pointing left + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "point_left_tone_1"
+    , "point_left_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👈🏼"
+  , "description": "backhand index pointing left + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "point_left_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👈🏽"
+  , "description": "backhand index pointing left + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "point_left_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👈🏾"
+  , "description": "backhand index pointing left + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "point_left_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👈🏿"
+  , "description": "backhand index pointing left + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "point_left_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👉"
@@ -1290,6 +1846,67 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👉🏻"
+  , "description": "backhand index pointing right + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "point_right_tone_1"
+    , "point_right_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👉🏼"
+  , "description": "backhand index pointing right + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "point_right_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👉🏽"
+  , "description": "backhand index pointing right + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "point_right_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👉🏾"
+  , "description": "backhand index pointing right + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "point_right_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👉🏿"
+  , "description": "backhand index pointing right + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "point_right_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👆"
   , "description": "backhand index pointing up"
   , "category": "People"
@@ -1300,6 +1917,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "👆🏻"
+  , "description": "backhand index pointing up + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "point_up_2_tone_1"
+    , "point_up_2_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👆🏼"
+  , "description": "backhand index pointing up + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "point_up_2_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👆🏽"
+  , "description": "backhand index pointing up + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "point_up_2_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👆🏾"
+  , "description": "backhand index pointing up + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "point_up_2_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👆🏿"
+  , "description": "backhand index pointing up + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "point_up_2_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👇"
@@ -1314,6 +1992,67 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👇🏻"
+  , "description": "backhand index pointing down + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "point_down_tone_1"
+    , "point_down_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👇🏼"
+  , "description": "backhand index pointing down + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "point_down_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👇🏽"
+  , "description": "backhand index pointing down + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "point_down_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👇🏾"
+  , "description": "backhand index pointing down + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "point_down_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👇🏿"
+  , "description": "backhand index pointing down + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "point_down_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👌"
   , "description": "OK hand"
   , "category": "People"
@@ -1324,6 +2063,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "👌🏻"
+  , "description": "OK hand + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "ok_hand_tone_1"
+    , "ok_hand_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👌🏼"
+  , "description": "OK hand + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "ok_hand_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👌🏽"
+  , "description": "OK hand + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "ok_hand_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👌🏾"
+  , "description": "OK hand + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "ok_hand_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👌🏿"
+  , "description": "OK hand + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "ok_hand_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "☝️"
@@ -1338,6 +2138,67 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "☝🏻️"
+  , "description": "index pointing up + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "point_up_tone_1"
+    , "point_up_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "☝🏼️"
+  , "description": "index pointing up + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "point_up_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "☝🏽️"
+  , "description": "index pointing up + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "point_up_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "☝🏾️"
+  , "description": "index pointing up + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "point_up_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "☝🏿️"
+  , "description": "index pointing up + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "point_up_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "✌️"
   , "description": "victory hand"
   , "category": "People"
@@ -1350,6 +2211,77 @@
     ]
   , "unicode_version": ""
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "✌🏻️"
+  , "description": "victory hand + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "v_tone_1"
+    , "v_tone_2"
+    ]
+  , "tags": [
+      "victory"
+    , "peace"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✌🏼️"
+  , "description": "victory hand + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "v_tone_3"
+    ]
+  , "tags": [
+      "victory"
+    , "peace"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✌🏽️"
+  , "description": "victory hand + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "v_tone_4"
+    ]
+  , "tags": [
+      "victory"
+    , "peace"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✌🏾️"
+  , "description": "victory hand + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "v_tone_5"
+    ]
+  , "tags": [
+      "victory"
+    , "peace"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✌🏿️"
+  , "description": "victory hand + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "v_tone_6"
+    ]
+  , "tags": [
+      "victory"
+    , "peace"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "✋"
@@ -1367,6 +2299,83 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "✋🏻"
+  , "description": "raised hand + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "hand_tone_1"
+    , "hand_tone_2"
+    , "raised_hand_tone_1"
+    , "raised_hand_tone_2"
+    ]
+  , "tags": [
+      "highfive"
+    , "stop"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✋🏼"
+  , "description": "raised hand + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "hand_tone_3"
+    , "raised_hand_tone_3"
+    ]
+  , "tags": [
+      "highfive"
+    , "stop"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✋🏽"
+  , "description": "raised hand + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "hand_tone_4"
+    , "raised_hand_tone_4"
+    ]
+  , "tags": [
+      "highfive"
+    , "stop"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✋🏾"
+  , "description": "raised hand + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "hand_tone_5"
+    , "raised_hand_tone_5"
+    ]
+  , "tags": [
+      "highfive"
+    , "stop"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✋🏿"
+  , "description": "raised hand + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "hand_tone_6"
+    , "raised_hand_tone_6"
+    ]
+  , "tags": [
+      "highfive"
+    , "stop"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🖐"
   , "description": "raised hand with fingers splayed"
   , "category": "People"
@@ -1379,6 +2388,67 @@
   , "ios_version": "9.1"
   }
 , {
+    "emoji": "🖐🏻"
+  , "description": "raised hand with fingers splayed + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "raised_hand_with_fingers_splayed_tone_1"
+    , "raised_hand_with_fingers_splayed_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🖐🏼"
+  , "description": "raised hand with fingers splayed + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "raised_hand_with_fingers_splayed_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🖐🏽"
+  , "description": "raised hand with fingers splayed + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "raised_hand_with_fingers_splayed_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🖐🏾"
+  , "description": "raised hand with fingers splayed + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "raised_hand_with_fingers_splayed_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🖐🏿"
+  , "description": "raised hand with fingers splayed + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "raised_hand_with_fingers_splayed_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👐"
   , "description": "open hands"
   , "category": "People"
@@ -1389,6 +2459,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "👐🏻"
+  , "description": "open hands + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "open_hands_tone_1"
+    , "open_hands_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👐🏼"
+  , "description": "open hands + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "open_hands_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👐🏽"
+  , "description": "open hands + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "open_hands_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👐🏾"
+  , "description": "open hands + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "open_hands_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👐🏿"
+  , "description": "open hands + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "open_hands_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "💪"
@@ -1407,6 +2538,87 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "💪🏻"
+  , "description": "flexed biceps + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "muscle_tone_1"
+    , "muscle_tone_2"
+    ]
+  , "tags": [
+      "flex"
+    , "bicep"
+    , "strong"
+    , "workout"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💪🏼"
+  , "description": "flexed biceps + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "muscle_tone_3"
+    ]
+  , "tags": [
+      "flex"
+    , "bicep"
+    , "strong"
+    , "workout"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💪🏽"
+  , "description": "flexed biceps + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "muscle_tone_4"
+    ]
+  , "tags": [
+      "flex"
+    , "bicep"
+    , "strong"
+    , "workout"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💪🏾"
+  , "description": "flexed biceps + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "muscle_tone_5"
+    ]
+  , "tags": [
+      "flex"
+    , "bicep"
+    , "strong"
+    , "workout"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💪🏿"
+  , "description": "flexed biceps + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "muscle_tone_6"
+    ]
+  , "tags": [
+      "flex"
+    , "bicep"
+    , "strong"
+    , "workout"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🙏"
   , "description": "folded hands"
   , "category": "People"
@@ -1420,6 +2632,82 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🙏🏻"
+  , "description": "folded hands + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "pray_tone_1"
+    , "pray_tone_2"
+    ]
+  , "tags": [
+      "please"
+    , "hope"
+    , "wish"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙏🏼"
+  , "description": "folded hands + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "pray_tone_3"
+    ]
+  , "tags": [
+      "please"
+    , "hope"
+    , "wish"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙏🏽"
+  , "description": "folded hands + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "pray_tone_4"
+    ]
+  , "tags": [
+      "please"
+    , "hope"
+    , "wish"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙏🏾"
+  , "description": "folded hands + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "pray_tone_5"
+    ]
+  , "tags": [
+      "please"
+    , "hope"
+    , "wish"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙏🏿"
+  , "description": "folded hands + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "pray_tone_6"
+    ]
+  , "tags": [
+      "please"
+    , "hope"
+    , "wish"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🖖"
@@ -1436,6 +2724,77 @@
   , "ios_version": "8.3"
   }
 , {
+    "emoji": "🖖🏻"
+  , "description": "vulcan salute + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "vulcan_salute_tone_1"
+    , "vulcan_salute_tone_2"
+    ]
+  , "tags": [
+      "prosper"
+    , "spock"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🖖🏼"
+  , "description": "vulcan salute + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "vulcan_salute_tone_3"
+    ]
+  , "tags": [
+      "prosper"
+    , "spock"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🖖🏽"
+  , "description": "vulcan salute + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "vulcan_salute_tone_4"
+    ]
+  , "tags": [
+      "prosper"
+    , "spock"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🖖🏾"
+  , "description": "vulcan salute + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "vulcan_salute_tone_5"
+    ]
+  , "tags": [
+      "prosper"
+    , "spock"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🖖🏿"
+  , "description": "vulcan salute + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "vulcan_salute_tone_6"
+    ]
+  , "tags": [
+      "prosper"
+    , "spock"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🤘"
   , "description": "sign of the horns"
   , "category": "People"
@@ -1446,6 +2805,67 @@
     ]
   , "unicode_version": "8.0"
   , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🤘🏻"
+  , "description": "sign of the horns + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "metal_tone_1"
+    , "metal_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🤘🏼"
+  , "description": "sign of the horns + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "metal_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🤘🏽"
+  , "description": "sign of the horns + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "metal_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🤘🏾"
+  , "description": "sign of the horns + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "metal_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🤘🏿"
+  , "description": "sign of the horns + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "metal_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🖕"
@@ -1461,6 +2881,73 @@
   , "ios_version": "9.1"
   }
 , {
+    "emoji": "🖕🏻"
+  , "description": "middle finger + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "middle_finger_tone_1"
+    , "middle_finger_tone_2"
+    , "fu_tone_1"
+    , "fu_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🖕🏼"
+  , "description": "middle finger + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "middle_finger_tone_3"
+    , "fu_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🖕🏽"
+  , "description": "middle finger + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "middle_finger_tone_4"
+    , "fu_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🖕🏾"
+  , "description": "middle finger + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "middle_finger_tone_5"
+    , "fu_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🖕🏿"
+  , "description": "middle finger + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "middle_finger_tone_6"
+    , "fu_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "✍️"
   , "description": "writing hand"
   , "category": "People"
@@ -1471,6 +2958,67 @@
     ]
   , "unicode_version": ""
   , "ios_version": "9.1"
+  }
+, {
+    "emoji": "✍🏻️"
+  , "description": "writing hand + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "writing_hand_tone_1"
+    , "writing_hand_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✍🏼️"
+  , "description": "writing hand + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "writing_hand_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✍🏽️"
+  , "description": "writing hand + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "writing_hand_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✍🏾️"
+  , "description": "writing hand + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "writing_hand_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "✍🏿️"
+  , "description": "writing hand + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "writing_hand_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "💅"
@@ -1485,6 +3033,77 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "💅🏻"
+  , "description": "nail polish + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "nail_care_tone_1"
+    , "nail_care_tone_2"
+    ]
+  , "tags": [
+      "beauty"
+    , "manicure"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💅🏼"
+  , "description": "nail polish + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "nail_care_tone_3"
+    ]
+  , "tags": [
+      "beauty"
+    , "manicure"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💅🏽"
+  , "description": "nail polish + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "nail_care_tone_4"
+    ]
+  , "tags": [
+      "beauty"
+    , "manicure"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💅🏾"
+  , "description": "nail polish + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "nail_care_tone_5"
+    ]
+  , "tags": [
+      "beauty"
+    , "manicure"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💅🏿"
+  , "description": "nail polish + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "nail_care_tone_6"
+    ]
+  , "tags": [
+      "beauty"
+    , "manicure"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👄"
@@ -1528,6 +3147,82 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👂🏻"
+  , "description": "ear + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "ear_tone_1"
+    , "ear_tone_2"
+    ]
+  , "tags": [
+      "hear"
+    , "sound"
+    , "listen"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👂🏼"
+  , "description": "ear + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "ear_tone_3"
+    ]
+  , "tags": [
+      "hear"
+    , "sound"
+    , "listen"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👂🏽"
+  , "description": "ear + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "ear_tone_4"
+    ]
+  , "tags": [
+      "hear"
+    , "sound"
+    , "listen"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👂🏾"
+  , "description": "ear + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "ear_tone_5"
+    ]
+  , "tags": [
+      "hear"
+    , "sound"
+    , "listen"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👂🏿"
+  , "description": "ear + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "ear_tone_6"
+    ]
+  , "tags": [
+      "hear"
+    , "sound"
+    , "listen"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👃"
   , "description": "nose"
   , "category": "People"
@@ -1539,6 +3234,72 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "👃🏻"
+  , "description": "nose + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "nose_tone_1"
+    , "nose_tone_2"
+    ]
+  , "tags": [
+      "smell"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👃🏼"
+  , "description": "nose + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "nose_tone_3"
+    ]
+  , "tags": [
+      "smell"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👃🏽"
+  , "description": "nose + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "nose_tone_4"
+    ]
+  , "tags": [
+      "smell"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👃🏾"
+  , "description": "nose + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "nose_tone_5"
+    ]
+  , "tags": [
+      "smell"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👃🏿"
+  , "description": "nose + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "nose_tone_6"
+    ]
+  , "tags": [
+      "smell"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👁"
@@ -1622,6 +3383,77 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👶🏻"
+  , "description": "baby + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "baby_tone_1"
+    , "baby_tone_2"
+    ]
+  , "tags": [
+      "child"
+    , "newborn"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👶🏼"
+  , "description": "baby + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "baby_tone_3"
+    ]
+  , "tags": [
+      "child"
+    , "newborn"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👶🏽"
+  , "description": "baby + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "baby_tone_4"
+    ]
+  , "tags": [
+      "child"
+    , "newborn"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👶🏾"
+  , "description": "baby + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "baby_tone_5"
+    ]
+  , "tags": [
+      "child"
+    , "newborn"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👶🏿"
+  , "description": "baby + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "baby_tone_6"
+    ]
+  , "tags": [
+      "child"
+    , "newborn"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👦"
   , "description": "boy"
   , "category": "People"
@@ -1635,6 +3467,72 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👦🏻"
+  , "description": "boy + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "boy_tone_1"
+    , "boy_tone_2"
+    ]
+  , "tags": [
+      "child"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👦🏼"
+  , "description": "boy + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "boy_tone_3"
+    ]
+  , "tags": [
+      "child"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👦🏽"
+  , "description": "boy + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "boy_tone_4"
+    ]
+  , "tags": [
+      "child"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👦🏾"
+  , "description": "boy + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "boy_tone_5"
+    ]
+  , "tags": [
+      "child"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👦🏿"
+  , "description": "boy + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "boy_tone_6"
+    ]
+  , "tags": [
+      "child"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👧"
   , "description": "girl"
   , "category": "People"
@@ -1646,6 +3544,72 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "👧🏻"
+  , "description": "girl + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "girl_tone_1"
+    , "girl_tone_2"
+    ]
+  , "tags": [
+      "child"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👧🏼"
+  , "description": "girl + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "girl_tone_3"
+    ]
+  , "tags": [
+      "child"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👧🏽"
+  , "description": "girl + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "girl_tone_4"
+    ]
+  , "tags": [
+      "child"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👧🏾"
+  , "description": "girl + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "girl_tone_5"
+    ]
+  , "tags": [
+      "child"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👧🏿"
+  , "description": "girl + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "girl_tone_6"
+    ]
+  , "tags": [
+      "child"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👨"
@@ -1663,6 +3627,82 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👨🏻"
+  , "description": "man + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "man_tone_1"
+    , "man_tone_2"
+    ]
+  , "tags": [
+      "mustache"
+    , "father"
+    , "dad"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👨🏼"
+  , "description": "man + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "man_tone_3"
+    ]
+  , "tags": [
+      "mustache"
+    , "father"
+    , "dad"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👨🏽"
+  , "description": "man + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "man_tone_4"
+    ]
+  , "tags": [
+      "mustache"
+    , "father"
+    , "dad"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👨🏾"
+  , "description": "man + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "man_tone_5"
+    ]
+  , "tags": [
+      "mustache"
+    , "father"
+    , "dad"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👨🏿"
+  , "description": "man + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "man_tone_6"
+    ]
+  , "tags": [
+      "mustache"
+    , "father"
+    , "dad"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👩"
   , "description": "woman"
   , "category": "People"
@@ -1676,6 +3716,72 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👩🏻"
+  , "description": "woman + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "woman_tone_1"
+    , "woman_tone_2"
+    ]
+  , "tags": [
+      "girls"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👩🏼"
+  , "description": "woman + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "woman_tone_3"
+    ]
+  , "tags": [
+      "girls"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👩🏽"
+  , "description": "woman + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "woman_tone_4"
+    ]
+  , "tags": [
+      "girls"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👩🏾"
+  , "description": "woman + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "woman_tone_5"
+    ]
+  , "tags": [
+      "girls"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👩🏿"
+  , "description": "woman + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "woman_tone_6"
+    ]
+  , "tags": [
+      "girls"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👱‍♀️"
   , "description": "blond-haired woman"
   , "category": "People"
@@ -1686,6 +3792,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "10.0"
+  }
+, {
+    "emoji": "👱🏻‍♀️"
+  , "description": "blond-haired woman + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "blonde_woman_tone_1"
+    , "blonde_woman_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👱🏼‍♀️"
+  , "description": "blond-haired woman + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "blonde_woman_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👱🏽‍♀️"
+  , "description": "blond-haired woman + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "blonde_woman_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👱🏾‍♀️"
+  , "description": "blond-haired woman + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "blonde_woman_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👱🏿‍♀️"
+  , "description": "blond-haired woman + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "blonde_woman_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👱"
@@ -1702,6 +3869,78 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👱🏻"
+  , "description": "blond-haired person + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "blonde_man_tone_1"
+    , "blonde_man_tone_2"
+    , "person_with_blond_hair_tone_1"
+    , "person_with_blond_hair_tone_2"
+    ]
+  , "tags": [
+      "boy"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👱🏼"
+  , "description": "blond-haired person + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "blonde_man_tone_3"
+    , "person_with_blond_hair_tone_3"
+    ]
+  , "tags": [
+      "boy"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👱🏽"
+  , "description": "blond-haired person + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "blonde_man_tone_4"
+    , "person_with_blond_hair_tone_4"
+    ]
+  , "tags": [
+      "boy"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👱🏾"
+  , "description": "blond-haired person + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "blonde_man_tone_5"
+    , "person_with_blond_hair_tone_5"
+    ]
+  , "tags": [
+      "boy"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👱🏿"
+  , "description": "blond-haired person + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "blonde_man_tone_6"
+    , "person_with_blond_hair_tone_6"
+    ]
+  , "tags": [
+      "boy"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👴"
   , "description": "old man"
   , "category": "People"
@@ -1712,6 +3951,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "👴🏻"
+  , "description": "old man + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "older_man_tone_1"
+    , "older_man_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👴🏼"
+  , "description": "old man + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "older_man_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👴🏽"
+  , "description": "old man + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "older_man_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👴🏾"
+  , "description": "old man + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "older_man_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👴🏿"
+  , "description": "old man + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "older_man_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👵"
@@ -1726,6 +4026,67 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👵🏻"
+  , "description": "old woman + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "older_woman_tone_1"
+    , "older_woman_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👵🏼"
+  , "description": "old woman + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "older_woman_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👵🏽"
+  , "description": "old woman + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "older_woman_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👵🏾"
+  , "description": "old woman + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "older_woman_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👵🏿"
+  , "description": "old woman + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "older_woman_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👲"
   , "description": "man with Chinese cap"
   , "category": "People"
@@ -1736,6 +4097,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "👲🏻"
+  , "description": "man with Chinese cap + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "man_with_gua_pi_mao_tone_1"
+    , "man_with_gua_pi_mao_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👲🏼"
+  , "description": "man with Chinese cap + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "man_with_gua_pi_mao_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👲🏽"
+  , "description": "man with Chinese cap + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "man_with_gua_pi_mao_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👲🏾"
+  , "description": "man with Chinese cap + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "man_with_gua_pi_mao_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👲🏿"
+  , "description": "man with Chinese cap + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "man_with_gua_pi_mao_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👳‍♀️"
@@ -1750,6 +4172,67 @@
   , "ios_version": "10.0"
   }
 , {
+    "emoji": "👳🏻‍♀️"
+  , "description": "woman wearing turban + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "woman_with_turban_tone_1"
+    , "woman_with_turban_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👳🏼‍♀️"
+  , "description": "woman wearing turban + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "woman_with_turban_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👳🏽‍♀️"
+  , "description": "woman wearing turban + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "woman_with_turban_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👳🏾‍♀️"
+  , "description": "woman wearing turban + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "woman_with_turban_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👳🏿‍♀️"
+  , "description": "woman wearing turban + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "woman_with_turban_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👳"
   , "description": "person wearing turban"
   , "category": "People"
@@ -1762,6 +4245,67 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👳🏻"
+  , "description": "person wearing turban + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "man_with_turban_tone_1"
+    , "man_with_turban_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👳🏼"
+  , "description": "person wearing turban + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "man_with_turban_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👳🏽"
+  , "description": "person wearing turban + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "man_with_turban_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👳🏾"
+  , "description": "person wearing turban + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "man_with_turban_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👳🏿"
+  , "description": "person wearing turban + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "man_with_turban_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👮‍♀️"
   , "description": "woman police officer"
   , "category": "People"
@@ -1772,6 +4316,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "10.0"
+  }
+, {
+    "emoji": "👮🏻‍♀️"
+  , "description": "woman police officer + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "policewoman_tone_1"
+    , "policewoman_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👮🏼‍♀️"
+  , "description": "woman police officer + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "policewoman_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👮🏽‍♀️"
+  , "description": "woman police officer + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "policewoman_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👮🏾‍♀️"
+  , "description": "woman police officer + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "policewoman_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👮🏿‍♀️"
+  , "description": "woman police officer + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "policewoman_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👮"
@@ -1789,6 +4394,83 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👮🏻"
+  , "description": "police officer + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "policeman_tone_1"
+    , "policeman_tone_2"
+    , "cop_tone_1"
+    , "cop_tone_2"
+    ]
+  , "tags": [
+      "police"
+    , "law"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👮🏼"
+  , "description": "police officer + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "policeman_tone_3"
+    , "cop_tone_3"
+    ]
+  , "tags": [
+      "police"
+    , "law"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👮🏽"
+  , "description": "police officer + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "policeman_tone_4"
+    , "cop_tone_4"
+    ]
+  , "tags": [
+      "police"
+    , "law"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👮🏾"
+  , "description": "police officer + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "policeman_tone_5"
+    , "cop_tone_5"
+    ]
+  , "tags": [
+      "police"
+    , "law"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👮🏿"
+  , "description": "police officer + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "policeman_tone_6"
+    , "cop_tone_6"
+    ]
+  , "tags": [
+      "police"
+    , "law"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👷‍♀️"
   , "description": "woman construction worker"
   , "category": "People"
@@ -1799,6 +4481,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "10.0"
+  }
+, {
+    "emoji": "👷🏻‍♀️"
+  , "description": "woman construction worker + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "construction_worker_woman_tone_1"
+    , "construction_worker_woman_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👷🏼‍♀️"
+  , "description": "woman construction worker + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "construction_worker_woman_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👷🏽‍♀️"
+  , "description": "woman construction worker + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "construction_worker_woman_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👷🏾‍♀️"
+  , "description": "woman construction worker + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "construction_worker_woman_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👷🏿‍♀️"
+  , "description": "woman construction worker + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "construction_worker_woman_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👷"
@@ -1815,6 +4558,78 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👷🏻"
+  , "description": "construction worker + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "construction_worker_man_tone_1"
+    , "construction_worker_man_tone_2"
+    , "construction_worker_tone_1"
+    , "construction_worker_tone_2"
+    ]
+  , "tags": [
+      "helmet"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👷🏼"
+  , "description": "construction worker + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "construction_worker_man_tone_3"
+    , "construction_worker_tone_3"
+    ]
+  , "tags": [
+      "helmet"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👷🏽"
+  , "description": "construction worker + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "construction_worker_man_tone_4"
+    , "construction_worker_tone_4"
+    ]
+  , "tags": [
+      "helmet"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👷🏾"
+  , "description": "construction worker + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "construction_worker_man_tone_5"
+    , "construction_worker_tone_5"
+    ]
+  , "tags": [
+      "helmet"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👷🏿"
+  , "description": "construction worker + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "construction_worker_man_tone_6"
+    , "construction_worker_tone_6"
+    ]
+  , "tags": [
+      "helmet"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "💂‍♀️"
   , "description": "woman guard"
   , "category": "People"
@@ -1825,6 +4640,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "10.0"
+  }
+, {
+    "emoji": "💂🏻‍♀️"
+  , "description": "woman guard + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "guardswoman_tone_1"
+    , "guardswoman_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💂🏼‍♀️"
+  , "description": "woman guard + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "guardswoman_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💂🏽‍♀️"
+  , "description": "woman guard + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "guardswoman_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💂🏾‍♀️"
+  , "description": "woman guard + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "guardswoman_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💂🏿‍♀️"
+  , "description": "woman guard + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "guardswoman_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "💂"
@@ -1839,6 +4715,67 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "💂🏻"
+  , "description": "guard + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "guardsman_tone_1"
+    , "guardsman_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💂🏼"
+  , "description": "guard + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "guardsman_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💂🏽"
+  , "description": "guard + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "guardsman_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💂🏾"
+  , "description": "guard + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "guardsman_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💂🏿"
+  , "description": "guard + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "guardsman_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🕵️‍♀️"
   , "description": "woman detective"
   , "category": "People"
@@ -1850,6 +4787,72 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🕵🏻️‍♀️"
+  , "description": "woman detective + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "female_detective_tone_1"
+    , "female_detective_tone_2"
+    ]
+  , "tags": [
+      "sleuth"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🕵🏼️‍♀️"
+  , "description": "woman detective + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "female_detective_tone_3"
+    ]
+  , "tags": [
+      "sleuth"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🕵🏽️‍♀️"
+  , "description": "woman detective + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "female_detective_tone_4"
+    ]
+  , "tags": [
+      "sleuth"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🕵🏾️‍♀️"
+  , "description": "woman detective + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "female_detective_tone_5"
+    ]
+  , "tags": [
+      "sleuth"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🕵🏿️‍♀️"
+  , "description": "woman detective + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "female_detective_tone_6"
+    ]
+  , "tags": [
+      "sleuth"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🕵️"
@@ -1866,6 +4869,78 @@
   , "ios_version": "9.1"
   }
 , {
+    "emoji": "🕵🏻️"
+  , "description": "detective + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "male_detective_tone_1"
+    , "male_detective_tone_2"
+    , "detective_tone_1"
+    , "detective_tone_2"
+    ]
+  , "tags": [
+      "sleuth"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🕵🏼️"
+  , "description": "detective + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "male_detective_tone_3"
+    , "detective_tone_3"
+    ]
+  , "tags": [
+      "sleuth"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🕵🏽️"
+  , "description": "detective + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "male_detective_tone_4"
+    , "detective_tone_4"
+    ]
+  , "tags": [
+      "sleuth"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🕵🏾️"
+  , "description": "detective + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "male_detective_tone_5"
+    , "detective_tone_5"
+    ]
+  , "tags": [
+      "sleuth"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🕵🏿️"
+  , "description": "detective + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "male_detective_tone_6"
+    , "detective_tone_6"
+    ]
+  , "tags": [
+      "sleuth"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🎅"
   , "description": "Santa Claus"
   , "category": "People"
@@ -1877,6 +4952,72 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎅🏻"
+  , "description": "Santa Claus + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "santa_tone_1"
+    , "santa_tone_2"
+    ]
+  , "tags": [
+      "christmas"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🎅🏼"
+  , "description": "Santa Claus + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "santa_tone_3"
+    ]
+  , "tags": [
+      "christmas"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🎅🏽"
+  , "description": "Santa Claus + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "santa_tone_4"
+    ]
+  , "tags": [
+      "christmas"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🎅🏾"
+  , "description": "Santa Claus + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "santa_tone_5"
+    ]
+  , "tags": [
+      "christmas"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🎅🏿"
+  , "description": "Santa Claus + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "santa_tone_6"
+    ]
+  , "tags": [
+      "christmas"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👸"
@@ -1894,6 +5035,82 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👸🏻"
+  , "description": "princess + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "princess_tone_1"
+    , "princess_tone_2"
+    ]
+  , "tags": [
+      "blonde"
+    , "crown"
+    , "royal"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👸🏼"
+  , "description": "princess + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "princess_tone_3"
+    ]
+  , "tags": [
+      "blonde"
+    , "crown"
+    , "royal"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👸🏽"
+  , "description": "princess + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "princess_tone_4"
+    ]
+  , "tags": [
+      "blonde"
+    , "crown"
+    , "royal"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👸🏾"
+  , "description": "princess + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "princess_tone_5"
+    ]
+  , "tags": [
+      "blonde"
+    , "crown"
+    , "royal"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👸🏿"
+  , "description": "princess + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "princess_tone_6"
+    ]
+  , "tags": [
+      "blonde"
+    , "crown"
+    , "royal"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👰"
   , "description": "bride with veil"
   , "category": "People"
@@ -1908,6 +5125,77 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "👰🏻"
+  , "description": "bride with veil + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "bride_with_veil_tone_1"
+    , "bride_with_veil_tone_2"
+    ]
+  , "tags": [
+      "marriage"
+    , "wedding"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👰🏼"
+  , "description": "bride with veil + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "bride_with_veil_tone_3"
+    ]
+  , "tags": [
+      "marriage"
+    , "wedding"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👰🏽"
+  , "description": "bride with veil + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "bride_with_veil_tone_4"
+    ]
+  , "tags": [
+      "marriage"
+    , "wedding"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👰🏾"
+  , "description": "bride with veil + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "bride_with_veil_tone_5"
+    ]
+  , "tags": [
+      "marriage"
+    , "wedding"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👰🏿"
+  , "description": "bride with veil + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "bride_with_veil_tone_6"
+    ]
+  , "tags": [
+      "marriage"
+    , "wedding"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "👼"
   , "description": "baby angel"
   , "category": "People"
@@ -1918,6 +5206,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "👼🏻"
+  , "description": "baby angel + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "angel_tone_1"
+    , "angel_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👼🏼"
+  , "description": "baby angel + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "angel_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👼🏽"
+  , "description": "baby angel + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "angel_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👼🏾"
+  , "description": "baby angel + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "angel_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "👼🏿"
+  , "description": "baby angel + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "angel_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🙇‍♀️"
@@ -1932,6 +5281,77 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🙇🏻‍♀️"
+  , "description": "woman bowing + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "bowing_woman_tone_1"
+    , "bowing_woman_tone_2"
+    ]
+  , "tags": [
+      "respect"
+    , "thanks"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙇🏼‍♀️"
+  , "description": "woman bowing + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "bowing_woman_tone_3"
+    ]
+  , "tags": [
+      "respect"
+    , "thanks"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙇🏽‍♀️"
+  , "description": "woman bowing + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "bowing_woman_tone_4"
+    ]
+  , "tags": [
+      "respect"
+    , "thanks"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙇🏾‍♀️"
+  , "description": "woman bowing + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "bowing_woman_tone_5"
+    ]
+  , "tags": [
+      "respect"
+    , "thanks"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙇🏿‍♀️"
+  , "description": "woman bowing + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "bowing_woman_tone_6"
+    ]
+  , "tags": [
+      "respect"
+    , "thanks"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🙇"
@@ -1949,6 +5369,83 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🙇🏻"
+  , "description": "person bowing + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "bowing_man_tone_1"
+    , "bowing_man_tone_2"
+    , "bow_tone_1"
+    , "bow_tone_2"
+    ]
+  , "tags": [
+      "respect"
+    , "thanks"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙇🏼"
+  , "description": "person bowing + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "bowing_man_tone_3"
+    , "bow_tone_3"
+    ]
+  , "tags": [
+      "respect"
+    , "thanks"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙇🏽"
+  , "description": "person bowing + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "bowing_man_tone_4"
+    , "bow_tone_4"
+    ]
+  , "tags": [
+      "respect"
+    , "thanks"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙇🏾"
+  , "description": "person bowing + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "bowing_man_tone_5"
+    , "bow_tone_5"
+    ]
+  , "tags": [
+      "respect"
+    , "thanks"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙇🏿"
+  , "description": "person bowing + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "bowing_man_tone_6"
+    , "bow_tone_6"
+    ]
+  , "tags": [
+      "respect"
+    , "thanks"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "💁"
   , "description": "person tipping hand"
   , "category": "People"
@@ -1962,6 +5459,73 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "💁🏻"
+  , "description": "person tipping hand + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "tipping_hand_woman_tone_1"
+    , "tipping_hand_woman_tone_2"
+    , "information_desk_person_tone_1"
+    , "information_desk_person_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💁🏼"
+  , "description": "person tipping hand + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "tipping_hand_woman_tone_3"
+    , "information_desk_person_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💁🏽"
+  , "description": "person tipping hand + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "tipping_hand_woman_tone_4"
+    , "information_desk_person_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💁🏾"
+  , "description": "person tipping hand + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "tipping_hand_woman_tone_5"
+    , "information_desk_person_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💁🏿"
+  , "description": "person tipping hand + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "tipping_hand_woman_tone_6"
+    , "information_desk_person_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "💁‍♂️"
   , "description": "man tipping hand"
   , "category": "People"
@@ -1973,6 +5537,72 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "10.0"
+  }
+, {
+    "emoji": "💁🏻‍♂️"
+  , "description": "man tipping hand + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "tipping_hand_man_tone_1"
+    , "tipping_hand_man_tone_2"
+    ]
+  , "tags": [
+      "information"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💁🏼‍♂️"
+  , "description": "man tipping hand + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "tipping_hand_man_tone_3"
+    ]
+  , "tags": [
+      "information"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💁🏽‍♂️"
+  , "description": "man tipping hand + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "tipping_hand_man_tone_4"
+    ]
+  , "tags": [
+      "information"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💁🏾‍♂️"
+  , "description": "man tipping hand + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "tipping_hand_man_tone_5"
+    ]
+  , "tags": [
+      "information"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💁🏿‍♂️"
+  , "description": "man tipping hand + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "tipping_hand_man_tone_6"
+    ]
+  , "tags": [
+      "information"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🙅"
@@ -1991,6 +5621,89 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🙅🏻"
+  , "description": "person gesturing NO + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "no_good_woman_tone_1"
+    , "no_good_woman_tone_2"
+    , "no_good_tone_1"
+    , "no_good_tone_2"
+    , "ng_woman_tone_1"
+    , "ng_woman_tone_2"
+    ]
+  , "tags": [
+      "stop"
+    , "halt"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙅🏼"
+  , "description": "person gesturing NO + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "no_good_woman_tone_3"
+    , "no_good_tone_3"
+    , "ng_woman_tone_3"
+    ]
+  , "tags": [
+      "stop"
+    , "halt"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙅🏽"
+  , "description": "person gesturing NO + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "no_good_woman_tone_4"
+    , "no_good_tone_4"
+    , "ng_woman_tone_4"
+    ]
+  , "tags": [
+      "stop"
+    , "halt"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙅🏾"
+  , "description": "person gesturing NO + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "no_good_woman_tone_5"
+    , "no_good_tone_5"
+    , "ng_woman_tone_5"
+    ]
+  , "tags": [
+      "stop"
+    , "halt"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙅🏿"
+  , "description": "person gesturing NO + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "no_good_woman_tone_6"
+    , "no_good_tone_6"
+    , "ng_woman_tone_6"
+    ]
+  , "tags": [
+      "stop"
+    , "halt"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🙅‍♂️"
   , "description": "man gesturing NO"
   , "category": "People"
@@ -2006,6 +5719,83 @@
   , "ios_version": "10.0"
   }
 , {
+    "emoji": "🙅🏻‍♂️"
+  , "description": "man gesturing NO + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "no_good_man_tone_1"
+    , "no_good_man_tone_2"
+    , "ng_man_tone_1"
+    , "ng_man_tone_2"
+    ]
+  , "tags": [
+      "stop"
+    , "halt"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙅🏼‍♂️"
+  , "description": "man gesturing NO + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "no_good_man_tone_3"
+    , "ng_man_tone_3"
+    ]
+  , "tags": [
+      "stop"
+    , "halt"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙅🏽‍♂️"
+  , "description": "man gesturing NO + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "no_good_man_tone_4"
+    , "ng_man_tone_4"
+    ]
+  , "tags": [
+      "stop"
+    , "halt"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙅🏾‍♂️"
+  , "description": "man gesturing NO + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "no_good_man_tone_5"
+    , "ng_man_tone_5"
+    ]
+  , "tags": [
+      "stop"
+    , "halt"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙅🏿‍♂️"
+  , "description": "man gesturing NO + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "no_good_man_tone_6"
+    , "ng_man_tone_6"
+    ]
+  , "tags": [
+      "stop"
+    , "halt"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🙆"
   , "description": "person gesturing OK"
   , "category": "People"
@@ -2018,6 +5808,67 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🙆🏻"
+  , "description": "person gesturing OK + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "ok_woman_tone_1"
+    , "ok_woman_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙆🏼"
+  , "description": "person gesturing OK + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "ok_woman_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙆🏽"
+  , "description": "person gesturing OK + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "ok_woman_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙆🏾"
+  , "description": "person gesturing OK + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "ok_woman_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙆🏿"
+  , "description": "person gesturing OK + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "ok_woman_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🙆‍♂️"
   , "description": "man gesturing OK"
   , "category": "People"
@@ -2028,6 +5879,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🙆🏻‍♂️"
+  , "description": "man gesturing OK + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "ok_man_tone_1"
+    , "ok_man_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙆🏼‍♂️"
+  , "description": "man gesturing OK + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "ok_man_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙆🏽‍♂️"
+  , "description": "man gesturing OK + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "ok_man_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙆🏾‍♂️"
+  , "description": "man gesturing OK + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "ok_man_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙆🏿‍♂️"
+  , "description": "man gesturing OK + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "ok_man_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🙋"
@@ -2043,6 +5955,73 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🙋🏻"
+  , "description": "person raising hand + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "raising_hand_woman_tone_1"
+    , "raising_hand_woman_tone_2"
+    , "raising_hand_tone_1"
+    , "raising_hand_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙋🏼"
+  , "description": "person raising hand + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "raising_hand_woman_tone_3"
+    , "raising_hand_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙋🏽"
+  , "description": "person raising hand + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "raising_hand_woman_tone_4"
+    , "raising_hand_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙋🏾"
+  , "description": "person raising hand + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "raising_hand_woman_tone_5"
+    , "raising_hand_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙋🏿"
+  , "description": "person raising hand + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "raising_hand_woman_tone_6"
+    , "raising_hand_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🙋‍♂️"
   , "description": "man raising hand"
   , "category": "People"
@@ -2053,6 +6032,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🙋🏻‍♂️"
+  , "description": "man raising hand + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "raising_hand_man_tone_1"
+    , "raising_hand_man_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙋🏼‍♂️"
+  , "description": "man raising hand + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "raising_hand_man_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙋🏽‍♂️"
+  , "description": "man raising hand + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "raising_hand_man_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙋🏾‍♂️"
+  , "description": "man raising hand + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "raising_hand_man_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙋🏿‍♂️"
+  , "description": "man raising hand + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "raising_hand_man_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🙎"
@@ -2068,6 +6108,73 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🙎🏻"
+  , "description": "person pouting + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "pouting_woman_tone_1"
+    , "pouting_woman_tone_2"
+    , "person_with_pouting_face_tone_1"
+    , "person_with_pouting_face_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙎🏼"
+  , "description": "person pouting + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "pouting_woman_tone_3"
+    , "person_with_pouting_face_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙎🏽"
+  , "description": "person pouting + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "pouting_woman_tone_4"
+    , "person_with_pouting_face_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙎🏾"
+  , "description": "person pouting + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "pouting_woman_tone_5"
+    , "person_with_pouting_face_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙎🏿"
+  , "description": "person pouting + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "pouting_woman_tone_6"
+    , "person_with_pouting_face_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🙎‍♂️"
   , "description": "man pouting"
   , "category": "People"
@@ -2078,6 +6185,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🙎🏻‍♂️"
+  , "description": "man pouting + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "pouting_man_tone_1"
+    , "pouting_man_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙎🏼‍♂️"
+  , "description": "man pouting + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "pouting_man_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙎🏽‍♂️"
+  , "description": "man pouting + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "pouting_man_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙎🏾‍♂️"
+  , "description": "man pouting + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "pouting_man_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙎🏿‍♂️"
+  , "description": "man pouting + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "pouting_man_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🙍"
@@ -2094,6 +6262,78 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🙍🏻"
+  , "description": "person frowning + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "frowning_woman_tone_1"
+    , "frowning_woman_tone_2"
+    , "person_frowning_tone_1"
+    , "person_frowning_tone_2"
+    ]
+  , "tags": [
+      "sad"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙍🏼"
+  , "description": "person frowning + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "frowning_woman_tone_3"
+    , "person_frowning_tone_3"
+    ]
+  , "tags": [
+      "sad"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙍🏽"
+  , "description": "person frowning + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "frowning_woman_tone_4"
+    , "person_frowning_tone_4"
+    ]
+  , "tags": [
+      "sad"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙍🏾"
+  , "description": "person frowning + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "frowning_woman_tone_5"
+    , "person_frowning_tone_5"
+    ]
+  , "tags": [
+      "sad"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙍🏿"
+  , "description": "person frowning + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "frowning_woman_tone_6"
+    , "person_frowning_tone_6"
+    ]
+  , "tags": [
+      "sad"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🙍‍♂️"
   , "description": "man frowning"
   , "category": "People"
@@ -2104,6 +6344,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🙍🏻‍♂️"
+  , "description": "man frowning + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "frowning_man_tone_1"
+    , "frowning_man_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙍🏼‍♂️"
+  , "description": "man frowning + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "frowning_man_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙍🏽‍♂️"
+  , "description": "man frowning + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "frowning_man_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙍🏾‍♂️"
+  , "description": "man frowning + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "frowning_man_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🙍🏿‍♂️"
+  , "description": "man frowning + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "frowning_man_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "💇"
@@ -2120,6 +6421,78 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "💇🏻"
+  , "description": "person getting haircut + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "haircut_woman_tone_1"
+    , "haircut_woman_tone_2"
+    , "haircut_tone_1"
+    , "haircut_tone_2"
+    ]
+  , "tags": [
+      "beauty"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💇🏼"
+  , "description": "person getting haircut + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "haircut_woman_tone_3"
+    , "haircut_tone_3"
+    ]
+  , "tags": [
+      "beauty"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💇🏽"
+  , "description": "person getting haircut + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "haircut_woman_tone_4"
+    , "haircut_tone_4"
+    ]
+  , "tags": [
+      "beauty"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💇🏾"
+  , "description": "person getting haircut + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "haircut_woman_tone_5"
+    , "haircut_tone_5"
+    ]
+  , "tags": [
+      "beauty"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💇🏿"
+  , "description": "person getting haircut + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "haircut_woman_tone_6"
+    , "haircut_tone_6"
+    ]
+  , "tags": [
+      "beauty"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "💇‍♂️"
   , "description": "man getting haircut"
   , "category": "People"
@@ -2130,6 +6503,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "10.0"
+  }
+, {
+    "emoji": "💇🏻‍♂️"
+  , "description": "man getting haircut + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "haircut_man_tone_1"
+    , "haircut_man_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💇🏼‍♂️"
+  , "description": "man getting haircut + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "haircut_man_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💇🏽‍♂️"
+  , "description": "man getting haircut + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "haircut_man_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💇🏾‍♂️"
+  , "description": "man getting haircut + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "haircut_man_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💇🏿‍♂️"
+  , "description": "man getting haircut + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "haircut_man_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "💆"
@@ -2146,6 +6580,78 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "💆🏻"
+  , "description": "person getting massage + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "massage_woman_tone_1"
+    , "massage_woman_tone_2"
+    , "massage_tone_1"
+    , "massage_tone_2"
+    ]
+  , "tags": [
+      "spa"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💆🏼"
+  , "description": "person getting massage + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "massage_woman_tone_3"
+    , "massage_tone_3"
+    ]
+  , "tags": [
+      "spa"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💆🏽"
+  , "description": "person getting massage + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "massage_woman_tone_4"
+    , "massage_tone_4"
+    ]
+  , "tags": [
+      "spa"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💆🏾"
+  , "description": "person getting massage + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "massage_woman_tone_5"
+    , "massage_tone_5"
+    ]
+  , "tags": [
+      "spa"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💆🏿"
+  , "description": "person getting massage + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "massage_woman_tone_6"
+    , "massage_tone_6"
+    ]
+  , "tags": [
+      "spa"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "💆‍♂️"
   , "description": "man getting massage"
   , "category": "People"
@@ -2159,6 +6665,72 @@
   , "ios_version": "10.0"
   }
 , {
+    "emoji": "💆🏻‍♂️"
+  , "description": "man getting massage + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "massage_man_tone_1"
+    , "massage_man_tone_2"
+    ]
+  , "tags": [
+      "spa"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💆🏼‍♂️"
+  , "description": "man getting massage + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "massage_man_tone_3"
+    ]
+  , "tags": [
+      "spa"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💆🏽‍♂️"
+  , "description": "man getting massage + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "massage_man_tone_4"
+    ]
+  , "tags": [
+      "spa"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💆🏾‍♂️"
+  , "description": "man getting massage + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "massage_man_tone_5"
+    ]
+  , "tags": [
+      "spa"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💆🏿‍♂️"
+  , "description": "man getting massage + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "massage_man_tone_6"
+    ]
+  , "tags": [
+      "spa"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "💃"
   , "description": "woman dancing"
   , "category": "People"
@@ -2170,6 +6742,72 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "💃🏻"
+  , "description": "woman dancing + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "dancer_tone_1"
+    , "dancer_tone_2"
+    ]
+  , "tags": [
+      "dress"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💃🏼"
+  , "description": "woman dancing + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "dancer_tone_3"
+    ]
+  , "tags": [
+      "dress"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💃🏽"
+  , "description": "woman dancing + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "dancer_tone_4"
+    ]
+  , "tags": [
+      "dress"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💃🏾"
+  , "description": "woman dancing + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "dancer_tone_5"
+    ]
+  , "tags": [
+      "dress"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "💃🏿"
+  , "description": "woman dancing + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "dancer_tone_6"
+    ]
+  , "tags": [
+      "dress"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👯"
@@ -2211,6 +6849,67 @@
   , "ios_version": "10.0"
   }
 , {
+    "emoji": "🚶🏻‍♀️"
+  , "description": "woman walking + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "walking_woman_tone_1"
+    , "walking_woman_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚶🏼‍♀️"
+  , "description": "woman walking + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "walking_woman_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚶🏽‍♀️"
+  , "description": "woman walking + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "walking_woman_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚶🏾‍♀️"
+  , "description": "woman walking + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "walking_woman_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚶🏿‍♀️"
+  , "description": "woman walking + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "walking_woman_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🚶"
   , "description": "person walking"
   , "category": "People"
@@ -2222,6 +6921,73 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🚶🏻"
+  , "description": "person walking + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "walking_man_tone_1"
+    , "walking_man_tone_2"
+    , "walking_tone_1"
+    , "walking_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚶🏼"
+  , "description": "person walking + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "walking_man_tone_3"
+    , "walking_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚶🏽"
+  , "description": "person walking + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "walking_man_tone_4"
+    , "walking_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚶🏾"
+  , "description": "person walking + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "walking_man_tone_5"
+    , "walking_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚶🏿"
+  , "description": "person walking + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "walking_man_tone_6"
+    , "walking_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🏃‍♀️"
@@ -2239,6 +7005,82 @@
   , "ios_version": "10.0"
   }
 , {
+    "emoji": "🏃🏻‍♀️"
+  , "description": "woman running + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "running_woman_tone_1"
+    , "running_woman_tone_2"
+    ]
+  , "tags": [
+      "exercise"
+    , "workout"
+    , "marathon"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏃🏼‍♀️"
+  , "description": "woman running + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "running_woman_tone_3"
+    ]
+  , "tags": [
+      "exercise"
+    , "workout"
+    , "marathon"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏃🏽‍♀️"
+  , "description": "woman running + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "running_woman_tone_4"
+    ]
+  , "tags": [
+      "exercise"
+    , "workout"
+    , "marathon"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏃🏾‍♀️"
+  , "description": "woman running + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "running_woman_tone_5"
+    ]
+  , "tags": [
+      "exercise"
+    , "workout"
+    , "marathon"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏃🏿‍♀️"
+  , "description": "woman running + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "running_woman_tone_6"
+    ]
+  , "tags": [
+      "exercise"
+    , "workout"
+    , "marathon"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🏃"
   , "description": "person running"
   , "category": "People"
@@ -2254,6 +7096,94 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🏃🏻"
+  , "description": "person running + skin tone 1 + 2"
+  , "category": "People"
+  , "aliases": [
+      "running_man_tone_1"
+    , "running_man_tone_2"
+    , "runner_tone_1"
+    , "runner_tone_2"
+    , "running_tone_1"
+    , "running_tone_2"
+    ]
+  , "tags": [
+      "exercise"
+    , "workout"
+    , "marathon"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏃🏼"
+  , "description": "person running + skin tone 3"
+  , "category": "People"
+  , "aliases": [
+      "running_man_tone_3"
+    , "runner_tone_3"
+    , "running_tone_3"
+    ]
+  , "tags": [
+      "exercise"
+    , "workout"
+    , "marathon"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏃🏽"
+  , "description": "person running + skin tone 4"
+  , "category": "People"
+  , "aliases": [
+      "running_man_tone_4"
+    , "runner_tone_4"
+    , "running_tone_4"
+    ]
+  , "tags": [
+      "exercise"
+    , "workout"
+    , "marathon"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏃🏾"
+  , "description": "person running + skin tone 5"
+  , "category": "People"
+  , "aliases": [
+      "running_man_tone_5"
+    , "runner_tone_5"
+    , "running_tone_5"
+    ]
+  , "tags": [
+      "exercise"
+    , "workout"
+    , "marathon"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏃🏿"
+  , "description": "person running + skin tone 6"
+  , "category": "People"
+  , "aliases": [
+      "running_man_tone_6"
+    , "runner_tone_6"
+    , "running_tone_6"
+    ]
+  , "tags": [
+      "exercise"
+    , "workout"
+    , "marathon"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "👫"
@@ -5997,6 +10927,77 @@
   , "ios_version": "10.0"
   }
 , {
+    "emoji": "🏋🏻️‍♀️"
+  , "description": "woman lifting weights + skin tone 1 + 2"
+  , "category": "Activity"
+  , "aliases": [
+      "weight_lifting_woman_tone_1"
+    , "weight_lifting_woman_tone_2"
+    ]
+  , "tags": [
+      "gym"
+    , "workout"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏋🏼️‍♀️"
+  , "description": "woman lifting weights + skin tone 3"
+  , "category": "Activity"
+  , "aliases": [
+      "weight_lifting_woman_tone_3"
+    ]
+  , "tags": [
+      "gym"
+    , "workout"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏋🏽️‍♀️"
+  , "description": "woman lifting weights + skin tone 4"
+  , "category": "Activity"
+  , "aliases": [
+      "weight_lifting_woman_tone_4"
+    ]
+  , "tags": [
+      "gym"
+    , "workout"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏋🏾️‍♀️"
+  , "description": "woman lifting weights + skin tone 5"
+  , "category": "Activity"
+  , "aliases": [
+      "weight_lifting_woman_tone_5"
+    ]
+  , "tags": [
+      "gym"
+    , "workout"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏋🏿️‍♀️"
+  , "description": "woman lifting weights + skin tone 6"
+  , "category": "Activity"
+  , "aliases": [
+      "weight_lifting_woman_tone_6"
+    ]
+  , "tags": [
+      "gym"
+    , "workout"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🏋️"
   , "description": "person lifting weights"
   , "category": "Activity"
@@ -6011,6 +11012,77 @@
   , "ios_version": "9.1"
   }
 , {
+    "emoji": "🏋🏻️"
+  , "description": "person lifting weights + skin tone 1 + 2"
+  , "category": "Activity"
+  , "aliases": [
+      "weight_lifting_man_tone_1"
+    , "weight_lifting_man_tone_2"
+    ]
+  , "tags": [
+      "gym"
+    , "workout"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏋🏼️"
+  , "description": "person lifting weights + skin tone 3"
+  , "category": "Activity"
+  , "aliases": [
+      "weight_lifting_man_tone_3"
+    ]
+  , "tags": [
+      "gym"
+    , "workout"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏋🏽️"
+  , "description": "person lifting weights + skin tone 4"
+  , "category": "Activity"
+  , "aliases": [
+      "weight_lifting_man_tone_4"
+    ]
+  , "tags": [
+      "gym"
+    , "workout"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏋🏾️"
+  , "description": "person lifting weights + skin tone 5"
+  , "category": "Activity"
+  , "aliases": [
+      "weight_lifting_man_tone_5"
+    ]
+  , "tags": [
+      "gym"
+    , "workout"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏋🏿️"
+  , "description": "person lifting weights + skin tone 6"
+  , "category": "Activity"
+  , "aliases": [
+      "weight_lifting_man_tone_6"
+    ]
+  , "tags": [
+      "gym"
+    , "workout"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "⛹️‍♀️"
   , "description": "woman bouncing ball"
   , "category": "Activity"
@@ -6023,6 +11095,67 @@
   , "ios_version": "10.0"
   }
 , {
+    "emoji": "⛹🏻️‍♀️"
+  , "description": "woman bouncing ball + skin tone 1 + 2"
+  , "category": "Activity"
+  , "aliases": [
+      "basketball_woman_tone_1"
+    , "basketball_woman_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "⛹🏼️‍♀️"
+  , "description": "woman bouncing ball + skin tone 3"
+  , "category": "Activity"
+  , "aliases": [
+      "basketball_woman_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "⛹🏽️‍♀️"
+  , "description": "woman bouncing ball + skin tone 4"
+  , "category": "Activity"
+  , "aliases": [
+      "basketball_woman_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "⛹🏾️‍♀️"
+  , "description": "woman bouncing ball + skin tone 5"
+  , "category": "Activity"
+  , "aliases": [
+      "basketball_woman_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "⛹🏿️‍♀️"
+  , "description": "woman bouncing ball + skin tone 6"
+  , "category": "Activity"
+  , "aliases": [
+      "basketball_woman_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "⛹️"
   , "description": "person bouncing ball"
   , "category": "Activity"
@@ -6033,6 +11166,67 @@
     ]
   , "unicode_version": "5.2"
   , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⛹🏻️"
+  , "description": "person bouncing ball + skin tone 1 + 2"
+  , "category": "Activity"
+  , "aliases": [
+      "basketball_man_tone_1"
+    , "basketball_man_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "⛹🏼️"
+  , "description": "person bouncing ball + skin tone 3"
+  , "category": "Activity"
+  , "aliases": [
+      "basketball_man_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "⛹🏽️"
+  , "description": "person bouncing ball + skin tone 4"
+  , "category": "Activity"
+  , "aliases": [
+      "basketball_man_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "⛹🏾️"
+  , "description": "person bouncing ball + skin tone 5"
+  , "category": "Activity"
+  , "aliases": [
+      "basketball_man_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "⛹🏿️"
+  , "description": "person bouncing ball + skin tone 6"
+  , "category": "Activity"
+  , "aliases": [
+      "basketball_man_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🏌️‍♀️"
@@ -6071,6 +11265,67 @@
   , "ios_version": "10.0"
   }
 , {
+    "emoji": "🏄🏻‍♀️"
+  , "description": "woman surfing + skin tone 1 + 2"
+  , "category": "Activity"
+  , "aliases": [
+      "surfing_woman_tone_1"
+    , "surfing_woman_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏄🏼‍♀️"
+  , "description": "woman surfing + skin tone 3"
+  , "category": "Activity"
+  , "aliases": [
+      "surfing_woman_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏄🏽‍♀️"
+  , "description": "woman surfing + skin tone 4"
+  , "category": "Activity"
+  , "aliases": [
+      "surfing_woman_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏄🏾‍♀️"
+  , "description": "woman surfing + skin tone 5"
+  , "category": "Activity"
+  , "aliases": [
+      "surfing_woman_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏄🏿‍♀️"
+  , "description": "woman surfing + skin tone 6"
+  , "category": "Activity"
+  , "aliases": [
+      "surfing_woman_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🏄"
   , "description": "person surfing"
   , "category": "Activity"
@@ -6084,6 +11339,73 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🏄🏻"
+  , "description": "person surfing + skin tone 1 + 2"
+  , "category": "Activity"
+  , "aliases": [
+      "surfing_man_tone_1"
+    , "surfing_man_tone_2"
+    , "surfer_tone_1"
+    , "surfer_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏄🏼"
+  , "description": "person surfing + skin tone 3"
+  , "category": "Activity"
+  , "aliases": [
+      "surfing_man_tone_3"
+    , "surfer_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏄🏽"
+  , "description": "person surfing + skin tone 4"
+  , "category": "Activity"
+  , "aliases": [
+      "surfing_man_tone_4"
+    , "surfer_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏄🏾"
+  , "description": "person surfing + skin tone 5"
+  , "category": "Activity"
+  , "aliases": [
+      "surfing_man_tone_5"
+    , "surfer_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏄🏿"
+  , "description": "person surfing + skin tone 6"
+  , "category": "Activity"
+  , "aliases": [
+      "surfing_man_tone_6"
+    , "surfer_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🏊‍♀️"
   , "description": "woman swimming"
   , "category": "Activity"
@@ -6094,6 +11416,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🏊🏻‍♀️"
+  , "description": "woman swimming + skin tone 1 + 2"
+  , "category": "Activity"
+  , "aliases": [
+      "swimming_woman_tone_1"
+    , "swimming_woman_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏊🏼‍♀️"
+  , "description": "woman swimming + skin tone 3"
+  , "category": "Activity"
+  , "aliases": [
+      "swimming_woman_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏊🏽‍♀️"
+  , "description": "woman swimming + skin tone 4"
+  , "category": "Activity"
+  , "aliases": [
+      "swimming_woman_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏊🏾‍♀️"
+  , "description": "woman swimming + skin tone 5"
+  , "category": "Activity"
+  , "aliases": [
+      "swimming_woman_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏊🏿‍♀️"
+  , "description": "woman swimming + skin tone 6"
+  , "category": "Activity"
+  , "aliases": [
+      "swimming_woman_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🏊"
@@ -6109,6 +11492,73 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🏊🏻"
+  , "description": "person swimming + skin tone 1 + 2"
+  , "category": "Activity"
+  , "aliases": [
+      "swimming_man_tone_1"
+    , "swimming_man_tone_2"
+    , "swimmer_tone_1"
+    , "swimmer_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏊🏼"
+  , "description": "person swimming + skin tone 3"
+  , "category": "Activity"
+  , "aliases": [
+      "swimming_man_tone_3"
+    , "swimmer_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏊🏽"
+  , "description": "person swimming + skin tone 4"
+  , "category": "Activity"
+  , "aliases": [
+      "swimming_man_tone_4"
+    , "swimmer_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏊🏾"
+  , "description": "person swimming + skin tone 5"
+  , "category": "Activity"
+  , "aliases": [
+      "swimming_man_tone_5"
+    , "swimmer_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🏊🏿"
+  , "description": "person swimming + skin tone 6"
+  , "category": "Activity"
+  , "aliases": [
+      "swimming_man_tone_6"
+    , "swimmer_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🚣‍♀️"
   , "description": "woman rowing boat"
   , "category": "Activity"
@@ -6119,6 +11569,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🚣🏻‍♀️"
+  , "description": "woman rowing boat + skin tone 1 + 2"
+  , "category": "Activity"
+  , "aliases": [
+      "rowing_woman_tone_1"
+    , "rowing_woman_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚣🏼‍♀️"
+  , "description": "woman rowing boat + skin tone 3"
+  , "category": "Activity"
+  , "aliases": [
+      "rowing_woman_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚣🏽‍♀️"
+  , "description": "woman rowing boat + skin tone 4"
+  , "category": "Activity"
+  , "aliases": [
+      "rowing_woman_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚣🏾‍♀️"
+  , "description": "woman rowing boat + skin tone 5"
+  , "category": "Activity"
+  , "aliases": [
+      "rowing_woman_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚣🏿‍♀️"
+  , "description": "woman rowing boat + skin tone 6"
+  , "category": "Activity"
+  , "aliases": [
+      "rowing_woman_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🚣"
@@ -6132,6 +11643,73 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🚣🏻"
+  , "description": "person rowing boat + skin tone 1 + 2"
+  , "category": "Activity"
+  , "aliases": [
+      "rowing_man_tone_1"
+    , "rowing_man_tone_2"
+    , "rowboat_tone_1"
+    , "rowboat_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚣🏼"
+  , "description": "person rowing boat + skin tone 3"
+  , "category": "Activity"
+  , "aliases": [
+      "rowing_man_tone_3"
+    , "rowboat_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚣🏽"
+  , "description": "person rowing boat + skin tone 4"
+  , "category": "Activity"
+  , "aliases": [
+      "rowing_man_tone_4"
+    , "rowboat_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚣🏾"
+  , "description": "person rowing boat + skin tone 5"
+  , "category": "Activity"
+  , "aliases": [
+      "rowing_man_tone_5"
+    , "rowboat_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚣🏿"
+  , "description": "person rowing boat + skin tone 6"
+  , "category": "Activity"
+  , "aliases": [
+      "rowing_man_tone_6"
+    , "rowboat_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🏇"
@@ -6158,6 +11736,67 @@
   , "ios_version": "10.0"
   }
 , {
+    "emoji": "🚴🏻‍♀️"
+  , "description": "woman biking + skin tone 1 + 2"
+  , "category": "Activity"
+  , "aliases": [
+      "biking_woman_tone_1"
+    , "biking_woman_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚴🏼‍♀️"
+  , "description": "woman biking + skin tone 3"
+  , "category": "Activity"
+  , "aliases": [
+      "biking_woman_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚴🏽‍♀️"
+  , "description": "woman biking + skin tone 4"
+  , "category": "Activity"
+  , "aliases": [
+      "biking_woman_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚴🏾‍♀️"
+  , "description": "woman biking + skin tone 5"
+  , "category": "Activity"
+  , "aliases": [
+      "biking_woman_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚴🏿‍♀️"
+  , "description": "woman biking + skin tone 6"
+  , "category": "Activity"
+  , "aliases": [
+      "biking_woman_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🚴"
   , "description": "person biking"
   , "category": "Activity"
@@ -6171,6 +11810,73 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🚴🏻"
+  , "description": "person biking + skin tone 1 + 2"
+  , "category": "Activity"
+  , "aliases": [
+      "biking_man_tone_1"
+    , "biking_man_tone_2"
+    , "bicyclist_tone_1"
+    , "bicyclist_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚴🏼"
+  , "description": "person biking + skin tone 3"
+  , "category": "Activity"
+  , "aliases": [
+      "biking_man_tone_3"
+    , "bicyclist_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚴🏽"
+  , "description": "person biking + skin tone 4"
+  , "category": "Activity"
+  , "aliases": [
+      "biking_man_tone_4"
+    , "bicyclist_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚴🏾"
+  , "description": "person biking + skin tone 5"
+  , "category": "Activity"
+  , "aliases": [
+      "biking_man_tone_5"
+    , "bicyclist_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚴🏿"
+  , "description": "person biking + skin tone 6"
+  , "category": "Activity"
+  , "aliases": [
+      "biking_man_tone_6"
+    , "bicyclist_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🚵‍♀️"
   , "description": "woman mountain biking"
   , "category": "Activity"
@@ -6181,6 +11887,67 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🚵🏻‍♀️"
+  , "description": "woman mountain biking + skin tone 1 + 2"
+  , "category": "Activity"
+  , "aliases": [
+      "mountain_biking_woman_tone_1"
+    , "mountain_biking_woman_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚵🏼‍♀️"
+  , "description": "woman mountain biking + skin tone 3"
+  , "category": "Activity"
+  , "aliases": [
+      "mountain_biking_woman_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚵🏽‍♀️"
+  , "description": "woman mountain biking + skin tone 4"
+  , "category": "Activity"
+  , "aliases": [
+      "mountain_biking_woman_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚵🏾‍♀️"
+  , "description": "woman mountain biking + skin tone 5"
+  , "category": "Activity"
+  , "aliases": [
+      "mountain_biking_woman_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚵🏿‍♀️"
+  , "description": "woman mountain biking + skin tone 6"
+  , "category": "Activity"
+  , "aliases": [
+      "mountain_biking_woman_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🚵"
@@ -6196,6 +11963,73 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🚵🏻"
+  , "description": "person mountain biking + skin tone 1 + 2"
+  , "category": "Activity"
+  , "aliases": [
+      "mountain_biking_man_tone_1"
+    , "mountain_biking_man_tone_2"
+    , "mountain_bicyclist_tone_1"
+    , "mountain_bicyclist_tone_2"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚵🏼"
+  , "description": "person mountain biking + skin tone 3"
+  , "category": "Activity"
+  , "aliases": [
+      "mountain_biking_man_tone_3"
+    , "mountain_bicyclist_tone_3"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚵🏽"
+  , "description": "person mountain biking + skin tone 4"
+  , "category": "Activity"
+  , "aliases": [
+      "mountain_biking_man_tone_4"
+    , "mountain_bicyclist_tone_4"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚵🏾"
+  , "description": "person mountain biking + skin tone 5"
+  , "category": "Activity"
+  , "aliases": [
+      "mountain_biking_man_tone_5"
+    , "mountain_bicyclist_tone_5"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🚵🏿"
+  , "description": "person mountain biking + skin tone 6"
+  , "category": "Activity"
+  , "aliases": [
+      "mountain_biking_man_tone_6"
+    , "mountain_bicyclist_tone_6"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
     "emoji": "🛀"
   , "description": "person taking bath"
   , "category": "Activity"
@@ -6207,6 +12041,72 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🛀🏻"
+  , "description": "person taking bath + skin tone 1 + 2"
+  , "category": "Activity"
+  , "aliases": [
+      "bath_tone_1"
+    , "bath_tone_2"
+    ]
+  , "tags": [
+      "shower"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🛀🏼"
+  , "description": "person taking bath + skin tone 3"
+  , "category": "Activity"
+  , "aliases": [
+      "bath_tone_3"
+    ]
+  , "tags": [
+      "shower"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🛀🏽"
+  , "description": "person taking bath + skin tone 4"
+  , "category": "Activity"
+  , "aliases": [
+      "bath_tone_4"
+    ]
+  , "tags": [
+      "shower"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🛀🏾"
+  , "description": "person taking bath + skin tone 5"
+  , "category": "Activity"
+  , "aliases": [
+      "bath_tone_5"
+    ]
+  , "tags": [
+      "shower"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🛀🏿"
+  , "description": "person taking bath + skin tone 6"
+  , "category": "Activity"
+  , "aliases": [
+      "bath_tone_6"
+    ]
+  , "tags": [
+      "shower"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "8.3"
   }
 , {
     "emoji": "🕴"
@@ -16454,123 +22354,208 @@
   , "ios_version": "8.3"
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "basecamp"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "basecampy"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "bowtie"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "feelsgood"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "finnadie"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "goberserk"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "godmode"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "hurtrealbad"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "neckbeard"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "octocat"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "rage1"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "rage2"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "rage3"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "rage4"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "shipit"
     , "squirrel"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "suspect"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 , {
-    "aliases": [
+    "emoji": null
+  , "description": null
+  , "category": null
+  , "aliases": [
       "trollface"
     ]
   , "tags": [
     ]
+  , "unicode_version": null
+  , "ios_version": null
   }
 ]
