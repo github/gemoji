@@ -124,3 +124,6 @@ module Emoji
       @unicodes_index
     end
 end
+
+# Preload emoji into memory
+Emoji.all
