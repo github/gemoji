@@ -104,7 +104,9 @@ module Emoji
         next unless raw
         no_gender = raw.sub(/(#{VARIATION_SELECTOR_16})?#{ZERO_WIDTH_JOINER}(#{FEMALE_SYMBOL}|#{MALE_SYMBOL})/, '')
         next unless $2
-        edit_emoji(find_by_unicode(no_gender)) do |emoji|
+        emoji = find_by_unicode(no_gender)
+        next unless emoji
+        edit_emoji(emoji) do
           emoji.add_unicode_alias(
             $2 == FEMALE_SYMBOL ?
               raw.sub(FEMALE_SYMBOL, MALE_SYMBOL) :

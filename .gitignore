@@ -3,6 +3,7 @@
 .bundle
 .ruby-version
 Gemfile.lock
-db/NamesList.txt
+db/emoji-test.txt
+db/ucd.nounihan.grouped.xml
 images/unicode/*.png
 vendor/

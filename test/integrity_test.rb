@@ -26,9 +26,7 @@ class IntegrityTest < TestCase
     end
 
     hashes.each do |checksum, emojis|
-      # Apple uses the same image for "black_medium_square" and "black_large_square":
-      expected_length = ("black_medium_square" == emojis[0].name) ? 2 : 1
-      assert_equal expected_length, emojis.length,
+      assert_equal 1, emojis.length,
         "These images share the same checksum: " +
         emojis.map(&:image_filename).join(', ')
     end
