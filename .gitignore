@@ -2,6 +2,7 @@
 !/bin/gemoji
 .bundle
 .ruby-version
+Gemfile.lock
 db/NamesList.txt
 images/unicode/*.png
 vendor/
