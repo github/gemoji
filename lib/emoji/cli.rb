@@ -1,9 +1,12 @@
 require 'emoji/extractor'
 require 'fileutils'
+require 'optparse'
 
 module Emoji
   module CLI
     extend self
+
+    InvalidUsage = Class.new(RuntimeError)
 
     def dispatch(argv)
       cmd = argv[0]
@@ -15,11 +18,15 @@ module Emoji
       when "help", "--help", "-h"
         help
       else
-        raise ArgumentError
+        raise InvalidUsage
       end
 
       return 0
-    rescue ArgumentError
+    rescue InvalidUsage, OptionParser::InvalidArgument, OptionParser::InvalidOption => err
+      unless err.message == err.class.to_s
+        $stderr.puts err.message
+        $stderr.puts
+      end
       $stderr.puts usage_text
       return 1
     end
@@ -28,11 +35,25 @@ module Emoji
       puts usage_text
     end
 
-    def extract(argv)
-      path = argv.shift
-      raise ArgumentError if path.to_s.empty?
+    VALID_SIZES = [ 20, 32, 40, 48, 64, 96, 160 ]
 
-      Emoji::Extractor.new(64, path).extract!
+    def extract(argv)
+      size = 64
+
+      OptionParser.new do |opts|
+        opts.on("--size=#{size}", Integer) do |val|
+          if VALID_SIZES.include?(val)
+            size = val
+          else
+            raise InvalidUsage, "size should be one of: #{VALID_SIZES.join(', ')}"
+          end
+        end
+      end.parse!(argv)
+
+      raise InvalidUsage unless argv.size == 1
+      path = argv[0]
+
+      Emoji::Extractor.new(size, path).extract!
       Dir["#{Emoji.images_path}/*.png"].each do |png|
         FileUtils.cp(png, File.join(path, File.basename(png)))
       end
@@ -40,7 +61,7 @@ module Emoji
 
     def usage_text
       <<EOF
-Usage: gemoji extract <path>
+Usage: gemoji extract <path> [--size=64]
 EOF
     end
   end
