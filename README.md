@@ -2,7 +2,7 @@ gemoji
 ======
 
 This library contains character information about native emoji, as well as image
-files for a few custom emoji.
+files for a few custom emoji. See [Emoji Keyboard Online](https://emojikeyboard.org) for examples of emojis and their associated descriptions.
 
 
 Installation
