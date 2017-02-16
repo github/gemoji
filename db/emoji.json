@@ -34,11 +34,11 @@
   , "category": "People"
   , "aliases": [
       "smile"
-    , "laugh"
     ]
   , "tags": [
       "happy"
     , "joy"
+    , "laugh"
     , "pleased"
     ]
   , "unicode_version": "6.0"
@@ -10590,10 +10590,10 @@
   , "category": "Objects"
   , "aliases": [
       "tada"
-    , "hooray"
     ]
   , "tags": [
-      "party"
+      "hooray"
+    , "party"
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
