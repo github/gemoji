@@ -7,8 +7,8 @@ unless images_extracted = File.directory?(File.join(Emoji.images_path, 'unicode'
 end
 
 class IntegrityTest < TestCase
-  test "images on disk correlate 1-1 with emojis" do
-    images_on_disk = Dir["#{Emoji.images_path}/**/*.png"].map {|f| f.sub(Emoji.images_path, '') }
+  test 'images on disk correlate 1-1 with emojis' do
+    images_on_disk = Dir["#{Emoji.images_path}/**/*.png"].map { |f| f.sub(Emoji.images_path, '') }
     expected_images = Emoji.all.map { |emoji| '/%s' % emoji.image_filename }
 
     missing_images = expected_images - images_on_disk
@@ -18,39 +18,38 @@ class IntegrityTest < TestCase
     assert_equal 0, extra_images.size, "these images don't match any emojis:\n  #{extra_images.join("\n  ")}\n"
   end
 
-  test "images on disk have no duplicates" do
-    hashes = Hash.new { |h,k| h[k] = [] }
+  test 'images on disk have no duplicates' do
+    hashes = Hash.new { |h, k| h[k] = [] }
     Emoji.all.each do |emoji|
       checksum = Digest::MD5.file(File.join(Emoji.images_path, emoji.image_filename)).to_s
       hashes[checksum] << emoji
     end
 
-    hashes.each do |checksum, emojis|
+    hashes.each do |_checksum, emojis|
       assert_equal 1, emojis.length,
-        "These images share the same checksum: " +
-        emojis.map(&:image_filename).join(', ')
+                   'These images share the same checksum: ' +
+                   emojis.map(&:image_filename).join(', ')
     end
   end
 
-  test "images on disk are 64x64" do
+  test 'images on disk are 64x64' do
     mismatches = []
     Dir["#{Emoji.images_path}/**/*.png"].each do |image_file|
       width, height = png_dimensions(image_file)
-      unless width == 64 && height == 64
-        mismatches << "%s: %dx%d" % [
-          image_file.sub(Emoji.images_path, ''),
-          width,
-          height
-        ]
-      end
+      next if width == 64 && height == 64
+      mismatches << '%s: %dx%d' % [
+        image_file.sub(Emoji.images_path, ''),
+        width,
+        height
+      ]
     end
-    assert_equal ["/shipit.png: 75x75"], mismatches
+    assert_equal ['/shipit.png: 75x75'], mismatches
   end
 
   private
 
   def png_dimensions(file)
-    png = File.open(file, "rb") { |f| f.read(1024) }
-    png.unpack("x16N2")
+    png = File.open(file, 'rb') { |f| f.read(1024) }
+    png.unpack('x16N2')
   end
 end if images_extracted

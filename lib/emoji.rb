@@ -14,7 +14,7 @@ module Emoji
   end
 
   def images_path
-    File.expand_path("../../images", __FILE__)
+    File.expand_path('../../images', __FILE__)
   end
 
   def all
@@ -39,15 +39,15 @@ module Emoji
   # The character is added to the `Emoji.all` set.
   def create(name)
     emoji = Emoji::Character.new(name)
-    self.all << edit_emoji(emoji) { yield emoji if block_given? }
+    all << edit_emoji(emoji) { yield emoji if block_given? }
     emoji
   end
 
   # Public: Yield an emoji to the block and update the indices in case its
   # aliases or unicode_aliases lists changed.
   def edit_emoji(emoji)
-    @names_index ||= Hash.new
-    @unicodes_index ||= Hash.new
+    @names_index ||= {}
+    @unicodes_index ||= {}
 
     yield emoji
 
@@ -72,59 +72,60 @@ module Emoji
   end
 
   private
-    VARIATION_SELECTOR_16 = "\u{fe0f}".freeze
-    ZERO_WIDTH_JOINER = "\u{200d}".freeze
-    FEMALE_SYMBOL = "\u{2640}".freeze
-    MALE_SYMBOL = "\u{2642}".freeze
 
-    # Chars from Apple's palette which must have VARIATION_SELECTOR_16 to render:
-    TEXT_GLYPHS = ["🈷", "🈂", "🅰", "🅱", "🅾", "©", "®", "™", "〰"].freeze
+  VARIATION_SELECTOR_16 = "\u{fe0f}".freeze
+  ZERO_WIDTH_JOINER = "\u{200d}".freeze
+  FEMALE_SYMBOL = "\u{2640}".freeze
+  MALE_SYMBOL = "\u{2642}".freeze
 
-    def parse_data_file
-      data = File.open(data_file, 'r:UTF-8') { |file| JSON.parse(file.read) }
-      data.each do |raw_emoji|
-        self.create(nil) do |emoji|
-          raw_emoji.fetch('aliases').each { |name| emoji.add_alias(name) }
-          if raw = raw_emoji['emoji']
-            unicodes = [raw, raw.sub(VARIATION_SELECTOR_16, '') + VARIATION_SELECTOR_16].uniq
-            unicodes.each { |uni| emoji.add_unicode_alias(uni) }
-          end
-          raw_emoji.fetch('tags').each { |tag| emoji.add_tag(tag) }
+  # Chars from Apple's palette which must have VARIATION_SELECTOR_16 to render:
+  TEXT_GLYPHS = ['🈷', '🈂', '🅰', '🅱', '🅾', '©', '®', '™', '〰'].freeze
 
-          emoji.category = raw_emoji['category']
-          emoji.description = raw_emoji['description']
-          emoji.unicode_version = raw_emoji['unicode_version']
-          emoji.ios_version = raw_emoji['ios_version']
+  def parse_data_file
+    data = File.open(data_file, 'r:UTF-8') { |file| JSON.parse(file.read) }
+    data.each do |raw_emoji|
+      create(nil) do |emoji|
+        raw_emoji.fetch('aliases').each { |name| emoji.add_alias(name) }
+        if raw = raw_emoji['emoji']
+          unicodes = [raw, raw.sub(VARIATION_SELECTOR_16, '') + VARIATION_SELECTOR_16].uniq
+          unicodes.each { |uni| emoji.add_unicode_alias(uni) }
         end
-      end
+        raw_emoji.fetch('tags').each { |tag| emoji.add_tag(tag) }
 
-      # Add an explicit gendered variant to emoji that historically imply a gender
-      data.each do |raw_emoji|
-        raw = raw_emoji['emoji']
-        next unless raw
-        no_gender = raw.sub(/(#{VARIATION_SELECTOR_16})?#{ZERO_WIDTH_JOINER}(#{FEMALE_SYMBOL}|#{MALE_SYMBOL})/, '')
-        next unless $2
-        emoji = find_by_unicode(no_gender)
-        next unless emoji
-        edit_emoji(emoji) do
-          emoji.add_unicode_alias(
-            $2 == FEMALE_SYMBOL ?
-              raw.sub(FEMALE_SYMBOL, MALE_SYMBOL) :
-              raw.sub(MALE_SYMBOL, FEMALE_SYMBOL)
-          )
-        end
+        emoji.category = raw_emoji['category']
+        emoji.description = raw_emoji['description']
+        emoji.unicode_version = raw_emoji['unicode_version']
+        emoji.ios_version = raw_emoji['ios_version']
       end
     end
 
-    def names_index
-      all unless defined? @all
-      @names_index
+    # Add an explicit gendered variant to emoji that historically imply a gender
+    data.each do |raw_emoji|
+      raw = raw_emoji['emoji']
+      next unless raw
+      no_gender = raw.sub(/(#{VARIATION_SELECTOR_16})?#{ZERO_WIDTH_JOINER}(#{FEMALE_SYMBOL}|#{MALE_SYMBOL})/, '')
+      next unless Regexp.last_match(2)
+      emoji = find_by_unicode(no_gender)
+      next unless emoji
+      edit_emoji(emoji) do
+        emoji.add_unicode_alias(
+          Regexp.last_match(2) == FEMALE_SYMBOL ?
+            raw.sub(FEMALE_SYMBOL, MALE_SYMBOL) :
+            raw.sub(MALE_SYMBOL, FEMALE_SYMBOL)
+        )
+      end
     end
+  end
 
-    def unicodes_index
-      all unless defined? @all
-      @unicodes_index
-    end
+  def names_index
+    all unless defined? @all
+    @names_index
+  end
+
+  def unicodes_index
+    all unless defined? @all
+    @unicodes_index
+  end
 end
 
 # Preload emoji into memory

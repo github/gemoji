@@ -3,7 +3,7 @@ require 'fileutils'
 
 module Emoji
   class Extractor
-    EMOJI_TTF = "/System/Library/Fonts/Apple Color Emoji.ttc"
+    EMOJI_TTF = '/System/Library/Fonts/Apple Color Emoji.ttc'.freeze
 
     attr_reader :size, :images_path
 
@@ -27,32 +27,31 @@ module Emoji
     end
 
     def extract!
-      each do |glyph_name, type, binread|
-        if emoji = glyph_name_to_emoji(glyph_name)
-          image_filename = "#{images_path}/#{emoji.image_filename}"
-          FileUtils.mkdir_p(File.dirname(image_filename))
-          File.open(image_filename, 'wb') { |f| f.write binread.call }
-        end
+      each do |glyph_name, _type, binread|
+        next unless emoji = glyph_name_to_emoji(glyph_name)
+        image_filename = "#{images_path}/#{emoji.image_filename}"
+        FileUtils.mkdir_p(File.dirname(image_filename))
+        File.open(image_filename, 'wb') { |f| f.write binread.call }
       end
     end
 
-  private
+    private
 
     GENDER_MAP = {
-      "M" => "\u{2642}",
-      "W" => "\u{2640}",
-    }
-
-    FAMILY_MAP = {
-      "B" => "\u{1f466}",
-      "G" => "\u{1f467}",
-      "M" => "\u{1f468}",
-      "W" => "\u{1f469}",
+      'M' => "\u{2642}",
+      'W' => "\u{2640}"
     }.freeze
 
-    FAMILY = "1F46A"
-    COUPLE = "1F491"
-    KISS = "1F48F"
+    FAMILY_MAP = {
+      'B' => "\u{1f466}",
+      'G' => "\u{1f467}",
+      'M' => "\u{1f468}",
+      'W' => "\u{1f469}"
+    }.freeze
+
+    FAMILY = '1F46A'.freeze
+    COUPLE = '1F491'.freeze
+    KISS = '1F48F'.freeze
 
     def glyph_name_to_emoji(glyph_name)
       return if glyph_name =~ /\.[1-5]($|\.)/
@@ -60,23 +59,23 @@ module Emoji
       v16 = Emoji::VARIATION_SELECTOR_16
 
       if glyph_name =~ /^u(#{FAMILY}|#{COUPLE}|#{KISS})\.([#{FAMILY_MAP.keys.join('')}]+)$/
-        if $1 == FAMILY ? $2 == "MWB" : $2 == "WM"
-          raw = [$1.hex].pack('U')
+        if Regexp.last_match(2) == (Regexp.last_match(1) == FAMILY ? 'MWB' : 'WM')
+          raw = [Regexp.last_match(1).hex].pack('U')
         else
-          if $1 == COUPLE
+          if Regexp.last_match(1) == COUPLE
             middle = "#{zwj}\u{2764}#{v16}#{zwj}" # heavy black heart
-          elsif $1 == KISS
+          elsif Regexp.last_match(1) == KISS
             middle = "#{zwj}\u{2764}#{v16}#{zwj}\u{1F48B}#{zwj}" # heart + kiss mark
           else
             middle = zwj
           end
-          raw = $2.split('').map { |c| FAMILY_MAP.fetch(c) }.join(middle)
+          raw = Regexp.last_match(2).split('').map { |c| FAMILY_MAP.fetch(c) }.join(middle)
         end
         candidates = [raw]
       else
-        raw = glyph_name.gsub(/(^|_)u([0-9A-F]+)/) { ($1.empty?? $1 : zwj) + [$2.hex].pack('U') }
+        raw = glyph_name.gsub(/(^|_)u([0-9A-F]+)/) { (Regexp.last_match(1).empty? ? Regexp.last_match(1) : zwj) + [Regexp.last_match(2).hex].pack('U') }
         raw.sub!(/\.0\b/, '')
-        raw.sub!(/\.(#{GENDER_MAP.keys.join('|')})$/) { v16 + zwj + GENDER_MAP.fetch($1) }
+        raw.sub!(/\.(#{GENDER_MAP.keys.join('|')})$/) { v16 + zwj + GENDER_MAP.fetch(Regexp.last_match(1)) }
         candidates = [raw]
         candidates << raw.sub(v16, '') if raw.include?(v16)
         candidates << raw.gsub(zwj, '') if raw.include?(zwj)
@@ -89,21 +88,21 @@ module Emoji
     # https://www.microsoft.com/typography/otspec/otff.htm
     def parse_ttc(io)
       header_name = io.read(4).unpack('a*')[0]
-      raise unless "ttcf" == header_name
-      header_version, num_fonts = io.read(4*2).unpack('l>N')
+      raise unless 'ttcf' == header_name
+      header_version, num_fonts = io.read(4 * 2).unpack('l>N')
       # parse_version(header_version) #=> 2.0
       io.read(4 * num_fonts).unpack('N*')
     end
 
     def parse_tables(io)
-      sfnt_version, num_tables = io.read(4 + 2*4).unpack('Nn')
+      sfnt_version, num_tables = io.read(4 + 2 * 4).unpack('Nn')
       # sfnt_version #=> 0x00010000
       num_tables.times.each_with_object({}) do |_, tables|
-        tag, checksum, offset, length = io.read(4 + 4*3).unpack('a4N*')
+        tag, checksum, offset, length = io.read(4 + 4 * 3).unpack('a4N*')
         tables[tag] = {
           checksum: checksum,
           offset: offset,
-          length: length,
+          length: length
         }
       end
     end
@@ -132,7 +131,7 @@ module Emoji
 
       parse_version(io.read(32).unpack('l>')[0]) #=> 2.0
       num_glyphs = io.read(2).unpack('n')[0]
-      glyph_name_index = io.read(2*num_glyphs).unpack('n*')
+      glyph_name_index = io.read(2 * num_glyphs).unpack('n*')
 
       glyph_names = []
       while io.pos < end_pos
@@ -152,33 +151,32 @@ module Emoji
         glyph_offset = strike[:glyph_data_offset][glyph_id]
         next_glyph_offset = strike[:glyph_data_offset][glyph_id + 1]
 
-        if glyph_offset && next_glyph_offset && glyph_offset < next_glyph_offset
-          io.pos = sbix_offset + strike[:offset] + glyph_offset
-          x, y, type = io.read(2*2 + 4).unpack('s2A4')
-          yield glyph_name, type, -> { io.read(next_glyph_offset - glyph_offset - 8) }
-        end
+        next unless glyph_offset && next_glyph_offset && glyph_offset < next_glyph_offset
+        io.pos = sbix_offset + strike[:offset] + glyph_offset
+        x, y, type = io.read(2 * 2 + 4).unpack('s2A4')
+        yield glyph_name, type, -> { io.read(next_glyph_offset - glyph_offset - 8) }
       end
     end
 
-    def extract_sbix_strike(io, num_glyphs, image_size)
+    def extract_sbix_strike(io, num_glyphs, _image_size)
       sbix_offset = io.pos
-      version, flags, num_strikes = io.read(2*2 + 4).unpack('n2N')
-      strike_offsets = num_strikes.times.map { io.read(4).unpack('N')[0] }
+      version, flags, num_strikes = io.read(2 * 2 + 4).unpack('n2N')
+      strike_offsets = Array.new(num_strikes) { io.read(4).unpack('N')[0] }
 
       strike_offsets.each do |strike_offset|
         io.pos = sbix_offset + strike_offset
-        ppem, resolution = io.read(4*2).unpack('n2')
+        ppem, resolution = io.read(4 * 2).unpack('n2')
         next unless ppem == size
 
-        data_offsets = io.read(4 * (num_glyphs+1)).unpack('N*')
+        data_offsets = io.read(4 * (num_glyphs + 1)).unpack('N*')
         return {
           ppem: ppem,
           resolution: resolution,
           offset: strike_offset,
-          glyph_data_offset: data_offsets,
+          glyph_data_offset: data_offsets
         }
       end
-      return nil
+      nil
     end
 
     def parse_version(num)
