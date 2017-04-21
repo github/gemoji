@@ -1913,7 +1913,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "👱‍♀️"
+    "emoji": "👱‍♀"
   , "description": "blond-haired woman"
   , "category": "People"
   , "aliases": [
@@ -1975,7 +1975,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "👳‍♀️"
+    "emoji": "👳‍♀"
   , "description": "woman wearing turban"
   , "category": "People"
   , "aliases": [
@@ -1999,7 +1999,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "👮‍♀️"
+    "emoji": "👮‍♀"
   , "description": "woman police officer"
   , "category": "People"
   , "aliases": [
@@ -2026,7 +2026,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "👷‍♀️"
+    "emoji": "👷‍♀"
   , "description": "woman construction worker"
   , "category": "People"
   , "aliases": [
@@ -2052,7 +2052,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "💂‍♀️"
+    "emoji": "💂‍♀"
   , "description": "woman guard"
   , "category": "People"
   , "aliases": [
@@ -2089,7 +2089,7 @@
   , "ios_version": "10.0"
   }
 , {
-    "emoji": "🕵️"
+    "emoji": "🕵"
   , "description": "detective"
   , "category": "People"
   , "aliases": [
@@ -2103,7 +2103,7 @@
   , "ios_version": "9.1"
   }
 , {
-    "emoji": "👩‍⚕️"
+    "emoji": "👩‍⚕"
   , "description": "woman health worker"
   , "category": "People"
   , "aliases": [
@@ -2117,7 +2117,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "👨‍⚕️"
+    "emoji": "👨‍⚕"
   , "description": "man health worker"
   , "category": "People"
   , "aliases": [
@@ -2437,7 +2437,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "👩‍✈️"
+    "emoji": "👩‍✈"
   , "description": "woman pilot"
   , "category": "People"
   , "aliases": [
@@ -2449,7 +2449,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "👨‍✈️"
+    "emoji": "👨‍✈"
   , "description": "man pilot"
   , "category": "People"
   , "aliases": [
@@ -2487,7 +2487,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "👩‍⚖️"
+    "emoji": "👩‍⚖"
   , "description": "woman judge"
   , "category": "People"
   , "aliases": [
@@ -2500,7 +2500,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "👨‍⚖️"
+    "emoji": "👨‍⚖"
   , "description": "man judge"
   , "category": "People"
   , "aliases": [
@@ -2621,7 +2621,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🙇‍♀️"
+    "emoji": "🙇‍♀"
   , "description": "woman bowing"
   , "category": "People"
   , "aliases": [
@@ -2663,7 +2663,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "💁‍♂️"
+    "emoji": "💁‍♂"
   , "description": "man tipping hand"
   , "category": "People"
   , "aliases": [
@@ -2692,7 +2692,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🙅‍♂️"
+    "emoji": "🙅‍♂"
   , "description": "man gesturing NO"
   , "category": "People"
   , "aliases": [
@@ -2719,7 +2719,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🙆‍♂️"
+    "emoji": "🙆‍♂"
   , "description": "man gesturing OK"
   , "category": "People"
   , "aliases": [
@@ -2744,7 +2744,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🙋‍♂️"
+    "emoji": "🙋‍♂"
   , "description": "man raising hand"
   , "category": "People"
   , "aliases": [
@@ -2756,7 +2756,7 @@
   , "ios_version": "10.0"
   }
 , {
-    "emoji": "🤦‍♀️"
+    "emoji": "🤦‍♀"
   , "description": "woman facepalming"
   , "category": "People"
   , "aliases": [
@@ -2768,7 +2768,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🤦‍♂️"
+    "emoji": "🤦‍♂"
   , "description": "man facepalming"
   , "category": "People"
   , "aliases": [
@@ -2780,7 +2780,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🤷‍♀️"
+    "emoji": "🤷‍♀"
   , "description": "woman shrugging"
   , "category": "People"
   , "aliases": [
@@ -2792,7 +2792,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🤷‍♂️"
+    "emoji": "🤷‍♂"
   , "description": "man shrugging"
   , "category": "People"
   , "aliases": [
@@ -2817,7 +2817,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🙎‍♂️"
+    "emoji": "🙎‍♂"
   , "description": "man pouting"
   , "category": "People"
   , "aliases": [
@@ -2843,7 +2843,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🙍‍♂️"
+    "emoji": "🙍‍♂"
   , "description": "man frowning"
   , "category": "People"
   , "aliases": [
@@ -2869,7 +2869,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "💇‍♂️"
+    "emoji": "💇‍♂"
   , "description": "man getting haircut"
   , "category": "People"
   , "aliases": [
@@ -2895,7 +2895,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "💆‍♂️"
+    "emoji": "💆‍♂"
   , "description": "man getting massage"
   , "category": "People"
   , "aliases": [
@@ -2960,7 +2960,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "👯‍♂️"
+    "emoji": "👯‍♂"
   , "description": "men with bunny ears partying"
   , "category": "People"
   , "aliases": [
@@ -2973,7 +2973,7 @@
   , "ios_version": "10.0"
   }
 , {
-    "emoji": "🚶‍♀️"
+    "emoji": "🚶‍♀"
   , "description": "woman walking"
   , "category": "People"
   , "aliases": [
@@ -2998,7 +2998,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🏃‍♀️"
+    "emoji": "🏃‍♀"
   , "description": "woman running"
   , "category": "People"
   , "aliases": [
@@ -5475,7 +5475,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "☄️"
+    "emoji": "☄"
   , "description": "comet"
   , "category": "Nature"
   , "aliases": [
@@ -7140,7 +7140,7 @@
   , "ios_version": "10.0"
   }
 , {
-    "emoji": "🏋️"
+    "emoji": "🏋"
   , "description": "person lifting weights"
   , "category": "Activity"
   , "aliases": [
@@ -7166,7 +7166,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🤼‍♀️"
+    "emoji": "🤼‍♀"
   , "description": "women wrestling"
   , "category": "Activity"
   , "aliases": [
@@ -7178,7 +7178,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🤼‍♂️"
+    "emoji": "🤼‍♂"
   , "description": "men wrestling"
   , "category": "Activity"
   , "aliases": [
@@ -7190,7 +7190,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🤸‍♀️"
+    "emoji": "🤸‍♀"
   , "description": "woman cartwheeling"
   , "category": "Activity"
   , "aliases": [
@@ -7202,7 +7202,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🤸‍♂️"
+    "emoji": "🤸‍♂"
   , "description": "man cartwheeling"
   , "category": "Activity"
   , "aliases": [
@@ -7226,7 +7226,7 @@
   , "ios_version": "10.0"
   }
 , {
-    "emoji": "⛹️"
+    "emoji": "⛹"
   , "description": "person bouncing ball"
   , "category": "Activity"
   , "aliases": [
@@ -7238,7 +7238,7 @@
   , "ios_version": "9.1"
   }
 , {
-    "emoji": "🤾‍♀️"
+    "emoji": "🤾‍♀"
   , "description": "woman playing handball"
   , "category": "Activity"
   , "aliases": [
@@ -7250,7 +7250,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🤾‍♂️"
+    "emoji": "🤾‍♂"
   , "description": "man playing handball"
   , "category": "Activity"
   , "aliases": [
@@ -7274,7 +7274,7 @@
   , "ios_version": "10.0"
   }
 , {
-    "emoji": "🏌️"
+    "emoji": "🏌"
   , "description": "person golfing"
   , "category": "Activity"
   , "aliases": [
@@ -7286,7 +7286,7 @@
   , "ios_version": "9.1"
   }
 , {
-    "emoji": "🏄‍♀️"
+    "emoji": "🏄‍♀"
   , "description": "woman surfing"
   , "category": "Activity"
   , "aliases": [
@@ -7311,7 +7311,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🏊‍♀️"
+    "emoji": "🏊‍♀"
   , "description": "woman swimming"
   , "category": "Activity"
   , "aliases": [
@@ -7336,7 +7336,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🤽‍♀️"
+    "emoji": "🤽‍♀"
   , "description": "woman playing water polo"
   , "category": "Activity"
   , "aliases": [
@@ -7348,7 +7348,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🤽‍♂️"
+    "emoji": "🤽‍♂"
   , "description": "man playing water polo"
   , "category": "Activity"
   , "aliases": [
@@ -7360,7 +7360,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🚣‍♀️"
+    "emoji": "🚣‍♀"
   , "description": "woman rowing boat"
   , "category": "Activity"
   , "aliases": [
@@ -7397,7 +7397,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🚴‍♀️"
+    "emoji": "🚴‍♀"
   , "description": "woman biking"
   , "category": "Activity"
   , "aliases": [
@@ -7422,7 +7422,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🚵‍♀️"
+    "emoji": "🚵‍♀"
   , "description": "woman mountain biking"
   , "category": "Activity"
   , "aliases": [
@@ -7600,7 +7600,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🤹‍♀️"
+    "emoji": "🤹‍♀"
   , "description": "woman juggling"
   , "category": "Activity"
   , "aliases": [
@@ -7612,7 +7612,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🤹‍♂️"
+    "emoji": "🤹‍♂"
   , "description": "man juggling"
   , "category": "Activity"
   , "aliases": [
