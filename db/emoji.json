@@ -17842,123 +17842,157 @@
   , "ios_version": "8.3"
   }
 , {
-    "aliases": [
+    "emoji": "⛺️\u200D🏔"
+  , "aliases": [
       "basecamp"
     ]
   , "tags": [
+      "custom"
     ]
   }
 , {
-    "aliases": [
+    "emoji": "⛺️\u200D⛰"
+  , "aliases": [
       "basecampy"
     ]
   , "tags": [
+      "custom"
     ]
   }
 , {
-    "aliases": [
+    "emoji": "😁\u200D🎀"
+  , "aliases": [
       "bowtie"
     ]
   , "tags": [
+      "custom"
     ]
   }
 , {
-    "aliases": [
+    "emoji": "😏\u200D👾"
+  , "aliases": [
       "feelsgood"
     ]
   , "tags": [
+      "custom"
     ]
   }
 , {
-    "aliases": [
+    "emoji": "💀\u200D👾"
+  , "aliases": [
       "finnadie"
     ]
   , "tags": [
+      "custom"
     ]
   }
 , {
-    "aliases": [
+    "emoji": "😈\u200D👾"
+  , "aliases": [
       "goberserk"
     ]
   , "tags": [
+      "custom"
     ]
   }
 , {
-    "aliases": [
+    "emoji": "😑\u200D👾"
+  , "aliases": [
       "godmode"
     ]
   , "tags": [
+      "custom"
     ]
   }
 , {
-    "aliases": [
+    "emoji": "🤕\u200D👾"
+  , "aliases": [
       "hurtrealbad"
     ]
   , "tags": [
+      "custom"
     ]
   }
 , {
-    "aliases": [
+    "emoji": "🤓\u200D💯"
+  , "aliases": [
       "neckbeard"
     ]
   , "tags": [
-    ]
+       "custom"
+   ]
   }
 , {
-    "aliases": [
+    "emoji": "🐱\u200D🐙"
+  , "aliases": [
       "octocat"
     ]
   , "tags": [
+      "custom"
     ]
   }
 , {
-    "aliases": [
+    "emoji": "😡\u200D👾"
+  , "aliases": [
       "rage1"
     ]
   , "tags": [
-    ]
+       "custom"
+   ]
   }
 , {
-    "aliases": [
+    "emoji": "😡\u200D💢\u200D👾"
+  , "aliases": [
       "rage2"
     ]
   , "tags": [
+      "custom"
     ]
   }
 , {
-    "aliases": [
+    "emoji": "😡\u200D💢\u200D💢\u200D👾"
+  , "aliases": [
       "rage3"
     ]
   , "tags": [
-    ]
+       "custom"
+   ]
   }
 , {
-    "aliases": [
+    "emoji": "😡\u200D💢\u200D💢\u200D💢\u200D👾"
+  , "aliases": [
       "rage4"
     ]
   , "tags": [
+      "custom"
     ]
   }
 , {
-    "aliases": [
+    "emoji": "🐿\u200D🕴"
+  , "aliases": [
       "shipit"
     , "squirrel"
     ]
   , "tags": [
+      "custom"
     ]
   }
 , {
-    "aliases": [
+    "emoji": "🤔\u200D👾"
+  , "aliases": [
       "suspect"
     ]
   , "tags": [
+      "custom"
     ]
   }
 , {
-    "aliases": [
+    "emoji": "😬\u200D💢"
+  , "aliases": [
       "trollface"
     ]
   , "tags": [
+      "custom"
     ]
   }
 ]
