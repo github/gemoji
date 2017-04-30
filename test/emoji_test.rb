@@ -119,10 +119,10 @@ class EmojiTest < TestCase
 
   test "custom emojis" do
     custom = Emoji.all.select(&:custom?)
-    assert custom.size > 0
+    assert custom.size > 0, "there should be at least 1 custom emoji"
 
     custom.each do |emoji|
-      assert_true emoji.custom
+      assert emoji.custom, "every custom emoji should be flagged as such"
       assert emoji.tags.include?("custom"), "every custom emoji must be tagged as 'custom'"
 #      assert_equal [], emoji.unicode_aliases ## change to expect any number of ZWJ sequences
     end
