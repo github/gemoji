@@ -122,15 +122,16 @@ class EmojiTest < TestCase
     assert custom.size > 0
 
     custom.each do |emoji|
-      assert_nil emoji.raw
-      assert_equal [], emoji.unicode_aliases
+      assert_true emoji.custom
+      assert emoji.tags.include?("custom"), "every custom emoji must be tagged as 'custom'"
+#      assert_equal [], emoji.unicode_aliases ## change to expect any number of ZWJ sequences
     end
   end
 
   test "custom emoji names" do
     custom_names = Emoji.all.select(&:custom?).map(&:name)
-    assert custom_names.include?("shipit")
-    assert !custom_names.include?("+1")
+    assert custom_names.include?("shipit"), ":shipit: should be a custom emoji"
+    assert !custom_names.include?("+1"), ":+1: should not be a custom emoji"
   end
 
   test "create" do
