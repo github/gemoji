@@ -6,9 +6,6 @@ module Emoji
       str.codepoints.map { |c| c.to_s(16).rjust(4, '0') }.join('-')
     end
 
-    # The custom-emoji status for this entry
-    attr_accessor :custom
-
     # A list of names uniquely referring to this emoji.
     attr_reader :aliases
 
@@ -49,7 +46,7 @@ module Emoji
     end
 
     # True if the emoji is not a standard Emoji character.
-    def custom?() tags.include?("custom") end
+    def custom?() @tags.include?("custom") end
 
     def initialize(name)
       @aliases = Array(name)
