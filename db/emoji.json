@@ -17847,7 +17847,9 @@
       "basecamp"
     ]
   , "tags": [
+      "custom"
     ]
+  , "custom": true
   }
 , {
     "emoji": "⛺️\u200D⛰"
@@ -17855,7 +17857,9 @@
       "basecampy"
     ]
   , "tags": [
+      "custom"
     ]
+  , "custom": true
   }
 , {
     "emoji": "😁\u200D🎀"
@@ -17863,7 +17867,9 @@
       "bowtie"
     ]
   , "tags": [
+      "custom"
     ]
+  , "custom": true
   }
 , {
     "emoji": "😏\u200D👾"
@@ -17871,7 +17877,9 @@
       "feelsgood"
     ]
   , "tags": [
+      "custom"
     ]
+  , "custom": true
   }
 , {
     "emoji": "💀\u200D👾"
@@ -17879,7 +17887,9 @@
       "finnadie"
     ]
   , "tags": [
+      "custom"
     ]
+  , "custom": true
   }
 , {
     "emoji": "😈\u200D👾"
@@ -17887,7 +17897,9 @@
       "goberserk"
     ]
   , "tags": [
+      "custom"
     ]
+  , "custom": true
   }
 , {
     "emoji": "😑\u200D👾"
@@ -17895,7 +17907,9 @@
       "godmode"
     ]
   , "tags": [
+      "custom"
     ]
+  , "custom": true
   }
 , {
     "emoji": "🤕\u200D👾"
@@ -17903,7 +17917,9 @@
       "hurtrealbad"
     ]
   , "tags": [
+      "custom"
     ]
+  , "custom": true
   }
 , {
     "emoji": "🤓\u200D💯"
@@ -17911,7 +17927,9 @@
       "neckbeard"
     ]
   , "tags": [
-   ]
+      "custom"
+    ]
+  , "custom": true
   }
 , {
     "emoji": "🐱\u200D🐙"
@@ -17919,7 +17937,9 @@
       "octocat"
     ]
   , "tags": [
+      "custom"
     ]
+  , "custom": true
   }
 , {
     "emoji": "😡\u200D👾"
@@ -17927,7 +17947,9 @@
       "rage1"
     ]
   , "tags": [
-   ]
+      "custom"
+    ]
+  , "custom": true
   }
 , {
     "emoji": "😡\u200D💢\u200D👾"
@@ -17935,7 +17957,9 @@
       "rage2"
     ]
   , "tags": [
+      "custom"
     ]
+  , "custom": true
   }
 , {
     "emoji": "😡\u200D💢\u200D💢\u200D👾"
@@ -17943,7 +17967,9 @@
       "rage3"
     ]
   , "tags": [
-   ]
+      "custom"
+    ]
+  , "custom": true
   }
 , {
     "emoji": "😡\u200D💢\u200D💢\u200D💢\u200D👾"
@@ -17951,7 +17977,9 @@
       "rage4"
     ]
   , "tags": [
+      "custom"
     ]
+  , "custom": true
   }
 , {
     "emoji": "🐿\u200D🕴"
@@ -17960,7 +17988,9 @@
     , "squirrel"
     ]
   , "tags": [
+      "custom"
     ]
+  , "custom": true
   }
 , {
     "emoji": "🤔\u200D👾"
@@ -17968,7 +17998,9 @@
       "suspect"
     ]
   , "tags": [
+      "custom"
     ]
+  , "custom": true
   }
 , {
     "emoji": "😬\u200D💢"
@@ -17976,6 +18008,8 @@
       "trollface"
     ]
   , "tags": [
+      "custom"
     ]
+  , "custom": true
   }
 ]
