@@ -7,10 +7,15 @@ module Emoji
     end
 
     # True if the emoji is not a standard Emoji character.
-    def custom?() !raw end
+    def custom?()
+      :custom
+    end
 
     # A list of names uniquely referring to this emoji.
     attr_reader :aliases
+
+    # The custom-emoji status for this entry
+    attr_accessor :custom
 
     # The category for this emoji as per Apple's character palette
     attr_accessor :category
@@ -33,7 +38,7 @@ module Emoji
     # A list of Unicode strings that uniquely refer to this emoji.
     attr_reader :unicode_aliases
 
-    # Raw Unicode string for an emoji. Nil if emoji is non-standard.
+    # Raw Unicode string for an emoji.
     def raw() unicode_aliases.first end
 
     def add_unicode_alias(str)
