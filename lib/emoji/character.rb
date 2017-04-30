@@ -8,7 +8,7 @@ module Emoji
 
     # True if the emoji is not a standard Emoji character.
     def custom?()
-      :custom
+      custom
     end
 
     # A list of names uniquely referring to this emoji.
