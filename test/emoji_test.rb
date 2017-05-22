@@ -1,41 +1,41 @@
 require 'test_helper'
 
 class EmojiTest < TestCase
-  test "fetching all emoji" do
+  test 'fetching all emoji' do
     count = Emoji.all.size
     assert count > 845, "there were too few emojis: #{count}"
   end
 
-  test "unicodes set contains the unicodes" do
+  test 'unicodes set contains the unicodes' do
     min_size = Emoji.all.reject(&:custom?).size
     count = Emoji.all.map(&:unicode_aliases).flatten.size
     assert count > min_size, "there were too few unicode mappings: #{count}"
   end
 
-  test "finding emoji by alias" do
+  test 'finding emoji by alias' do
     assert_equal 'smile', Emoji.find_by_alias('smile').name
   end
 
-  test "finding nonexistent emoji by alias returns nil" do
+  test 'finding nonexistent emoji by alias returns nil' do
     assert_nil Emoji.find_by_alias('$$$')
   end
 
-  test "finding emoji by unicode" do
+  test 'finding emoji by unicode' do
     assert_equal "\u{1f604}", Emoji.find_by_unicode("\u{1f604}").raw
   end
 
-  test "finding nonexistent emoji by unicode returns nil" do
+  test 'finding nonexistent emoji by unicode returns nil' do
     assert_nil Emoji.find_by_unicode("\u{1234}")
   end
 
-  test "unicode_aliases" do
+  test 'unicode_aliases' do
     emoji = Emoji.find_by_unicode("\u{2728}")
     assert_equal ["\u{2728}", "\u{2728}\u{fe0f}"], emoji.unicode_aliases
   end
 
-  test "unicode_aliases includes alternate position of VARIATION_SELECTOR_16" do
+  test 'unicode_aliases includes alternate position of VARIATION_SELECTOR_16' do
     emoji = Emoji.find_by_unicode("\u{0031}\u{fe0f}\u{20e3}")
-    assert_equal ["\u{0031}\u{fe0f}\u{20e3}", "\u{0031}\u{20e3}\u{fe0f}"], emoji.unicode_aliases
+    assert_equal %w(1️⃣ 1⃣️), emoji.unicode_aliases
   end
 
   test "unicode_aliases doesn't necessarily include form without VARIATION_SELECTOR_16" do
@@ -43,19 +43,19 @@ class EmojiTest < TestCase
     assert_equal ["\u{00a9}\u{fe0f}"], emoji.unicode_aliases
   end
 
-  test "unicode_aliases for emoji that have gender variant include form with explicit gender" do
+  test 'unicode_aliases for emoji that have gender variant include form with explicit gender' do
     male_spy = Emoji.find_by_unicode("\u{1f575}\u{fe0f}")
     assert_equal male_spy, Emoji.find_by_unicode("\u{1f575}\u{fe0f}\u{200d}\u{2642}\u{fe0f}")
   end
 
-  test "emojis have tags" do
+  test 'emojis have tags' do
     emoji = Emoji.find_by_alias('smile')
     assert emoji.tags.include?('happy')
     assert emoji.tags.include?('joy')
     assert emoji.tags.include?('pleased')
   end
 
-  test "emojis have valid names" do
+  test 'emojis have valid names' do
     aliases = Emoji.all.flat_map(&:aliases)
 
     invalid = []
@@ -67,11 +67,11 @@ class EmojiTest < TestCase
 
     duplicates = alias_count.select { |_, count| count > 1 }.keys
 
-    assert_equal [], invalid, "some emoji have invalid names"
-    assert_equal [], duplicates, "some emoji aliases have duplicates"
+    assert_equal [], invalid, 'some emoji have invalid names'
+    assert_equal [], duplicates, 'some emoji aliases have duplicates'
   end
 
-  test "missing or incorrect unicodes" do
+  test 'missing or incorrect unicodes' do
     source_unicode_emoji = Emoji.apple_palette.values.flatten
     missing = source_unicode_emoji - Emoji.all.flat_map(&:unicode_aliases)
 
@@ -88,7 +88,7 @@ class EmojiTest < TestCase
     assert_equal 0, missing.size, message
   end
 
-  test "emoji have category" do
+  test 'emoji have category' do
     missing = Emoji.all.select { |e| !e.custom? && e.category.to_s.empty? }
     assert_equal [], missing.map(&:name), "some emoji don't have a category"
 
@@ -96,7 +96,7 @@ class EmojiTest < TestCase
     assert_equal 'People', emoji.category
   end
 
-  test "emoji have description" do
+  test 'emoji have description' do
     missing = Emoji.all.select { |e| !e.custom? && e.description.to_s.empty? }
     assert_equal [], missing.map(&:name), "some emoji don't have a description"
 
@@ -104,12 +104,12 @@ class EmojiTest < TestCase
     assert_equal 'family: man, woman, girl', emoji.description
   end
 
-  test "emoji have Unicode version" do
+  test 'emoji have Unicode version' do
     emoji = Emoji.find_by_alias('family_man_woman_girl')
     assert_equal '6.0', emoji.unicode_version
   end
 
-  test "emoji have iOS version" do
+  test 'emoji have iOS version' do
     missing = Emoji.all.select { |e| !e.custom? && e.ios_version.to_s.empty? }
     assert_equal [], missing.map(&:name), "some emoji don't have an iOS version"
 
@@ -117,9 +117,9 @@ class EmojiTest < TestCase
     assert_equal '8.3', emoji.ios_version
   end
 
-  test "custom emojis" do
+  test 'custom emojis' do
     custom = Emoji.all.select(&:custom?)
-    assert custom.size > 0
+    assert !custom.empty?
 
     custom.each do |emoji|
       assert_nil emoji.raw
@@ -127,77 +127,77 @@ class EmojiTest < TestCase
     end
   end
 
-  test "custom emoji names" do
+  test 'custom emoji names' do
     custom_names = Emoji.all.select(&:custom?).map(&:name)
-    assert custom_names.include?("shipit")
-    assert !custom_names.include?("+1")
+    assert custom_names.include?('shipit')
+    assert !custom_names.include?('+1')
   end
 
-  test "create" do
-    emoji = Emoji.create("music") do |char|
+  test 'create' do
+    emoji = Emoji.create('music') do |char|
       char.add_unicode_alias "\u{266b}"
       char.add_unicode_alias "\u{266a}"
-      char.add_tag "notes"
-      char.add_tag "eighth"
+      char.add_tag 'notes'
+      char.add_tag 'eighth'
     end
 
     begin
       assert_equal emoji, Emoji.all.last
-      assert_equal emoji, Emoji.find_by_alias("music")
+      assert_equal emoji, Emoji.find_by_alias('music')
       assert_equal emoji, Emoji.find_by_unicode("\u{266a}")
       assert_equal emoji, Emoji.find_by_unicode("\u{266b}")
 
       assert_equal "\u{266b}", emoji.raw
-      assert_equal "unicode/266b.png", emoji.image_filename
-      assert_equal %w[music], emoji.aliases
-      assert_equal %w[notes eighth], emoji.tags
+      assert_equal 'unicode/266b.png', emoji.image_filename
+      assert_equal %w(music), emoji.aliases
+      assert_equal %w(notes eighth), emoji.tags
     ensure
       Emoji.all.pop
     end
   end
 
-  test "create with custom filename" do
-    emoji = Emoji.create("music") do |char|
-      char.image_filename = "some_path/my_emoji.gif"
+  test 'create with custom filename' do
+    emoji = Emoji.create('music') do |char|
+      char.image_filename = 'some_path/my_emoji.gif'
     end
 
     begin
-      assert_equal "some_path/my_emoji.gif", emoji.image_filename
+      assert_equal 'some_path/my_emoji.gif', emoji.image_filename
     ensure
       Emoji.all.pop
     end
   end
 
-  test "create without block" do
-    emoji = Emoji.create("music")
+  test 'create without block' do
+    emoji = Emoji.create('music')
 
     begin
-      assert_equal emoji, Emoji.find_by_alias("music")
+      assert_equal emoji, Emoji.find_by_alias('music')
       assert_equal [], emoji.unicode_aliases
       assert_equal [], emoji.tags
-      assert_equal "music.png", emoji.image_filename
+      assert_equal 'music.png', emoji.image_filename
     ensure
       Emoji.all.pop
     end
   end
 
-  test "edit" do
-    emoji = Emoji.find_by_alias("weary")
+  test 'edit' do
+    emoji = Emoji.find_by_alias('weary')
 
     emoji = Emoji.edit_emoji(emoji) do |char|
-      char.add_alias "whining"
+      char.add_alias 'whining'
       char.add_unicode_alias "\u{1f629}\u{266a}"
-      char.add_tag "complaining"
+      char.add_tag 'complaining'
     end
 
     begin
-      assert_equal emoji, Emoji.find_by_alias("weary")
-      assert_equal emoji, Emoji.find_by_alias("whining")
+      assert_equal emoji, Emoji.find_by_alias('weary')
+      assert_equal emoji, Emoji.find_by_alias('whining')
       assert_equal emoji, Emoji.find_by_unicode("\u{1f629}")
       assert_equal emoji, Emoji.find_by_unicode("\u{1f629}\u{266a}")
 
-      assert_equal %w[weary whining], emoji.aliases
-      assert_includes emoji.tags, "complaining"
+      assert_equal %w(weary whining), emoji.aliases
+      assert_includes emoji.tags, 'complaining'
     ensure
       emoji.aliases.pop
       emoji.unicode_aliases.pop

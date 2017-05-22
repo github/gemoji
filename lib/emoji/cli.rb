@@ -13,9 +13,9 @@ module Emoji
       argv = argv[1..-1]
 
       case cmd
-      when "extract"
+      when 'extract'
         public_send(cmd, argv)
-      when "help", "--help", "-h"
+      when 'help', '--help', '-h'
         help
       else
         raise InvalidUsage
@@ -35,7 +35,7 @@ module Emoji
       puts usage_text
     end
 
-    VALID_SIZES = [ 20, 32, 40, 48, 64, 96, 160 ]
+    VALID_SIZES = [20, 32, 40, 48, 64, 96, 160].freeze
 
     def extract(argv)
       size = 64

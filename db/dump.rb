@@ -6,10 +6,10 @@ class UnicodeCharacter
   attr_reader :code, :description, :version, :aliases
 
   class CharListener
-    CHAR_TAG = "char".freeze
+    CHAR_TAG = 'char'.freeze
 
     def self.parse(io, &block)
-      REXML::Document.parse_stream(io, self.new(&block))
+      REXML::Document.parse_stream(io, new(&block))
     end
 
     def initialize(&block)
@@ -19,9 +19,9 @@ class UnicodeCharacter
     def tag_start(name, attributes)
       if CHAR_TAG == name
         @callback.call(
-          attributes.fetch("cp") { return },
-          attributes.fetch("na") { return },
-          attributes.fetch("age", nil),
+          attributes.fetch('cp') { return },
+          attributes.fetch('na') { return },
+          attributes.fetch('age', nil)
         )
       end
     end
@@ -43,7 +43,7 @@ class UnicodeCharacter
 
   def self.fetch(code)
     code = code.to_s(16).rjust(4, '0') if code.is_a?(Integer)
-    self.index.fetch(code)
+    index.fetch(code)
   end
 
   def initialize(code, description, version)
@@ -64,12 +64,12 @@ class UnicodeCharacter
 end
 
 unless $stdin.tty?
-  codepoints = STDIN.read.chomp.codepoints.map { |code|
+  codepoints = STDIN.read.chomp.codepoints.map do |code|
     UnicodeCharacter.fetch(code)
-  }
+  end
   codepoints.each do |char|
-    printf "%5s: %s", char.code.upcase, char.description
-    printf " (%s)", char.version if char.version
+    printf '%5s: %s', char.code.upcase, char.description
+    printf ' (%s)', char.version if char.version
     puts
   end
   exit
@@ -77,9 +77,9 @@ end
 
 trap(:PIPE) { abort }
 
-normalize = -> (raw) {
+normalize = lambda do |raw|
   raw.sub(Emoji::VARIATION_SELECTOR_16, '')
-}
+end
 
 emojidesc = {}
 File.open(File.expand_path('../emoji-test.txt', __FILE__)) do |file|
@@ -87,7 +87,7 @@ File.open(File.expand_path('../emoji-test.txt', __FILE__)) do |file|
     next if line =~ /^(#|$)/
     line = line.chomp.split('# ', 2)[1]
     emoji, description = line.split(' ', 2)
-    emojidesc[normalize.(emoji)] = description
+    emojidesc[normalize.call(emoji)] = description
   end
 end
 
@@ -104,15 +104,13 @@ for category, emojis in Emoji.apple_palette
       unicode_version = uchar.version unless uchar.version.nil?
     end
 
-    description = emojidesc.fetch(normalize.(raw))
+    description = emojidesc.fetch(normalize.call(raw))
 
     if unicode_version == ''
       warn "#{description} (#{raw}) doesn't have Unicode version"
     end
 
-    if ios_version == ''
-      ios_version = '10.2'
-    end
+    ios_version = '10.2' if ios_version == ''
 
     items << {
       emoji: raw,
@@ -121,7 +119,7 @@ for category, emojis in Emoji.apple_palette
       aliases: emoji ? emoji.aliases : [description.gsub(/\W+/, '_').downcase],
       tags: emoji ? emoji.tags : [],
       unicode_version: unicode_version,
-      ios_version: ios_version,
+      ios_version: ios_version
     }
   end
 end
@@ -129,10 +127,10 @@ end
 for emoji in Emoji.all.select(&:custom?)
   items << {
     aliases: emoji.aliases,
-    tags: emoji.tags,
+    tags: emoji.tags
   }
 end
 
 puts JSON.pretty_generate(items)
-  .gsub("\n\n", "\n")
-  .gsub(/,\n( +)/) { "\n%s, " % $1[2..-1] }
+         .gsub("\n\n", "\n")
+         .gsub(/,\n( +)/) { "\n%s, " % Regexp.last_match(1)[2..-1] }

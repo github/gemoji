@@ -1,30 +1,30 @@
 require 'rake/testtask'
 
-task :default => :test
+task default: :test
 
 Rake::TestTask.new do |t|
-  t.libs << "test"
-  t.test_files = FileList["test/*_test.rb"]
+  t.libs << 'test'
+  t.test_files = FileList['test/*_test.rb']
 end
 
 namespace :db do
   desc %(Generate Emoji data files needed for development)
-  task :generate => [
+  task generate: [
     'db/Category-Emoji.json',
     'db/ucd.nounihan.grouped.xml',
-    'db/emoji-test.txt',
+    'db/emoji-test.txt'
   ]
 
   desc %(Dump a list of supported Emoji with Unicode descriptions and aliases)
-  task :dump => :generate do
+  task dump: :generate do
     system 'ruby', '-Ilib', 'db/dump.rb'
   end
 end
 
 task 'db/Category-Emoji.json' do |t|
   system 'plutil', '-convert', 'json', '-r',
-    '/System/Library/Input Methods/CharacterPalette.app/Contents/Resources/Category-Emoji.plist',
-    '-o', t.name
+         '/System/Library/Input Methods/CharacterPalette.app/Contents/Resources/Category-Emoji.plist',
+         '-o', t.name
 end
 
 file 'db/ucd.nounihan.grouped.xml' do
