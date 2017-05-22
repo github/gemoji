@@ -2656,6 +2656,7 @@
   , "aliases": [
       "tipping_hand_woman"
     , "information_desk_person"
+    , "sassy_woman"
     ]
   , "tags": [
     ]
@@ -2668,6 +2669,7 @@
   , "category": "People"
   , "aliases": [
       "tipping_hand_man"
+    , "sassy_man"
     ]
   , "tags": [
       "information"
