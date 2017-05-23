@@ -26,7 +26,7 @@ module Emoji
 
   def apple_palette
     return @apple_palette if defined? @apple_palette
-    data = File.open(apple_palette_file, 'r:UTF-8') { |f| JSON.parse(f.read) }
+    data = File.open(apple_palette_file, 'r:UTF-8') { |f| JSON.parse(f.read, symbolize_names: false) }
     @apple_palette = data.fetch('EmojiDataArray').each_with_object({}) do |group, all|
       title = group.fetch('CVDataTitle').split('-', 2)[1]
       all[title] = group.fetch('CVCategoryData').fetch('Data').split(',').map do |raw|
@@ -81,7 +81,7 @@ module Emoji
     TEXT_GLYPHS = ["🈷", "🈂", "🅰", "🅱", "🅾", "©", "®", "™", "〰"].freeze
 
     def parse_data_file
-      data = File.open(data_file, 'r:UTF-8') { |file| JSON.parse(file.read) }
+      data = File.open(data_file, 'r:UTF-8') { |file| JSON.parse(file.read, symbolize_names: false) }
       data.each do |raw_emoji|
         self.create(nil) do |emoji|
           raw_emoji.fetch('aliases').each { |name| emoji.add_alias(name) }
