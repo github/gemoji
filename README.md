@@ -8,7 +8,7 @@ files for a few custom emoji.
 Installation
 ------------
 
-Add `gemoji` to your Gemfile.
+Add `gemoji` to your `Gemfile`.
 
 ``` ruby
 gem 'gemoji'
