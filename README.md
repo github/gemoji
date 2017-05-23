@@ -32,7 +32,7 @@ This will extract images into filenames such as:
 Example Rails Helper
 --------------------
 
-This would allow emojifying content such as: `it's raining :cat:s and :dog:s!`
+This would allow emojifying content such as: `it's raining :cat:s and :dog:s!` or emojifying unicode content such as `it's raining 🐱s and 🐶s!`
 
 See the [Emoji cheat sheet](http://www.emoji-cheat-sheet.com) for more examples.
 
@@ -42,6 +42,16 @@ module EmojiHelper
     h(content).to_str.gsub(/:([\w+-]+):/) do |match|
       if emoji = Emoji.find_by_alias($1)
         %(<img alt="#$1" src="#{image_path("emoji/#{emoji.image_filename}")}" style="vertical-align:middle" width="20" height="20" />)
+      else
+        match
+      end
+    end.html_safe if content.present?
+  end
+
+  def emojify_unicodes(content)
+    h(content).to_str.gsub(Emoji.unicodes_regex) do |match|
+      if emoji = Emoji.find_by_unicode(match)
+        %(<img alt="#{match}" src="#{image_path("emoji/#{emoji.image_filename}")}" style="vertical-align:middle" width="20" height="20" />)
       else
         match
       end

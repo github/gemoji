@@ -43,4 +43,26 @@ class DocumentationTest < TestCase
   test "returns nil for blank content" do
     assert_nil Helper.emojify('')
   end
+
+  test "replaces emoji unicodes with images" do
+    assert_equal "It's raining " \
+        '<img alt="🐱" src="/images/emoji/unicode/1f431.png?123" style="vertical-align:middle" width="20" height="20" />s and ' \
+        '<img alt="🐶" src="/images/emoji/unicode/1f436.png?123" style="vertical-align:middle" width="20" height="20" />s!',
+      Helper.emojify_unicodes("It's raining 🐱s and 🐶s!")
+  end
+
+  test "doesn't replace unknown emoji" do
+    content = "\u{12345}is in \u{1111}"
+    assert_equal content, Helper.emojify_unicodes(content)
+  end
+
+  test "escapes other HTML" do
+    assert_equal "You have been &lt;script&gt;alert('pwned!')&lt;/script&gt;",
+      Helper.emojify_unicodes("You have been <script>alert('pwned!')</script>")
+  end
+
+  test "returns nil for blank content" do
+    assert_nil Helper.emojify_unicodes('')
+  end
+
 end

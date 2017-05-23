@@ -71,6 +71,13 @@ module Emoji
     unicodes_index[unicode]
   end
 
+  def unicodes_regex
+    all unless defined? @all
+    #.sort.reverse in order to match '1f44d-1f3ff' before '1f44d'
+    #'*' is escaped (in emojione collection set 2016)
+    @unicodes_regex ||= /#{@unicodes_index.keys.sort.reverse.join('|').gsub('*','\*')}/
+  end
+
   private
     VARIATION_SELECTOR_16 = "\u{fe0f}".freeze
     ZERO_WIDTH_JOINER = "\u{200d}".freeze
