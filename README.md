@@ -50,6 +50,17 @@ module EmojiHelper
 end
 ```
 
+Or a very simplistic version:
+
+```ruby
+module EmojiHelper
+  def emoji(name, size: 20)
+    emoji = Emoji.find_by_alias(name)
+    image_tag asset_path("emoji/#{emoji.image_filename}"), alt: name, width: size, height: size
+  end
+end
+```
+
 Unicode mapping
 ---------------
 
