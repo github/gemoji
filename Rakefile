@@ -1,4 +1,5 @@
 require 'rake/testtask'
+require 'rake/extensiontask'
 
 task :default => :test
 
@@ -43,3 +44,16 @@ directory 'images/unicode' do
   require 'emoji/extractor'
   Emoji::Extractor.new(64, Emoji.images_path).extract!
 end
+
+namespace :c do
+  task :headers do
+    require 'emoji/tables'
+    gem_dir = File.dirname(File.realpath(__FILE__))
+
+    File.open(File.join(gem_dir, "ext/gemoji/emoji.h"), "w") do |file|
+      file.puts(Emoji::Tables.generate_length_tables)
+    end
+  end
+end
+
+Rake::ExtensionTask.new('gemoji')
