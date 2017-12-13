@@ -17963,4 +17963,922 @@
   , "tags": [
     ]
   }
+, {
+    "emoji": "🤩"
+  , "description": "star-struck"
+  , "category": "People"
+  , "aliases": [
+      "starstruck"
+    ]
+  , "tags": [
+      "eyes"
+    , "face"
+    , "grinning"
+    , "star"
+    , "star-struck"
+    , "starry-eyed"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤨"
+  , "description": "face with raised eyebrow"
+  , "category": "People"
+  , "aliases": [
+      "eyebrowraised"
+    ]
+  , "tags": [
+      "distrust"
+    , "face with raised eyebrow"
+    , "skeptic"
+    , "disapproval"
+    , "disbelief"
+    , "mild surprise"
+    , "scepticism"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤯"
+  , "description": "exploding head"
+  , "category": "People"
+  , "aliases": [
+      "mindblown"
+    ]
+  , "tags": [
+      "exploding head"
+    , "shocked"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤪"
+  , "description": "zany face"
+  , "category": "People"
+  , "aliases": [
+      "zany"
+    ]
+  , "tags": [
+      "eye"
+    , "goofy"
+    , "large"
+    , "small"
+    , "zany face"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤬"
+  , "description": "face with symbols on mouth"
+  , "category": "People"
+  , "aliases": [
+      "cursing"
+    ]
+  , "tags": [
+      "face with symbols on mouth"
+    , "swearing"
+    , "cursing"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤮"
+  , "description": "face vomiting"
+  , "category": "People"
+  , "aliases": [
+      "vomiting"
+    ]
+  , "tags": [
+      "face vomiting"
+    , "sick"
+    , "vomit"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤫"
+  , "description": "shushing face"
+  , "category": "People"
+  , "aliases": [
+      "shushing"
+    ]
+  , "tags": [
+      "quiet"
+    , "shush"
+    , "shushing face"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤭"
+  , "description": "face with hand over mouth"
+  , "category": "People"
+  , "aliases": [
+      "giggling"
+    ]
+  , "tags": [
+      "face with hand over mouth"
+    , "whoops"
+    , "shock"
+    , "sudden realization"
+    , "surprise"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧐"
+  , "description": "face with monocle"
+  , "category": "People"
+  , "aliases": [
+      "posh"
+    ]
+  , "tags": [
+      "face with monocle"
+    , "stuffy"
+    , "wealthy"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧒"
+  , "description": "child"
+  , "category": "People"
+  , "aliases": [
+      "child"
+    ]
+  , "tags": [
+      "child"
+    , "gender-neutral"
+    , "young"
+    , "(no specific gender)"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧑"
+  , "description": "adult"
+  , "category": "People"
+  , "aliases": [
+      "adult"
+    ]
+  , "tags": [
+      "adult"
+    , "gender-neutral"
+    , "(no specific gender)"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧓"
+  , "description": "older adult"
+  , "category": "People"
+  , "aliases": [
+      "senior"
+    ]
+  , "tags": [
+      "gender-neutral"
+    , "old"
+    , "older adult"
+    , "(no specific gender)"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧕"
+  , "description": "woman with headscarf"
+  , "category": "People"
+  , "aliases": [
+      "headscarf"
+    ]
+  , "tags": [
+      "headscarf"
+    , "hijab"
+    , "mantilla"
+    , "tichel"
+    , "woman with headscarf"
+    , "bandana"
+    , "head kerchief"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧔"
+  , "description": "bearded person"
+  , "category": "People"
+  , "aliases": [
+      "beard"
+    ]
+  , "tags": [
+      "beard"
+    , "bearded person"
+    , "bewhiskered"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤱"
+  , "description": "breast-feeding"
+  , "category": "People"
+  , "aliases": [
+      "breastfeeding"
+    ]
+  , "tags": [
+      "baby"
+    , "breast"
+    , "breast-feeding"
+    , "nursing"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧙"
+  , "description": "mage"
+  , "category": "People"
+  , "aliases": [
+      "mage"
+    ]
+  , "tags": [
+      "mage"
+    , "sorcerer"
+    , "sorceress"
+    , "witch"
+    , "wizard"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧚"
+  , "description": "fairy"
+  , "category": "People"
+  , "aliases": [
+      "fairy"
+    ]
+  , "tags": [
+      "fairy"
+    , "Oberon"
+    , "Puck"
+    , "Titania"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧛"
+  , "description": "vampire"
+  , "category": "People"
+  , "aliases": [
+      "vampire"
+    ]
+  , "tags": [
+      "Dracula"
+    , "undead"
+    , "vampire"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧜"
+  , "description": "merperson"
+  , "category": "People"
+  , "aliases": [
+      "mermaid"
+    ]
+  , "tags": [
+      "mermaid"
+    , "merman"
+    , "merperson"
+    , "merwoman"
+    , "merfolk"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧝"
+  , "description": "elf"
+  , "category": "People"
+  , "aliases": [
+      "elf"
+    ]
+  , "tags": [
+      "elf"
+    , "magical"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧞"
+  , "description": "genie"
+  , "category": "People"
+  , "aliases": [
+      "genie"
+    ]
+  , "tags": [
+      "djinn"
+    , "genie"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧟"
+  , "description": "zombie"
+  , "category": "People"
+  , "aliases": [
+      "zombie"
+    ]
+  , "tags": [
+      "undead"
+    , "walking dead"
+    , "zombie"
+    , "(non-human color)"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧖"
+  , "description": "person in steamy room"
+  , "category": "People"
+  , "aliases": [
+      "sauna"
+    ]
+  , "tags": [
+      "person in steamy room"
+    , "sauna"
+    , "steam room"
+    , "hamam"
+    , "steambath"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧗"
+  , "description": "person climbing"
+  , "category": "People"
+  , "aliases": [
+      "climber"
+    ]
+  , "tags": [
+      "climber"
+    , "person climbing"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧘"
+  , "description": "person in lotus position"
+  , "category": "People"
+  , "aliases": [
+      "yoga"
+    ]
+  , "tags": [
+      "meditation"
+    , "person in lotus position"
+    , "yoga"
+    , "serenity"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤟"
+  , "description": "love-you gesture"
+  , "category": "People"
+  , "aliases": [
+      "ily"
+    ]
+  , "tags": [
+      "hand"
+    , "ILY"
+    , "love-you gesture"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤲"
+  , "description": "palms up together"
+  , "category": "People"
+  , "aliases": [
+      "praying"
+    ]
+  , "tags": [
+      "palms up together"
+    , "prayer"
+    , "cupped hands"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧠"
+  , "description": "brain"
+  , "category": "People"
+  , "aliases": [
+      "brain"
+    ]
+  , "tags": [
+      "brain"
+    , "intelligent"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧡"
+  , "description": "orange heart"
+  , "category": "Symbols"
+  , "aliases": [
+      "orange_heart"
+    ]
+  , "tags": [
+      "orange"
+    , "orange heart"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧣"
+  , "description": "scarf"
+  , "category": "People"
+  , "aliases": [
+      "scarf"
+    ]
+  , "tags": [
+      "neck"
+    , "scarf"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧤"
+  , "description": "gloves"
+  , "category": "People"
+  , "aliases": [
+      "gloves"
+    ]
+  , "tags": [
+      "gloves"
+    , "hand"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧥"
+  , "description": "coat"
+  , "category": "People"
+  , "aliases": [
+      "coat"
+    ]
+  , "tags": [
+      "coat"
+    , "jacket"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧦"
+  , "description": "socks"
+  , "category": "People"
+  , "aliases": [
+      "socks"
+    ]
+  , "tags": [
+      "socks"
+    , "stocking"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🧢"
+  , "description": "billed cap"
+  , "category": "People"
+  , "aliases": [
+      "cap"
+    ]
+  , "tags": [
+      "baseball cap"
+    , "billed cap"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🦓"
+  , "description": "zebra"
+  , "category": "Nature"
+  , "aliases": [
+      "zebra"
+    ]
+  , "tags": [
+      "stripe"
+    , "zebra"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🦒"
+  , "description": "giraffe"
+  , "category": "Nature"
+  , "aliases": [
+      "giraffe"
+    ]
+  , "tags": [
+      "giraffe"
+    , "spots"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🦔"
+  , "description": "hedgehog"
+  , "category": "Nature"
+  , "aliases": [
+      "hedgehog"
+    ]
+  , "tags": [
+      "hedgehog"
+    , "spiny"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🦕"
+  , "description": "sauropod"
+  , "category": "Nature"
+  , "aliases": [
+      "dino"
+    ]
+  , "tags": [
+      "brachiosaurus"
+    , "brontosaurus"
+    , "diplodocus"
+    , "sauropod"
+    , "dinosaur"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🦖"
+  , "description": "T-Rex"
+  , "category": "Nature"
+  , "aliases": [
+      "T-Rex"
+    ]
+  , "tags": [
+      "T-Rex"
+    , "Tyrannosaurus Rex"
+    , "dinosaur"
+    , "meatosaur"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🦗"
+  , "description": "cricket"
+  , "category": "Nature"
+  , "aliases": [
+      "crickets"
+    ]
+  , "tags": [
+      "cricket"
+    , "grasshopper"
+    , "Orthoptera"
+    , "silence"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🥥"
+  , "description": "coconut"
+  , "category": "Foods"
+  , "aliases": [
+      "coconut"
+    ]
+  , "tags": [
+      "coconut"
+    , "palm"
+    , "piña colada"
+    , "cocos"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🥦"
+  , "description": "broccoli"
+  , "category": "Foods"
+  , "aliases": [
+      "broccoli"
+    ]
+  , "tags": [
+      "broccoli"
+    , "wild cabbage"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🥨"
+  , "description": "pretzel"
+  , "category": "Foods"
+  , "aliases": [
+      "pretzel"
+    ]
+  , "tags": [
+      "pretzel"
+    , "twisted"
+    , "convoluted"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🥩"
+  , "description": "cut of meat"
+  , "category": "Foods"
+  , "aliases": [
+      "steak"
+    ]
+  , "tags": [
+      "chop"
+    , "cut of meat"
+    , "lambchop"
+    , "porkchop"
+    , "steak"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🥪"
+  , "description": "sandwich"
+  , "category": "Foods"
+  , "aliases": [
+      "sandwich"
+    ]
+  , "tags": [
+      "bread"
+    , "sandwich"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🥣"
+  , "description": "bowl with spoon"
+  , "category": "Foods"
+  , "aliases": [
+      "cereal"
+    ]
+  , "tags": [
+      "bowl with spoon"
+    , "breakfast"
+    , "cereal"
+    , "congee"
+    , "oatmeal"
+    , "porridge"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🥫"
+  , "description": "canned food"
+  , "category": "Foods"
+  , "aliases": [
+      "can"
+    ]
+  , "tags": [
+      "can"
+    , "canned food"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🥟"
+  , "description": "dumpling"
+  , "category": "Foods"
+  , "aliases": [
+      "dumpling"
+    ]
+  , "tags": [
+      "dumpling"
+    , "empanada"
+    , "gyōza"
+    , "jiaozi"
+    , "pierogi"
+    , "potsticker"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🥠"
+  , "description": "fortune cookie"
+  , "category": "Foods"
+  , "aliases": [
+      "fortune_cookie"
+    ]
+  , "tags": [
+      "fortune cookie"
+    , "prophecy"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🥡"
+  , "description": "takeout box"
+  , "category": "Foods"
+  , "aliases": [
+      "takeout"
+    ]
+  , "tags": [
+      "oyster pail"
+    , "takeout box"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🥧"
+  , "description": "pie"
+  , "category": "Foods"
+  , "aliases": [
+      "pie"
+    ]
+  , "tags": [
+      "filling"
+    , "pastry"
+    , "pie"
+    , "fruit"
+    , "meat"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🥤"
+  , "description": "cup with straw"
+  , "category": "Foods"
+  , "aliases": [
+      "softdrink"
+    ]
+  , "tags": [
+      "cup with straw"
+    , "juice"
+    , "soda"
+    , "malt"
+    , "soft drink"
+    , "water"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🥢"
+  , "description": "chopsticks"
+  , "category": "Foods"
+  , "aliases": [
+      "chopsticks"
+    ]
+  , "tags": [
+      "chopsticks"
+    , "hashi"
+    , "jeotgarak"
+    , "kuaizi"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🛸"
+  , "description": "flying saucer"
+  , "category": "Places"
+  , "aliases": [
+      "ufo"
+    ]
+  , "tags": [
+      "flying saucer"
+    , "UFO"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🛷"
+  , "description": "sled"
+  , "category": "Places"
+  , "aliases": [
+      "sled"
+    ]
+  , "tags": [
+      "sled"
+    , "sledge"
+    , "sleigh"
+    , "luge"
+    , "toboggan"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🥌"
+  , "description": "curling stone"
+  , "category": "Activity"
+  , "aliases": [
+      "curling"
+    ]
+  , "tags": [
+      "curling stone"
+    , "game"
+    , "rock"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+  , "description": "England"
+  , "category": "Flags"
+  , "aliases": [
+      "England"
+    , "gbeng"
+    , "ENG"
+    ]
+  , "tags": [
+      "flag"
+    , "English"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🏴󠁧󠁢󠁳󠁣󠁴󠁿"
+  , "description": "Scotland"
+  , "category": "Flags"
+  , "aliases": [
+      "Scotland"
+    , "Alba"
+    , "gbsct"
+    , "SCO"
+    ]
+  , "tags": [
+      "flag"
+    , "Scottish"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🏴󠁧󠁢󠁷󠁬󠁳󠁿"
+  , "description": "Wales"
+  , "category": "Flags"
+  , "aliases": [
+      "Wales"
+    , "Cymru"
+    , "gbwls"
+    , "WAL"
+    ]
+  , "tags": [
+      "flag"
+    , "Welsh"
+    ]
+  , "unicode_version": "10.0"
+  , "ios_version": "11.1"
+  }
 ]
