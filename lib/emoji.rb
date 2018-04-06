@@ -13,11 +13,92 @@ module Emoji
     File.expand_path("../../images", __FILE__)
   end
 
+  def unicode_palette_file
+    File.expand_path("../../db/emoji-test.txt", __FILE__)
+  end
+
   def all
     return @all if defined? @all
     @all = []
     parse_data_file
     @all
+  end
+
+  def unicode_palette
+    return @unicode_palette if defined? @unicode_palette
+    data = []
+    groupMapping = {
+      "Smileys & People": {
+        "CVDataTitle" => "EmojiCategory-People",
+        image: "Emoji-HumanImage",
+        "CVCategoryData" => { "Data" => [] }
+      },
+      "Animals & Nature": {
+        "CVDataTitle" => "EmojiCategory-Nature",
+        image: "Emoji-NatureImage",
+        "CVCategoryData" => { "Data" => [] }
+      },
+      "Food & Drink": {
+        "CVDataTitle" => "EmojiCategory-Foods",
+        image: "Emoji-FoodsImage",
+        "CVCategoryData" => { "Data" => [] }
+      },
+      "Travel & Places": {
+        "CVDataTitle" => "EmojiCategory-Places",
+        image: "Emoji-PlacesImage",
+        "CVCategoryData" => { "Data" => [] }
+      },
+      "Activities": {
+        "CVDataTitle" => "EmojiCategory-Activity",
+        image: "Emoji-ActivityImage",
+        "CVCategoryData" => { "Data" => [] }
+      },
+      "Objects": {
+        "CVDataTitle" => "EmojiCategory-Objects",
+        image: "Emoji-ObjectsImage",
+        "CVCategoryData" => { "Data" => [] }
+      },
+      "Symbols": {
+        "CVDataTitle" => "EmojiCategory-Symbols",
+        image: "Emoji-SymbolImage",
+        "CVCategoryData" => { "Data" => [] }
+      },
+      "Flags": {
+        "CVDataTitle" => "EmojiCategory-Flags",
+        image: "Emoji-FlagsImage",
+        "CVCategoryData" => { "Data" => [] }
+      },
+    }
+    currentGroup = {}
+    File.foreach(unicode_palette_file) do |line|
+      if line.start_with? '# group:'
+        group = line.sub!('# group: ', '').strip
+        if newGroup = groupMapping[group.to_sym]
+          if !currentGroup.empty?
+            data.push(currentGroup)
+          end
+          currentGroup = newGroup
+        end
+      elsif !line.strip.empty? and !line.start_with? '#' and !line.include? "non-fully-qualified" and !line.include? 'keycap'
+        _, comment = line.split("#").map(&:strip).reject(&:empty?)
+        emoji, _ = comment.split(" ")
+        currentGroup["CVCategoryData"]["Data"].push(emoji)
+      end
+    end
+    data.push(currentGroup)
+    {
+      "EmojiDataArray" => data
+    }
+  end
+
+  def apple_palette
+    return @apple_palette if defined? @apple_palette
+    @apple_palette = unicode_palette.fetch('EmojiDataArray').each_with_object({}) do |group, all|
+      title = group.fetch('CVDataTitle').split('-', 2)[1]
+      all[title] = group.fetch('CVCategoryData').fetch('Data').map do |raw|
+        TEXT_GLYPHS.include?(raw) ? raw + VARIATION_SELECTOR_16 : raw
+      end
+    end
   end
 
   # Public: Initialize an Emoji::Character instance and yield it to the block.
