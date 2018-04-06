@@ -10,7 +10,6 @@ end
 namespace :db do
   desc %(Generate Emoji data files needed for development)
   task :generate => [
-    'db/Category-Emoji.json',
     'db/ucd.nounihan.grouped.xml',
     'db/emoji-test.txt',
   ]
@@ -19,12 +18,6 @@ namespace :db do
   task :dump => :generate do
     system 'ruby', '-Ilib', 'db/dump.rb'
   end
-end
-
-task 'db/Category-Emoji.json' do |t|
-  system 'plutil', '-convert', 'json', '-r',
-    '/System/Library/Input Methods/CharacterPalette.app/Contents/Resources/Category-Emoji.plist',
-    '-o', t.name
 end
 
 file 'db/ucd.nounihan.grouped.xml' do
