@@ -28,42 +28,42 @@ module Emoji
     return @unicode_palette if defined? @unicode_palette
     data = []
     groupMapping = {
-      "Smileys & People": {
+      "Smileys & People" => {
         "CVDataTitle" => "EmojiCategory-People",
         image: "Emoji-HumanImage",
         "CVCategoryData" => { "Data" => [] }
       },
-      "Animals & Nature": {
+      "Animals & Nature" => {
         "CVDataTitle" => "EmojiCategory-Nature",
         image: "Emoji-NatureImage",
         "CVCategoryData" => { "Data" => [] }
       },
-      "Food & Drink": {
+      "Food & Drink" => {
         "CVDataTitle" => "EmojiCategory-Foods",
         image: "Emoji-FoodsImage",
         "CVCategoryData" => { "Data" => [] }
       },
-      "Travel & Places": {
+      "Travel & Places" => {
         "CVDataTitle" => "EmojiCategory-Places",
         image: "Emoji-PlacesImage",
         "CVCategoryData" => { "Data" => [] }
       },
-      "Activities": {
+      "Activities" => {
         "CVDataTitle" => "EmojiCategory-Activity",
         image: "Emoji-ActivityImage",
         "CVCategoryData" => { "Data" => [] }
       },
-      "Objects": {
+      "Objects" => {
         "CVDataTitle" => "EmojiCategory-Objects",
         image: "Emoji-ObjectsImage",
         "CVCategoryData" => { "Data" => [] }
       },
-      "Symbols": {
+      "Symbols" => {
         "CVDataTitle" => "EmojiCategory-Symbols",
         image: "Emoji-SymbolImage",
         "CVCategoryData" => { "Data" => [] }
       },
-      "Flags": {
+      "Flags" => {
         "CVDataTitle" => "EmojiCategory-Flags",
         image: "Emoji-FlagsImage",
         "CVCategoryData" => { "Data" => [] }
@@ -73,7 +73,7 @@ module Emoji
     File.foreach(unicode_palette_file) do |line|
       if line.start_with? '# group:'
         group = line.sub!('# group: ', '').strip
-        if newGroup = groupMapping[group.to_sym]
+        if newGroup = groupMapping[group]
           if !currentGroup.empty?
             data.push(currentGroup)
           end
