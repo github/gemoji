@@ -85,12 +85,16 @@ module Emoji
       },
     }
 
+    all_apple_emojis = []
+
     # Seed unicode groups with data from apple groups
     apple_categories = File.open(apple_palette_file, 'r:UTF-8') { |file| JSON.parse(file.read)["EmojiDataArray"] }
     apple_categories.each do |category|
       unicode_group_name = apple_to_unicode_mappings[category["CVDataTitle"]]
       unicode_group = groupMapping[unicode_group_name]
-      unicode_group["CVCategoryData"]["Data"] = category["CVCategoryData"]["Data"].split(',')
+      emojis = category["CVCategoryData"]["Data"].split(',')
+      all_apple_emojis += emojis
+      unicode_group["CVCategoryData"]["Data"] = emojis
     end
     currentGroup = {}
     File.foreach(unicode_palette_file) do |line|
@@ -105,7 +109,7 @@ module Emoji
       elsif !line.strip.empty? and !line.start_with? '#' and !line.include? "non-fully-qualified" and !line.include? 'keycap'
         _, comment = line.split("#").map(&:strip).reject(&:empty?)
         emoji, _ = comment.split(" ")
-        if !currentGroup["CVCategoryData"]["Data"].include? emoji
+        if !all_apple_emojis.include? emoji
           currentGroup["CVCategoryData"]["Data"].push(emoji)
         end
       end
