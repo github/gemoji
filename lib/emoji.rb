@@ -9,6 +9,10 @@ module Emoji
     File.expand_path('../../db/emoji.json', __FILE__)
   end
 
+  def apple_palette_file
+    File.expand_path('../../db/Category-Emoji.json', __FILE__)
+  end
+
   def images_path
     File.expand_path("../../images", __FILE__)
   end
@@ -27,6 +31,17 @@ module Emoji
   def unicode_palette
     return @unicode_palette if defined? @unicode_palette
     data = []
+    # CVDataTitle to Unicode group
+    apple_to_unicode_mappings = {
+      "EmojiCategory-People" => "Smileys & People",
+      "EmojiCategory-Nature" => "Animals & Nature",
+      "EmojiCategory-Foods" => "Food & Drink",
+      "EmojiCategory-Places" => "Travel & Places",
+      "EmojiCategory-Activity" => "Activities",
+      "EmojiCategory-Objects" => "Objects",
+      "EmojiCategory-Symbols" => "Symbols",
+      "EmojiCategory-Flags" => "Flags",
+    }
     groupMapping = {
       "Smileys & People" => {
         "CVDataTitle" => "EmojiCategory-People",
@@ -69,6 +84,14 @@ module Emoji
         "CVCategoryData" => { "Data" => [] }
       },
     }
+
+    # Seed unicode groups with data from apple groups
+    apple_categories = File.open(apple_palette_file, 'r:UTF-8') { |file| JSON.parse(file.read)["EmojiDataArray"] }
+    apple_categories.each do |category|
+      unicode_group_name = apple_to_unicode_mappings[category["CVDataTitle"]]
+      unicode_group = groupMapping[unicode_group_name]
+      unicode_group["CVCategoryData"]["Data"] = category["CVCategoryData"]["Data"].split(',')
+    end
     currentGroup = {}
     File.foreach(unicode_palette_file) do |line|
       if line.start_with? '# group:'
@@ -82,7 +105,9 @@ module Emoji
       elsif !line.strip.empty? and !line.start_with? '#' and !line.include? "non-fully-qualified" and !line.include? 'keycap'
         _, comment = line.split("#").map(&:strip).reject(&:empty?)
         emoji, _ = comment.split(" ")
-        currentGroup["CVCategoryData"]["Data"].push(emoji)
+        if !currentGroup["CVCategoryData"]["Data"].include? emoji
+          currentGroup["CVCategoryData"]["Data"].push(emoji)
+        end
       end
     end
     data.push(currentGroup)
