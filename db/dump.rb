@@ -97,6 +97,7 @@ for category, emojis in Emoji.apple_palette
   for raw in emojis
     emoji = Emoji.find_by_unicode(raw)
     unicode_version = emoji ? emoji.unicode_version : ''
+    ios_version = emoji ? emoji.ios_version : ''
 
     unless raw.include?(Emoji::ZERO_WIDTH_JOINER)
       uchar = UnicodeCharacter.fetch(raw.codepoints[0])
@@ -109,6 +110,10 @@ for category, emojis in Emoji.apple_palette
       warn "#{description} (#{raw}) doesn't have Unicode version"
     end
 
+    if ios_version == ''
+      ios_version = '11.1'
+    end
+
     items << {
       emoji: raw,
       description: description,
@@ -116,6 +121,7 @@ for category, emojis in Emoji.apple_palette
       aliases: emoji ? emoji.aliases : [description.gsub(/\W+/, '_').downcase],
       tags: emoji ? emoji.tags : [],
       unicode_version: unicode_version,
+      ios_version: ios_version,
     }
   end
 end
