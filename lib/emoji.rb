@@ -106,7 +106,7 @@ module Emoji
           end
           currentGroup = newGroup
         end
-      elsif !line.strip.empty? and !line.start_with? '#' and !line.include? "non-fully-qualified" and !line.include? 'keycap'
+      elsif !line.strip.empty? and !line.start_with? '#' and !line.include? "non-fully-qualified" and !line.include? 'keycap' and !line.include? 'skin tone'
         _, comment = line.split("#").map(&:strip).reject(&:empty?)
         emoji, _ = comment.split(" ")
         if !all_apple_emojis.include? emoji
