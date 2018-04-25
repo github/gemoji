@@ -1913,7 +1913,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "👱‍♀"
+    "emoji": "👱‍♀️"
   , "description": "blond-haired woman"
   , "category": "People"
   , "aliases": [
@@ -1975,7 +1975,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "👳‍♀"
+    "emoji": "👳‍♀️"
   , "description": "woman wearing turban"
   , "category": "People"
   , "aliases": [
@@ -1999,7 +1999,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "👮‍♀"
+    "emoji": "👮‍♀️"
   , "description": "woman police officer"
   , "category": "People"
   , "aliases": [
@@ -2026,7 +2026,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "👷‍♀"
+    "emoji": "👷‍♀️"
   , "description": "woman construction worker"
   , "category": "People"
   , "aliases": [
@@ -2052,7 +2052,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "💂‍♀"
+    "emoji": "💂‍♀️"
   , "description": "woman guard"
   , "category": "People"
   , "aliases": [
@@ -2089,7 +2089,7 @@
   , "ios_version": "10.0"
   }
 , {
-    "emoji": "🕵"
+    "emoji": "🕵️"
   , "description": "detective"
   , "category": "People"
   , "aliases": [
@@ -2103,7 +2103,7 @@
   , "ios_version": "9.1"
   }
 , {
-    "emoji": "👩‍⚕"
+    "emoji": "👩‍⚕️"
   , "description": "woman health worker"
   , "category": "People"
   , "aliases": [
@@ -2117,7 +2117,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "👨‍⚕"
+    "emoji": "👨‍⚕️"
   , "description": "man health worker"
   , "category": "People"
   , "aliases": [
@@ -2437,7 +2437,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "👩‍✈"
+    "emoji": "👩‍✈️"
   , "description": "woman pilot"
   , "category": "People"
   , "aliases": [
@@ -2449,7 +2449,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "👨‍✈"
+    "emoji": "👨‍✈️"
   , "description": "man pilot"
   , "category": "People"
   , "aliases": [
@@ -2487,7 +2487,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "👩‍⚖"
+    "emoji": "👩‍⚖️"
   , "description": "woman judge"
   , "category": "People"
   , "aliases": [
@@ -2500,7 +2500,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "👨‍⚖"
+    "emoji": "👨‍⚖️"
   , "description": "man judge"
   , "category": "People"
   , "aliases": [
@@ -2621,7 +2621,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🙇‍♀"
+    "emoji": "🙇‍♀️"
   , "description": "woman bowing"
   , "category": "People"
   , "aliases": [
@@ -2664,7 +2664,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "💁‍♂"
+    "emoji": "💁‍♂️"
   , "description": "man tipping hand"
   , "category": "People"
   , "aliases": [
@@ -2694,7 +2694,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🙅‍♂"
+    "emoji": "🙅‍♂️"
   , "description": "man gesturing NO"
   , "category": "People"
   , "aliases": [
@@ -2721,7 +2721,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🙆‍♂"
+    "emoji": "🙆‍♂️"
   , "description": "man gesturing OK"
   , "category": "People"
   , "aliases": [
@@ -2746,7 +2746,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🙋‍♂"
+    "emoji": "🙋‍♂️"
   , "description": "man raising hand"
   , "category": "People"
   , "aliases": [
@@ -2758,7 +2758,7 @@
   , "ios_version": "10.0"
   }
 , {
-    "emoji": "🤦‍♀"
+    "emoji": "🤦‍♀️"
   , "description": "woman facepalming"
   , "category": "People"
   , "aliases": [
@@ -2770,7 +2770,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🤦‍♂"
+    "emoji": "🤦‍♂️"
   , "description": "man facepalming"
   , "category": "People"
   , "aliases": [
@@ -2782,7 +2782,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🤷‍♀"
+    "emoji": "🤷‍♀️"
   , "description": "woman shrugging"
   , "category": "People"
   , "aliases": [
@@ -2794,7 +2794,7 @@
   , "ios_version": "10.2"
   }
 , {
-    "emoji": "🤷‍♂"
+    "emoji": "🤷‍♂️"
   , "description": "man shrugging"
   , "category": "People"
   , "aliases": [
@@ -2819,7 +2819,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🙎‍♂"
+    "emoji": "🙎‍♂️"
   , "description": "man pouting"
   , "category": "People"
   , "aliases": [
@@ -2845,7 +2845,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🙍‍♂"
+    "emoji": "🙍‍♂️"
   , "description": "man frowning"
   , "category": "People"
   , "aliases": [
@@ -2871,7 +2871,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "💇‍♂"
+    "emoji": "💇‍♂️"
   , "description": "man getting haircut"
   , "category": "People"
   , "aliases": [
@@ -2897,7 +2897,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "💆‍♂"
+    "emoji": "💆‍♂️"
   , "description": "man getting massage"
   , "category": "People"
   , "aliases": [
@@ -2962,7 +2962,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "👯‍♂"
+    "emoji": "👯‍♂️"
   , "description": "men with bunny ears partying"
   , "category": "People"
   , "aliases": [
@@ -2975,7 +2975,7 @@
   , "ios_version": "10.0"
   }
 , {
-    "emoji": "🚶‍♀"
+    "emoji": "🚶‍♀️"
   , "description": "woman walking"
   , "category": "People"
   , "aliases": [
@@ -3000,7 +3000,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "🏃‍♀"
+    "emoji": "🏃‍♀️"
   , "description": "woman running"
   , "category": "People"
   , "aliases": [
@@ -3785,6 +3785,611 @@
   , "tags": [
     ]
   , "unicode_version": ""
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "👮‍♂️"
+  , "description": "man police officer"
+  , "category": "People"
+  , "aliases": [
+      "man_police_officer"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🕵️‍♂️"
+  , "description": "man detective"
+  , "category": "People"
+  , "aliases": [
+      "male_detective"
+    , "detective"
+    ]
+  , "tags": [
+      "sleuth"
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "💂‍♂️"
+  , "description": "man guard"
+  , "category": "People"
+  , "aliases": [
+      "man_guard"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "👷‍♂️"
+  , "description": "man construction worker"
+  , "category": "People"
+  , "aliases": [
+      "man_construction_worker"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "👳‍♂️"
+  , "description": "man wearing turban"
+  , "category": "People"
+  , "aliases": [
+      "man_wearing_turban"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "👱‍♂️"
+  , "description": "blond-haired man"
+  , "category": "People"
+  , "aliases": [
+      "blond_haired_man"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🙍‍♀️"
+  , "description": "woman frowning"
+  , "category": "People"
+  , "aliases": [
+      "woman_frowning"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🙎‍♀️"
+  , "description": "woman pouting"
+  , "category": "People"
+  , "aliases": [
+      "woman_pouting"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🙅‍♀️"
+  , "description": "woman gesturing NO"
+  , "category": "People"
+  , "aliases": [
+      "woman_gesturing_no"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🙆‍♀️"
+  , "description": "woman gesturing OK"
+  , "category": "People"
+  , "aliases": [
+      "woman_gesturing_ok"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "💁‍♀️"
+  , "description": "woman tipping hand"
+  , "category": "People"
+  , "aliases": [
+      "woman_tipping_hand"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🙋‍♀️"
+  , "description": "woman raising hand"
+  , "category": "People"
+  , "aliases": [
+      "woman_raising_hand"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🙇‍♂️"
+  , "description": "man bowing"
+  , "category": "People"
+  , "aliases": [
+      "man_bowing"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤦"
+  , "description": "person facepalming"
+  , "category": "People"
+  , "aliases": [
+      "person_facepalming"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤷"
+  , "description": "person shrugging"
+  , "category": "People"
+  , "aliases": [
+      "person_shrugging"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "💆‍♀️"
+  , "description": "woman getting massage"
+  , "category": "People"
+  , "aliases": [
+      "woman_getting_massage"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "💇‍♀️"
+  , "description": "woman getting haircut"
+  , "category": "People"
+  , "aliases": [
+      "woman_getting_haircut"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🚶‍♂️"
+  , "description": "man walking"
+  , "category": "People"
+  , "aliases": [
+      "man_walking"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🏃‍♂️"
+  , "description": "man running"
+  , "category": "People"
+  , "aliases": [
+      "man_running"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "👯‍♀️"
+  , "description": "women with bunny ears partying"
+  , "category": "People"
+  , "aliases": [
+      "women_with_bunny_ears_partying"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🕴️"
+  , "description": "man in business suit levitating"
+  , "category": "People"
+  , "aliases": [
+      "business_suit_levitating"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🗣️"
+  , "description": "speaking head"
+  , "category": "People"
+  , "aliases": [
+      "speaking_head"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⛷️"
+  , "description": "skier"
+  , "category": "People"
+  , "aliases": [
+      "skier"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏌️‍♂️"
+  , "description": "man golfing"
+  , "category": "People"
+  , "aliases": [
+      "golfing_man"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏄‍♂️"
+  , "description": "man surfing"
+  , "category": "People"
+  , "aliases": [
+      "man_surfing"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🚣‍♂️"
+  , "description": "man rowing boat"
+  , "category": "People"
+  , "aliases": [
+      "man_rowing_boat"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🏊‍♂️"
+  , "description": "man swimming"
+  , "category": "People"
+  , "aliases": [
+      "man_swimming"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⛹️‍♂️"
+  , "description": "man bouncing ball"
+  , "category": "People"
+  , "aliases": [
+      "basketball_man"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏋️‍♂️"
+  , "description": "man lifting weights"
+  , "category": "People"
+  , "aliases": [
+      "weight_lifting_man"
+    ]
+  , "tags": [
+      "gym"
+    , "workout"
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🚴‍♂️"
+  , "description": "man biking"
+  , "category": "People"
+  , "aliases": [
+      "man_biking"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🚵‍♂️"
+  , "description": "man mountain biking"
+  , "category": "People"
+  , "aliases": [
+      "man_mountain_biking"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🏎️"
+  , "description": "racing car"
+  , "category": "People"
+  , "aliases": [
+      "racing_car"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏍️"
+  , "description": "motorcycle"
+  , "category": "People"
+  , "aliases": [
+      "motorcycle"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🤸"
+  , "description": "person cartwheeling"
+  , "category": "People"
+  , "aliases": [
+      "person_cartwheeling"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤼"
+  , "description": "people wrestling"
+  , "category": "People"
+  , "aliases": [
+      "people_wrestling"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤽"
+  , "description": "person playing water polo"
+  , "category": "People"
+  , "aliases": [
+      "person_playing_water_polo"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤾"
+  , "description": "person playing handball"
+  , "category": "People"
+  , "aliases": [
+      "person_playing_handball"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🤹"
+  , "description": "person juggling"
+  , "category": "People"
+  , "aliases": [
+      "person_juggling"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "👩‍❤️‍💋‍👨"
+  , "description": "kiss: woman, man"
+  , "category": "People"
+  , "aliases": [
+      "kiss_woman_man"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "👩‍❤️‍👨"
+  , "description": "couple with heart: woman, man"
+  , "category": "People"
+  , "aliases": [
+      "couple_with_heart_woman_man"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "👨‍👩‍👦"
+  , "description": "family: man, woman, boy"
+  , "category": "People"
+  , "aliases": [
+      "family_man_woman_boy"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🖐️"
+  , "description": "raised hand with fingers splayed"
+  , "category": "People"
+  , "aliases": [
+      "raised_hand_with_fingers_splayed"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "👁️"
+  , "description": "eye"
+  , "category": "People"
+  , "aliases": [
+      "eye"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "👁️‍🗨️"
+  , "description": "eye in speech bubble"
+  , "category": "People"
+  , "aliases": [
+      "eye_in_speech_bubble"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🗨️"
+  , "description": "left speech bubble"
+  , "category": "People"
+  , "aliases": [
+      "left_speech_bubble"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🗯️"
+  , "description": "right anger bubble"
+  , "category": "People"
+  , "aliases": [
+      "right_anger_bubble"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🕳️"
+  , "description": "hole"
+  , "category": "People"
+  , "aliases": [
+      "hole"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🕶️"
+  , "description": "sunglasses"
+  , "category": "People"
+  , "aliases": [
+      "dark_sunglasses"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🛍️"
+  , "description": "shopping bags"
+  , "category": "People"
+  , "aliases": [
+      "shopping"
+    ]
+  , "tags": [
+      "bags"
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⛑️"
+  , "description": "rescue worker’s helmet"
+  , "category": "People"
+  , "aliases": [
+      "rescue_worker_helmet"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
   , "ios_version": "9.1"
   }
 , {
@@ -5477,7 +6082,7 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "☄"
+    "emoji": "☄️"
   , "description": "comet"
   , "category": "Nature"
   , "aliases": [
@@ -5769,6 +6374,67 @@
     ]
   , "unicode_version": "4.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🐿️"
+  , "description": "chipmunk"
+  , "category": "Nature"
+  , "aliases": [
+      "chipmunk"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🕊️"
+  , "description": "dove"
+  , "category": "Nature"
+  , "aliases": [
+      "dove"
+    ]
+  , "tags": [
+      "peace"
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🕷️"
+  , "description": "spider"
+  , "category": "Nature"
+  , "aliases": [
+      "spider"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🕸️"
+  , "description": "spider web"
+  , "category": "Nature"
+  , "aliases": [
+      "spider_web"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏵️"
+  , "description": "rosette"
+  , "category": "Nature"
+  , "aliases": [
+      "rosette"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
   }
 , {
     "emoji": "🍏"
@@ -6843,1007 +7509,43 @@
   , "ios_version": "9.1"
   }
 , {
-    "emoji": "⚽️"
-  , "description": "soccer ball"
-  , "category": "Activity"
+    "emoji": "🌶️"
+  , "description": "hot pepper"
+  , "category": "Foods"
   , "aliases": [
-      "soccer"
+      "hot_pepper"
     ]
   , "tags": [
-      "sports"
-    ]
-  , "unicode_version": "5.2"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🏀"
-  , "description": "basketball"
-  , "category": "Activity"
-  , "aliases": [
-      "basketball"
-    ]
-  , "tags": [
-      "sports"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🏈"
-  , "description": "american football"
-  , "category": "Activity"
-  , "aliases": [
-      "football"
-    ]
-  , "tags": [
-      "sports"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "⚾️"
-  , "description": "baseball"
-  , "category": "Activity"
-  , "aliases": [
-      "baseball"
-    ]
-  , "tags": [
-      "sports"
-    ]
-  , "unicode_version": "5.2"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎾"
-  , "description": "tennis"
-  , "category": "Activity"
-  , "aliases": [
-      "tennis"
-    ]
-  , "tags": [
-      "sports"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🏐"
-  , "description": "volleyball"
-  , "category": "Activity"
-  , "aliases": [
-      "volleyball"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "8.0"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🏉"
-  , "description": "rugby football"
-  , "category": "Activity"
-  , "aliases": [
-      "rugby_football"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎱"
-  , "description": "pool 8 ball"
-  , "category": "Activity"
-  , "aliases": [
-      "8ball"
-    ]
-  , "tags": [
-      "pool"
-    , "billiards"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🏓"
-  , "description": "ping pong"
-  , "category": "Activity"
-  , "aliases": [
-      "ping_pong"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "8.0"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🏸"
-  , "description": "badminton"
-  , "category": "Activity"
-  , "aliases": [
-      "badminton"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "8.0"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🥅"
-  , "description": "goal net"
-  , "category": "Activity"
-  , "aliases": [
-      "goal_net"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🏒"
-  , "description": "ice hockey"
-  , "category": "Activity"
-  , "aliases": [
-      "ice_hockey"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "8.0"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🏑"
-  , "description": "field hockey"
-  , "category": "Activity"
-  , "aliases": [
-      "field_hockey"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "8.0"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🏏"
-  , "description": "cricket"
-  , "category": "Activity"
-  , "aliases": [
-      "cricket"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "8.0"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "⛳️"
-  , "description": "flag in hole"
-  , "category": "Activity"
-  , "aliases": [
-      "golf"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "5.2"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🏹"
-  , "description": "bow and arrow"
-  , "category": "Activity"
-  , "aliases": [
-      "bow_and_arrow"
-    ]
-  , "tags": [
-      "archery"
-    ]
-  , "unicode_version": "8.0"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🎣"
-  , "description": "fishing pole"
-  , "category": "Activity"
-  , "aliases": [
-      "fishing_pole_and_fish"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🥊"
-  , "description": "boxing glove"
-  , "category": "Activity"
-  , "aliases": [
-      "boxing_glove"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🥋"
-  , "description": "martial arts uniform"
-  , "category": "Activity"
-  , "aliases": [
-      "martial_arts_uniform"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "⛸"
-  , "description": "ice skate"
-  , "category": "Activity"
-  , "aliases": [
-      "ice_skate"
-    ]
-  , "tags": [
-      "skating"
-    ]
-  , "unicode_version": "5.2"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🎿"
-  , "description": "skis"
-  , "category": "Activity"
-  , "aliases": [
-      "ski"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "⛷"
-  , "description": "skier"
-  , "category": "Activity"
-  , "aliases": [
-      "skier"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "5.2"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🏂"
-  , "description": "snowboarder"
-  , "category": "Activity"
-  , "aliases": [
-      "snowboarder"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🏋️‍♀️"
-  , "description": "woman lifting weights"
-  , "category": "Activity"
-  , "aliases": [
-      "weight_lifting_woman"
-    ]
-  , "tags": [
-      "gym"
-    , "workout"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "10.0"
-  }
-, {
-    "emoji": "🏋"
-  , "description": "person lifting weights"
-  , "category": "Activity"
-  , "aliases": [
-      "weight_lifting_man"
-    ]
-  , "tags": [
-      "gym"
-    , "workout"
+      "spicy"
     ]
   , "unicode_version": "7.0"
   , "ios_version": "9.1"
   }
 , {
-    "emoji": "🤺"
-  , "description": "person fencing"
-  , "category": "Activity"
+    "emoji": "☕"
+  , "description": "hot beverage"
+  , "category": "Foods"
   , "aliases": [
-      "person_fencing"
+      "hot_beverage"
     ]
   , "tags": [
     ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
+  , "unicode_version": "4.0"
+  , "ios_version": "11.1"
   }
 , {
-    "emoji": "🤼‍♀"
-  , "description": "women wrestling"
-  , "category": "Activity"
+    "emoji": "🍽️"
+  , "description": "fork and knife with plate"
+  , "category": "Foods"
   , "aliases": [
-      "women_wrestling"
+      "plate_with_cutlery"
     ]
   , "tags": [
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🤼‍♂"
-  , "description": "men wrestling"
-  , "category": "Activity"
-  , "aliases": [
-      "men_wrestling"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🤸‍♀"
-  , "description": "woman cartwheeling"
-  , "category": "Activity"
-  , "aliases": [
-      "woman_cartwheeling"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": ""
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🤸‍♂"
-  , "description": "man cartwheeling"
-  , "category": "Activity"
-  , "aliases": [
-      "man_cartwheeling"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": ""
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "⛹️‍♀️"
-  , "description": "woman bouncing ball"
-  , "category": "Activity"
-  , "aliases": [
-      "basketball_woman"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "7.0"
-  , "ios_version": "10.0"
-  }
-, {
-    "emoji": "⛹"
-  , "description": "person bouncing ball"
-  , "category": "Activity"
-  , "aliases": [
-      "basketball_man"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "5.2"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🤾‍♀"
-  , "description": "woman playing handball"
-  , "category": "Activity"
-  , "aliases": [
-      "woman_playing_handball"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🤾‍♂"
-  , "description": "man playing handball"
-  , "category": "Activity"
-  , "aliases": [
-      "man_playing_handball"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🏌️‍♀️"
-  , "description": "woman golfing"
-  , "category": "Activity"
-  , "aliases": [
-      "golfing_woman"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": ""
-  , "ios_version": "10.0"
-  }
-, {
-    "emoji": "🏌"
-  , "description": "person golfing"
-  , "category": "Activity"
-  , "aliases": [
-      "golfing_man"
-    ]
-  , "tags": [
+      "dining"
+    , "dinner"
     ]
   , "unicode_version": "7.0"
   , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🏄‍♀"
-  , "description": "woman surfing"
-  , "category": "Activity"
-  , "aliases": [
-      "surfing_woman"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "7.0"
-  , "ios_version": "10.0"
-  }
-, {
-    "emoji": "🏄"
-  , "description": "person surfing"
-  , "category": "Activity"
-  , "aliases": [
-      "surfing_man"
-    , "surfer"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🏊‍♀"
-  , "description": "woman swimming"
-  , "category": "Activity"
-  , "aliases": [
-      "swimming_woman"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "10.0"
-  }
-, {
-    "emoji": "🏊"
-  , "description": "person swimming"
-  , "category": "Activity"
-  , "aliases": [
-      "swimming_man"
-    , "swimmer"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🤽‍♀"
-  , "description": "woman playing water polo"
-  , "category": "Activity"
-  , "aliases": [
-      "woman_playing_water_polo"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🤽‍♂"
-  , "description": "man playing water polo"
-  , "category": "Activity"
-  , "aliases": [
-      "man_playing_water_polo"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🚣‍♀"
-  , "description": "woman rowing boat"
-  , "category": "Activity"
-  , "aliases": [
-      "rowing_woman"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "10.0"
-  }
-, {
-    "emoji": "🚣"
-  , "description": "person rowing boat"
-  , "category": "Activity"
-  , "aliases": [
-      "rowing_man"
-    , "rowboat"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🏇"
-  , "description": "horse racing"
-  , "category": "Activity"
-  , "aliases": [
-      "horse_racing"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🚴‍♀"
-  , "description": "woman biking"
-  , "category": "Activity"
-  , "aliases": [
-      "biking_woman"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "10.0"
-  }
-, {
-    "emoji": "🚴"
-  , "description": "person biking"
-  , "category": "Activity"
-  , "aliases": [
-      "biking_man"
-    , "bicyclist"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🚵‍♀"
-  , "description": "woman mountain biking"
-  , "category": "Activity"
-  , "aliases": [
-      "mountain_biking_woman"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "10.0"
-  }
-, {
-    "emoji": "🚵"
-  , "description": "person mountain biking"
-  , "category": "Activity"
-  , "aliases": [
-      "mountain_biking_man"
-    , "mountain_bicyclist"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎽"
-  , "description": "running shirt"
-  , "category": "Activity"
-  , "aliases": [
-      "running_shirt_with_sash"
-    ]
-  , "tags": [
-      "marathon"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🏅"
-  , "description": "sports medal"
-  , "category": "Activity"
-  , "aliases": [
-      "medal_sports"
-    ]
-  , "tags": [
-      "gold"
-    , "winner"
-    ]
-  , "unicode_version": "7.0"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🎖"
-  , "description": "military medal"
-  , "category": "Activity"
-  , "aliases": [
-      "medal_military"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "7.0"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🥇"
-  , "description": "1st place medal"
-  , "category": "Activity"
-  , "aliases": [
-      "1st_place_medal"
-    ]
-  , "tags": [
-      "gold"
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🥈"
-  , "description": "2nd place medal"
-  , "category": "Activity"
-  , "aliases": [
-      "2nd_place_medal"
-    ]
-  , "tags": [
-      "silver"
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🥉"
-  , "description": "3rd place medal"
-  , "category": "Activity"
-  , "aliases": [
-      "3rd_place_medal"
-    ]
-  , "tags": [
-      "bronze"
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🏆"
-  , "description": "trophy"
-  , "category": "Activity"
-  , "aliases": [
-      "trophy"
-    ]
-  , "tags": [
-      "award"
-    , "contest"
-    , "winner"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🏵"
-  , "description": "rosette"
-  , "category": "Activity"
-  , "aliases": [
-      "rosette"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "7.0"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🎗"
-  , "description": "reminder ribbon"
-  , "category": "Activity"
-  , "aliases": [
-      "reminder_ribbon"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "7.0"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🎫"
-  , "description": "ticket"
-  , "category": "Activity"
-  , "aliases": [
-      "ticket"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎟"
-  , "description": "admission tickets"
-  , "category": "Activity"
-  , "aliases": [
-      "tickets"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "7.0"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🎪"
-  , "description": "circus tent"
-  , "category": "Activity"
-  , "aliases": [
-      "circus_tent"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🤹‍♀"
-  , "description": "woman juggling"
-  , "category": "Activity"
-  , "aliases": [
-      "woman_juggling"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🤹‍♂"
-  , "description": "man juggling"
-  , "category": "Activity"
-  , "aliases": [
-      "man_juggling"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🎭"
-  , "description": "performing arts"
-  , "category": "Activity"
-  , "aliases": [
-      "performing_arts"
-    ]
-  , "tags": [
-      "theater"
-    , "drama"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎨"
-  , "description": "artist palette"
-  , "category": "Activity"
-  , "aliases": [
-      "art"
-    ]
-  , "tags": [
-      "design"
-    , "paint"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎬"
-  , "description": "clapper board"
-  , "category": "Activity"
-  , "aliases": [
-      "clapper"
-    ]
-  , "tags": [
-      "film"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎤"
-  , "description": "microphone"
-  , "category": "Activity"
-  , "aliases": [
-      "microphone"
-    ]
-  , "tags": [
-      "sing"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎧"
-  , "description": "headphone"
-  , "category": "Activity"
-  , "aliases": [
-      "headphones"
-    ]
-  , "tags": [
-      "music"
-    , "earphones"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎼"
-  , "description": "musical score"
-  , "category": "Activity"
-  , "aliases": [
-      "musical_score"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎹"
-  , "description": "musical keyboard"
-  , "category": "Activity"
-  , "aliases": [
-      "musical_keyboard"
-    ]
-  , "tags": [
-      "piano"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🥁"
-  , "description": "drum"
-  , "category": "Activity"
-  , "aliases": [
-      "drum"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": ""
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🎷"
-  , "description": "saxophone"
-  , "category": "Activity"
-  , "aliases": [
-      "saxophone"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎺"
-  , "description": "trumpet"
-  , "category": "Activity"
-  , "aliases": [
-      "trumpet"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎸"
-  , "description": "guitar"
-  , "category": "Activity"
-  , "aliases": [
-      "guitar"
-    ]
-  , "tags": [
-      "rock"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎻"
-  , "description": "violin"
-  , "category": "Activity"
-  , "aliases": [
-      "violin"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎲"
-  , "description": "game die"
-  , "category": "Activity"
-  , "aliases": [
-      "game_die"
-    ]
-  , "tags": [
-      "dice"
-    , "gambling"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎯"
-  , "description": "direct hit"
-  , "category": "Activity"
-  , "aliases": [
-      "dart"
-    ]
-  , "tags": [
-      "target"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎳"
-  , "description": "bowling"
-  , "category": "Activity"
-  , "aliases": [
-      "bowling"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎮"
-  , "description": "video game"
-  , "category": "Activity"
-  , "aliases": [
-      "video_game"
-    ]
-  , "tags": [
-      "play"
-    , "controller"
-    , "console"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
-    "emoji": "🎰"
-  , "description": "slot machine"
-  , "category": "Activity"
-  , "aliases": [
-      "slot_machine"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
   }
 , {
     "emoji": "🚗"
@@ -9300,6 +9002,1773 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🗺️"
+  , "description": "world map"
+  , "category": "Places"
+  , "aliases": [
+      "world_map"
+    ]
+  , "tags": [
+      "travel"
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏔️"
+  , "description": "snow-capped mountain"
+  , "category": "Places"
+  , "aliases": [
+      "mountain_snow"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⛰️"
+  , "description": "mountain"
+  , "category": "Places"
+  , "aliases": [
+      "mountain"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏕️"
+  , "description": "camping"
+  , "category": "Places"
+  , "aliases": [
+      "camping"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏖️"
+  , "description": "beach with umbrella"
+  , "category": "Places"
+  , "aliases": [
+      "beach_umbrella"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏜️"
+  , "description": "desert"
+  , "category": "Places"
+  , "aliases": [
+      "desert"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏝️"
+  , "description": "desert island"
+  , "category": "Places"
+  , "aliases": [
+      "desert_island"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏞️"
+  , "description": "national park"
+  , "category": "Places"
+  , "aliases": [
+      "national_park"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏟️"
+  , "description": "stadium"
+  , "category": "Places"
+  , "aliases": [
+      "stadium"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏛️"
+  , "description": "classical building"
+  , "category": "Places"
+  , "aliases": [
+      "classical_building"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏗️"
+  , "description": "building construction"
+  , "category": "Places"
+  , "aliases": [
+      "building_construction"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏘️"
+  , "description": "house"
+  , "category": "Places"
+  , "aliases": [
+      "houses"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏙️"
+  , "description": "cityscape"
+  , "category": "Places"
+  , "aliases": [
+      "cityscape"
+    ]
+  , "tags": [
+      "skyline"
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏚️"
+  , "description": "derelict house"
+  , "category": "Places"
+  , "aliases": [
+      "derelict_house"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⛪"
+  , "description": "church"
+  , "category": "Places"
+  , "aliases": [
+      "church"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⛩️"
+  , "description": "shinto shrine"
+  , "category": "Places"
+  , "aliases": [
+      "shinto_shrine"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⛲"
+  , "description": "fountain"
+  , "category": "Places"
+  , "aliases": [
+      "fountain"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⛺"
+  , "description": "tent"
+  , "category": "Places"
+  , "aliases": [
+      "tent"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🖼️"
+  , "description": "framed picture"
+  , "category": "Places"
+  , "aliases": [
+      "framed_picture"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🛣️"
+  , "description": "motorway"
+  , "category": "Places"
+  , "aliases": [
+      "motorway"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🛤️"
+  , "description": "railway track"
+  , "category": "Places"
+  , "aliases": [
+      "railway_track"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⛽"
+  , "description": "fuel pump"
+  , "category": "Places"
+  , "aliases": [
+      "fuel_pump"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⚓"
+  , "description": "anchor"
+  , "category": "Places"
+  , "aliases": [
+      "anchor"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "4.1"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⛵"
+  , "description": "sailboat"
+  , "category": "Places"
+  , "aliases": [
+      "sailboat"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🛳️"
+  , "description": "passenger ship"
+  , "category": "Places"
+  , "aliases": [
+      "passenger_ship"
+    ]
+  , "tags": [
+      "cruise"
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⛴️"
+  , "description": "ferry"
+  , "category": "Places"
+  , "aliases": [
+      "ferry"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🛥️"
+  , "description": "motor boat"
+  , "category": "Places"
+  , "aliases": [
+      "motor_boat"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🛩️"
+  , "description": "small airplane"
+  , "category": "Places"
+  , "aliases": [
+      "small_airplane"
+    ]
+  , "tags": [
+      "flight"
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🛰️"
+  , "description": "satellite"
+  , "category": "Places"
+  , "aliases": [
+      "artificial_satellite"
+    ]
+  , "tags": [
+      "orbit"
+    , "space"
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🛎️"
+  , "description": "bellhop bell"
+  , "category": "Places"
+  , "aliases": [
+      "bellhop_bell"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🛏️"
+  , "description": "bed"
+  , "category": "Places"
+  , "aliases": [
+      "bed"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🛋️"
+  , "description": "couch and lamp"
+  , "category": "Places"
+  , "aliases": [
+      "couch_and_lamp"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⌛"
+  , "description": "hourglass"
+  , "category": "Places"
+  , "aliases": [
+      "hourglass"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⌚"
+  , "description": "watch"
+  , "category": "Places"
+  , "aliases": [
+      "watch"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⏱️"
+  , "description": "stopwatch"
+  , "category": "Places"
+  , "aliases": [
+      "stopwatch"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⏲️"
+  , "description": "timer clock"
+  , "category": "Places"
+  , "aliases": [
+      "timer_clock"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🕰️"
+  , "description": "mantelpiece clock"
+  , "category": "Places"
+  , "aliases": [
+      "mantelpiece_clock"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🌡️"
+  , "description": "thermometer"
+  , "category": "Places"
+  , "aliases": [
+      "thermometer"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⭐"
+  , "description": "white medium star"
+  , "category": "Places"
+  , "aliases": [
+      "white_medium_star"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.1"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⛅"
+  , "description": "sun behind cloud"
+  , "category": "Places"
+  , "aliases": [
+      "sun_behind_cloud"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⛈️"
+  , "description": "cloud with lightning and rain"
+  , "category": "Places"
+  , "aliases": [
+      "cloud_with_lightning_and_rain"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🌤️"
+  , "description": "sun behind small cloud"
+  , "category": "Places"
+  , "aliases": [
+      "sun_behind_small_cloud"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🌥️"
+  , "description": "sun behind large cloud"
+  , "category": "Places"
+  , "aliases": [
+      "sun_behind_large_cloud"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🌦️"
+  , "description": "sun behind rain cloud"
+  , "category": "Places"
+  , "aliases": [
+      "sun_behind_rain_cloud"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🌧️"
+  , "description": "cloud with rain"
+  , "category": "Places"
+  , "aliases": [
+      "cloud_with_rain"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🌨️"
+  , "description": "cloud with snow"
+  , "category": "Places"
+  , "aliases": [
+      "cloud_with_snow"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🌩️"
+  , "description": "cloud with lightning"
+  , "category": "Places"
+  , "aliases": [
+      "cloud_with_lightning"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🌪️"
+  , "description": "tornado"
+  , "category": "Places"
+  , "aliases": [
+      "tornado"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🌫️"
+  , "description": "fog"
+  , "category": "Places"
+  , "aliases": [
+      "fog"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🌬️"
+  , "description": "wind face"
+  , "category": "Places"
+  , "aliases": [
+      "wind_face"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "☔"
+  , "description": "umbrella with rain drops"
+  , "category": "Places"
+  , "aliases": [
+      "umbrella_with_rain_drops"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "4.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⛱️"
+  , "description": "umbrella on ground"
+  , "category": "Places"
+  , "aliases": [
+      "parasol_on_ground"
+    ]
+  , "tags": [
+      "beach_umbrella"
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⚡"
+  , "description": "high voltage"
+  , "category": "Places"
+  , "aliases": [
+      "high_voltage"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "4.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⛄"
+  , "description": "snowman without snow"
+  , "category": "Places"
+  , "aliases": [
+      "snowman_without_snow"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⚽️"
+  , "description": "soccer ball"
+  , "category": "Activity"
+  , "aliases": [
+      "soccer"
+    ]
+  , "tags": [
+      "sports"
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🏀"
+  , "description": "basketball"
+  , "category": "Activity"
+  , "aliases": [
+      "basketball"
+    ]
+  , "tags": [
+      "sports"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🏈"
+  , "description": "american football"
+  , "category": "Activity"
+  , "aliases": [
+      "football"
+    ]
+  , "tags": [
+      "sports"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "⚾️"
+  , "description": "baseball"
+  , "category": "Activity"
+  , "aliases": [
+      "baseball"
+    ]
+  , "tags": [
+      "sports"
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎾"
+  , "description": "tennis"
+  , "category": "Activity"
+  , "aliases": [
+      "tennis"
+    ]
+  , "tags": [
+      "sports"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🏐"
+  , "description": "volleyball"
+  , "category": "Activity"
+  , "aliases": [
+      "volleyball"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏉"
+  , "description": "rugby football"
+  , "category": "Activity"
+  , "aliases": [
+      "rugby_football"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎱"
+  , "description": "pool 8 ball"
+  , "category": "Activity"
+  , "aliases": [
+      "8ball"
+    ]
+  , "tags": [
+      "pool"
+    , "billiards"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🏓"
+  , "description": "ping pong"
+  , "category": "Activity"
+  , "aliases": [
+      "ping_pong"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏸"
+  , "description": "badminton"
+  , "category": "Activity"
+  , "aliases": [
+      "badminton"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🥅"
+  , "description": "goal net"
+  , "category": "Activity"
+  , "aliases": [
+      "goal_net"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🏒"
+  , "description": "ice hockey"
+  , "category": "Activity"
+  , "aliases": [
+      "ice_hockey"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏑"
+  , "description": "field hockey"
+  , "category": "Activity"
+  , "aliases": [
+      "field_hockey"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏏"
+  , "description": "cricket"
+  , "category": "Activity"
+  , "aliases": [
+      "cricket"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⛳️"
+  , "description": "flag in hole"
+  , "category": "Activity"
+  , "aliases": [
+      "golf"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🏹"
+  , "description": "bow and arrow"
+  , "category": "Activity"
+  , "aliases": [
+      "bow_and_arrow"
+    ]
+  , "tags": [
+      "archery"
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🎣"
+  , "description": "fishing pole"
+  , "category": "Activity"
+  , "aliases": [
+      "fishing_pole_and_fish"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🥊"
+  , "description": "boxing glove"
+  , "category": "Activity"
+  , "aliases": [
+      "boxing_glove"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🥋"
+  , "description": "martial arts uniform"
+  , "category": "Activity"
+  , "aliases": [
+      "martial_arts_uniform"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "⛸"
+  , "description": "ice skate"
+  , "category": "Activity"
+  , "aliases": [
+      "ice_skate"
+    ]
+  , "tags": [
+      "skating"
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🎿"
+  , "description": "skis"
+  , "category": "Activity"
+  , "aliases": [
+      "ski"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "⛷"
+  , "description": "skier"
+  , "category": "Activity"
+  , "aliases": [
+      "skier"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏂"
+  , "description": "snowboarder"
+  , "category": "Activity"
+  , "aliases": [
+      "snowboarder"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🏋️‍♀️"
+  , "description": "woman lifting weights"
+  , "category": "Activity"
+  , "aliases": [
+      "weight_lifting_woman"
+    ]
+  , "tags": [
+      "gym"
+    , "workout"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🏋️"
+  , "description": "person lifting weights"
+  , "category": "Activity"
+  , "aliases": [
+      "weight_lifting_man"
+    ]
+  , "tags": [
+      "gym"
+    , "workout"
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🤺"
+  , "description": "person fencing"
+  , "category": "Activity"
+  , "aliases": [
+      "person_fencing"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🤼‍♀️"
+  , "description": "women wrestling"
+  , "category": "Activity"
+  , "aliases": [
+      "women_wrestling"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🤼‍♂️"
+  , "description": "men wrestling"
+  , "category": "Activity"
+  , "aliases": [
+      "men_wrestling"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🤸‍♀️"
+  , "description": "woman cartwheeling"
+  , "category": "Activity"
+  , "aliases": [
+      "woman_cartwheeling"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🤸‍♂️"
+  , "description": "man cartwheeling"
+  , "category": "Activity"
+  , "aliases": [
+      "man_cartwheeling"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "⛹️‍♀️"
+  , "description": "woman bouncing ball"
+  , "category": "Activity"
+  , "aliases": [
+      "basketball_woman"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "10.0"
+  }
+, {
+    "emoji": "⛹️"
+  , "description": "person bouncing ball"
+  , "category": "Activity"
+  , "aliases": [
+      "basketball_man"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🤾‍♀️"
+  , "description": "woman playing handball"
+  , "category": "Activity"
+  , "aliases": [
+      "woman_playing_handball"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🤾‍♂️"
+  , "description": "man playing handball"
+  , "category": "Activity"
+  , "aliases": [
+      "man_playing_handball"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🏌️‍♀️"
+  , "description": "woman golfing"
+  , "category": "Activity"
+  , "aliases": [
+      "golfing_woman"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🏌️"
+  , "description": "person golfing"
+  , "category": "Activity"
+  , "aliases": [
+      "golfing_man"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏄‍♀️"
+  , "description": "woman surfing"
+  , "category": "Activity"
+  , "aliases": [
+      "surfing_woman"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🏄"
+  , "description": "person surfing"
+  , "category": "Activity"
+  , "aliases": [
+      "surfing_man"
+    , "surfer"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🏊‍♀️"
+  , "description": "woman swimming"
+  , "category": "Activity"
+  , "aliases": [
+      "swimming_woman"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🏊"
+  , "description": "person swimming"
+  , "category": "Activity"
+  , "aliases": [
+      "swimming_man"
+    , "swimmer"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🤽‍♀️"
+  , "description": "woman playing water polo"
+  , "category": "Activity"
+  , "aliases": [
+      "woman_playing_water_polo"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🤽‍♂️"
+  , "description": "man playing water polo"
+  , "category": "Activity"
+  , "aliases": [
+      "man_playing_water_polo"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🚣‍♀️"
+  , "description": "woman rowing boat"
+  , "category": "Activity"
+  , "aliases": [
+      "rowing_woman"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🚣"
+  , "description": "person rowing boat"
+  , "category": "Activity"
+  , "aliases": [
+      "rowing_man"
+    , "rowboat"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🏇"
+  , "description": "horse racing"
+  , "category": "Activity"
+  , "aliases": [
+      "horse_racing"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🚴‍♀️"
+  , "description": "woman biking"
+  , "category": "Activity"
+  , "aliases": [
+      "biking_woman"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🚴"
+  , "description": "person biking"
+  , "category": "Activity"
+  , "aliases": [
+      "biking_man"
+    , "bicyclist"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🚵‍♀️"
+  , "description": "woman mountain biking"
+  , "category": "Activity"
+  , "aliases": [
+      "mountain_biking_woman"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "10.0"
+  }
+, {
+    "emoji": "🚵"
+  , "description": "person mountain biking"
+  , "category": "Activity"
+  , "aliases": [
+      "mountain_biking_man"
+    , "mountain_bicyclist"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎽"
+  , "description": "running shirt"
+  , "category": "Activity"
+  , "aliases": [
+      "running_shirt_with_sash"
+    ]
+  , "tags": [
+      "marathon"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🏅"
+  , "description": "sports medal"
+  , "category": "Activity"
+  , "aliases": [
+      "medal_sports"
+    ]
+  , "tags": [
+      "gold"
+    , "winner"
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🎖"
+  , "description": "military medal"
+  , "category": "Activity"
+  , "aliases": [
+      "medal_military"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🥇"
+  , "description": "1st place medal"
+  , "category": "Activity"
+  , "aliases": [
+      "1st_place_medal"
+    ]
+  , "tags": [
+      "gold"
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🥈"
+  , "description": "2nd place medal"
+  , "category": "Activity"
+  , "aliases": [
+      "2nd_place_medal"
+    ]
+  , "tags": [
+      "silver"
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🥉"
+  , "description": "3rd place medal"
+  , "category": "Activity"
+  , "aliases": [
+      "3rd_place_medal"
+    ]
+  , "tags": [
+      "bronze"
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🏆"
+  , "description": "trophy"
+  , "category": "Activity"
+  , "aliases": [
+      "trophy"
+    ]
+  , "tags": [
+      "award"
+    , "contest"
+    , "winner"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🏵"
+  , "description": "rosette"
+  , "category": "Activity"
+  , "aliases": [
+      "rosette"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🎗"
+  , "description": "reminder ribbon"
+  , "category": "Activity"
+  , "aliases": [
+      "reminder_ribbon"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🎫"
+  , "description": "ticket"
+  , "category": "Activity"
+  , "aliases": [
+      "ticket"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎟"
+  , "description": "admission tickets"
+  , "category": "Activity"
+  , "aliases": [
+      "tickets"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🎪"
+  , "description": "circus tent"
+  , "category": "Activity"
+  , "aliases": [
+      "circus_tent"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🤹‍♀️"
+  , "description": "woman juggling"
+  , "category": "Activity"
+  , "aliases": [
+      "woman_juggling"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🤹‍♂️"
+  , "description": "man juggling"
+  , "category": "Activity"
+  , "aliases": [
+      "man_juggling"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🎭"
+  , "description": "performing arts"
+  , "category": "Activity"
+  , "aliases": [
+      "performing_arts"
+    ]
+  , "tags": [
+      "theater"
+    , "drama"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎨"
+  , "description": "artist palette"
+  , "category": "Activity"
+  , "aliases": [
+      "art"
+    ]
+  , "tags": [
+      "design"
+    , "paint"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎬"
+  , "description": "clapper board"
+  , "category": "Activity"
+  , "aliases": [
+      "clapper"
+    ]
+  , "tags": [
+      "film"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎤"
+  , "description": "microphone"
+  , "category": "Activity"
+  , "aliases": [
+      "microphone"
+    ]
+  , "tags": [
+      "sing"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎧"
+  , "description": "headphone"
+  , "category": "Activity"
+  , "aliases": [
+      "headphones"
+    ]
+  , "tags": [
+      "music"
+    , "earphones"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎼"
+  , "description": "musical score"
+  , "category": "Activity"
+  , "aliases": [
+      "musical_score"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎹"
+  , "description": "musical keyboard"
+  , "category": "Activity"
+  , "aliases": [
+      "musical_keyboard"
+    ]
+  , "tags": [
+      "piano"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🥁"
+  , "description": "drum"
+  , "category": "Activity"
+  , "aliases": [
+      "drum"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🎷"
+  , "description": "saxophone"
+  , "category": "Activity"
+  , "aliases": [
+      "saxophone"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎺"
+  , "description": "trumpet"
+  , "category": "Activity"
+  , "aliases": [
+      "trumpet"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎸"
+  , "description": "guitar"
+  , "category": "Activity"
+  , "aliases": [
+      "guitar"
+    ]
+  , "tags": [
+      "rock"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎻"
+  , "description": "violin"
+  , "category": "Activity"
+  , "aliases": [
+      "violin"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎲"
+  , "description": "game die"
+  , "category": "Activity"
+  , "aliases": [
+      "game_die"
+    ]
+  , "tags": [
+      "dice"
+    , "gambling"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎯"
+  , "description": "direct hit"
+  , "category": "Activity"
+  , "aliases": [
+      "dart"
+    ]
+  , "tags": [
+      "target"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎳"
+  , "description": "bowling"
+  , "category": "Activity"
+  , "aliases": [
+      "bowling"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎮"
+  , "description": "video game"
+  , "category": "Activity"
+  , "aliases": [
+      "video_game"
+    ]
+  , "tags": [
+      "play"
+    , "controller"
+    , "console"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎰"
+  , "description": "slot machine"
+  , "category": "Activity"
+  , "aliases": [
+      "slot_machine"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎗️"
+  , "description": "reminder ribbon"
+  , "category": "Activity"
+  , "aliases": [
+      "reminder_ribbon"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🎟️"
+  , "description": "admission tickets"
+  , "category": "Activity"
+  , "aliases": [
+      "tickets"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🎖️"
+  , "description": "military medal"
+  , "category": "Activity"
+  , "aliases": [
+      "medal_military"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⚽"
+  , "description": "soccer ball"
+  , "category": "Activity"
+  , "aliases": [
+      "soccer_ball"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⚾"
+  , "description": "baseball"
+  , "category": "Activity"
+  , "aliases": [
+      "baseball"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⛳"
+  , "description": "flag in hole"
+  , "category": "Activity"
+  , "aliases": [
+      "flag_in_hole"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⛸️"
+  , "description": "ice skate"
+  , "category": "Activity"
+  , "aliases": [
+      "ice_skate"
+    ]
+  , "tags": [
+      "skating"
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🕹️"
+  , "description": "joystick"
+  , "category": "Activity"
+  , "aliases": [
+      "joystick"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🀄"
+  , "description": "mahjong red dragon"
+  , "category": "Activity"
+  , "aliases": [
+      "mahjong_red_dragon"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
   }
 , {
     "emoji": "⌚️"
@@ -11474,6 +12943,406 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🎙️"
+  , "description": "studio microphone"
+  , "category": "Objects"
+  , "aliases": [
+      "studio_microphone"
+    ]
+  , "tags": [
+      "podcast"
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🎚️"
+  , "description": "level slider"
+  , "category": "Objects"
+  , "aliases": [
+      "level_slider"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🎛️"
+  , "description": "control knobs"
+  , "category": "Objects"
+  , "aliases": [
+      "control_knobs"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🖥️"
+  , "description": "desktop computer"
+  , "category": "Objects"
+  , "aliases": [
+      "desktop_computer"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🖨️"
+  , "description": "printer"
+  , "category": "Objects"
+  , "aliases": [
+      "printer"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🖱️"
+  , "description": "computer mouse"
+  , "category": "Objects"
+  , "aliases": [
+      "computer_mouse"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🖲️"
+  , "description": "trackball"
+  , "category": "Objects"
+  , "aliases": [
+      "trackball"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🎞️"
+  , "description": "film frames"
+  , "category": "Objects"
+  , "aliases": [
+      "film_strip"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "📽️"
+  , "description": "film projector"
+  , "category": "Objects"
+  , "aliases": [
+      "film_projector"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🕯️"
+  , "description": "candle"
+  , "category": "Objects"
+  , "aliases": [
+      "candle"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🗞️"
+  , "description": "rolled-up newspaper"
+  , "category": "Objects"
+  , "aliases": [
+      "newspaper_roll"
+    ]
+  , "tags": [
+      "press"
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🏷️"
+  , "description": "label"
+  , "category": "Objects"
+  , "aliases": [
+      "label"
+    ]
+  , "tags": [
+      "tag"
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🗳️"
+  , "description": "ballot box with ballot"
+  , "category": "Objects"
+  , "aliases": [
+      "ballot_box"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🖋️"
+  , "description": "fountain pen"
+  , "category": "Objects"
+  , "aliases": [
+      "fountain_pen"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🖊️"
+  , "description": "pen"
+  , "category": "Objects"
+  , "aliases": [
+      "pen"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🖌️"
+  , "description": "paintbrush"
+  , "category": "Objects"
+  , "aliases": [
+      "paintbrush"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🖍️"
+  , "description": "crayon"
+  , "category": "Objects"
+  , "aliases": [
+      "crayon"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🗂️"
+  , "description": "card index dividers"
+  , "category": "Objects"
+  , "aliases": [
+      "card_index_dividers"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🗒️"
+  , "description": "spiral notepad"
+  , "category": "Objects"
+  , "aliases": [
+      "spiral_notepad"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🗓️"
+  , "description": "spiral calendar"
+  , "category": "Objects"
+  , "aliases": [
+      "spiral_calendar"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🖇️"
+  , "description": "linked paperclips"
+  , "category": "Objects"
+  , "aliases": [
+      "paperclips"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🗃️"
+  , "description": "card file box"
+  , "category": "Objects"
+  , "aliases": [
+      "card_file_box"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🗄️"
+  , "description": "file cabinet"
+  , "category": "Objects"
+  , "aliases": [
+      "file_cabinet"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🗑️"
+  , "description": "wastebasket"
+  , "category": "Objects"
+  , "aliases": [
+      "wastebasket"
+    ]
+  , "tags": [
+      "trash"
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🗝️"
+  , "description": "old key"
+  , "category": "Objects"
+  , "aliases": [
+      "old_key"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⛏️"
+  , "description": "pick"
+  , "category": "Objects"
+  , "aliases": [
+      "pick"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⚒️"
+  , "description": "hammer and pick"
+  , "category": "Objects"
+  , "aliases": [
+      "hammer_and_pick"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "4.1"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🛠️"
+  , "description": "hammer and wrench"
+  , "category": "Objects"
+  , "aliases": [
+      "hammer_and_wrench"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🗡️"
+  , "description": "dagger"
+  , "category": "Objects"
+  , "aliases": [
+      "dagger"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🛡️"
+  , "description": "shield"
+  , "category": "Objects"
+  , "aliases": [
+      "shield"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🗜️"
+  , "description": "clamp"
+  , "category": "Objects"
+  , "aliases": [
+      "clamp"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⛓️"
+  , "description": "chains"
+  , "category": "Objects"
+  , "aliases": [
+      "chains"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🛢️"
+  , "description": "oil drum"
+  , "category": "Objects"
+  , "aliases": [
+      "oil_drum"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
   }
 , {
     "emoji": "❤️"
@@ -14784,6 +16653,426 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "♿"
+  , "description": "wheelchair symbol"
+  , "category": "Symbols"
+  , "aliases": [
+      "wheelchair_symbol"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "4.1"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⛔"
+  , "description": "no entry"
+  , "category": "Symbols"
+  , "aliases": [
+      "no_entry"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🕉️"
+  , "description": "om"
+  , "category": "Symbols"
+  , "aliases": [
+      "om"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "♈"
+  , "description": "Aries"
+  , "category": "Symbols"
+  , "aliases": [
+      "aries"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "♉"
+  , "description": "Taurus"
+  , "category": "Symbols"
+  , "aliases": [
+      "taurus"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "♊"
+  , "description": "Gemini"
+  , "category": "Symbols"
+  , "aliases": [
+      "gemini"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "♋"
+  , "description": "Cancer"
+  , "category": "Symbols"
+  , "aliases": [
+      "cancer"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "♌"
+  , "description": "Leo"
+  , "category": "Symbols"
+  , "aliases": [
+      "leo"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "♍"
+  , "description": "Virgo"
+  , "category": "Symbols"
+  , "aliases": [
+      "virgo"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "♎"
+  , "description": "Libra"
+  , "category": "Symbols"
+  , "aliases": [
+      "libra"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "♏"
+  , "description": "Scorpius"
+  , "category": "Symbols"
+  , "aliases": [
+      "scorpius"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "♐"
+  , "description": "Sagittarius"
+  , "category": "Symbols"
+  , "aliases": [
+      "sagittarius"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "♑"
+  , "description": "Capricorn"
+  , "category": "Symbols"
+  , "aliases": [
+      "capricorn"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "♒"
+  , "description": "Aquarius"
+  , "category": "Symbols"
+  , "aliases": [
+      "aquarius"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "♓"
+  , "description": "Pisces"
+  , "category": "Symbols"
+  , "aliases": [
+      "pisces"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⏭️"
+  , "description": "next track button"
+  , "category": "Symbols"
+  , "aliases": [
+      "next_track_button"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⏯️"
+  , "description": "play or pause button"
+  , "category": "Symbols"
+  , "aliases": [
+      "play_or_pause_button"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⏮️"
+  , "description": "last track button"
+  , "category": "Symbols"
+  , "aliases": [
+      "previous_track_button"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⏸️"
+  , "description": "pause button"
+  , "category": "Symbols"
+  , "aliases": [
+      "pause_button"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⏹️"
+  , "description": "stop button"
+  , "category": "Symbols"
+  , "aliases": [
+      "stop_button"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⏺️"
+  , "description": "record button"
+  , "category": "Symbols"
+  , "aliases": [
+      "record_button"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "7.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "⏏️"
+  , "description": "eject button"
+  , "category": "Symbols"
+  , "aliases": [
+      "eject_button"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "4.0"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⭕"
+  , "description": "heavy large circle"
+  , "category": "Symbols"
+  , "aliases": [
+      "heavy_large_circle"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "♀️"
+  , "description": "female sign"
+  , "category": "Symbols"
+  , "aliases": [
+      "female_sign"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "♂️"
+  , "description": "male sign"
+  , "category": "Symbols"
+  , "aliases": [
+      "male_sign"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⚕️"
+  , "description": "medical symbol"
+  , "category": "Symbols"
+  , "aliases": [
+      "medical_symbol"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "4.1"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "❗"
+  , "description": "exclamation mark"
+  , "category": "Symbols"
+  , "aliases": [
+      "exclamation_mark"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.2"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🈯"
+  , "description": "Japanese “reserved” button"
+  , "category": "Symbols"
+  , "aliases": [
+      "japanese_reserved_button"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🈚"
+  , "description": "Japanese “free of charge” button"
+  , "category": "Symbols"
+  , "aliases": [
+      "japanese_free_of_charge_button"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "◽"
+  , "description": "white medium-small square"
+  , "category": "Symbols"
+  , "aliases": [
+      "white_medium_small_square"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "3.2"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "◾"
+  , "description": "black medium-small square"
+  , "category": "Symbols"
+  , "aliases": [
+      "black_medium_small_square"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "3.2"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⬛"
+  , "description": "black large square"
+  , "category": "Symbols"
+  , "aliases": [
+      "black_large_square"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.1"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⬜"
+  , "description": "white large square"
+  , "category": "Symbols"
+  , "aliases": [
+      "white_large_square"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "5.1"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⚪"
+  , "description": "white circle"
+  , "category": "Symbols"
+  , "aliases": [
+      "white_circle"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "4.1"
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "⚫"
+  , "description": "black circle"
+  , "category": "Symbols"
+  , "aliases": [
+      "black_circle"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "4.1"
+  , "ios_version": "11.1"
+  }
+, {
     "emoji": "🏳️"
   , "description": "white flag"
   , "category": "Flags"
@@ -17842,6 +20131,138 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "8.3"
+  }
+, {
+    "emoji": "🇦🇨"
+  , "description": "Ascension Island"
+  , "category": "Flags"
+  , "aliases": [
+      "ascension_island"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🇧🇻"
+  , "description": "Bouvet Island"
+  , "category": "Flags"
+  , "aliases": [
+      "bouvet_island"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🇨🇵"
+  , "description": "Clipperton Island"
+  , "category": "Flags"
+  , "aliases": [
+      "clipperton_island"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🇩🇬"
+  , "description": "Diego Garcia"
+  , "category": "Flags"
+  , "aliases": [
+      "diego_garcia"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🇪🇦"
+  , "description": "Ceuta & Melilla"
+  , "category": "Flags"
+  , "aliases": [
+      "ceuta_melilla"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🇭🇲"
+  , "description": "Heard & McDonald Islands"
+  , "category": "Flags"
+  , "aliases": [
+      "heard_mcdonald_islands"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🇲🇫"
+  , "description": "St. Martin"
+  , "category": "Flags"
+  , "aliases": [
+      "st_martin"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🇸🇯"
+  , "description": "Svalbard & Jan Mayen"
+  , "category": "Flags"
+  , "aliases": [
+      "svalbard_jan_mayen"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🇹🇦"
+  , "description": "Tristan da Cunha"
+  , "category": "Flags"
+  , "aliases": [
+      "tristan_da_cunha"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🇺🇲"
+  , "description": "U.S. Outlying Islands"
+  , "category": "Flags"
+  , "aliases": [
+      "u_s_outlying_islands"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
+  }
+, {
+    "emoji": "🇺🇳"
+  , "description": "United Nations"
+  , "category": "Flags"
+  , "aliases": [
+      "united_nations"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": ""
+  , "ios_version": "11.1"
   }
 , {
     "aliases": [
