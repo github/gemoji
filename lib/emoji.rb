@@ -80,6 +80,9 @@ module Emoji
     # Chars from Apple's palette which must have VARIATION_SELECTOR_16 to render:
     TEXT_GLYPHS = ["🈷", "🈂", "🅰", "🅱", "🅾", "©", "®", "™", "〰"].freeze
 
+    private_constant :VARIATION_SELECTOR_16, :ZERO_WIDTH_JOINER,
+                     :FEMALE_SYMBOL, :MALE_SYMBOL, :TEXT_GLYPHS
+
     def parse_data_file
       data = File.open(data_file, 'r:UTF-8') { |file| JSON.parse(file.read) }
       data.each do |raw_emoji|
