@@ -6,15 +6,15 @@ module Emoji
   extend self
 
   def data_file
-    File.expand_path('../../db/emoji.json', __FILE__)
+    @data_file ||= File.expand_path('../../db/emoji.json', __FILE__)
   end
 
   def apple_palette_file
-    File.expand_path('../../db/Category-Emoji.json', __FILE__)
+    @apple_palette_file ||= File.expand_path('../../db/Category-Emoji.json', __FILE__)
   end
 
   def images_path
-    File.expand_path("../../images", __FILE__)
+   @images_path ||= File.expand_path("../../images", __FILE__)
   end
 
   def all
