@@ -7,12 +7,12 @@ require 'json'
 module Emoji
   extend self
 
-  def data_file
-    File.expand_path('../../db/emoji.json', __FILE__)
+  def raw_data_file
+    File.expand_path('../../db/raw-emoji.json', __FILE__)
   end
 
-  def apple_palette_file
-    File.expand_path('../../db/Category-Emoji.json', __FILE__)
+  def data_file
+    File.expand_path('../../db/emoji.json', __FILE__)
   end
 
   def images_path
@@ -26,16 +26,31 @@ module Emoji
     @all
   end
 
-  def apple_palette
-    return @apple_palette if defined? @apple_palette
-    data = File.open(apple_palette_file, 'r:UTF-8') { |f| JSON.parse(f.read) }
-    @apple_palette = data.fetch('EmojiDataArray').each_with_object({}) do |group, all|
-      title = group.fetch('CVDataTitle').split('-', 2)[1]
-      all[title] = group.fetch('CVCategoryData').fetch('Data').split(',').map do |raw|
-        TEXT_GLYPHS.include?(raw) ? raw + VARIATION_SELECTOR_16 : raw
+  def palette
+    return @palette if defined? @palette
+
+    data = File.open(raw_data_file, 'r:UTF-8') { |f| JSON.parse(f.read) }
+    @palette = data.each_with_object({}) do |group, all|
+      next unless group.key?('category')
+
+      emoji = group.fetch('char')
+
+      if data.any? do |e|
+        e.fetch('char') == "#{emoji}#{ZERO_WIDTH_JOINER}#{FEMALE_SYMBOL}#{VARIATION_SELECTOR_16}"
+      end && data.any? do |e|
+        e.fetch('char') == "#{emoji}#{ZERO_WIDTH_JOINER}#{MALE_SYMBOL}#{VARIATION_SELECTOR_16}"
       end
+        next
+      end
+
+      emoji = TEXT_GLYPHS.include?(emoji) ? emoji + VARIATION_SELECTOR_16 : emoji
+
+      category = group.fetch('category')
+      all[category] = [] unless all.key?(category)
+      all[category].push(emoji)
     end
   end
+  alias apple_palette palette
 
   # Public: Initialize an Emoji::Character instance and yield it to the block.
   # The character is added to the `Emoji.all` set.
@@ -88,11 +103,19 @@ module Emoji
     def parse_data_file
       data = File.open(data_file, 'r:UTF-8') { |file| JSON.parse(file.read) }
       data.each do |raw_emoji|
+      if data.any? do |e|
+        e['emoji'] == "#{raw_emoji['emoji']}#{ZERO_WIDTH_JOINER}#{FEMALE_SYMBOL}#{VARIATION_SELECTOR_16}"
+      end && data.any? do |e|
+        e['emoji'] == "#{raw_emoji['emoji']}#{ZERO_WIDTH_JOINER}#{MALE_SYMBOL}#{VARIATION_SELECTOR_16}"
+      end
+        next
+      end
+
         self.create(nil) do |emoji|
           raw_emoji.fetch('aliases').each { |name| emoji.add_alias(name) }
           if raw = raw_emoji['emoji']
             unicodes = [raw, raw.sub(VARIATION_SELECTOR_16, '') + VARIATION_SELECTOR_16].uniq
-            unicodes.each { |uni| emoji.add_unicode_alias(uni) }
+            unicodes.each { |uni| emoji.add_unicode_alias(uni) unless TEXT_GLYPHS.include?(uni) }
           end
           raw_emoji.fetch('tags').each { |tag| emoji.add_tag(tag) }
 

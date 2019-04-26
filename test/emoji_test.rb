@@ -72,7 +72,7 @@ class EmojiTest < TestCase
   end
 
   test "missing or incorrect unicodes" do
-    source_unicode_emoji = Emoji.apple_palette.values.flatten
+    source_unicode_emoji = Emoji.palette.values.flatten
     missing = source_unicode_emoji - Emoji.all.flat_map(&:unicode_aliases)
 
     message = "Missing or incorrect unicodes:\n"
@@ -93,7 +93,7 @@ class EmojiTest < TestCase
     assert_equal [], missing.map(&:name), "some emoji don't have a category"
 
     emoji = Emoji.find_by_alias('family_man_woman_girl')
-    assert_equal 'People', emoji.category
+    assert_equal 'People & Body', emoji.category
   end
 
   test "emoji have description" do

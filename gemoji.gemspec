@@ -16,7 +16,6 @@ Gem::Specification.new do |s|
     "README.md",
     "bin/gemoji",
     "images/*.png",
-    "db/Category-Emoji.json",
     "db/emoji.json",
     "lib/**/*.rb",
   ]

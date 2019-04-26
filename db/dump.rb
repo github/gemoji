@@ -93,7 +93,7 @@ end
 
 items = []
 
-for category, emojis in Emoji.apple_palette
+for category, emojis in Emoji.palette
   for raw in emojis
     emoji = Emoji.find_by_unicode(raw)
     unicode_version = emoji ? emoji.unicode_version : ''
