@@ -181,6 +181,17 @@ class EmojiTest < TestCase
     end
   end
 
+  test "create with aliases" do
+    emoji = Emoji.create("foo", %w[bar baz])
+
+    begin
+      assert_equal emoji, Emoji.find_by_alias("bar")
+      assert_equal emoji, Emoji.find_by_alias("baz")
+    ensure
+      Emoji.all.pop
+    end
+  end
+
   test "edit" do
     emoji = Emoji.find_by_alias("weary")
 

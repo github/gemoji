@@ -48,8 +48,9 @@ module Emoji
       tags << tag
     end
 
-    def initialize(name)
-      @aliases = Array(name)
+    def initialize(name, aliases = [])
+      aliases.concat([name]) if name
+      @aliases = aliases
       @unicode_aliases = []
       @tags = []
     end

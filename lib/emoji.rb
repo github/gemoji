@@ -37,8 +37,8 @@ module Emoji
 
   # Public: Initialize an Emoji::Character instance and yield it to the block.
   # The character is added to the `Emoji.all` set.
-  def create(name)
-    emoji = Emoji::Character.new(name)
+  def create(name, aliases = [])
+    emoji = Emoji::Character.new(name, aliases)
     self.all << edit_emoji(emoji) { yield emoji if block_given? }
     emoji
   end
