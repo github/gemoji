@@ -7,10 +7,6 @@ require 'json'
 module Emoji
   extend self
 
-  def raw_data_file
-    File.expand_path('../../db/raw-emoji.json', __FILE__)
-  end
-
   def data_file
     File.expand_path('../../db/emoji.json', __FILE__)
   end
@@ -25,32 +21,6 @@ module Emoji
     parse_data_file
     @all
   end
-
-  def palette
-    return @palette if defined? @palette
-
-    data = File.open(raw_data_file, 'r:UTF-8') { |f| JSON.parse(f.read) }
-    @palette = data.each_with_object({}) do |group, all|
-      next unless group.key?('category')
-
-      emoji = group.fetch('char')
-
-      if data.any? do |e|
-        e.fetch('char') == "#{emoji}#{ZERO_WIDTH_JOINER}#{FEMALE_SYMBOL}#{VARIATION_SELECTOR_16}"
-      end && data.any? do |e|
-        e.fetch('char') == "#{emoji}#{ZERO_WIDTH_JOINER}#{MALE_SYMBOL}#{VARIATION_SELECTOR_16}"
-      end
-        next
-      end
-
-      emoji = TEXT_GLYPHS.include?(emoji) ? emoji + VARIATION_SELECTOR_16 : emoji
-
-      category = group.fetch('category')
-      all[category] = [] unless all.key?(category)
-      all[category].push(emoji)
-    end
-  end
-  alias apple_palette palette
 
   # Public: Initialize an Emoji::Character instance and yield it to the block.
   # The character is added to the `Emoji.all` set.

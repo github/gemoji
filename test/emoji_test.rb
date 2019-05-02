@@ -1,4 +1,5 @@
 require 'test_helper'
+require_relative '../db/emoji-test'
 
 class EmojiTest < TestCase
   test "fetching all emoji" do
@@ -72,7 +73,8 @@ class EmojiTest < TestCase
   end
 
   test "missing or incorrect unicodes" do
-    source_unicode_emoji = Emoji.palette.values.flatten
+    emoji_map, _ = EmojiTestParser.parse
+    source_unicode_emoji = emoji_map.values.map { |e| e[:sequences] }.flatten
     missing = source_unicode_emoji - Emoji.all.flat_map(&:unicode_aliases)
 
     message = "Missing or incorrect unicodes:\n"
