@@ -107,7 +107,7 @@ module Emoji
       data.each do |raw_emoji|
         raw = raw_emoji['emoji']
         next unless raw
-        no_gender = raw.sub(/(#{VARIATION_SELECTOR_16})?#{ZERO_WIDTH_JOINER}(#{FEMALE_SYMBOL}|#{MALE_SYMBOL})/, '')
+        no_gender = raw.sub(/(#{VARIATION_SELECTOR_16})?#{ZERO_WIDTH_JOINER}(#{FEMALE_SYMBOL}|#{MALE_SYMBOL})/o, '')
         next unless $2
         emoji = find_by_unicode(no_gender)
         next unless emoji
