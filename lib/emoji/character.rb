@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Emoji
   class Character
     # Inspect individual Unicode characters in a string by dumping its
