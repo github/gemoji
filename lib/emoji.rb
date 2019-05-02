@@ -71,20 +71,23 @@ module Emoji
                      :FEMALE_SYMBOL, :MALE_SYMBOL, :TEXT_GLYPHS
 
     def parse_data_file
-      data = File.open(data_file, 'r:UTF-8') { |file| JSON.parse(file.read) }
+      data = File.open(data_file, 'r:UTF-8') do |file|
+        JSON.parse(file.read, symbolize_names: true)
+      end
+
       data.each do |raw_emoji|
         self.create(nil) do |emoji|
-          raw_emoji.fetch('aliases').each { |name| emoji.add_alias(name) }
-          if raw = raw_emoji['emoji']
+          raw_emoji.fetch(:aliases).each { |name| emoji.add_alias(name) }
+          if raw = raw_emoji[:emoji]
             emoji.add_unicode_alias(raw) unless TEXT_GLYPHS.include?(raw)
             emoji.add_unicode_alias("#{raw}#{VARIATION_SELECTOR_16}") unless raw.include?(VARIATION_SELECTOR_16)
           end
-          raw_emoji.fetch('tags').each { |tag| emoji.add_tag(tag) }
+          raw_emoji.fetch(:tags).each { |tag| emoji.add_tag(tag) }
 
-          emoji.category = raw_emoji['category']
-          emoji.description = raw_emoji['description']
-          emoji.unicode_version = raw_emoji['unicode_version']
-          emoji.ios_version = raw_emoji['ios_version']
+          emoji.category = raw_emoji[:category]
+          emoji.description = raw_emoji[:description]
+          emoji.unicode_version = raw_emoji[:unicode_version]
+          emoji.ios_version = raw_emoji[:ios_version]
         end
       end
     end
