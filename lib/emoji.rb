@@ -73,19 +73,11 @@ module Emoji
     def parse_data_file
       data = File.open(data_file, 'r:UTF-8') { |file| JSON.parse(file.read) }
       data.each do |raw_emoji|
-      if data.any? do |e|
-        e['emoji'] == "#{raw_emoji['emoji']}#{ZERO_WIDTH_JOINER}#{FEMALE_SYMBOL}#{VARIATION_SELECTOR_16}"
-      end && data.any? do |e|
-        e['emoji'] == "#{raw_emoji['emoji']}#{ZERO_WIDTH_JOINER}#{MALE_SYMBOL}#{VARIATION_SELECTOR_16}"
-      end
-        next
-      end
-
         self.create(nil) do |emoji|
           raw_emoji.fetch('aliases').each { |name| emoji.add_alias(name) }
           if raw = raw_emoji['emoji']
-            unicodes = [raw, raw.sub(VARIATION_SELECTOR_16, '') + VARIATION_SELECTOR_16].uniq
-            unicodes.each { |uni| emoji.add_unicode_alias(uni) unless TEXT_GLYPHS.include?(uni) }
+            emoji.add_unicode_alias(raw) unless TEXT_GLYPHS.include?(raw)
+            emoji.add_unicode_alias("#{raw}#{VARIATION_SELECTOR_16}") unless raw.include?(VARIATION_SELECTOR_16)
           end
           raw_emoji.fetch('tags').each { |tag| emoji.add_tag(tag) }
 
@@ -93,23 +85,6 @@ module Emoji
           emoji.description = raw_emoji['description']
           emoji.unicode_version = raw_emoji['unicode_version']
           emoji.ios_version = raw_emoji['ios_version']
-        end
-      end
-
-      # Add an explicit gendered variant to emoji that historically imply a gender
-      data.each do |raw_emoji|
-        raw = raw_emoji['emoji']
-        next unless raw
-        no_gender = raw.sub(/(#{VARIATION_SELECTOR_16})?#{ZERO_WIDTH_JOINER}(#{FEMALE_SYMBOL}|#{MALE_SYMBOL})/o, '')
-        next unless $2
-        emoji = find_by_unicode(no_gender)
-        next unless emoji
-        edit_emoji(emoji) do
-          emoji.add_unicode_alias(
-            $2 == FEMALE_SYMBOL ?
-              raw.sub(FEMALE_SYMBOL, MALE_SYMBOL) :
-              raw.sub(MALE_SYMBOL, FEMALE_SYMBOL)
-          )
         end
       end
     end
