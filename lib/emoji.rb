@@ -60,15 +60,21 @@ module Emoji
 
   private
     VARIATION_SELECTOR_16 = "\u{fe0f}".freeze
-    ZERO_WIDTH_JOINER = "\u{200d}".freeze
-    FEMALE_SYMBOL = "\u{2640}".freeze
-    MALE_SYMBOL = "\u{2642}".freeze
 
-    # Chars from Apple's palette which must have VARIATION_SELECTOR_16 to render:
-    TEXT_GLYPHS = ["🈷", "🈂", "🅰", "🅱", "🅾", "©", "®", "™", "〰"].freeze
+    # Characters which must have VARIATION_SELECTOR_16 to render as color emoji:
+    TEXT_GLYPHS = [
+      "\u{1f237}", # Japanese “monthly amount” button
+      "\u{1f202}", # Japanese “service charge” button
+      "\u{1f170}", # A button (blood type)
+      "\u{1f171}", # B button (blood type)
+      "\u{1f17e}", # O button (blood type)
+      "\u{00a9}",  # copyright
+      "\u{00ae}",  # registered
+      "\u{2122}",  # trade mark
+      "\u{3030}",  # wavy dash
+    ].freeze
 
-    private_constant :VARIATION_SELECTOR_16, :ZERO_WIDTH_JOINER,
-                     :FEMALE_SYMBOL, :MALE_SYMBOL, :TEXT_GLYPHS
+    private_constant :VARIATION_SELECTOR_16, :TEXT_GLYPHS
 
     def parse_data_file
       data = File.open(data_file, 'r:UTF-8') do |file|
