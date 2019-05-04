@@ -7,12 +7,15 @@ require_relative './emoji-test'
 items = []
 
 _, categories = EmojiTestParser.parse
+seen_existing = {}
 
 for category in categories
   for sub_category in category[:emoji]
     for emoji_item in sub_category[:emoji]
       raw = emoji_item[:sequences][0]
       existing_emoji = Emoji.find_by_unicode(raw) || Emoji.find_by_unicode("#{raw}\u{fe0f}")
+      existing_emoji = nil if seen_existing.key?(existing_emoji)
+      seen_existing[existing_emoji] = true
       output_item = {
         emoji: raw,
         description: emoji_item[:description],
