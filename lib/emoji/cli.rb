@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'emoji/extractor'
 require 'fileutils'
 require 'optparse'
 
@@ -37,25 +36,14 @@ module Emoji
       puts usage_text
     end
 
-    VALID_SIZES = [ 20, 32, 40, 48, 64, 96, 160 ]
-
     def extract(argv)
-      size = 64
-
-      OptionParser.new do |opts|
-        opts.on("--size=#{size}", Integer) do |val|
-          if VALID_SIZES.include?(val)
-            size = val
-          else
-            raise InvalidUsage, "size should be one of: #{VALID_SIZES.join(', ')}"
-          end
-        end
-      end.parse!(argv)
+      # OptionParser.new do |opts|
+      #   opts.on("--size=64", Integer) do |size|
+      # end.parse!(argv)
 
       raise InvalidUsage unless argv.size == 1
       path = argv[0]
 
-      Emoji::Extractor.new(size, path).extract!
       Dir["#{Emoji.images_path}/*.png"].each do |png|
         FileUtils.cp(png, File.join(path, File.basename(png)))
       end
@@ -63,7 +51,7 @@ module Emoji
 
     def usage_text
       <<EOF
-Usage: gemoji extract <path> [--size=64]
+Usage: gemoji extract <path>
 EOF
     end
   end

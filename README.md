@@ -16,9 +16,6 @@ gem 'gemoji'
 
 ### Extract images
 
-To obtain image files as fallbacks for browsers and OS's that don't support
-emoji, run the `gemoji extract` command **on macOS Sierra or later**:
-
 ``` sh
 bundle exec gemoji extract public/images/emoji
 ```
@@ -26,7 +23,6 @@ bundle exec gemoji extract public/images/emoji
 This will extract images into filenames such as:
 
 * `public/images/emoji/octocat.png`
-* `public/images/emoji/unicode/1f9c0.png` (the `:cheese:` emoji)
 
 
 Example Rails Helper
