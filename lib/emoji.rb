@@ -11,10 +11,6 @@ module Emoji
     File.expand_path('../../db/emoji.json', __FILE__)
   end
 
-  def apple_palette_file
-    File.expand_path('../../db/Category-Emoji.json', __FILE__)
-  end
-
   def images_path
     File.expand_path("../../images", __FILE__)
   end
@@ -24,17 +20,6 @@ module Emoji
     @all = []
     parse_data_file
     @all
-  end
-
-  def apple_palette
-    return @apple_palette if defined? @apple_palette
-    data = File.open(apple_palette_file, 'r:UTF-8') { |f| JSON.parse(f.read) }
-    @apple_palette = data.fetch('EmojiDataArray').each_with_object({}) do |group, all|
-      title = group.fetch('CVDataTitle').split('-', 2)[1]
-      all[title] = group.fetch('CVCategoryData').fetch('Data').split(',').map do |raw|
-        TEXT_GLYPHS.include?(raw) ? raw + VARIATION_SELECTOR_16 : raw
-      end
-    end
   end
 
   # Public: Initialize an Emoji::Character instance and yield it to the block.
@@ -75,48 +60,60 @@ module Emoji
 
   private
     VARIATION_SELECTOR_16 = "\u{fe0f}".freeze
-    ZERO_WIDTH_JOINER = "\u{200d}".freeze
-    FEMALE_SYMBOL = "\u{2640}".freeze
-    MALE_SYMBOL = "\u{2642}".freeze
 
-    # Chars from Apple's palette which must have VARIATION_SELECTOR_16 to render:
-    TEXT_GLYPHS = ["🈷", "🈂", "🅰", "🅱", "🅾", "©", "®", "™", "〰"].freeze
+    # Characters which must have VARIATION_SELECTOR_16 to render as color emoji:
+    TEXT_GLYPHS = [
+      "\u{1f237}", # Japanese “monthly amount” button
+      "\u{1f202}", # Japanese “service charge” button
+      "\u{1f170}", # A button (blood type)
+      "\u{1f171}", # B button (blood type)
+      "\u{1f17e}", # O button (blood type)
+      "\u{00a9}",  # copyright
+      "\u{00ae}",  # registered
+      "\u{2122}",  # trade mark
+      "\u{3030}",  # wavy dash
+    ].freeze
 
-    private_constant :VARIATION_SELECTOR_16, :ZERO_WIDTH_JOINER,
-                     :FEMALE_SYMBOL, :MALE_SYMBOL, :TEXT_GLYPHS
+    private_constant :VARIATION_SELECTOR_16, :TEXT_GLYPHS
 
     def parse_data_file
-      data = File.open(data_file, 'r:UTF-8') { |file| JSON.parse(file.read) }
-      data.each do |raw_emoji|
-        self.create(nil) do |emoji|
-          raw_emoji.fetch('aliases').each { |name| emoji.add_alias(name) }
-          if raw = raw_emoji['emoji']
-            unicodes = [raw, raw.sub(VARIATION_SELECTOR_16, '') + VARIATION_SELECTOR_16].uniq
-            unicodes.each { |uni| emoji.add_unicode_alias(uni) }
-          end
-          raw_emoji.fetch('tags').each { |tag| emoji.add_tag(tag) }
+      data = File.open(data_file, 'r:UTF-8') do |file|
+        JSON.parse(file.read, symbolize_names: true)
+      end
 
-          emoji.category = raw_emoji['category']
-          emoji.description = raw_emoji['description']
-          emoji.unicode_version = raw_emoji['unicode_version']
-          emoji.ios_version = raw_emoji['ios_version']
+      append_unicode = lambda do |emoji, raw|
+        unless TEXT_GLYPHS.include?(raw) || emoji.unicode_aliases.include?(raw)
+          emoji.add_unicode_alias(raw)
         end
       end
 
-      # Add an explicit gendered variant to emoji that historically imply a gender
       data.each do |raw_emoji|
-        raw = raw_emoji['emoji']
-        next unless raw
-        no_gender = raw.sub(/(#{VARIATION_SELECTOR_16})?#{ZERO_WIDTH_JOINER}(#{FEMALE_SYMBOL}|#{MALE_SYMBOL})/o, '')
-        next unless $2
-        emoji = find_by_unicode(no_gender)
-        next unless emoji
-        edit_emoji(emoji) do
-          emoji.add_unicode_alias(
-            $2 == FEMALE_SYMBOL ?
-              raw.sub(FEMALE_SYMBOL, MALE_SYMBOL) :
-              raw.sub(MALE_SYMBOL, FEMALE_SYMBOL)
-          )
+        self.create(nil) do |emoji|
+          raw_emoji.fetch(:aliases).each { |name| emoji.add_alias(name) }
+          if raw = raw_emoji[:emoji]
+            append_unicode.call(emoji, raw)
+            start_pos = 0
+            while found_index = raw.index(VARIATION_SELECTOR_16, start_pos)
+              # register every variant where one VARIATION_SELECTOR_16 is removed
+              raw_alternate = raw.dup
+              raw_alternate[found_index] = ""
+              append_unicode.call(emoji, raw_alternate)
+              start_pos = found_index + 1
+            end
+            if start_pos > 0
+              # register a variant with all VARIATION_SELECTOR_16 removed
+              append_unicode.call(emoji, raw.gsub(VARIATION_SELECTOR_16, ""))
+            else
+              # register a variant where VARIATION_SELECTOR_16 is added
+              append_unicode.call(emoji, "#{raw}#{VARIATION_SELECTOR_16}")
+            end
+          end
+          raw_emoji.fetch(:tags).each { |tag| emoji.add_tag(tag) }
+
+          emoji.category = raw_emoji[:category]
+          emoji.description = raw_emoji[:description]
+          emoji.unicode_version = raw_emoji[:unicode_version]
+          emoji.ios_version = raw_emoji[:ios_version]
         end
       end
     end
