@@ -18,8 +18,8 @@ module EmojiTestParser
 
   module_function
 
-  def parse
-    File.open(File.expand_path("../emoji-test.txt", __FILE__), "r:utf-8") do |file|
+  def parse(filename)
+    File.open(filename, "r:UTF-8") do |file|
       parse_file(file)
     end
   end

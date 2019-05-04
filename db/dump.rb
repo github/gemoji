@@ -2,11 +2,11 @@
 
 require 'emoji'
 require 'json'
-require_relative './emoji-test'
+require_relative './emoji-test-parser'
 
 items = []
 
-_, categories = EmojiTestParser.parse
+_, categories = EmojiTestParser.parse(File.expand_path("../../vendor/unicode-emoji-test.txt", __FILE__))
 seen_existing = {}
 
 for category in categories
