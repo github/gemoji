@@ -81,12 +81,32 @@ module Emoji
         JSON.parse(file.read, symbolize_names: true)
       end
 
+      append_unicode = lambda do |emoji, raw|
+        unless TEXT_GLYPHS.include?(raw) || emoji.unicode_aliases.include?(raw)
+          emoji.add_unicode_alias(raw)
+        end
+      end
+
       data.each do |raw_emoji|
         self.create(nil) do |emoji|
           raw_emoji.fetch(:aliases).each { |name| emoji.add_alias(name) }
           if raw = raw_emoji[:emoji]
-            emoji.add_unicode_alias(raw) unless TEXT_GLYPHS.include?(raw)
-            emoji.add_unicode_alias("#{raw}#{VARIATION_SELECTOR_16}") unless raw.include?(VARIATION_SELECTOR_16)
+            append_unicode.call(emoji, raw)
+            start_pos = 0
+            while found_index = raw.index(VARIATION_SELECTOR_16, start_pos)
+              # register every variant where one VARIATION_SELECTOR_16 is removed
+              raw_alternate = raw.dup
+              raw_alternate[found_index] = ""
+              append_unicode.call(emoji, raw_alternate)
+              start_pos = found_index + 1
+            end
+            if start_pos > 0
+              # register a variant with all VARIATION_SELECTOR_16 removed
+              append_unicode.call(emoji, raw.gsub(VARIATION_SELECTOR_16, ""))
+            else
+              # register a variant where VARIATION_SELECTOR_16 is added
+              append_unicode.call(emoji, "#{raw}#{VARIATION_SELECTOR_16}")
+            end
           end
           raw_emoji.fetch(:tags).each { |tag| emoji.add_tag(tag) }
 
