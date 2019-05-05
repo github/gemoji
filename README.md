@@ -1,8 +1,7 @@
 gemoji
 ======
 
-This library contains character information about native emoji, as well as image
-files for a few custom emoji.
+This library contains character information about native emojis.
 
 
 Installation
@@ -13,16 +12,6 @@ Add `gemoji` to your Gemfile.
 ``` ruby
 gem 'gemoji'
 ```
-
-### Extract images
-
-``` sh
-bundle exec gemoji extract public/images/emoji
-```
-
-This will extract images into filenames such as:
-
-* `public/images/emoji/octocat.png`
 
 
 Example Rails Helper
