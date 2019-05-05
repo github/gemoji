@@ -22,8 +22,3 @@ end
 file 'vendor/unicode-emoji-test.txt' do |t|
   system 'curl', '-fsSL', 'http://unicode.org/Public/emoji/11.0/emoji-test.txt', '-o', t.name
 end
-
-directory 'images/unicode' do
-  require 'emoji/extractor'
-  Emoji::Extractor.new(64, Emoji.images_path).extract!
-end

@@ -3,6 +3,5 @@
 .bundle
 .ruby-version
 Gemfile.lock
-images/unicode/*.png
 vendor/*
 !vendor/unicode-emoji-test.txt
