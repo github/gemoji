@@ -8,7 +8,7 @@ class EmojiTest < TestCase
   end
 
   test "unicodes set contains the unicodes" do
-    min_size = Emoji.all.reject(&:custom?).size
+    min_size = Emoji.all.size
     count = Emoji.all.map(&:unicode_aliases).flatten.size
     assert count > min_size, "there were too few unicode mappings: #{count}"
   end
@@ -112,7 +112,7 @@ class EmojiTest < TestCase
   end
 
   test "emoji have category" do
-    missing = Emoji.all.select { |e| !e.custom? && e.category.to_s.empty? }
+    missing = Emoji.all.select { |e| e.category.to_s.empty? }
     assert_equal [], missing.map(&:name), "some emoji don't have a category"
 
     emoji = Emoji.find_by_alias('family_man_woman_girl')
@@ -120,7 +120,7 @@ class EmojiTest < TestCase
   end
 
   test "emoji have description" do
-    missing = Emoji.all.select { |e| !e.custom? && e.description.to_s.empty? }
+    missing = Emoji.all.select { |e| e.description.to_s.empty? }
     assert_equal [], missing.map(&:name), "some emoji don't have a description"
 
     emoji = Emoji.find_by_alias('family_man_woman_girl')
@@ -133,27 +133,16 @@ class EmojiTest < TestCase
   end
 
   test "emoji have iOS version" do
-    missing = Emoji.all.select { |e| !e.custom? && e.ios_version.to_s.empty? }
+    missing = Emoji.all.select { |e| e.ios_version.to_s.empty? }
     assert_equal [], missing.map(&:name), "some emoji don't have an iOS version"
 
     emoji = Emoji.find_by_alias('family_man_woman_girl')
     assert_equal '8.3', emoji.ios_version
   end
 
-  test "custom emojis" do
+  test "no custom emojis" do
     custom = Emoji.all.select(&:custom?)
-    assert custom.size > 0
-
-    custom.each do |emoji|
-      assert_nil emoji.raw
-      assert_equal [], emoji.unicode_aliases
-    end
-  end
-
-  test "custom emoji names" do
-    custom_names = Emoji.all.select(&:custom?).map(&:name)
-    assert custom_names.include?("shipit")
-    assert !custom_names.include?("+1")
+    assert 0, custom.size
   end
 
   test "create" do
