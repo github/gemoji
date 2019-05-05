@@ -116,7 +116,20 @@ class EmojiTest < TestCase
     assert_equal [], missing.map(&:name), "some emoji don't have a category"
 
     emoji = Emoji.find_by_alias('family_man_woman_girl')
-    assert_equal 'Smileys & People', emoji.category
+    assert_equal 'People & Body', emoji.category
+
+    categories = Emoji.all.map(&:category).uniq.compact
+    assert_equal [
+      "Smileys & Emotion",
+      "People & Body",
+      "Animals & Nature",
+      "Food & Drink",
+      "Travel & Places",
+      "Activities",
+      "Objects",
+      "Symbols",
+      "Flags",
+    ], categories
   end
 
   test "emoji have description" do
