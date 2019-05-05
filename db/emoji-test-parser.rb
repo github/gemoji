@@ -59,7 +59,7 @@ module EmojiTestParser
             .gsub(VARIATION_SELECTOR_16, "")
             .gsub(/(#{SKIN_TONES.join("|")})/o, "")
           emoji_item = emoji_map[emoji_normalized]
-          if desc.end_with?(" skin tone")
+          if SKIN_TONES.any? { |s| emoji_raw.include?(s) }
             emoji_item[:skin_tones] = true if emoji_item
             next
           end
