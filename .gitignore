@@ -1,5 +1,4 @@
 /bin/*
-!/bin/gemoji
 .bundle
 .ruby-version
 Gemfile.lock

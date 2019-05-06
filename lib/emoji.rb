@@ -11,10 +11,6 @@ module Emoji
     File.expand_path('../../db/emoji.json', __FILE__)
   end
 
-  def images_path
-    File.expand_path("../../images", __FILE__)
-  end
-
   def all
     return @all if defined? @all
     @all = []
