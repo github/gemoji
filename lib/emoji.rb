@@ -77,15 +77,23 @@ module Emoji
         JSON.parse(file.read, symbolize_names: true)
       end
 
+      if "".respond_to?(:-@)
+        # Ruby >= 2.3 this is equivalent to .freeze
+        # Ruby >= 2.5 this will freeze and dedup
+        dedup = lambda { |str| -str }
+      else
+        dedup = lambda { |str| str.freeze }
+      end
+
       append_unicode = lambda do |emoji, raw|
         unless TEXT_GLYPHS.include?(raw) || emoji.unicode_aliases.include?(raw)
-          emoji.add_unicode_alias(raw)
+          emoji.add_unicode_alias(dedup.call(raw))
         end
       end
 
       data.each do |raw_emoji|
         self.create(nil) do |emoji|
-          raw_emoji.fetch(:aliases).each { |name| emoji.add_alias(name) }
+          raw_emoji.fetch(:aliases).each { |name| emoji.add_alias(dedup.call(name)) }
           if raw = raw_emoji[:emoji]
             append_unicode.call(emoji, raw)
             start_pos = 0
@@ -104,12 +112,12 @@ module Emoji
               append_unicode.call(emoji, "#{raw}#{VARIATION_SELECTOR_16}")
             end
           end
-          raw_emoji.fetch(:tags).each { |tag| emoji.add_tag(tag) }
+          raw_emoji.fetch(:tags).each { |tag| emoji.add_tag(dedup.call(tag)) }
 
-          emoji.category = raw_emoji[:category]
-          emoji.description = raw_emoji[:description]
-          emoji.unicode_version = raw_emoji[:unicode_version]
-          emoji.ios_version = raw_emoji[:ios_version]
+          emoji.category = dedup.call(raw_emoji[:category])
+          emoji.description = dedup.call(raw_emoji[:description])
+          emoji.unicode_version = dedup.call(raw_emoji[:unicode_version])
+          emoji.ios_version = dedup.call(raw_emoji[:ios_version])
         end
       end
     end
