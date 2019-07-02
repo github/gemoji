@@ -11,6 +11,11 @@ module Emoji
     # True if the emoji is not a standard Emoji character.
     def custom?() !raw end
 
+    # True if the emoji supports Fitzpatrick scale skin tone modifiers
+    def skin_tones?() @skin_tones end
+
+    attr_writer :skin_tones
+
     # A list of names uniquely referring to this emoji.
     attr_reader :aliases
 
@@ -54,6 +59,7 @@ module Emoji
       @aliases = Array(name)
       @unicode_aliases = []
       @tags = []
+      @skin_tones = false
     end
 
     def inspect

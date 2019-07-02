@@ -153,6 +153,14 @@ class EmojiTest < TestCase
     assert_equal '8.3', emoji.ios_version
   end
 
+  test "skin tones" do
+    smiley = Emoji.find_by_alias("smiley")
+    assert_equal false, smiley.skin_tones?
+
+    wave = Emoji.find_by_alias("wave")
+    assert_equal true, wave.skin_tones?
+  end
+
   test "no custom emojis" do
     custom = Emoji.all.select(&:custom?)
     assert 0, custom.size
