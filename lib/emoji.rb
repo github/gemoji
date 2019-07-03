@@ -68,6 +68,82 @@ module Emoji
       "\u{00ae}",  # registered
       "\u{2122}",  # trade mark
       "\u{3030}",  # wavy dash
+      "\u{263a}",  # smiling face
+      "\u{261D}",  # index pointing up
+      "\u{270C}",  # victory hand
+      "\u{270D}",  # writing hand
+      "\u{2764}",  # red heart
+      "\u{2763}",  # heavy heart exclamation
+      "\u{2668}",  # hot springs
+      "\u{2708}",  # airplane
+      "\u{2600}",  # sun
+      "\u{2601}",  # cloud
+      "\u{2602}",  # umbrella
+      "\u{2744}",  # snowflake
+      "\u{2603}",  # snowman
+      "\u{2660}",  # spade suit
+      "\u{2665}",  # heart suit
+      "\u{2666}",  # diamond suit
+      "\u{2663}",  # club suit
+      "\u{260e}",  # telephone
+      "\u{2709}",  # envelope
+      "\u{270F}",  # pencil
+      "\u{2712}",  # black nib
+      "\u{2702}",  # scissors
+      "\u{26a0}",  # warning
+      "\u{2B06}",  # up arrow
+      "\u{2197}",  # up-right arrow
+      "\u{27A1}",  # right arrow
+      "\u{2198}",  # down-right arrow
+      "\u{2B07}",  # down arrow
+      "\u{2199}",  # down-left arrow
+      "\u{2B05}",  # left arrow
+      "\u{2196}",  # up-left arrow
+      "\u{2195}",  # up-down arrow
+      "\u{2194}",  # left-right arrow
+      "\u{21A9}",  # right arrow curving left
+      "\u{21AA}",  # left arrow curving right
+      "\u{2934}",  # right arrow curving up
+      "\u{2935}",  # right arrow curving down
+      "\u{2721}",  # star of David
+      "\u{262F}",  # yin yang
+      "\u{271D}",  # latin cross
+      "\u{25B6}",  # play button
+      "\u{25C0}",  # reverse button
+      "\u{23CF}",  # eject button
+      "\u{2640}",  # female sign
+      "\u{2642}",  # male sign
+      "\u{267B}",  # recycling symbol
+      "\u{2611}",  # ballot box with check
+      "\u{2714}",  # heavy check mark
+      "\u{2716}",  # heavy multiplication x
+      "\u{303D}",  # part alternation mark
+      "\u{2733}",  # eight-spoked asterisk
+      "\u{2734}",  # eight-pointed star
+      "\u{2747}",  # sparkle
+      "\u{203C}",  # double exclamation mark
+      "\u{2049}",  # exclamation question mark
+      "\u{23}\u{20E3}",  # keycap: #
+      "\u{2A}\u{20E3}",  # keycap: *
+      "\u{30}\u{20E3}",  # keycap: 0
+      "\u{31}\u{20E3}",  # keycap: 1
+      "\u{32}\u{20E3}",  # keycap: 2
+      "\u{33}\u{20E3}",  # keycap: 3
+      "\u{34}\u{20E3}",  # keycap: 4
+      "\u{35}\u{20E3}",  # keycap: 5
+      "\u{36}\u{20E3}",  # keycap: 6
+      "\u{37}\u{20E3}",  # keycap: 7
+      "\u{38}\u{20E3}",  # keycap: 8
+      "\u{39}\u{20E3}",  # keycap: 9
+      "\u{2139}",  # information
+      "\u{24C2}",  # circled M
+      "\u{1F17F}", # P button
+      "\u{3297}",  # Japanese “congratulations” button
+      "\u{3299}",  # Japanese “secret” button
+      "\u{25AA}",  # black small square
+      "\u{25AB}",  # white small square
+      "\u{25FB}",  # white medium square
+      "\u{25FC}",  # black medium square
     ].freeze
 
     private_constant :VARIATION_SELECTOR_16, :TEXT_GLYPHS

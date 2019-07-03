@@ -91,14 +91,18 @@ class EmojiTest < TestCase
   test "missing or incorrect unicodes" do
     emoji_map, _ = EmojiTestParser.parse(File.expand_path("../../vendor/unicode-emoji-test.txt", __FILE__))
     source_unicode_emoji = emoji_map.values
-    supported_sequences = Emoji.all.flat_map(&:unicode_aliases)
     text_glyphs = Emoji.const_get(:TEXT_GLYPHS)
 
     missing = 0
     message = "Missing or incorrect unicodes:\n"
     source_unicode_emoji.each do |emoji|
       emoji[:sequences].each do |raw|
-        next if text_glyphs.include?(raw) || Emoji.find_by_unicode(raw)
+        found = Emoji.find_by_unicode(raw)
+        if text_glyphs.include?(raw)
+          assert_nil found, Emoji::Character.hex_inspect(raw)
+          next
+        end
+        next if found
         message << "%s (%s)" % [Emoji::Character.hex_inspect(raw), emoji[:description]]
         if found = Emoji.find_by_unicode(raw.gsub("\u{fe0f}", ""))
           message << " - could be %s (:%s:)" % [found.hex_inspect, found.name]
@@ -109,6 +113,13 @@ class EmojiTest < TestCase
     end
 
     assert_equal 0, missing, message
+  end
+
+  test "raw representation does not include VARIATION SELECTOR 16 unless necessary" do
+    emoji = Emoji.all.select do |emoji|
+      !emoji.custom? && emoji.raw.end_with?("\u{fe0f}") && emoji.unicode_aliases.size == 2
+    end
+    assert_equal [], emoji
   end
 
   test "emoji have category" do

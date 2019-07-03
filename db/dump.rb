@@ -12,23 +12,28 @@ seen_existing = {}
 for category in categories
   for sub_category in category[:emoji]
     for emoji_item in sub_category[:emoji]
-      raw = emoji_item[:sequences][0]
-      existing_emoji = Emoji.find_by_unicode(raw) || Emoji.find_by_unicode("#{raw}\u{fe0f}")
-      # next unless existing_emoji
+      unicodes = emoji_item[:sequences].sort_by(&:bytesize)
+      existing_emoji = nil
+      unicodes.detect do |raw|
+        existing_emoji = Emoji.find_by_unicode(raw)
+      end
       existing_emoji = nil if seen_existing.key?(existing_emoji)
-      seen_existing[existing_emoji] = true
       output_item = {
-        emoji: raw,
+        emoji: unicodes[0],
         description: emoji_item[:description],
         category: category[:name],
       }
       if existing_emoji
+        eu = existing_emoji.unicode_aliases
+        preferred_raw = eu.size == 2 && eu[0] == "#{eu[1]}\u{fe0f}" ? eu[1] : eu[0]
         output_item.update(
+          emoji: preferred_raw,
           aliases: existing_emoji.aliases,
           tags: existing_emoji.tags,
           unicode_version: existing_emoji.unicode_version,
           ios_version: existing_emoji.ios_version,
         )
+        seen_existing[existing_emoji] = true
       else
         output_item.update(
           aliases: [emoji_item[:description].gsub(/\W+/, '_').downcase],
