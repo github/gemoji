@@ -97,7 +97,12 @@ class EmojiTest < TestCase
     message = "Missing or incorrect unicodes:\n"
     source_unicode_emoji.each do |emoji|
       emoji[:sequences].each do |raw|
-        next if text_glyphs.include?(raw) || Emoji.find_by_unicode(raw)
+        found = Emoji.find_by_unicode(raw)
+        if text_glyphs.include?(raw)
+          assert_nil found, Emoji::Character.hex_inspect(raw)
+          next
+        end
+        next if found
         message << "%s (%s)" % [Emoji::Character.hex_inspect(raw), emoji[:description]]
         if found = Emoji.find_by_unicode(raw.gsub("\u{fe0f}", ""))
           message << " - could be %s (:%s:)" % [found.hex_inspect, found.name]
