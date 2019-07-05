@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name    = "gemoji"
-  s.version = "3.0.1"
-  s.summary = "Emoji library"
-  s.description = "Character information and metadata for standard and custom emoji."
+  s.version = "4.0.0.pre0"
+  s.summary = "Unicode emoji library"
+  s.description = "Character information and metadata for Unicode emoji."
 
   s.required_ruby_version = '> 1.9'
 
