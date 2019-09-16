@@ -91,7 +91,7 @@ if $0 == __FILE__
     html_output = true
   end
 
-  _, categories = EmojiTestParser.parse
+  _, categories = EmojiTestParser.parse(File.expand_path("../../vendor/unicode-emoji-test.txt", __FILE__))
 
   trap(:PIPE) { abort }
 
