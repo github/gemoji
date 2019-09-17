@@ -85,7 +85,7 @@ li > span {
       renderEmoji(json)
     }
   }
-  xhr.open('GET', 'emoji.json')
+  xhr.open('GET', 'https://raw.githubusercontent.com/github/gemoji/master/db/emoji.json')
   xhr.send(null)
 
   function searchEmoji(query) {
