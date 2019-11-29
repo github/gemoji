@@ -2719,19 +2719,6 @@
   , "skin_tones": true
   }
 , {
-    "emoji": "👱‍♂️"
-  , "description": "man: blond hair"
-  , "category": "People & Body"
-  , "aliases": [
-      "blond_haired_man"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "11.0"
-  , "ios_version": "12.1"
-  , "skin_tones": true
-  }
-, {
     "emoji": "👨‍🦰"
   , "description": "man: red hair"
   , "category": "People & Body"
@@ -2798,20 +2785,6 @@
   , "skin_tones": true
   }
 , {
-    "emoji": "👱‍♀️"
-  , "description": "woman: blond hair"
-  , "category": "People & Body"
-  , "aliases": [
-      "blond_haired_woman"
-    , "blonde_woman"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "10.0"
-  , "skin_tones": true
-  }
-, {
     "emoji": "👩‍🦰"
   , "description": "woman: red hair"
   , "category": "People & Body"
@@ -2822,6 +2795,19 @@
     ]
   , "unicode_version": "11.0"
   , "ios_version": "12.1"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "🧑‍🦰"
+  , "description": "person: red hair"
+  , "category": "People & Body"
+  , "aliases": [
+      "person_red_hair"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
   , "skin_tones": true
   }
 , {
@@ -2838,6 +2824,19 @@
   , "skin_tones": true
   }
 , {
+    "emoji": "🧑‍🦱"
+  , "description": "person: curly hair"
+  , "category": "People & Body"
+  , "aliases": [
+      "person_curly_hair"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
+  , "skin_tones": true
+  }
+, {
     "emoji": "👩‍🦳"
   , "description": "woman: white hair"
   , "category": "People & Body"
@@ -2851,11 +2850,64 @@
   , "skin_tones": true
   }
 , {
+    "emoji": "🧑‍🦳"
+  , "description": "person: white hair"
+  , "category": "People & Body"
+  , "aliases": [
+      "person_white_hair"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
+  , "skin_tones": true
+  }
+, {
     "emoji": "👩‍🦲"
   , "description": "woman: bald"
   , "category": "People & Body"
   , "aliases": [
       "bald_woman"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "11.0"
+  , "ios_version": "12.1"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "🧑‍🦲"
+  , "description": "person: bald"
+  , "category": "People & Body"
+  , "aliases": [
+      "person_bald"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "👱‍♀️"
+  , "description": "woman: blond hair"
+  , "category": "People & Body"
+  , "aliases": [
+      "blond_haired_woman"
+    , "blonde_woman"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "10.0"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "👱‍♂️"
+  , "description": "man: blond hair"
+  , "category": "People & Body"
+  , "aliases": [
+      "blond_haired_man"
     ]
   , "tags": [
     ]
@@ -3315,6 +3367,19 @@
   , "skin_tones": true
   }
 , {
+    "emoji": "🧑‍⚕️"
+  , "description": "health worker"
+  , "category": "People & Body"
+  , "aliases": [
+      "health_worker"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
+  , "skin_tones": true
+  }
+, {
     "emoji": "👨‍⚕️"
   , "description": "man health worker"
   , "category": "People & Body"
@@ -3345,6 +3410,19 @@
   , "skin_tones": true
   }
 , {
+    "emoji": "🧑‍🎓"
+  , "description": "student"
+  , "category": "People & Body"
+  , "aliases": [
+      "student"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
+  , "skin_tones": true
+  }
+, {
     "emoji": "👨‍🎓"
   , "description": "man student"
   , "category": "People & Body"
@@ -3370,6 +3448,19 @@
     ]
   , "unicode_version": ""
   , "ios_version": "10.2"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "🧑‍🏫"
+  , "description": "teacher"
+  , "category": "People & Body"
+  , "aliases": [
+      "teacher"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
   , "skin_tones": true
   }
 , {
@@ -3403,6 +3494,19 @@
   , "skin_tones": true
   }
 , {
+    "emoji": "🧑‍⚖️"
+  , "description": "judge"
+  , "category": "People & Body"
+  , "aliases": [
+      "judge"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
+  , "skin_tones": true
+  }
+, {
     "emoji": "👨‍⚖️"
   , "description": "man judge"
   , "category": "People & Body"
@@ -3431,6 +3535,19 @@
   , "skin_tones": true
   }
 , {
+    "emoji": "🧑‍🌾"
+  , "description": "farmer"
+  , "category": "People & Body"
+  , "aliases": [
+      "farmer"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
+  , "skin_tones": true
+  }
+, {
     "emoji": "👨‍🌾"
   , "description": "man farmer"
   , "category": "People & Body"
@@ -3454,6 +3571,19 @@
     ]
   , "unicode_version": ""
   , "ios_version": "10.2"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "🧑‍🍳"
+  , "description": "cook"
+  , "category": "People & Body"
+  , "aliases": [
+      "cook"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
   , "skin_tones": true
   }
 , {
@@ -3485,6 +3615,19 @@
   , "skin_tones": true
   }
 , {
+    "emoji": "🧑‍🔧"
+  , "description": "mechanic"
+  , "category": "People & Body"
+  , "aliases": [
+      "mechanic"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
+  , "skin_tones": true
+  }
+, {
     "emoji": "👨‍🔧"
   , "description": "man mechanic"
   , "category": "People & Body"
@@ -3511,6 +3654,19 @@
   , "skin_tones": true
   }
 , {
+    "emoji": "🧑‍🏭"
+  , "description": "factory worker"
+  , "category": "People & Body"
+  , "aliases": [
+      "factory_worker"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
+  , "skin_tones": true
+  }
+, {
     "emoji": "👨‍🏭"
   , "description": "man factory worker"
   , "category": "People & Body"
@@ -3534,6 +3690,19 @@
     ]
   , "unicode_version": ""
   , "ios_version": "10.2"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "🧑‍💼"
+  , "description": "office worker"
+  , "category": "People & Body"
+  , "aliases": [
+      "office_worker"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
   , "skin_tones": true
   }
 , {
@@ -3565,6 +3734,19 @@
   , "skin_tones": true
   }
 , {
+    "emoji": "🧑‍🔬"
+  , "description": "scientist"
+  , "category": "People & Body"
+  , "aliases": [
+      "scientist"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
+  , "skin_tones": true
+  }
+, {
     "emoji": "👨‍🔬"
   , "description": "man scientist"
   , "category": "People & Body"
@@ -3590,6 +3772,19 @@
     ]
   , "unicode_version": ""
   , "ios_version": "10.2"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "🧑‍💻"
+  , "description": "technologist"
+  , "category": "People & Body"
+  , "aliases": [
+      "technologist"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
   , "skin_tones": true
   }
 , {
@@ -3621,6 +3816,19 @@
   , "skin_tones": true
   }
 , {
+    "emoji": "🧑‍🎤"
+  , "description": "singer"
+  , "category": "People & Body"
+  , "aliases": [
+      "singer"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
+  , "skin_tones": true
+  }
+, {
     "emoji": "👨‍🎤"
   , "description": "man singer"
   , "category": "People & Body"
@@ -3646,6 +3854,19 @@
     ]
   , "unicode_version": ""
   , "ios_version": "10.2"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "🧑‍🎨"
+  , "description": "artist"
+  , "category": "People & Body"
+  , "aliases": [
+      "artist"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
   , "skin_tones": true
   }
 , {
@@ -3677,6 +3898,19 @@
   , "skin_tones": true
   }
 , {
+    "emoji": "🧑‍✈️"
+  , "description": "pilot"
+  , "category": "People & Body"
+  , "aliases": [
+      "pilot"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
+  , "skin_tones": true
+  }
+, {
     "emoji": "👨‍✈️"
   , "description": "man pilot"
   , "category": "People & Body"
@@ -3700,6 +3934,19 @@
     ]
   , "unicode_version": ""
   , "ios_version": "10.2"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "🧑‍🚀"
+  , "description": "astronaut"
+  , "category": "People & Body"
+  , "aliases": [
+      "astronaut"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
   , "skin_tones": true
   }
 , {
@@ -3728,6 +3975,19 @@
     ]
   , "unicode_version": ""
   , "ios_version": "10.2"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "🧑‍🚒"
+  , "description": "firefighter"
+  , "category": "People & Body"
+  , "aliases": [
+      "firefighter"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
   , "skin_tones": true
   }
 , {
@@ -3995,7 +4255,7 @@
   }
 , {
     "emoji": "👲"
-  , "description": "man with Chinese cap"
+  , "description": "man with skullcap"
   , "category": "People & Body"
   , "aliases": [
       "man_with_gua_pi_mao"
@@ -4667,6 +4927,19 @@
   , "skin_tones": true
   }
 , {
+    "emoji": "🧑‍🦯"
+  , "description": "person with probing cane"
+  , "category": "People & Body"
+  , "aliases": [
+      "person_with_probing_cane"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
+  , "skin_tones": true
+  }
+, {
     "emoji": "👨‍🦯"
   , "description": "man with probing cane"
   , "category": "People & Body"
@@ -4693,6 +4966,19 @@
   , "skin_tones": true
   }
 , {
+    "emoji": "🧑‍🦼"
+  , "description": "person in motorized wheelchair"
+  , "category": "People & Body"
+  , "aliases": [
+      "person_in_motorized_wheelchair"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
+  , "skin_tones": true
+  }
+, {
     "emoji": "👨‍🦼"
   , "description": "man in motorized wheelchair"
   , "category": "People & Body"
@@ -4716,6 +5002,19 @@
     ]
   , "unicode_version": "12.0"
   , "ios_version": "13.0"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "🧑‍🦽"
+  , "description": "person in manual wheelchair"
+  , "category": "People & Body"
+  , "aliases": [
+      "person_in_manual_wheelchair"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.1"
+  , "ios_version": "13.2"
   , "skin_tones": true
   }
 , {
@@ -9078,7 +9377,7 @@
   }
 , {
     "emoji": "🧊"
-  , "description": "ice cube"
+  , "description": "ice"
   , "category": "Food & Drink"
   , "aliases": [
       "ice_cube"
@@ -12936,7 +13235,7 @@
   }
 , {
     "emoji": "🩲"
-  , "description": "swim brief"
+  , "description": "briefs"
   , "category": "Objects"
   , "aliases": [
       "swim_brief"
@@ -13705,7 +14004,7 @@
   }
 , {
     "emoji": "💻"
-  , "description": "laptop computer"
+  , "description": "laptop"
   , "category": "Objects"
   , "aliases": [
       "computer"
@@ -20187,7 +20486,7 @@
   }
 , {
     "emoji": "🇲🇰"
-  , "description": "flag: Macedonia"
+  , "description": "flag: North Macedonia"
   , "category": "Flags"
   , "aliases": [
       "macedonia"
