@@ -36,8 +36,8 @@ for category in categories
         output_item.update(
           aliases: [description.gsub(/\W+/, '_').downcase],
           tags: [],
-          unicode_version: "12.1",
-          ios_version: "13.2",
+          unicode_version: "13.0",
+          ios_version: "14.0",
         )
       end
       output_item[:skin_tones] = true if emoji_item[:skin_tones]
