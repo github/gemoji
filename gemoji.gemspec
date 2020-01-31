@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name    = "gemoji"
-  s.version = "4.0.0.rc1"
+  s.version = "4.0.0.rc2"
   s.summary = "Unicode emoji library"
   s.description = "Character information and metadata for Unicode emoji."
 
