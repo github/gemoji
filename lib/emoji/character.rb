@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Emoji
   class Character
     # Inspect individual Unicode characters in a string by dumping its
@@ -11,6 +13,18 @@ module Emoji
 
     # A list of names uniquely referring to this emoji.
     attr_reader :aliases
+
+    # The category for this emoji as per Apple's character palette
+    attr_accessor :category
+
+    # The Unicode description text
+    attr_accessor :description
+
+    # The Unicode spec version where this emoji first debuted
+    attr_accessor :unicode_version
+
+    # The iOS version where this emoji first debuted
+    attr_accessor :ios_version
 
     def name() aliases.first end
 
@@ -51,11 +65,24 @@ module Emoji
       self.class.hex_inspect(raw)
     end
 
+    attr_writer :image_filename
+
     def image_filename
+      if defined? @image_filename
+        @image_filename
+      else
+        default_image_filename
+      end
+    end
+
+    private
+
+    def default_image_filename
       if custom?
         '%s.png' % name
       else
-        'unicode/%s.png' % hex_inspect.sub(/-fe0f\b/, '')
+        hex_name = hex_inspect.gsub(/-(fe0f|200d)\b/, '')
+        'unicode/%s.png' % hex_name
       end
     end
   end

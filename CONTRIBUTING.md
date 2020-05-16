@@ -1,5 +1,4 @@
-Our emoji set is based off Apple's emoji character palette, plus some custom
-emoji such as :octocat: :shipit: :metal:.
+Contributions to this project are [released](https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license) to the public under the [project's open source license](LICENSE).
 
 Some useful tools in development are:
 
@@ -13,27 +12,10 @@ Sets up the development environment. The prerequisites are:
 * Bundler
 
 ```
-rake db:generate
-```
-
-On OS X, this will rebuild the `db/Category-Emoji.json` file from the system
-one, pulling in any new emoji that Apple may have added in the meantime.
-
-```
 script/test
 ```
 
-Runs the test suite, including the integrity test where we assert that we have
-covered each of Apple's emoji.
-
-```
-script/regenerate
-```
-
-Rebuilds the `db/emoji.json` file which is our main list of emoji: their
-canonical representations, descriptions, aliases, and tags. This requires OS X
-because Safari is used in the process to verify which character render as emoji
-and which render as ordinary Unicode glyphs from the current font.
+Runs the test suite.
 
 ```
 script/console

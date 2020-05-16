@@ -1,2 +1,6 @@
+/bin/*
+.bundle
 .ruby-version
-db/NamesList.txt
+Gemfile.lock
+vendor/*
+!vendor/unicode-emoji-test.txt
