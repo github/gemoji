@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
+require "i18n"
 require 'emoji'
 require 'json'
 require_relative './emoji-test-parser'
 
+I18n.config.available_locales = :en
 items = []
 
 _, categories = EmojiTestParser.parse(File.expand_path("../../vendor/unicode-emoji-test.txt", __FILE__))
@@ -34,7 +36,7 @@ for category in categories
         )
       else
         output_item.update(
-          aliases: [description.gsub(/\W+/, '_').downcase],
+          aliases: [I18n.transliterate(description).gsub(/\W+/, '_').downcase],
           tags: [],
           unicode_version: "13.0",
           ios_version: "14.0",
