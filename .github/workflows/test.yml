@@ -23,12 +23,12 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: vendor/bundle
-        key: bundle-use-ruby-${{ matrix.os }}-${{ matrix.ruby }}-${{ hashFiles('**/Gemfile.lock') }}
+        key: bundle-use-ruby-${{ matrix.os }}-${{ matrix.ruby }}-${{ hashFiles('Gemfile') }}
         restore-keys: |
           bundle-use-ruby-${{ matrix.os }}-${{ matrix.ruby }}-
     
     - name: Install dependencies
-      run: bundle install --deployment --path vendor/bundle --jobs 4
+      run: bundle install --path vendor/bundle --jobs 4
     
     - name: Run tests
       run: bundle exec rake
