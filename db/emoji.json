@@ -15291,8 +15291,7 @@
   , "description": "envelope"
   , "category": "Objects"
   , "aliases": [
-      "email"
-    , "envelope"
+    "envelope"
     ]
   , "tags": [
       "letter"
@@ -15306,6 +15305,7 @@
   , "category": "Objects"
   , "aliases": [
       "e-mail"
+    , "email"
     ]
   , "tags": [
     ]
