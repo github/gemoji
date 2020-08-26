@@ -15305,8 +15305,8 @@
   , "description": "e-mail"
   , "category": "Objects"
   , "aliases": [
-      "e-mail"
-    , "email"
+      "email"
+    , "e-mail"
     ]
   , "tags": [
     ]
