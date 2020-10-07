@@ -15291,11 +15291,11 @@
   , "description": "envelope"
   , "category": "Objects"
   , "aliases": [
-      "email"
-    , "envelope"
+      "envelope"
     ]
   , "tags": [
       "letter"
+    , "email"
     ]
   , "unicode_version": ""
   , "ios_version": "6.0"
@@ -15305,7 +15305,8 @@
   , "description": "e-mail"
   , "category": "Objects"
   , "aliases": [
-      "e-mail"
+      "email"
+    , "e-mail"
     ]
   , "tags": [
     ]
