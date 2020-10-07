@@ -118,6 +118,7 @@ module Emoji
           emoji.description = dedup.call(raw_emoji[:description])
           emoji.unicode_version = dedup.call(raw_emoji[:unicode_version])
           emoji.ios_version = dedup.call(raw_emoji[:ios_version])
+          emoji.skin_tones = raw_emoji.fetch(:skin_tones, false)
         end
       end
     end
