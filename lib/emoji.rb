@@ -3,6 +3,7 @@
 
 require 'emoji/character'
 require 'json'
+require 'gemoji.so'
 
 module Emoji
   extend self

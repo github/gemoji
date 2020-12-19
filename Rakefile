@@ -1,4 +1,5 @@
 require 'rake/testtask'
+require 'rake/extensiontask'
 
 task :default => :test
 
@@ -20,5 +21,18 @@ namespace :db do
 end
 
 file 'vendor/unicode-emoji-test.txt' do |t|
-  system 'curl', '-fsSL', 'http://unicode.org/Public/emoji/12.0/emoji-test.txt', '-o', t.name
+  system 'curl', '-fsSL', 'http://unicode.org/Public/emoji/13.0/emoji-test.txt', '-o', t.name
 end
+
+namespace :c do
+  task :headers do
+    require 'emoji/tables'
+    gem_dir = File.dirname(File.realpath(__FILE__))
+
+    File.open(File.join(gem_dir, "ext/gemoji/emoji.h"), "w") do |file|
+      file.puts(Emoji::Tables.generate_length_tables)
+    end
+  end
+end
+
+Rake::ExtensionTask.new('gemoji')
