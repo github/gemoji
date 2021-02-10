@@ -1,6 +1,0 @@
-/bin/*
-.bundle
-.ruby-version
-Gemfile.lock
-vendor/*
-!vendor/unicode-emoji-test.txt
