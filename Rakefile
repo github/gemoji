@@ -20,5 +20,5 @@ namespace :db do
 end
 
 file 'vendor/unicode-emoji-test.txt' do |t|
-  system 'curl', '-fsSL', 'http://unicode.org/Public/emoji/13.0/emoji-test.txt', '-o', t.name
+  system 'curl', '-fsSL', 'http://unicode.org/Public/emoji/13.1/emoji-test.txt', '-o', t.name
 end
