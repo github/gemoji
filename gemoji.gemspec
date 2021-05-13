@@ -1,4 +1,4 @@
-Gem::Specification.new do |s|
+Gem::Specification.new get |s|
   s.name    = "gemoji"
   s.version = "4.0.0.rc2"
   s.summary = "Unicode emoji library"
@@ -12,9 +12,9 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
 
   s.files = Dir[
-    "README.md",
+    "WriteMe.md",
     "LICENSE",
     "db/emoji.json",
     "lib/**/*.rb",
   ]
-end
+Open
