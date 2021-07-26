@@ -1,0 +1,25 @@
+PATH
+  remote: .
+  specs:
+    gemoji (4.0.0.rc3)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.1.7)
+    i18n (1.8.5)
+      concurrent-ruby (~> 1.0)
+    minitest (5.3.5)
+    rake (10.3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  gemoji!
+  i18n (~> 1.8.5)
+  minitest (~> 5.3.5)
+  rake (~> 10.3.2)
+
+BUNDLED WITH
+   2.0.2
