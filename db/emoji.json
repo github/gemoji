@@ -488,6 +488,18 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "😶‍🌫️"
+  , "description": "face in clouds"
+  , "category": "Smileys & Emotion"
+  , "aliases": [
+      "face_in_clouds"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "13.1"
+  , "ios_version": "14.0"
+  }
+, {
     "emoji": "😏"
   , "description": "smirking face"
   , "category": "Smileys & Emotion"
@@ -536,6 +548,18 @@
     ]
   , "unicode_version": "6.1"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "😮‍💨"
+  , "description": "face exhaling"
+  , "category": "Smileys & Emotion"
+  , "aliases": [
+      "face_exhaling"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "13.1"
+  , "ios_version": "14.0"
   }
 , {
     "emoji": "🤥"
@@ -739,7 +763,7 @@
   }
 , {
     "emoji": "😵"
-  , "description": "dizzy face"
+  , "description": "knocked-out face"
   , "category": "Smileys & Emotion"
   , "aliases": [
       "dizzy_face"
@@ -748,6 +772,18 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "😵‍💫"
+  , "description": "face with spiral eyes"
+  , "category": "Smileys & Emotion"
+  , "aliases": [
+      "face_with_spiral_eyes"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "13.1"
+  , "ios_version": "14.0"
   }
 , {
     "emoji": "🤯"
@@ -1680,6 +1716,30 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "❤️‍🔥"
+  , "description": "heart on fire"
+  , "category": "Smileys & Emotion"
+  , "aliases": [
+      "heart_on_fire"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "13.1"
+  , "ios_version": "14.0"
+  }
+, {
+    "emoji": "❤️‍🩹"
+  , "description": "mending heart"
+  , "category": "Smileys & Emotion"
+  , "aliases": [
+      "mending_heart"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "13.1"
+  , "ios_version": "14.0"
   }
 , {
     "emoji": "❤️"
@@ -2768,7 +2828,7 @@
   }
 , {
     "emoji": "🧔"
-  , "description": "man: beard"
+  , "description": "person: beard"
   , "category": "People & Body"
   , "aliases": [
       "bearded_person"
@@ -2777,6 +2837,32 @@
     ]
   , "unicode_version": "11.0"
   , "ios_version": "12.1"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "🧔‍♂️"
+  , "description": "man: beard"
+  , "category": "People & Body"
+  , "aliases": [
+      "man_beard"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "13.1"
+  , "ios_version": "14.0"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "🧔‍♀️"
+  , "description": "woman: beard"
+  , "category": "People & Body"
+  , "aliases": [
+      "woman_beard"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "13.1"
+  , "ios_version": "14.0"
   , "skin_tones": true
   }
 , {
@@ -4429,8 +4515,8 @@
   , "description": "woman with veil"
   , "category": "People & Body"
   , "aliases": [
-      "woman_with_veil",
-      "bride_with_veil"
+      "woman_with_veil"
+    , "bride_with_veil"
     ]
   , "tags": [
     ]
@@ -6138,6 +6224,7 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  , "skin_tones": true
   }
 , {
     "emoji": "👩‍❤️‍💋‍👨"
@@ -6150,6 +6237,7 @@
     ]
   , "unicode_version": "11.0"
   , "ios_version": "12.1"
+  , "skin_tones": true
   }
 , {
     "emoji": "👨‍❤️‍💋‍👨"
@@ -6162,6 +6250,7 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "8.3"
+  , "skin_tones": true
   }
 , {
     "emoji": "👩‍❤️‍💋‍👩"
@@ -6174,6 +6263,7 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "8.3"
+  , "skin_tones": true
   }
 , {
     "emoji": "💑"
@@ -6186,6 +6276,7 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  , "skin_tones": true
   }
 , {
     "emoji": "👩‍❤️‍👨"
@@ -6198,6 +6289,7 @@
     ]
   , "unicode_version": "11.0"
   , "ios_version": "12.1"
+  , "skin_tones": true
   }
 , {
     "emoji": "👨‍❤️‍👨"
@@ -6210,6 +6302,7 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "8.3"
+  , "skin_tones": true
   }
 , {
     "emoji": "👩‍❤️‍👩"
@@ -6222,6 +6315,7 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "8.3"
+  , "skin_tones": true
   }
 , {
     "emoji": "👪"
@@ -13228,7 +13322,7 @@
   }
 , {
     "emoji": "🎯"
-  , "description": "direct hit"
+  , "description": "bullseye"
   , "category": "Activities"
   , "aliases": [
       "dart"
@@ -15989,7 +16083,7 @@
   }
 , {
     "emoji": "🔫"
-  , "description": "pistol"
+  , "description": "water pistol"
   , "category": "Objects"
   , "aliases": [
       "gun"
@@ -18018,7 +18112,7 @@
   }
 , {
     "emoji": "❓"
-  , "description": "question mark"
+  , "description": "red question mark"
   , "category": "Symbols"
   , "aliases": [
       "question"
@@ -18055,7 +18149,7 @@
   }
 , {
     "emoji": "❗"
-  , "description": "exclamation mark"
+  , "description": "red exclamation mark"
   , "category": "Symbols"
   , "aliases": [
       "exclamation"
