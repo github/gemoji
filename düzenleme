@@ -1,0 +1,3 @@
+git klonu https://github.com/ercetin/gemoji-ghsa-grh8-cpcf-qvqr.git
+cd gemoji-ghsa-grh8-cpcf-qvqr
+git checkout -b danışma düzeltme-1
