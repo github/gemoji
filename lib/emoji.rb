@@ -51,11 +51,12 @@ module Emoji
 
   # Public: Find an emoji by its unicode character. Return nil if missing.
   def find_by_unicode(unicode)
-    unicodes_index[unicode]
+    unicodes_index[unicode] || unicodes_index[unicode.sub(SKIN_TONE_RE, "")]
   end
 
   private
     VARIATION_SELECTOR_16 = "\u{fe0f}".freeze
+    SKIN_TONE_RE = /[\u{1F3FB}-\u{1F3FF}]/
 
     # Characters which must have VARIATION_SELECTOR_16 to render as color emoji:
     TEXT_GLYPHS = [
@@ -70,7 +71,7 @@ module Emoji
       "\u{3030}",  # wavy dash
     ].freeze
 
-    private_constant :VARIATION_SELECTOR_16, :TEXT_GLYPHS
+    private_constant :VARIATION_SELECTOR_16, :TEXT_GLYPHS, :SKIN_TONE_RE
 
     def parse_data_file
       data = File.open(data_file, 'r:UTF-8') do |file|
@@ -118,6 +119,7 @@ module Emoji
           emoji.description = dedup.call(raw_emoji[:description])
           emoji.unicode_version = dedup.call(raw_emoji[:unicode_version])
           emoji.ios_version = dedup.call(raw_emoji[:ios_version])
+          emoji.skin_tones = raw_emoji.fetch(:skin_tones, false)
         end
       end
     end

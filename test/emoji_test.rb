@@ -157,6 +157,27 @@ class EmojiTest < TestCase
     assert_equal '8.3', emoji.ios_version
   end
 
+  test "skin tones" do
+    smiley = Emoji.find_by_alias("smiley")
+    assert_equal false, smiley.skin_tones?
+    assert_equal [], smiley.raw_skin_tone_variants
+
+    wave = Emoji.find_by_alias("wave")
+    assert_equal true, wave.skin_tones?
+
+    wave = Emoji.find_by_unicode("\u{1f44b}\u{1f3ff}") # wave + dark skin tone
+    assert_equal "wave", wave.name
+
+    woman_with_beard = Emoji.find_by_unicode("\u{1f9d4}\u{200d}\u{2640}\u{fe0f}")
+    assert_equal [
+      "1f9d4-1f3fb-200d-2640",
+      "1f9d4-1f3fc-200d-2640",
+      "1f9d4-1f3fd-200d-2640",
+      "1f9d4-1f3fe-200d-2640",
+      "1f9d4-1f3ff-200d-2640",
+    ], woman_with_beard.raw_skin_tone_variants.map { |u| Emoji::Character.hex_inspect(u) }
+  end
+
   test "no custom emojis" do
     custom = Emoji.all.select(&:custom?)
     assert 0, custom.size
