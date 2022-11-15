@@ -56,6 +56,13 @@ class EmojiTest < TestCase
     /^family_/,
   ]
 
+  DASH_EXCEPTIONS = [
+    "-1",
+    "t-rex",
+    "e-mail",
+    "non-potable_water",
+  ]
+
   test "emojis have valid names" do
     aliases = Emoji.all.flat_map(&:aliases)
 
@@ -74,7 +81,7 @@ class EmojiTest < TestCase
     alias_count = Hash.new(0)
     aliases.each do |name|
       alias_count[name] += 1
-      invalid << name if name !~ /\A[\w+-]+\Z/
+      invalid << name if name !~ /\A[\w+]+\Z/ && !DASH_EXCEPTIONS.include?(name)
       another_gender = to_another_gender.call(name)
       gender_mismatch << another_gender unless aliases.include?(another_gender)
     end
