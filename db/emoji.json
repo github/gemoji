@@ -6416,7 +6416,7 @@
     ]
   , "unicode_version": "12.0"
   , "ios_version": "13.0"
-  , "skin_tones": true
+  , "skin_tones": false
   }
 , {
     "emoji": "👭"
