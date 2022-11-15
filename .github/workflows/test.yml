@@ -7,28 +7,18 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest]
-        ruby: ["2.3", "2.4", "2.5", "2.6", "2.7"]
+        ruby: ["2.7", "3.0", "3.1"]
 
-    runs-on: ${{matrix.os}}
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{matrix.ruby}}
-    
-    - uses: actions/cache@v2
-      with:
-        path: vendor/bundle
-        key: bundle-use-ruby-${{ matrix.os }}-${{ matrix.ruby }}-${{ hashFiles('Gemfile') }}
-        restore-keys: |
-          bundle-use-ruby-${{ matrix.os }}-${{ matrix.ruby }}-
-    
-    - name: Install dependencies
-      run: bundle install --path vendor/bundle --jobs 4
+        bundler-cache: true
     
     - name: Run tests
       run: bundle exec rake
