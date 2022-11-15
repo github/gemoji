@@ -9,12 +9,8 @@ module EmojiTestParser
     "\u{1F3FE}", # medium-dark skin tone
     "\u{1F3FF}", # dark skin tone
   ]
-  HAIR_MODIFIERS = [
-    "\u{1F9B0}", # red-haired
-    "\u{1F9B1}", # curly-haired
-    "\u{1F9B2}", # bald
-    "\u{1F9B3}", # white-haired
-  ]
+  SKIN_TONES_RE = /(#{SKIN_TONES.join("|")})/o
+  SKIP_TYPES = ["unqualified", "component"]
 
   module_function
 
@@ -52,12 +48,12 @@ module EmojiTestParser
         else
           row, desc = line.split("#", 2)
           desc = desc.strip.split(" ", 2)[1]
-          codepoints, _ = row.split(";", 2)
+          codepoints, qualification = row.split(";", 2)
+          next if SKIP_TYPES.include?(qualification.strip)
           emoji_raw = codepoints.strip.split.map { |c| c.hex }.pack("U*")
-          next if HAIR_MODIFIERS.include?(emoji_raw)
           emoji_normalized = emoji_raw
             .gsub(VARIATION_SELECTOR_16, "")
-            .gsub(/(#{SKIN_TONES.join("|")})/o, "")
+            .gsub(SKIN_TONES_RE, "")
           emoji_item = emoji_map[emoji_normalized]
           if SKIN_TONES.any? { |s| emoji_raw.include?(s) }
             emoji_item[:skin_tones] = true if emoji_item
@@ -91,7 +87,7 @@ if $0 == __FILE__
     html_output = true
   end
 
-  _, categories = EmojiTestParser.parse
+  _, categories = EmojiTestParser.parse(File.expand_path("../../vendor/unicode-emoji-test.txt", __FILE__))
 
   trap(:PIPE) { abort }
 
