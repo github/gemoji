@@ -50,9 +50,8 @@ class EmojiTest < TestCase
   GENDER_EXCEPTIONS = [
     "man_with_gua_pi_mao",
     "woman_with_headscarf",
-    "pregnant_woman",
     "isle_of_man",
-    "blonde_woman",
+    "blonde_woman", # blond_haired_man
     /^couple(kiss)?_/,
     /^family_/,
   ]
