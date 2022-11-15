@@ -43,6 +43,21 @@ module Emoji
     # Raw Unicode string for an emoji. Nil if emoji is non-standard.
     def raw() unicode_aliases.first end
 
+    # Raw Unicode strings for each skin tone variant of this emoji.
+    def raw_skin_tone_variants
+      return [] if custom? || !skin_tones?
+      raw_normalized = raw.sub("\u{fe0f}", "") # strip VARIATION_SELECTOR_16
+      idx = raw_normalized.index("\u{200d}") # detect zero-width joiner
+      SKIN_TONES.map do |modifier|
+        if idx
+          # insert modifier before zero-width joiner
+          raw_normalized[...idx] + modifier + raw_normalized[idx..]
+        else
+          raw_normalized + modifier
+        end
+      end
+    end
+
     def add_unicode_alias(str)
       unicode_aliases << str
     end
@@ -82,6 +97,16 @@ module Emoji
     end
 
     private
+    
+    SKIN_TONES = [
+      "\u{1F3FB}", # light skin tone
+      "\u{1F3FC}", # medium-light skin tone
+      "\u{1F3FD}", # medium skin tone
+      "\u{1F3FE}", # medium-dark skin tone
+      "\u{1F3FF}", # dark skin tone
+    ]
+
+    private_constant :SKIN_TONES
 
     def default_image_filename
       if custom?
