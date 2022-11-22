@@ -51,7 +51,7 @@ module Emoji
       SKIN_TONES.map do |modifier|
         if idx
           # insert modifier before zero-width joiner
-          raw_normalized[...idx] + modifier + raw_normalized[idx..]
+          raw_normalized[0...idx] + modifier + raw_normalized[idx..nil]
         else
           raw_normalized + modifier
         end
