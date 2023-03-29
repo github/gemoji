@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    gemoji (4.0.1)
+    gemoji (4.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -22,4 +22,4 @@ DEPENDENCIES
   rake (~> 10.3.2)
 
 BUNDLED WITH
-   2.0.2
+   2.4.10
