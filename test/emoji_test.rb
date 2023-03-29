@@ -176,6 +176,15 @@ class EmojiTest < TestCase
       "1f9d4-1f3fe-200d-2640",
       "1f9d4-1f3ff-200d-2640",
     ], woman_with_beard.raw_skin_tone_variants.map { |u| Emoji::Character.hex_inspect(u) }
+
+    people_holding_hands = Emoji.find_by_alias("people_holding_hands")
+    assert_equal [
+      "1f9d1-1f3fb-200d-1f91d-200d-1f9d1-1f3fb",
+      "1f9d1-1f3fc-200d-1f91d-200d-1f9d1-1f3fc",
+      "1f9d1-1f3fd-200d-1f91d-200d-1f9d1-1f3fd",
+      "1f9d1-1f3fe-200d-1f91d-200d-1f9d1-1f3fe",
+      "1f9d1-1f3ff-200d-1f91d-200d-1f9d1-1f3ff",
+    ], people_holding_hands.raw_skin_tone_variants.map { |u| Emoji::Character.hex_inspect(u) }
   end
 
   test "no custom emojis" do

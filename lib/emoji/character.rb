@@ -43,13 +43,20 @@ module Emoji
     # Raw Unicode string for an emoji. Nil if emoji is non-standard.
     def raw() unicode_aliases.first end
 
-    # Raw Unicode strings for each skin tone variant of this emoji.
+    # Raw Unicode strings for each skin tone variant of this emoji. The result is an empty array
+    # unless the emoji supports skin tones.
+    #
+    # Note: for emojis that depict multiple people (e.g. couples or families), this will not produce
+    # every possible permutation of skin tone per person.
     def raw_skin_tone_variants
       return [] if custom? || !skin_tones?
-      raw_normalized = raw.sub("\u{fe0f}", "") # strip VARIATION_SELECTOR_16
-      idx = raw_normalized.index("\u{200d}") # detect zero-width joiner
+      raw_normalized = raw.sub(VARIATION_SELECTOR_16, "")
+      idx = raw_normalized.index(ZERO_WIDTH_JOINER)
       SKIN_TONES.map do |modifier|
-        if idx
+        if raw_normalized == PEOPLE_HOLDING_HANDS
+          # special case to apply the modifier to both persons
+          raw_normalized[0...idx] + modifier + raw_normalized[idx..nil] + modifier
+        elsif idx
           # insert modifier before zero-width joiner
           raw_normalized[0...idx] + modifier + raw_normalized[idx..nil]
         else
@@ -97,7 +104,11 @@ module Emoji
     end
 
     private
-    
+
+    VARIATION_SELECTOR_16 = "\u{fe0f}".freeze
+    ZERO_WIDTH_JOINER = "\u{200d}".freeze
+    PEOPLE_HOLDING_HANDS = "\u{1f9d1}\u{200d}\u{1f91d}\u{200d}\u{1f9d1}".freeze
+
     SKIN_TONES = [
       "\u{1F3FB}", # light skin tone
       "\u{1F3FC}", # medium-light skin tone
@@ -106,7 +117,7 @@ module Emoji
       "\u{1F3FF}", # dark skin tone
     ]
 
-    private_constant :SKIN_TONES
+    private_constant :VARIATION_SELECTOR_16, :ZERO_WIDTH_JOINER, :PEOPLE_HOLDING_HANDS, :SKIN_TONES
 
     def default_image_filename
       if custom?
