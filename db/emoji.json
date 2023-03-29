@@ -641,6 +641,19 @@
   , "ios_version": "10.2"
   }
 , {
+    "emoji": "🫨"
+  , "description": "shaking face"
+  , "category": "Smileys & Emotion"
+  , "aliases": [
+      "shaking_face"
+    ]
+  , "tags": [
+      "shock"
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
+  }
+, {
     "emoji": "😌"
   , "description": "relieved face"
   , "category": "Smileys & Emotion"
@@ -1302,7 +1315,7 @@
   }
 , {
     "emoji": "😡"
-  , "description": "pouting face"
+  , "description": "enraged face"
   , "category": "Smileys & Emotion"
   , "aliases": [
       "rage"
@@ -1661,19 +1674,6 @@
   , "ios_version": "6.0"
   }
 , {
-    "emoji": "💋"
-  , "description": "kiss mark"
-  , "category": "Smileys & Emotion"
-  , "aliases": [
-      "kiss"
-    ]
-  , "tags": [
-      "lipstick"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
     "emoji": "💌"
   , "description": "love letter"
   , "category": "Smileys & Emotion"
@@ -1848,6 +1848,18 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🩷"
+  , "description": "pink heart"
+  , "category": "Smileys & Emotion"
+  , "aliases": [
+      "pink_heart"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
+  }
+, {
     "emoji": "🧡"
   , "description": "orange heart"
   , "category": "Smileys & Emotion"
@@ -1896,6 +1908,18 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🩵"
+  , "description": "light blue heart"
+  , "category": "Smileys & Emotion"
+  , "aliases": [
+      "light_blue_heart"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
+  }
+, {
     "emoji": "💜"
   , "description": "purple heart"
   , "category": "Smileys & Emotion"
@@ -1932,6 +1956,18 @@
   , "ios_version": "10.2"
   }
 , {
+    "emoji": "🩶"
+  , "description": "grey heart"
+  , "category": "Smileys & Emotion"
+  , "aliases": [
+      "grey_heart"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
+  }
+, {
     "emoji": "🤍"
   , "description": "white heart"
   , "category": "Smileys & Emotion"
@@ -1942,6 +1978,19 @@
     ]
   , "unicode_version": "12.0"
   , "ios_version": "13.0"
+  }
+, {
+    "emoji": "💋"
+  , "description": "kiss mark"
+  , "category": "Smileys & Emotion"
+  , "aliases": [
+      "kiss"
+    ]
+  , "tags": [
+      "lipstick"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
   }
 , {
     "emoji": "💯"
@@ -2039,19 +2088,6 @@
   , "ios_version": "9.1"
   }
 , {
-    "emoji": "💣"
-  , "description": "bomb"
-  , "category": "Smileys & Emotion"
-  , "aliases": [
-      "bomb"
-    ]
-  , "tags": [
-      "boom"
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
     "emoji": "💬"
   , "description": "speech balloon"
   , "category": "Smileys & Emotion"
@@ -2115,7 +2151,7 @@
   }
 , {
     "emoji": "💤"
-  , "description": "zzz"
+  , "description": "ZZZ"
   , "category": "Smileys & Emotion"
   , "aliases": [
       "zzz"
@@ -2247,6 +2283,32 @@
     ]
   , "unicode_version": "14.0"
   , "ios_version": "15.4"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "🫷"
+  , "description": "leftwards pushing hand"
+  , "category": "People & Body"
+  , "aliases": [
+      "leftwards_pushing_hand"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
+  , "skin_tones": true
+  }
+, {
+    "emoji": "🫸"
+  , "description": "rightwards pushing hand"
+  , "category": "People & Body"
+  , "aliases": [
+      "rightwards_pushing_hand"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
   , "skin_tones": true
   }
 , {
@@ -7191,6 +7253,32 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🫎"
+  , "description": "moose"
+  , "category": "Animals & Nature"
+  , "aliases": [
+      "moose"
+    ]
+  , "tags": [
+      "canada"
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
+  }
+, {
+    "emoji": "🫏"
+  , "description": "donkey"
+  , "category": "Animals & Nature"
+  , "aliases": [
+      "donkey"
+    ]
+  , "tags": [
+      "mule"
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
+  }
+, {
     "emoji": "🐎"
   , "description": "horse"
   , "category": "Animals & Nature"
@@ -7942,6 +8030,44 @@
   , "ios_version": "12.1"
   }
 , {
+    "emoji": "🪽"
+  , "description": "wing"
+  , "category": "Animals & Nature"
+  , "aliases": [
+      "wing"
+    ]
+  , "tags": [
+      "fly"
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
+  }
+, {
+    "emoji": "🐦‍⬛"
+  , "description": "black bird"
+  , "category": "Animals & Nature"
+  , "aliases": [
+      "black_bird"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
+  }
+, {
+    "emoji": "🪿"
+  , "description": "goose"
+  , "category": "Animals & Nature"
+  , "aliases": [
+      "goose"
+    ]
+  , "tags": [
+      "honk"
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
+  }
+, {
     "emoji": "🐸"
   , "description": "frog"
   , "category": "Animals & Nature"
@@ -8187,6 +8313,18 @@
     ]
   , "unicode_version": "14.0"
   , "ios_version": "15.4"
+  }
+, {
+    "emoji": "🪼"
+  , "description": "jellyfish"
+  , "category": "Animals & Nature"
+  , "aliases": [
+      "jellyfish"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
   }
 , {
     "emoji": "🐌"
@@ -8522,6 +8660,18 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🪻"
+  , "description": "hyacinth"
+  , "category": "Animals & Nature"
+  , "aliases": [
+      "hyacinth"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
+  }
+, {
     "emoji": "🌱"
   , "description": "seedling"
   , "category": "Animals & Nature"
@@ -8707,6 +8857,19 @@
     ]
   , "unicode_version": "14.0"
   , "ios_version": "15.4"
+  }
+, {
+    "emoji": "🍄"
+  , "description": "mushroom"
+  , "category": "Animals & Nature"
+  , "aliases": [
+      "mushroom"
+    ]
+  , "tags": [
+      "fungus"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
   }
 , {
     "emoji": "🍇"
@@ -9089,18 +9252,6 @@
   , "ios_version": "13.0"
   }
 , {
-    "emoji": "🍄"
-  , "description": "mushroom"
-  , "category": "Food & Drink"
-  , "aliases": [
-      "mushroom"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "6.0"
-  , "ios_version": "6.0"
-  }
-, {
     "emoji": "🥜"
   , "description": "peanuts"
   , "category": "Food & Drink"
@@ -9135,6 +9286,30 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🫚"
+  , "description": "ginger root"
+  , "category": "Food & Drink"
+  , "aliases": [
+      "ginger_root"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
+  }
+, {
+    "emoji": "🫛"
+  , "description": "pea pod"
+  , "category": "Food & Drink"
+  , "aliases": [
+      "pea_pod"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
   }
 , {
     "emoji": "🍞"
@@ -13728,6 +13903,20 @@
   , "ios_version": "13.0"
   }
 , {
+    "emoji": "🔫"
+  , "description": "water pistol"
+  , "category": "Activities"
+  , "aliases": [
+      "gun"
+    ]
+  , "tags": [
+      "shoot"
+    , "weapon"
+    ]
+  , "unicode_version": "6.0"
+  , "ios_version": "6.0"
+  }
+, {
     "emoji": "🎱"
   , "description": "pool 8 ball"
   , "category": "Activities"
@@ -13765,30 +13954,6 @@
     ]
   , "unicode_version": "13.0"
   , "ios_version": "14.0"
-  }
-, {
-    "emoji": "🧿"
-  , "description": "nazar amulet"
-  , "category": "Activities"
-  , "aliases": [
-      "nazar_amulet"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "11.0"
-  , "ios_version": "12.1"
-  }
-, {
-    "emoji": "🪬"
-  , "description": "hamsa"
-  , "category": "Activities"
-  , "aliases": [
-      "hamsa"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "14.0"
-  , "ios_version": "15.4"
   }
 , {
     "emoji": "🎮"
@@ -14336,6 +14501,19 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🪭"
+  , "description": "folding hand fan"
+  , "category": "Objects"
+  , "aliases": [
+      "folding_hand_fan"
+    ]
+  , "tags": [
+      "sensu"
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
+  }
+, {
     "emoji": "👛"
   , "description": "purse"
   , "category": "Objects"
@@ -14511,6 +14689,18 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🪮"
+  , "description": "hair pick"
+  , "category": "Objects"
+  , "aliases": [
+      "hair_pick"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
   }
 , {
     "emoji": "👑"
@@ -14998,6 +15188,32 @@
     ]
   , "unicode_version": "13.0"
   , "ios_version": "14.0"
+  }
+, {
+    "emoji": "🪇"
+  , "description": "maracas"
+  , "category": "Objects"
+  , "aliases": [
+      "maracas"
+    ]
+  , "tags": [
+      "shaker"
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
+  }
+, {
+    "emoji": "🪈"
+  , "description": "flute"
+  , "category": "Objects"
+  , "aliases": [
+      "flute"
+    ]
+  , "tags": [
+      "recorder"
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
   }
 , {
     "emoji": "📱"
@@ -16490,15 +16706,14 @@
   , "ios_version": "9.1"
   }
 , {
-    "emoji": "🔫"
-  , "description": "water pistol"
+    "emoji": "💣"
+  , "description": "bomb"
   , "category": "Objects"
   , "aliases": [
-      "gun"
+      "bomb"
     ]
   , "tags": [
-      "shoot"
-    , "weapon"
+      "boom"
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
@@ -17238,6 +17453,30 @@
     ]
   , "unicode_version": "4.1"
   , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🧿"
+  , "description": "nazar amulet"
+  , "category": "Objects"
+  , "aliases": [
+      "nazar_amulet"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "11.0"
+  , "ios_version": "12.1"
+  }
+, {
+    "emoji": "🪬"
+  , "description": "hamsa"
+  , "category": "Objects"
+  , "aliases": [
+      "hamsa"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "14.0"
+  , "ios_version": "15.4"
   }
 , {
     "emoji": "🗿"
@@ -17996,6 +18235,18 @@
   , "ios_version": "6.0"
   }
 , {
+    "emoji": "🪯"
+  , "description": "khanda"
+  , "category": "Symbols"
+  , "aliases": [
+      "khanda"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
+  }
+, {
     "emoji": "♈"
   , "description": "Aries"
   , "category": "Symbols"
@@ -18419,6 +18670,19 @@
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
+  }
+, {
+    "emoji": "🛜"
+  , "description": "wireless"
+  , "category": "Symbols"
+  , "aliases": [
+      "wireless"
+    ]
+  , "tags": [
+      "wifi"
+    ]
+  , "unicode_version": "15.0"
+  , "ios_version": "16.4"
   }
 , {
     "emoji": "📳"
