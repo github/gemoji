@@ -1,20 +1,25 @@
 PATH
   remote: .
   specs:
-    gemoji (2.1.0)
+    gemoji (4.1.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    concurrent-ruby (1.1.7)
+    i18n (1.8.5)
+      concurrent-ruby (~> 1.0)
     minitest (5.3.5)
     rake (10.3.2)
-    ttfunk (1.4.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   gemoji!
-  minitest
-  rake
-  ttfunk (~> 1.4.0)
+  i18n (~> 1.8.5)
+  minitest (~> 5.3.5)
+  rake (~> 10.3.2)
+
+BUNDLED WITH
+   2.4.10

@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-gem "ttfunk", "~> 1.4.0"
-gem "rake"
-gem "minitest"
+gem "rake", "~> 10.3.2"
+gem "minitest", "~> 5.3.5"
+gem "i18n", "~> 1.8.5"
 
 gemspec

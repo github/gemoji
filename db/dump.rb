@@ -1,73 +1,68 @@
+# frozen_string_literal: true
+
+require "i18n"
 require 'emoji'
 require 'json'
+require_relative './emoji-test-parser'
 
-names_list = File.expand_path('../NamesList.txt', __FILE__)
+I18n.config.available_locales = :en
+items = []
 
-class UnicodeCharacter
-  attr_reader :code, :description, :aliases
+_, categories = EmojiTestParser.parse(File.expand_path("../../vendor/unicode-emoji-test.txt", __FILE__))
+seen_existing = {}
 
-  @index = {}
-  class << self
-    attr_reader :index
-
-    def fetch(code, *args, &block)
-      code = code.to_s(16).rjust(4, '0') if code.is_a?(Integer)
-      index.fetch(code, *args, &block)
+for category in categories
+  for sub_category in category[:emoji]
+    for emoji_item in sub_category[:emoji]
+      raw = emoji_item[:sequences][0]
+      existing_emoji = Emoji.find_by_unicode(raw) || Emoji.find_by_unicode("#{raw}\u{fe0f}")
+      if seen_existing.key?(existing_emoji)
+        existing_emoji = nil
+      else
+        seen_existing[existing_emoji] = true
+      end
+      description = emoji_item[:description].sub(/^E\d+(\.\d+)? /, '')
+      output_item = {
+        emoji: raw,
+        description: description,
+        category: category[:name],
+      }
+      if existing_emoji
+        output_item.update(
+          aliases: existing_emoji.aliases,
+          tags: existing_emoji.tags,
+          unicode_version: existing_emoji.unicode_version,
+          ios_version: existing_emoji.ios_version,
+        )
+      else
+        output_item.update(
+          aliases: [I18n.transliterate(description).gsub(/\W+/, '_').downcase],
+          tags: [],
+          unicode_version: "15.0",
+          ios_version: "16.4",
+        )
+      end
+      output_item[:skin_tones] = true if emoji_item[:skin_tones]
+      items << output_item
     end
-  end
-
-  def initialize(code, description)
-    @code = code.downcase
-    @description = description.downcase
-    @aliases = []
-    @references = []
-
-    self.class.index[@code] = self
-  end
-
-  def add_alias(string)
-    @aliases.concat string.split(/\s*,\s*/)
-  end
-
-  def add_reference(code)
-    @references << code.downcase
   end
 end
 
-char = nil
+missing_emoji = Emoji.all.reject { |e| e.custom? || seen_existing.key?(e) }
+if missing_emoji.any?
+  $stderr.puts "Error: these `emoji.json` entries were not matched:"
+  $stderr.puts missing_emoji.map { |e| "%s (%s)" % [e.hex_inspect, e.name] }
+  exit 1
+end
 
-File.foreach(names_list) do |line|
-  case line
-  when /^[A-F0-9]{4,5}\t/
-    code, desc = line.chomp.split("\t", 2)
-    codepoint = code.hex
-    char = UnicodeCharacter.new(code, desc)
-  when /^\t= /
-    char.add_alias($')
-  when /^\tx .+ - ([A-F0-9]{4,5})\)$/
-    char.add_reference($1)
-  end
+for emoji in Emoji.all.select(&:custom?)
+  items << {
+    aliases: emoji.aliases,
+    tags: emoji.tags,
+  }
 end
 
 trap(:PIPE) { abort }
-
-items = []
-variation_codepoint = Emoji::VARIATION_SELECTOR_16.codepoints[0]
-
-for emoji in Emoji.all
-  item = {}
-
-  unless emoji.custom?
-    chars = emoji.raw.codepoints.map { |code| UnicodeCharacter.fetch(code) unless code == variation_codepoint }.compact
-    item[:emoji] = emoji.raw
-    item[:description] = chars.map(&:description).join(' + ')
-  end
-
-  item[:aliases] = emoji.aliases
-  item[:tags] = emoji.tags
-
-  items << item
-end
 
 puts JSON.pretty_generate(items)
   .gsub("\n\n", "\n")
