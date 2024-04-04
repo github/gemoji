@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   test:
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         ruby: ["2.7", "3.0", "3.1"]
 
