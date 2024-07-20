@@ -1,6 +1,6 @@
 gemoji
 ======
-
+gem 'gemoji'
 Emoji images and names. See the LICENSE for copyright information.
 
 
