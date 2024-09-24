@@ -38,7 +38,7 @@ for category in categories
         output_item.update(
           aliases: [I18n.transliterate(description).gsub(/\W+/, '_').downcase],
           tags: [],
-          unicode_version: "15.0",
+          unicode_version: "16.0",
           ios_version: "16.4",
         )
       end
