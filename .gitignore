@@ -4,3 +4,4 @@
 Gemfile.lock
 vendor/*
 !vendor/unicode-emoji-test.txt
+.DS_Store
