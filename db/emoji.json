@@ -21857,6 +21857,8 @@
       "north_korea"
     ]
   , "tags": [
+      "korea"
+    , "north"
     ]
   , "unicode_version": "6.0"
   , "ios_version": "8.3"
@@ -21867,9 +21869,11 @@
   , "category": "Flags"
   , "aliases": [
       "kr"
+    , "south_korea"
     ]
   , "tags": [
       "korea"
+    , "south"
     ]
   , "unicode_version": "6.0"
   , "ios_version": "6.0"
