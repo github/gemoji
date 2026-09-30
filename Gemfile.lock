@@ -9,7 +9,7 @@ GEM
     concurrent-ruby (1.1.7)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
-    minitest (5.3.5)
+    minitest (5.12.0)
     rake (10.3.2)
 
 PLATFORMS
@@ -18,7 +18,7 @@ PLATFORMS
 DEPENDENCIES
   gemoji!
   i18n (~> 1.8.5)
-  minitest (~> 5.3.5)
+  minitest (~> 5.12.0)
   rake (~> 10.3.2)
 
 BUNDLED WITH
