@@ -8327,6 +8327,66 @@
   , "ios_version": "16.4"
   }
 , {
+    "emoji": "🦀"
+  , "description": "crab"
+  , "category": "Food & Drink"
+  , "aliases": [
+      "crab"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "8.0"
+  , "ios_version": "9.1"
+  }
+, {
+    "emoji": "🦞"
+  , "description": "lobster"
+  , "category": "Food & Drink"
+  , "aliases": [
+      "lobster"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "11.0"
+  , "ios_version": "12.1"
+  }
+, {
+    "emoji": "🦐"
+  , "description": "shrimp"
+  , "category": "Food & Drink"
+  , "aliases": [
+      "shrimp"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🦑"
+  , "description": "squid"
+  , "category": "Food & Drink"
+  , "aliases": [
+      "squid"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "9.0"
+  , "ios_version": "10.2"
+  }
+, {
+    "emoji": "🦪"
+  , "description": "oyster"
+  , "category": "Food & Drink"
+  , "aliases": [
+      "oyster"
+    ]
+  , "tags": [
+    ]
+  , "unicode_version": "12.0"
+  , "ios_version": "13.0"
+  }
+, {
     "emoji": "🐌"
   , "description": "snail"
   , "category": "Animals & Nature"
@@ -9932,66 +9992,6 @@
     ]
   , "unicode_version": "11.0"
   , "ios_version": "12.1"
-  }
-, {
-    "emoji": "🦀"
-  , "description": "crab"
-  , "category": "Food & Drink"
-  , "aliases": [
-      "crab"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "8.0"
-  , "ios_version": "9.1"
-  }
-, {
-    "emoji": "🦞"
-  , "description": "lobster"
-  , "category": "Food & Drink"
-  , "aliases": [
-      "lobster"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "11.0"
-  , "ios_version": "12.1"
-  }
-, {
-    "emoji": "🦐"
-  , "description": "shrimp"
-  , "category": "Food & Drink"
-  , "aliases": [
-      "shrimp"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🦑"
-  , "description": "squid"
-  , "category": "Food & Drink"
-  , "aliases": [
-      "squid"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "9.0"
-  , "ios_version": "10.2"
-  }
-, {
-    "emoji": "🦪"
-  , "description": "oyster"
-  , "category": "Food & Drink"
-  , "aliases": [
-      "oyster"
-    ]
-  , "tags": [
-    ]
-  , "unicode_version": "12.0"
-  , "ios_version": "13.0"
   }
 , {
     "emoji": "🍦"
